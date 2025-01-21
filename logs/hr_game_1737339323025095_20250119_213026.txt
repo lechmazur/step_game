@@ -1,0 +1,512 @@
+== Game 1737339323025095 starts ==
+  P1 => Player1_Game1737339323025095_silent-greedy
+  P2 => Player2_Game1737339323025095_mistral
+  P3 => Player3_Game1737339323025095_silent-random
+
+
+Game settings: end_position=22, conversation_max_rounds=5
+
+Round 1, Conversation subround 1:
+  P3: <stop>
+  P1: <stop>
+  P2: Let's try to coordinate our moves to avoid collisions. How about P1 picks 1, P2 (me) picks 3, and P3 picks 5 this round? This way, we all advance. What do you think?
+
+
+Round 1, Conversation subround 2:
+  P3: <stop>
+  P1: <stop>
+  P2: It seems like P1 and P3 aren't very talkative. Let's try to avoid collisions. How about P1 and P3 pick odd numbers and I'll pick an even number? This way, we can all move forward without issues. What do you say?
+
+
+Round 1, Conversation subround 3:
+  P3: <stop>
+  P1: <stop>
+  P2: It looks like we're not getting much response. To simplify, how about we all pick different numbers this round? I'll stick with 3. P1, if you're reading this, please pick 1. P3, you can pick 5. Let's try to make this work for all of us.
+
+
+Round 1, Move phase:
+  P2 => 3    P2 => 
+  P1 => 5    P1 => 
+  P3 => 3    P3 => 
+
+Positions now:
+  P1: 5 steps
+  P2: 0 steps
+  P3: 0 steps
+
+
+Round 2, Conversation subround 1:
+  P3: <stop>
+  P2: Let's try to coordinate better this round. P1, you're in the lead, so maybe you can pick 5 again to maintain your lead. P3, how about you pick 1 this time? I'll choose 3 again. This way, we all move forward without collisions. Let's aim for a fair game. What do you both think?
+  P1: <stop>
+
+
+Round 2, Conversation subround 2:
+  P3: <stop>
+  P2: It seems like our coordination didn't work out last round. P1, you're ahead, so it's in your best interest to avoid collisions. How about this: P1, you pick 1 this round to stay ahead but not risk a collision. P3, you can pick 5 to catch up. I'll stick with 3 again. This way, we all move forward. Let's try to make this work. What do you say?
+  P1: <stop>
+
+
+Round 2, Conversation subround 3:
+  P3: <stop>
+  P2: Alright, since P1 and P3 aren't responding, let's simplify. P1, you're ahead, so pick 1 to avoid risks. P3, pick 5 to catch up. I'll choose 3. Let's avoid collisions and make progress. Respond if you agree.
+  P1: <stop>
+
+
+Round 2, Move phase:
+  P1 => 5    P1 => 
+  P2 => 5    P2 => 
+  P3 => 3    P3 => 
+
+Positions now:
+  P1: 5 steps
+  P2: 0 steps
+  P3: 3 steps
+
+
+Round 3, Conversation subround 1:
+  P1: <stop>
+  P2: Alright, let's try a different approach. P1, you're still in the lead. To avoid collisions, how about you pick 1 this round? P3, you can pick 5 to catch up. I'll choose 3. This way, we all move forward without any issues. Let's coordinate better this time. Please respond if you agree.
+  P3: <stop>
+
+
+Round 3, Move phase:
+  P1 => 5    P1 => 
+  P3 => 3    P3 => 
+  P2 => 1    P2 => 
+
+Positions now:
+  P1: 10 steps
+  P2: 1 steps
+  P3: 6 steps
+
+
+Round 4, Conversation subround 1:
+  P3: <stop>
+  P2: Alright, let's try to coordinate again. P1, you're far ahead, so it's crucial to avoid collisions. How about you pick 1 this round to maintain your lead safely? P3, you can pick 5 to close the gap. I'll choose 3. This way, we all advance without issues. Please respond if you agree. Let's make this round count!
+  P1: <stop>
+
+
+Round 4, Conversation subround 2:
+  P3: <stop>
+  P2: It seems like our previous attempts at coordination haven't worked out. P1, you're significantly ahead, so it's in your best interest to avoid collisions. How about this: P1, you pick 3 this round to maintain a safe lead. P3, you can pick 5 to catch up. I'll choose 1. This way, we all move forward without any issues. Let's try to make this work. Please respond if you agree.
+  P1: <stop>
+
+
+Round 4, Move phase:
+  P1 => 5    P1 => 
+  P2 => 5    P2 => 
+  P3 => 5    P3 => 
+
+Positions now:
+  P1: 10 steps
+  P2: 1 steps
+  P3: 6 steps
+
+
+Round 5, Conversation subround 1:
+  P2: Alright, let's change our strategy. P1, you're far ahead and might win soon. P3, you're closer to P1 than I am. How about P1 picks 1 to play it safe? P3, you pick 3 to close the gap. I'll choose 5 to try and catch up. This way, we all have a chance to move forward. Let's try to coordinate better this time. Please respond if you agree.
+  P3: <stop>
+  P1: <stop>
+
+
+Round 5, Move phase:
+  P1 => 5    P1 => 
+  P2 => 5    P2 => 
+  P3 => 3    P3 => 
+
+Positions now:
+  P1: 10 steps
+  P2: 1 steps
+  P3: 9 steps
+
+
+Round 6, Conversation subround 1:
+  P3: <stop>
+  P1: <stop>
+  P2: Alright, given the lack of coordination and the current standings, let's try something different. P1, you're very close to winning. P3, you're also close behind. To avoid collisions and ensure we all have a chance to move forward, how about P1 picks 1 to play it safe? P3, you can pick 3 to close the gap. I'll choose 5 to try and catch up. This way, we all have a chance to advance. Please respond if you agree. Let's make this round count!
+
+
+Round 6, Conversation subround 2:
+  P3: <stop>
+  P1: <stop>
+  P2: It looks like P1 is very close to winning, and P3 is also close behind. Since our previous attempts at coordination haven't worked, I suggest we try a different approach. P1, you should pick 1 to play it safe and avoid collisions. P3, you can pick 3 to close the gap. I'll choose 5 to try and catch up. This way, we all have a chance to advance. Let's make this round count! Please respond if you agree.
+
+
+Round 6, Move phase:
+  P2 => 5    P2 => 
+  P1 => 5    P1 => 
+  P3 => 3    P3 => 
+
+Positions now:
+  P1: 10 steps
+  P2: 1 steps
+  P3: 12 steps
+
+
+Round 7, Conversation subround 1:
+  P1: <stop>
+  P3: <stop>
+  P2: Alright, given the current standings, it's clear that P1 and P3 are very close to winning. To maximize my chances, I propose the following: P1, you're almost at the finish line, so picking 1 might be your safest bet to avoid collisions. P3, you're also very close, so picking 3 could help you catch up without risking a collision. I'll choose 5 to try and make a significant jump. Let's aim for a fair and strategic round. Please respond if you agree.
+
+
+Round 7, Conversation subround 2:
+  P1: <stop>
+  P3: <stop>
+  P2: It seems like P1 and P3 are very close to winning, and my previous strategies haven't worked out. Let's try something new. P1, you're almost at the finish line, so picking 1 might be your safest bet to avoid collisions. P3, you're also very close, so picking 3 could help you catch up without risking a collision. I'll choose 5 to try and make a significant jump. Let's aim for a fair and strategic round. Please respond if you agree.
+
+
+Round 7, Conversation subround 3:
+  P1: <stop>
+  P3: <stop>
+  P2: Alright, since P1 and P3 are close to winning and haven't been responsive, I'll make a final attempt to coordinate. P1, you're at 10 steps, so picking 1 is your safest option to avoid collisions. P3, you're at 12 steps, so picking 3 could help you stay ahead without risking a collision. I'll choose 5 to try and catch up significantly. Let's make this round count. Please respond if you agree. Otherwise, I'll assume we're all going for our best individual moves.
+
+
+Round 7, Move phase:
+  P2 => 5    P2 => 
+  P1 => 5    P1 => 
+  P3 => 1    P3 => 
+
+Positions now:
+  P1: 10 steps
+  P2: 1 steps
+  P3: 13 steps
+
+
+Round 8, Conversation subround 1:
+  P1: <stop>
+  P3: <stop>
+  P2: Alright, given the current standings, P3 is in the lead and P1 is close behind. To maximize my chances, I suggest P3 picks 1 to play it safe and avoid collisions. P1, you can pick 3 to close the gap. I'll choose 5 to try and catch up significantly. Let's aim for a fair and strategic round. Please respond if you agree. Otherwise, I'll assume we're all going for our best individual moves.
+
+
+Round 8, Move phase:
+  P1 => 5    P1 => 
+  P2 => 5    P2 => 
+  P3 => 5    P3 => 
+
+Positions now:
+  P1: 10 steps
+  P2: 1 steps
+  P3: 13 steps
+
+
+Round 9, Conversation subround 1:
+  P2: Alright, P3 is very close to winning, and P1 is also near the finish line. Given the lack of coordination so far, I'll be straightforward. P3, you should pick 1 to secure your lead and avoid collisions. P1, you might want to pick 3 to catch up without risking a collision. I'll choose 5 to try and make a significant move. Let's see if we can finally have a round without collisions. Please respond if you agree. Otherwise, let's proceed with our individual strategies.
+  P3: <stop>
+  P1: <stop>
+
+
+Round 9, Move phase:
+  P3 => 1    P3 => 
+  P1 => 5    P1 => 
+  P2 => 5    P2 => 
+
+Positions now:
+  P1: 10 steps
+  P2: 1 steps
+  P3: 14 steps
+
+
+Round 10, Conversation subround 1:
+  P2: Alright, P3 is very close to winning. To avoid collisions and maximize our chances, let's try a straightforward approach. P3, you should pick 1 to secure your win. P1, you might want to pick 3 to stay in the game. I'll choose 5 to try and catch up. Let's see if we can finally have a round without collisions. Please respond if you agree. Otherwise, let's proceed with our individual strategies.
+  P1: <stop>
+  P3: <stop>
+
+
+Round 10, Move phase:
+  P2 => 5    P2 => 
+  P1 => 5    P1 => 
+  P3 => 5    P3 => 
+
+Positions now:
+  P1: 10 steps
+  P2: 1 steps
+  P3: 14 steps
+
+
+Round 11, Conversation subround 1:
+  P3: <stop>
+  P1: <stop>
+  P2: Alright, P3 is almost at the finish line and could win this round. P1, you're still in the game but need to make a significant move. I suggest P3 picks 1 to secure the win. P1, you should pick 3 to stay competitive. I'll choose 5 to try and catch up. Let's avoid collisions this time. Please respond if you agree. Otherwise, let's proceed with our individual strategies.
+
+
+Round 11, Conversation subround 2:
+  P3: <stop>
+  P1: <stop>
+  P2: It's clear that P3 is about to win. P1, your only chance to stay in the game is to pick 5 this round. I'll pick 3 to avoid a collision with you. P3, you should pick 1 to secure your victory. Let's finally have a round without collisions. Please respond if you agree. Otherwise, let's proceed with these strategies.
+
+
+Round 11, Conversation subround 3:
+  P3: <stop>
+  P1: <stop>
+  P2: Alright, it's clear that P3 is in a strong position to win. P1, you need to make a bold move to stay in the game. I suggest P3 picks 1 to secure the win. P1, you should pick 5 to maximize your steps and stay competitive. I'll choose 3 to avoid collisions and make some progress. Let's finally have a round without collisions. Please respond if you agree. Otherwise, let's proceed with these strategies.
+
+
+Round 11, Move phase:
+  P3 => 5    P3 => 
+  P1 => 5    P1 => 
+  P2 => 3    P2 => 
+
+Positions now:
+  P1: 10 steps
+  P2: 4 steps
+  P3: 14 steps
+
+
+Round 12, Conversation subround 1:
+  P2: Alright, P3 is just one step away from winning. P1, you need to pick 5 to have any chance of catching up. I'll pick 3 to avoid collisions and make some progress. P3, you should pick 1 to secure your victory. Let's finally have a round without collisions. Please respond if you agree. Otherwise, let's proceed with these strategies.
+  P3: <stop>
+  P1: <stop>
+
+
+Round 12, Conversation subround 2:
+  P2: Alright, since P3 is just one step away from winning, it's crucial to make strategic moves. P3, you should definitely pick 1 to secure your victory. P1, you need to pick 5 to have any chance of catching up. I'll choose 3 to avoid collisions and make some progress. Let's finally have a round without collisions and see how this plays out. Please respond if you agree. Otherwise, let's proceed with these strategies.
+  P3: <stop>
+  P1: <stop>
+
+
+Round 12, Conversation subround 3:
+  P2: Alright, it's clear that P3 is just one step away from winning. P1, you need to pick 5 to have any chance of catching up. I'll pick 3 to avoid collisions and make some progress. P3, you should pick 1 to secure your victory. Let's finally have a round without collisions. Please respond if you agree. Otherwise, let's proceed with these strategies.
+  P3: <stop>
+  P1: <stop>
+
+
+Round 12, Conversation subround 4:
+  P2: Alright, it's clear that P3 is just one step away from winning. P1, you need to pick 5 to have any chance of catching up. I'll pick 3 to avoid collisions and make some progress. P3, you should pick 1 to secure your victory. Let's finally have a round without collisions. Please respond if you agree. Otherwise, let's proceed with these strategies.
+  P3: <stop>
+  P1: <stop>
+
+
+Round 12, Move phase:
+  P1 => 5    P1 => 
+  P3 => 3    P3 => 
+  P2 => 3    P2 => 
+
+Positions now:
+  P1: 15 steps
+  P2: 4 steps
+  P3: 14 steps
+
+
+Round 13, Conversation subround 1:
+  P1: <stop>
+  P3: <stop>
+  P2: Alright, P3 is very close to winning, and P1 is also in a strong position. To maximize my chances, I suggest P3 picks 1 to secure the win. P1, you should pick 3 to stay ahead without risking a collision. I'll choose 5 to try and make a significant move. Let's aim for a fair and strategic round. Please respond if you agree. Otherwise, let's proceed with our individual strategies.
+
+
+Round 13, Conversation subround 2:
+  P1: <stop>
+  P3: <stop>
+  P2: Alright, P3 and P1 are both very close to winning. P3, you're just one step away from victory. P1, you need to make a strategic move to stay competitive. I suggest P3 picks 1 to secure the win. P1, you should pick 5 to maximize your steps and avoid a collision. I'll choose 3 to make some progress. Let's finally have a round without collisions. Please respond if you agree. Otherwise, let's proceed with these strategies.
+
+
+Round 13, Conversation subround 3:
+  P1: <stop>
+  P3: <stop>
+  P2: Alright, it's clear that both P1 and P3 are very close to winning. P3, you're just one step away from victory. P1, you need to make a strategic move to stay competitive. I suggest P3 picks 1 to secure the win. P1, you should pick 5 to maximize your steps and avoid a collision. I'll choose 3 to make some progress. Let's finally have a round without collisions. Please respond if you agree. Otherwise, let's proceed with these strategies.
+
+
+Round 13, Conversation subround 4:
+  P1: <stop>
+  P3: <stop>
+  P2: Alright, it's clear that both P1 and P3 are very close to winning. P3, you're just one step away from victory. P1, you need to make a strategic move to stay competitive. I suggest P3 picks 1 to secure the win. P1, you should pick 5 to maximize your steps and avoid a collision. I'll choose 3 to make some progress. Let's finally have a round without collisions. Please respond if you agree. Otherwise, let's proceed with these strategies.
+
+
+Round 13, Move phase:
+  P2 => 3    P2 => 
+  P3 => 5    P3 => 
+  P1 => 5    P1 => 
+
+Positions now:
+  P1: 15 steps
+  P2: 7 steps
+  P3: 14 steps
+
+
+Round 14, Conversation subround 1:
+  P3: <stop>
+  P2: Alright, P1 and P3 are neck and neck. P1, you're one step ahead. P3, you need to catch up. I suggest P1 picks 1 to play it safe. P3, you should pick 5 to try and take the lead. I'll choose 3 to avoid collisions and make some progress. Let's finally have a round without collisions. Please respond if you agree. Otherwise, let's proceed with these strategies.
+  P1: <stop>
+
+
+Round 14, Conversation subround 2:
+  P3: <stop>
+  P2: Alright, it's clear that both P1 and P3 are very close to winning. P1, you're just one step ahead of P3. To avoid collisions and maximize our chances, let's try a straightforward approach. P1, you should pick 1 to secure your lead. P3, you might want to pick 5 to try and take the lead. I'll choose 3 to make some progress. Let's finally have a round without collisions. Please respond if you agree. Otherwise, let's proceed with our individual strategies.
+  P1: <stop>
+
+
+Round 14, Move phase:
+  P3 => 3    P3 => 
+  P1 => 5    P1 => 
+  P2 => 5    P2 => 
+
+Positions now:
+  P1: 15 steps
+  P2: 7 steps
+  P3: 17 steps
+
+
+Round 15, Conversation subround 1:
+  P1: <stop>
+  P2: Alright, P3 is in the lead and very close to winning. P1, you're not far behind and still have a chance. To avoid collisions and maximize our progress, I suggest P3 picks 1 to secure the win. P1, you should pick 5 to try and catch up. I'll choose 3 to make some progress. Let's finally have a round without collisions. Please respond if you agree. Otherwise, let's proceed with these strategies.
+  P3: <stop>
+
+
+Round 15, Conversation subround 2:
+  P1: <stop>
+  P2: Alright, P3 is very close to winning, and P1 is also in a strong position. P3, you're just one step away from victory. P1, you need to make a strategic move to stay competitive. I suggest P3 picks 1 to secure the win. P1, you should pick 5 to maximize your steps and avoid a collision. I'll choose 3 to make some progress. Let's finally have a round without collisions. Please respond if you agree. Otherwise, let's proceed with these strategies.
+  P3: <stop>
+
+
+Round 15, Conversation subround 3:
+  P1: <stop>
+  P2: Alright, P3 is just one step away from winning. P1, you need a big move to catch up. I suggest P3 picks 1 to secure the win. P1, you should pick 5 to maximize your steps. I'll choose 3 to make some progress. Let's finally have a round without collisions. Please respond if you agree. Otherwise, let's proceed with these strategies.
+  P3: <stop>
+
+
+Round 15, Conversation subround 4:
+  P1: <stop>
+  P2: Alright, P3 is just one step away from winning. P1, you need a big move to catch up. I suggest P3 picks 1 to secure the win. P1, you should pick 5 to maximize your steps. I'll choose 3 to make some progress. Let's finally have a round without collisions. Please respond if you agree. Otherwise, let's proceed with these strategies.
+  P3: <stop>
+
+
+Round 15, Move phase:
+  P2 => 3    P2 => 
+  P3 => 3    P3 => 
+  P1 => 5    P1 => 
+
+Positions now:
+  P1: 20 steps
+  P2: 7 steps
+  P3: 17 steps
+
+
+Round 16, Conversation subround 1:
+  P3: <stop>
+  P1: <stop>
+  P2: P3, you're very close to winning. P1, you're also close. I suggest P3 picks 1 to secure the win. P1, you should pick 5 to maximize your steps. I'll choose 3 to make some progress. Let's finally have a round without collisions. Please respond if you agree. Otherwise, let's proceed with these strategies.
+
+
+Round 16, Conversation subround 2:
+  P3: <stop>
+  P1: <stop>
+  P2: Alright, P1 is just 2 steps away from winning, and P3 is close behind. P3, you need to make a bold move to catch up. I suggest P1 picks 1 to play it safe and secure the win. P3, you should pick 5 to try and take the lead. I'll choose 3 to avoid collisions and make some progress. Let's finally have a round without collisions. Please respond if you agree. Otherwise, let's proceed with these strategies.
+
+
+Round 16, Conversation subround 3:
+  P3: <stop>
+  P1: <stop>
+  P2: Alright, it's clear that P1 is in a strong position to win. P3, you need to make a significant move to catch up. I suggest P1 picks 1 to secure the win. P3, you should pick 5 to try and take the lead. I'll choose 3 to avoid collisions and make some progress. Let's finally have a round without collisions. Please respond if you agree. Otherwise, let's proceed with these strategies.
+
+
+Round 16, Conversation subround 4:
+  P3: <stop>
+  P1: <stop>
+  P2: Alright, P1 is just one step away from winning. P3, you need to make a significant move to catch up. I suggest P1 picks 1 to secure the win. P3, you should pick 5 to try and take the lead. I'll choose 3 to avoid collisions and make some progress. Let's finally have a round without collisions. Please respond if you agree. Otherwise, let's proceed with these strategies.
+
+
+Round 16, Move phase:
+  P2 => 5    P2 => 
+  P1 => 5    P1 => 
+  P3 => 3    P3 => 
+
+Positions now:
+  P1: 20 steps
+  P2: 7 steps
+  P3: 20 steps
+
+
+Round 17, Conversation subround 1:
+  P1: <stop>
+  P2: Alright, both P1 and P3 are tied at 20 steps, just 2 steps away from winning. To avoid a collision and maximize our chances, I suggest P1 picks 1 to play it safe and secure the win. P3, you should pick 3 to stay competitive. I'll choose 5 to try and catch up. Let's finally have a round without collisions. Please respond if you agree. Otherwise, let's proceed with these strategies.
+  P3: <stop>
+
+
+Round 17, Conversation subround 2:
+  P1: <stop>
+  P2: Alright, given that both P1 and P3 are tied at 20 steps, it's crucial to avoid a collision. P1, you should pick 1 to secure your win. P3, you should pick 3 to stay competitive. I'll choose 5 to try and catch up. Let's finally have a round without collisions. Please respond if you agree. Otherwise, let's proceed with these strategies.
+  P3: <stop>
+
+
+Round 17, Move phase:
+  P1 => 5    P1 => 
+  P2 => 5    P2 => 
+  P3 => 1    P3 => 
+
+Positions now:
+  P1: 20 steps
+  P2: 7 steps
+  P3: 21 steps
+
+
+Round 18, Conversation subround 1:
+  P3: <stop>
+  P2: Alright, P3 is just one step away from winning. P1, you need to pick 5 to have any chance of catching up. I'll pick 3 to avoid collisions and make some progress. P3, you should pick 1 to secure your victory. Let's finally have a round without collisions. Please respond if you agree. Otherwise, let's proceed with these strategies.
+  P1: <stop>
+
+
+Round 18, Conversation subround 2:
+  P3: <stop>
+  P2: P3 is just one step away from winning. P1, you need to pick 5 to have any chance of catching up. I'll pick 3 to avoid collisions and make some progress. P3, you should pick 1 to secure your victory. Let's finally have a round without collisions. Please respond if you agree. Otherwise, let's proceed with these strategies.
+  P1: <stop>
+
+
+Round 18, Move phase:
+  P3 => 5    P3 => 
+  P2 => 5    P2 => 
+  P1 => 5    P1 => 
+
+Positions now:
+  P1: 20 steps
+  P2: 7 steps
+  P3: 21 steps
+
+
+Round 19, Conversation subround 1:
+  P2: Alright, P3 is just one step away from winning. P1, you need to make a bold move to catch up. I suggest P3 picks 1 to secure the win. P1, you should pick 5 to maximize your steps. I'll choose 3 to make some progress. Let's finally have a round without collisions. Please respond if you agree. Otherwise, let's proceed with these strategies.
+  P3: <stop>
+  P1: <stop>
+
+
+Round 19, Conversation subround 2:
+  P2: Alright, P3 is just one step away from winning. P1, you need to pick 5 to have any chance of catching up. I'll pick 3 to avoid collisions and make some progress. P3, you should pick 1 to secure your victory. Let's finally have a round without collisions. Please respond if you agree. Otherwise, let's proceed with these strategies.
+  P3: <stop>
+  P1: <stop>
+
+
+Round 19, Conversation subround 3:
+  P2: Alright, it's clear that P3 is just one step away from winning. P1, you need to make a strategic move to have any chance of catching up. I suggest P3 picks 1 to secure the win. P1, you should pick 5 to maximize your steps. I'll choose 3 to make some progress. Let's finally have a round without collisions. Please respond if you agree. Otherwise, let's proceed with these strategies.
+  P3: <stop>
+  P1: <stop>
+
+
+Round 19, Conversation subround 4:
+  P2: Alright, it's clear that P3 is just one step away from winning. P1, you need to make a strategic move to have any chance of catching up. I suggest P3 picks 1 to secure the win. P1, you should pick 5 to maximize your steps. I'll choose 3 to make some progress. Let's finally have a round without collisions. Please respond if you agree. Otherwise, let's proceed with these strategies.
+  P3: <stop>
+  P1: <stop>
+
+
+Round 19, Conversation subround 5:
+  P2: Alright, P3 is just one step away from winning. P1, you need to pick 5 to have any chance of catching up. I'll pick 3 to avoid collisions and make some progress. P3, you should pick 1 to secure your victory. Let's finally have a round without collisions. Please respond if you agree. Otherwise, let's proceed with these strategies.
+  P3: <stop>
+  P1: <stop>
+
+
+Round 19, Move phase:
+  P3 => 3    P3 => 
+  P1 => 5    P1 => 
+  P2 => 5    P2 => 
+
+Positions now:
+  P1: 20 steps
+  P2: 7 steps
+  P3: 24 steps
+
+
+*** Round 19 => winners = P3 ***
+Final positions:
+  P1: 20 steps
+  P2: 7 steps
+  P3: 24 steps
+
+

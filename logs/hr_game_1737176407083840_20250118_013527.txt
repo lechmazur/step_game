@@ -1,0 +1,107 @@
+== Game 1737176407083840 starts ==
+  P1 => Player1_Game1737176407083840_gemma
+  P2 => Player2_Game1737176407083840_qwen
+  P3 => Player3_Game1737176407083840_llama33_70b
+
+
+Game settings: end_position=17, conversation_max_rounds=4
+
+Round 1, Conversation subround 1:
+  P1: Let's try to avoid collisions. How about we each pick a different number and stick with it unless someone is close to winning?
+  P3: I agree with P1's suggestion. To avoid collisions, how about P1 chooses 1, P2 chooses 3, and I choose 5? This way, we each start with a unique number.
+  P2: I'm okay with the plan, but let's reassess if anyone gets close to 17 steps. For now, I'll go with 3.
+
+
+Round 1, Move phase:
+  P2 => 3    P2 => 
+  P3 => 5    P3 => 
+  P1 => 1    P1 => 
+
+Positions now:
+  P1: 1 steps
+  P2: 3 steps
+  P3: 5 steps
+
+
+Round 2, Conversation subround 1:
+  P2: Let's stick to the plan for now. I'll go with 3 again.
+  P3: I'll stick with 5 for now, as planned. Let's keep the collisions to a minimum and reassess later if needed.
+  P1: I'm sticking with 1. Good luck everyone.
+
+
+Round 2, Move phase:
+  P2 => 3    P2 => 
+  P3 => 5    P3 => 
+  P1 => 1    P1 => 
+
+Positions now:
+  P1: 2 steps
+  P2: 6 steps
+  P3: 10 steps
+
+
+Round 3, Conversation subround 1:
+  P2: Let's keep the plan going. I'll stick with 3. How about you both?
+  P3: I'll stick with 5 for now, as planned. Let's keep the collisions to a minimum and reassess later if needed.
+  P1: P1: I'll stick with 1. Good luck.
+
+
+Round 3, Conversation subround 2:
+  P2: I'll stick with 3. It's working so far. Let's keep it up.
+  P3: Let's reassess our strategy since we're a few rounds in. I'm starting to get ahead, but I don't want to provoke a collision. For now, I'll stick with 5, but let's discuss potential changes for future rounds.
+  P1: P3, I agree we should reassess.  I'm open to switching if it helps us avoid collisions and get ahead. What do you think, P2?
+
+
+Round 3, Conversation subround 3:
+  P2: I think we should keep the current strategy for one more round. I'm at 6 steps, and I'll stick with 3. Let's see how it goes and reassess after this round.
+  P3: I'm ahead, but I don't want to risk a collision. Let's stick to the plan for this round, but I suggest we discuss a potential switch for the next round to throw off anyone trying to catch up.
+  P1: P2, are you open to switching to 5 next round? I'll switch to 3. This way, P3 will have to change their strategy.
+
+
+Round 3, Move phase:
+  P3 => 5    P3 => 
+  P2 => 3    P2 => 
+  P1 => 3    P1 => 
+
+Positions now:
+  P1: 2 steps
+  P2: 6 steps
+  P3: 15 steps
+
+
+Round 4, Conversation subround 1:
+  P1: P2, are you sticking with 3 this round?  P3, I'm thinking of switching to 1.
+  P2: P2: I think we should mix it up this round. P1, if you switch to 1, I'll go with 5. P3, you might want to consider 3 to keep the lead. Let's avoid collisions and keep advancing.
+  P3: I'm ahead with 15 steps, but I don't want to risk a collision. Considering P2's suggestion, I might switch to 3 this round to throw off the prediction. What are your thoughts, P1 and P2?
+
+
+Round 4, Conversation subround 2:
+  P1: P2, I like your thinking. I'll stick with 1 this round.  P3, are you going to stick with 3?
+  P2: P3, if you switch to 3, it will throw off any patterns. I'll go with 5 to catch up. P1, sticking with 1 is a good move. Let's keep this up and reassess after this round.
+  P3: I'm considering switching to 3 as suggested, but I want to hear more from you both. P1, are you sure about sticking with 1? P2, are you committed to 5?
+
+
+Round 4, Conversation subround 3:
+  P1: P3, if you switch to 3, I'll switch to 5 next round.  P2, you in?
+  P2: P3, if you switch to 3 this round, it will definitely throw off any patterns and keep you in the lead. I'll go with 5 to catch up. P1, sticking with 1 is a solid move. Let's keep this plan and reassess after this round.
+  P3: I'm leaning towards switching to 3 this round to avoid any potential collisions and throw off predictions. P1, you're planning to stick with 1, and P2, you're considering 5. Let's finalize our strategies for this round.
+
+
+Round 4, Move phase:
+  P3 => 3    P3 => 
+  P1 => 1    P1 => 
+  P2 => 5    P2 => 
+
+Positions now:
+  P1: 3 steps
+  P2: 11 steps
+  P3: 18 steps
+
+
+*** Round 4 => winners = P3 ***
+Final positions:
+  P1: 3 steps
+  P2: 11 steps
+  P3: 18 steps
+
+

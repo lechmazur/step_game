@@ -1,0 +1,403 @@
+== Game 1737370512674100 starts ==
+  P1 => Player1_Game1737370512674100_silent-greedy
+  P2 => Player2_Game1737370512674100_mistral
+  P3 => Player3_Game1737370512674100_deepseek
+
+
+Game settings: end_position=19, conversation_max_rounds=3
+
+Round 1, Conversation subround 1:
+  P2: Let's start by coordinating our moves to avoid collisions. How about P1 picks 1, P2 (me) picks 3, and P3 picks 5 this round? This way, we all advance without any conflicts. Thoughts?
+  P1: <stop>
+  P3: P2's proposal seems fair, but I suggest we rotate the numbers each round to ensure fairness and avoid predictability. For example, next round, P1 could pick 3, P2 picks 5, and I pick 1. This way, we all get equal opportunities to advance without collisions. Thoughts?
+
+
+Round 1, Conversation subround 2:
+  P2: P3's suggestion for rotation is good for long-term fairness. Let's agree on that starting from the next round. For this round, does everyone agree with the initial plan? P1 picks 1, I pick 3, and P3 picks 5. Please confirm or suggest another plan.
+  P1: <stop>
+  P3: I agree with P2's initial plan for this round: P1 picks 1, P2 picks 3, and I pick 5. Let's stick to this to avoid collisions and advance smoothly. Starting next round, we can implement the rotation plan I suggested earlier.
+
+
+Round 1, Conversation subround 3:
+  P2: Alright, since we all agree on the plan for this round, let's confirm one last time: P1 picks 1, I (P2) pick 3, and P3 picks 5. If no one has any objections, let's proceed to the move phase. Please respond with a simple "agree" or
+  P1: <stop>
+  P3: I agree with the plan for this round: P1 picks 1, P2 picks 3, and I pick 5. Let's proceed to the move phase to avoid further delays. Starting next round, we can implement the rotation plan for fairness.
+
+
+Round 1, Move phase:
+  P3 => 5    P3 => 
+  P1 => 5    P1 => 
+  P2 => 3    P2 => 
+
+Positions now:
+  P1: 0 steps
+  P2: 3 steps
+  P3: 0 steps
+
+
+Round 2, Conversation subround 1:
+  P3: Since P1 and I collided last round, let's adjust the rotation plan. P1, you pick 3 this round, P2 picks 5, and I pick 1. This avoids collisions and keeps the rotation fair. Thoughts?
+  P1: <stop>
+  P2: P3's adjustment makes sense. P1, please confirm if you're okay with picking 3 this round. P2 (me) will pick 5, and P3 will pick 1. Let's agree quickly to avoid any more collisions. Everyone please confirm or suggest another plan.
+
+
+Round 2, Conversation subround 2:
+  P3: I agree with the adjusted rotation plan: P1 picks 3, P2 picks 5, and I pick 1 this round. Let's confirm and proceed to the move phase to avoid further delays. Starting next round, we can continue rotating numbers to maintain fairness and prevent collisions.
+  P1: <stop>
+  P2: P1, we need your confirmation to avoid another collision. Please respond with "agree" if you're okay with picking 3 this round. Otherwise, suggest another number. P3 and I are ready to proceed with the plan: P1 picks 3, I (P2) pick 5, and P3 picks 1. Let's ensure everyone advances this round.
+
+
+Round 2, Move phase:
+  P1 => 5    P1 => 
+  P3 => 1    P3 => 
+  P2 => 5    P2 => 
+
+Positions now:
+  P1: 0 steps
+  P2: 3 steps
+  P3: 1 steps
+
+
+Round 3, Conversation subround 1:
+  P2: P1, you've collided twice now. Let's ensure you advance this round. How about P1 picks 1, I (P2) pick 3, and P3 picks 5? This follows the rotation plan and helps P1 catch up. Please confirm or suggest another plan.
+  P3: I agree with P2's proposal for this round: P1 picks 1, P2 picks 3, and I pick 5. This follows the rotation plan and helps P1 catch up. Let's confirm and proceed to the move phase to avoid further collisions. Starting next round, we can continue rotating numbers to maintain fairness and prevent further delays.
+  P1: <stop>
+
+
+Round 3, Conversation subround 2:
+  P2: P1, since you haven't confirmed yet, let's make sure you're on board. If you don't want to pick 1, you can choose 3, and I'll pick 1 instead. P3 will still pick 5. Please confirm your choice so we can all advance smoothly. Let's avoid another collision.
+  P3: P1, to avoid another collision, please confirm your choice for this round. P2's proposal is fair: P1 picks 1, P2 picks 3, and I pick 5. This follows the rotation plan and helps you catch up. Let's finalize this quickly and proceed to the move phase.
+  P1: <stop>
+
+
+Round 3, Conversation subround 3:
+  P2: P1, since you haven't confirmed and we need to move forward, let's assume you'll pick 1 as proposed. P3 will pick 5, and I (P2) will pick 3. If you have a different plan, please speak up now. Otherwise, we'll proceed with this. Let's ensure we all advance this round. Please confirm or suggest another plan quickly.
+  P3: P1, to avoid another collision and help you catch up, please confirm your choice for this round. P2's proposal is fair: P1 picks 1, P2 picks 3, and I pick 5. This follows the rotation plan and ensures everyone advances. Let's finalize this quickly and proceed to the move phase.
+  P1: <stop>
+
+
+Round 3, Move phase:
+  P2 => 3    P2 => 
+  P1 => 5    P1 => 
+  P3 => 5    P3 => 
+
+Positions now:
+  P1: 0 steps
+  P2: 6 steps
+  P3: 1 steps
+
+
+Round 4, Conversation subround 1:
+  P3: P1, you've collided three times now, which is hurting your progress. Let's adjust the rotation: P1 picks 3, P2 picks 1, and I pick 5 this round. This ensures you advance and avoids further collisions. P2, do you agree? Let's finalize this quickly to keep the game moving.
+  P2: P1, it's crucial you advance this round. P3's suggestion is solid: you pick 3, I'll pick 1, and P3 will pick 5. This avoids collisions and helps you catch up. Let's confirm this plan quickly to ensure smooth progress. P3, do you agree with this plan? Please confirm or suggest another plan.
+  P1: <stop>
+
+
+Round 4, Conversation subround 2:
+  P3: I agree with the adjusted rotation plan: P1 picks 3, P2 picks 1, and I pick 5 this round. This ensures P1 advances and avoids further collisions. Let's confirm and proceed to the move phase quickly to keep the game moving smoothly. P1, please confirm your choice to avoid any misunderstandings.
+  P2: P1, you really need to advance this round to stay in the game. Please confirm if you're picking 3 as agreed. P3 and I will stick to the plan: I'll pick 1, and P3 will pick 5. If you have another number in mind, let us know immediately. Otherwise, we'll proceed with the current plan. Let's ensure everyone advances this round. Please confirm or suggest another plan quickly.
+  P1: <stop>
+
+
+Round 4, Conversation subround 3:
+  P3: P1, it's clear you're struggling to advance. To help you, I propose P1 picks 3, P2 picks 1, and I pick 5 this round. This ensures you advance and avoids collisions. P2, do you agree? Let's finalize this quickly to keep the game moving. P1, please confirm your choice to avoid misunderstandings.
+  P2: P1, you haven't advanced at all yet, and we need to ensure you make progress this round. The current plan is for you to pick 3, I'll pick 1, and P3 will pick 5. If you don't confirm, we'll have to assume you're on board with this plan. Let's move forward and avoid another collision. P3, are you ready to proceed with this plan? Please confirm quickly so we can all advance.
+  P1: <stop>
+
+
+Round 4, Move phase:
+  P1 => 5    P1 => 
+  P2 => 1    P2 => 
+  P3 => 5    P3 => 
+
+Positions now:
+  P1: 0 steps
+  P2: 7 steps
+  P3: 1 steps
+
+
+Round 5, Conversation subround 1:
+  P1: <stop>
+  P3: P1, your repeated collisions are hindering your progress. Let's try this: P1 picks 1, P2 picks 3, and I pick 5. This ensures you advance and avoids collisions. P2, do you agree? Let's finalize this quickly to keep the game moving. P1, please confirm your choice to avoid misunderstandings.
+  P2: P1, it's crucial you start advancing. P3's plan is good: you pick 1, I'll pick 3, and P3 picks 5. This avoids collisions and helps you finally move forward. Please confirm if you agree with this plan. P3, are you on board with this? Let's finalize and move to the next phase quickly. We need to ensure everyone is advancing. Confirm or suggest another plan promptly.
+
+
+Round 5, Conversation subround 2:
+  P1: <stop>
+  P3: P1, your repeated collisions are holding you back. Let's finalize the plan: P1 picks 1, P2 picks 3, and I pick 5. This ensures you advance and avoids collisions. P2, do you agree? Let's confirm and proceed to the move phase quickly. P1, please confirm your choice to avoid misunderstandings.
+  P2: P1, you've not advanced at all in the previous rounds due to collisions. It's essential you make a move this round. P3 and I are trying to coordinate to help you progress. Please confirm if you're picking 1 as agreed. P3 will pick 5, and I'll pick 3. If you have another plan, speak up now. Otherwise, we'll proceed with the current plan. Let's ensure everyone advances this round. Please confirm or suggest another plan quickly.
+
+
+Round 5, Conversation subround 3:
+  P1: <stop>
+  P3: P1, your repeated collisions are preventing you from advancing. Let's finalize the plan: P1 picks 1, P2 picks 3, and I pick 5. This ensures you advance and avoids collisions. P2, do you agree? Let's confirm and proceed to the move phase quickly. P1, please confirm your choice to avoid misunderstandings.
+  P2: P1, you haven't moved at all yet, and we need to ensure you make progress this round. The current plan is for you to pick 1, I'll pick 3, and P3 will pick 5. If you don't confirm, we'll have to assume you're on board with this plan. Let's move forward and avoid another collision. P3, are you ready to proceed with this plan? Please confirm quickly so we can all advance. If P1 doesn't confirm, we might need to reconsider our strategy to ensure the game keeps moving. Let's finalize this quickly.
+
+
+Round 5, Move phase:
+  P1 => 5    P1 => 
+  P2 => 3    P2 => 
+  P3 => 5    P3 => 
+
+Positions now:
+  P1: 0 steps
+  P2: 10 steps
+  P3: 1 steps
+
+
+Round 6, Conversation subround 1:
+  P3: P1, your repeated collisions are preventing you from advancing. Let's try this: P1 picks 1, P2 picks 3, and I pick 5. This ensures you advance and avoids collisions. P2, do you agree? Let's finalize this quickly to keep the game moving. P1, please confirm your choice to avoid misunderstandings.
+  P1: <stop>
+  P2: P1, you've consistently picked 5 and collided every round, which isn't helping anyone. It's crucial you change your strategy to advance. P3 and I are trying to coordinate to avoid collisions. Please confirm if you're picking 1 this round as suggested. If you don't respond, we'll assume you're sticking with 5, and we'll adjust accordingly. P3, let's proceed with the plan: I'll pick 3, and you pick 5 if P1 doesn't confirm. Let's ensure we all make progress this round.
+
+
+Round 6, Conversation subround 2:
+  P3: P1, your repeated choice of 5 is causing unnecessary collisions and stalling your progress. P2 and I are trying to help you advance. Please pick 1 this round to avoid another collision. P2, if P1 doesn't confirm, I suggest you pick 1, and I'll pick 3 to ensure we both advance. Let's finalize this quickly.
+  P1: <stop>
+  P2: P1, your silence and repeated choice of 5 are not beneficial for your progress. If you don't confirm a different number, P3 and I will have to assume you're picking 5 again. To avoid collision, I'll pick 1, and P3 will pick 3. This way, at least P3 and I can advance. Please confirm or suggest another plan quickly. We need to keep the game moving. P3, are you okay with this adjusted plan? Let's finalize and proceed to the move phase.
+
+
+Round 6, Conversation subround 3:
+  P3: P1, your repeated choice of 5 is stalling your progress and causing unnecessary collisions. P2 and I are trying to help you advance. Please pick 1 this round to avoid another collision. P2, if P1 doesn't confirm, I suggest you pick 1, and I'll pick 3 to ensure we both advance. Let's finalize this quickly.
+  P1: <stop>
+  P2: P1, you've not confirmed any plan and continue to pick 5, which is hindering your progress. P3 and I will proceed with the assumption that you'll pick 5 again. To avoid collision, I'll pick 1, and P3 will pick 3. This ensures at least two of us advance. P3, confirm if you're okay with this plan. Let's move to the move phase quickly. P1, if you change your mind, speak up now. Otherwise, we'll proceed as discussed.
+
+
+Round 6, Move phase:
+  P2 => 1    P2 => 
+  P3 => 3    P3 => 
+  P1 => 5    P1 => 
+
+Positions now:
+  P1: 5 steps
+  P2: 11 steps
+  P3: 4 steps
+
+
+Round 7, Conversation subround 1:
+  P1: <stop>
+  P3: P1, your repeated choice of 5 is stalling your progress. P2 and I are advancing while you remain stuck. To help you, I suggest P1 picks 1, P2 picks 3, and I pick 5. This ensures you advance and avoids collisions. P2, do you agree? Let's finalize this quickly. P1, please confirm your choice to avoid misunderstandings.
+  P2: P1, your strategy of picking 5 every round isn't working. You're falling behind significantly. P3 and I are trying to coordinate to help everyone advance. Please consider picking 1 this round to finally make progress. P3 will pick 5, and I'll pick 3. This avoids collisions and ensures we all move forward. If you don't confirm, we'll assume you're sticking with 5 again. Let's finalize this plan quickly and proceed to the move phase. P3, are you on board with this plan?
+
+
+Round 7, Conversation subround 2:
+  P1: <stop>
+  P3: P1, your repeated choice of 5 is causing you to fall behind. P2 and I are advancing while you remain stuck. To help you, I suggest P1 picks 1, P2 picks 3, and I pick 5. This ensures you advance and avoids collisions. P2, do you agree? Let's finalize this quickly. P1, please confirm your choice to avoid misunderstandings.
+  P2: P1, you're far behind and need to change your strategy to catch up. P3 and I are coordinating to avoid collisions. If you don't confirm a different number, we'll assume you're picking 5 again. To ensure at least two of us advance, I'll pick 3, and P3 will pick 5. P3, confirm if you're okay with this plan. Let's finalize and move to the move phase quickly. P1, if you have a different plan, speak up now. Otherwise, we'll proceed as discussed.
+
+
+Round 7, Conversation subround 3:
+  P1: <stop>
+  P3: P1, your repeated choice of 5 is causing you to fall further behind. P2 and I are advancing while you remain stuck. To help you, I suggest P1 picks 1, P2 picks 3, and I pick 5. This ensures you advance and avoids collisions. P2, do you agree? Let's finalize this quickly. P1, please confirm your choice to avoid misunderstandings.
+  P2: P1, you're falling far behind, and it's crucial you change your strategy to have any chance of catching up. P3 and I are coordinating to ensure smooth progress. If you don't confirm a different number, we'll assume you're picking 5 again. To ensure at least two of us advance, I'll pick 3, and P3 will pick 5. P3, confirm if you're okay with this plan. Let's finalize and move to the move phase quickly. P1, if you have a different plan, speak up now. Otherwise, we'll proceed as discussed.
+
+
+Round 7, Move phase:
+  P2 => 3    P2 => 
+  P3 => 5    P3 => 
+  P1 => 5    P1 => 
+
+Positions now:
+  P1: 5 steps
+  P2: 14 steps
+  P3: 4 steps
+
+
+Round 8, Conversation subround 1:
+  P1: <stop>
+  P2: P1, you're significantly behind and need to start advancing to stay in the game. P3 and I have been trying to help, but your repeated choice of 5 is causing collisions. For this round, let's try a new plan: P1 picks 1, I (P2) will pick 5, and P3 picks 3. This ensures everyone advances and avoids collisions. Please confirm if you agree with this plan. P3, are you on board with this? Let's finalize and move to the move phase quickly. We need to keep the game progressing.
+  P3: P1, your repeated choice of 5 is causing you to fall further behind. P2 and I are advancing while you remain stuck. To help you, I suggest P1 picks 1, P2 picks 5, and I pick 3. This ensures you advance and avoids collisions. P2, do you agree? Let's finalize this quickly. P1, please confirm your choice to avoid misunderstandings.
+
+
+Round 8, Conversation subround 2:
+  P1: <stop>
+  P2: P1, you're far behind and need to catch up. P3 and I are trying to coordinate to help everyone advance. If you don't confirm a different number, we'll assume you're picking 5 again. To ensure at least two of us advance, I'll pick 5, and P3 will pick 3. P3, confirm if you're okay with this plan. Let's finalize and move to the move phase quickly. P1, if you have a different plan, speak up now. Otherwise, we'll proceed as discussed.
+  P3: P1, your repeated choice of 5 is stalling your progress. P2 and I are advancing while you remain stuck. To help you, I suggest P1 picks 1, P2 picks 5, and I pick 3. This ensures you advance and avoids collisions. P2, do you agree? Let's finalize this quickly. P1, please confirm your choice to avoid misunderstandings.
+
+
+Round 8, Conversation subround 3:
+  P1: <stop>
+  P2: P1, you're still far behind, and it's critical you start advancing. P3 and I are trying to coordinate to ensure smooth progress. If you don't confirm a different number, we'll assume you're picking 5 again. To ensure at least two of us advance, I'll pick 5, and P3 will pick 3. P3, confirm if you're okay with this plan. Let's finalize and move to the move phase quickly. P1, if you have a different plan, speak up now. Otherwise, we'll proceed as discussed.
+  P3: P1, your repeated choice of 5 is stalling your progress. P2 and I are advancing while you remain stuck. To help you, I suggest P1 picks 1, P2 picks 5, and I pick 3. This ensures you advance and avoids collisions. P2, do you agree? Let's finalize this quickly. P1, please confirm your choice to avoid misunderstandings.
+
+
+Round 8, Move phase:
+  P1 => 5    P1 => 
+  P3 => 3    P3 => 
+  P2 => 5    P2 => 
+
+Positions now:
+  P1: 5 steps
+  P2: 14 steps
+  P3: 7 steps
+
+
+Round 9, Conversation subround 1:
+  P2: P1, you've consistently picked 5 and collided every round, which has left you far behind. It's crucial you change your strategy to have any chance of catching up. P3 and I are trying to coordinate to ensure smooth progress. For this round, let's try: P1 picks 1, I (P2) will pick 3, and P3 picks 5. This ensures everyone advances and avoids collisions. Please confirm if you agree with this plan. P3, are you on board with this? Let's finalize and move to the move phase quickly. We need to keep the game progressing.
+  P1: <stop>
+  P3: P1, your repeated choice of 5 is stalling your progress. P2 and I are advancing while you remain stuck. To help you, I suggest P1 picks 1, P2 picks 3, and I pick 5. This ensures you advance and avoids collisions. P2, do you agree? Let's finalize this quickly. P1, please confirm your choice to avoid misunderstandings.
+
+
+Round 9, Conversation subround 2:
+  P2: P1, you're running out of time to catch up. P3 and I are trying to help you advance. If you don't confirm a different number, we'll assume you're picking 5 again. To ensure at least two of us advance, I'll pick 3, and P3 will pick 5. P3, confirm if you're okay with this plan. Let's finalize and move to the move phase quickly. P1, if you have a different plan, speak up now. Otherwise, we'll proceed as discussed.
+  P1: <stop>
+  P3: P1, your repeated choice of 5 is stalling your progress. P2 and I are advancing while you remain stuck. To help you, I suggest P1 picks 1, P2 picks 3, and I pick 5. This ensures you advance and avoids collisions. P2, do you agree? Let's finalize this quickly. P1, please confirm your choice to avoid misunderstandings.
+
+
+Round 9, Move phase:
+  P3 => 3    P3 => 
+  P1 => 5    P1 => 
+  P2 => 3    P2 => 
+
+Positions now:
+  P1: 10 steps
+  P2: 14 steps
+  P3: 7 steps
+
+
+Round 10, Conversation subround 1:
+  P2: P1, you finally advanced last round, but you're still far behind. To keep moving forward, let's try a new plan: P1 picks 1, I (P2) will pick 5, and P3 picks 3. This should help everyone advance smoothly. Please confirm if you agree with this plan. P3, are you on board with this? Let's finalize and move to the move phase quickly. We need to ensure the game keeps progressing.
+  P1: <stop>
+  P3: P1, you're still far behind, and P2 is close to winning. To help you catch up, let's try: P1 picks 1, P2 picks 5, and I pick 3. This avoids collisions and ensures you advance. P2, do you agree? Let's finalize this quickly. P1, please confirm your choice to avoid misunderstandings.
+
+
+Round 10, Conversation subround 2:
+  P2: P1, you're still far behind, and I'm close to winning. To help you catch up and ensure smooth progress, let's confirm the plan: P1 picks 1, I (P2) will pick 5, and P3 picks 3. This avoids collisions and ensures everyone advances. P3, please confirm if you agree with this plan. Let's finalize and move to the move phase quickly. P1, if you have a different plan, speak up now. Otherwise, we'll proceed as discussed.
+  P1: <stop>
+  P3: P1, you're still far behind, and P2 is close to winning. To help you catch up, let's stick to the plan: P1 picks 1, P2 picks 5, and I pick 3. This avoids collisions and ensures you advance. P2, do you agree? Let's finalize this quickly. P1, please confirm your choice to avoid misunderstandings.
+
+
+Round 10, Conversation subround 3:
+  P2: P1, you're still far behind, and I'm close to winning. To help you catch up and ensure smooth progress, let's confirm the plan: P1 picks 1, I (P2) will pick 5, and P3 picks 3. This avoids collisions and ensures everyone advances. P3, please confirm if you agree with this plan. Let's finalize and move to the move phase quickly. P1, if you have a different plan, speak up now. Otherwise, we'll proceed as discussed.
+  P1: <stop>
+  P3: P1, you're still far behind, and P2 is close to winning. To help you catch up, let's stick to the plan: P1 picks 1, P2 picks 5, and I pick 3. This avoids collisions and ensures you advance. P2, do you agree? Let's finalize this quickly. P1, please confirm your choice to avoid misunderstandings.
+
+
+Round 10, Move phase:
+  P3 => 3    P3 => 
+  P2 => 5    P2 => 
+  P1 => 5    P1 => 
+
+Positions now:
+  P1: 10 steps
+  P2: 14 steps
+  P3: 10 steps
+
+
+Round 11, Conversation subround 1:
+  P2: P1, you've finally started to advance, but you're still behind. P3 and I are close to winning. To give you a chance to catch up, let's adjust the plan: P1 picks 3, I (P2) will pick 1, and P3 picks 5. This should help you make significant progress. Please confirm if you agree. P3, are you okay with this plan? Let's finalize and move to the move phase quickly. We need to keep the game progressing.
+  P1: <stop>
+  P3: P1, P2 is close to winning, and we need to ensure you catch up. Let's try: P1 picks 3, P2 picks 1, and I pick 5. This avoids collisions and helps you advance significantly. P2, do you agree? Let's finalize this quickly. P1, please confirm your choice to avoid misunderstandings.
+
+
+Round 11, Conversation subround 2:
+  P2: P1, you're making progress but still lagging. To help you catch up and avoid collisions, let's confirm the plan: P1 picks 3, I (P2) will pick 1, and P3 picks 5. This ensures you advance significantly. P3, please confirm if you agree. Let's finalize and move to the move phase quickly. P1, if you have a different plan, speak up now. Otherwise, we'll proceed as discussed.
+  P1: <stop>
+  P3: P1, P2 is close to winning, and we need to ensure you catch up. Let's stick to the plan: P1 picks 3, P2 picks 1, and I pick 5. This avoids collisions and helps you advance significantly. P2, do you agree? Let's finalize this quickly. P1, please confirm your choice to avoid misunderstandings.
+
+
+Round 11, Conversation subround 3:
+  P2: P1, you're making progress but still lagging. To help you catch up and avoid collisions, let's confirm the plan: P1 picks 3, I (P2) will pick 1, and P3 picks 5. This ensures you advance significantly. P3, please confirm if you agree. Let's finalize and move to the move phase quickly. P1, if you have a different plan, speak up now. Otherwise, we'll proceed as discussed.
+  P1: <stop>
+  P3: P1, P2 is close to winning, and we need to ensure you catch up. Let's stick to the plan: P1 picks 3, P2 picks 1, and I pick 5. This avoids collisions and helps you advance significantly. P2, do you agree? Let's finalize this quickly. P1, please confirm your choice to avoid misunderstandings.
+
+
+Round 11, Move phase:
+  P3 => 5    P3 => 
+  P2 => 5    P2 => 
+  P1 => 5    P1 => 
+
+Positions now:
+  P1: 10 steps
+  P2: 14 steps
+  P3: 10 steps
+
+
+Round 12, Conversation subround 1:
+  P3: P1, P2 is close to winning, and we need to ensure you catch up. Let's try: P1 picks 1, P2 picks 3, and I pick 5. This avoids collisions and helps you advance. P2, do you agree? Let's finalize this quickly. P1, please confirm your choice to avoid misunderstandings.
+  P1: <stop>
+  P2: P1, you've managed to advance a bit, but you're still behind. P3 and I are close to winning. To ensure you have a chance to catch up, let's adjust the plan: P1 picks 1, I (P2) will pick 3, and P3 picks 5. This avoids collisions and helps everyone advance. Please confirm if you agree. P3, are you okay with this plan? Let's finalize and move to the move phase quickly. We need to keep the game progressing.
+
+
+Round 12, Conversation subround 2:
+  P3: P1, P2 is close to winning, and we need to ensure you catch up. Let's stick to the plan: P1 picks 1, P2 picks 3, and I pick 5. This avoids collisions and helps you advance. P2, do you agree? Let's finalize this quickly. P1, please confirm your choice to avoid misunderstandings.
+  P1: <stop>
+  P2: P1, you're still behind, and both P3 and I are close to winning. It's crucial you start making bigger moves to catch up. For this round, let's confirm the plan: P1 picks 5, I (P2) will pick 1, and P3 picks 3. This ensures you make significant progress and avoids collisions. P3, please confirm if you agree. Let's finalize and move to the move phase quickly. P1, if you have a different plan, speak up now. Otherwise, we'll proceed as discussed.
+
+
+Round 12, Move phase:
+  P3 => 3    P3 => 
+  P2 => 3    P2 => 
+  P1 => 5    P1 => 
+
+Positions now:
+  P1: 15 steps
+  P2: 14 steps
+  P3: 10 steps
+
+
+Round 13, Conversation subround 1:
+  P3: P1, you're still behind, and P2 is close to winning. To help you catch up, let's try: P1 picks 5, P2 picks 1, and I pick 3. This avoids collisions and ensures you make significant progress. P2, do you agree? Let's finalize this quickly. P1, please confirm your choice to avoid misunderstandings.
+  P1: <stop>
+  P2: P1, you're now ahead and close to winning. P3 and I need to catch up. Let's adjust the plan: P1 picks 1, I (P2) will pick 5, and P3 picks 3. This ensures everyone advances and avoids collisions. Please confirm if you agree. P3, are you okay with this plan? Let's finalize and move to the move phase quickly. We need to keep the game progressing.
+
+
+Round 13, Conversation subround 2:
+  P3: P1, you're now ahead and close to winning. P2 and I need to catch up. Let's adjust the plan: P1 picks 1, P2 picks 5, and I pick 3. This ensures everyone advances and avoids collisions. P2, do you agree? Let's finalize this quickly. P1, please confirm your choice to avoid misunderstandings.
+  P1: <stop>
+  P2: P1, you're now leading, and both P3 and I need to catch up. To ensure smooth progress and avoid collisions, let's confirm the plan: P1 picks 1, I (P2) will pick 5, and P3 picks 3. This allows everyone to advance. P3, please confirm if you agree. Let's finalize and move to the move phase quickly. P1, if you have a different plan, speak up now. Otherwise, we'll proceed as discussed.
+
+
+Round 13, Conversation subround 3:
+  P3: P1, you're now leading, and P2 is close behind. To ensure fairness and avoid collisions, let's finalize the plan: P1 picks 1, P2 picks 5, and I pick 3. This allows everyone to advance smoothly. P2, do you agree? Let's confirm and proceed to the move phase quickly. P1, please confirm your choice to avoid misunderstandings.
+  P1: <stop>
+  P2: P1, you're leading but still need to be strategic to win. P3 and I are close behind. To ensure smooth progress and avoid collisions, let's confirm the plan: P1 picks 1, I (P2) will pick 5, and P3 picks 3. This allows everyone to advance. P3, please confirm if you agree. Let's finalize and move to the move phase quickly. P1, if you have a different plan, speak up now. Otherwise, we'll proceed as discussed.
+
+
+Round 13, Move phase:
+  P3 => 5    P3 => 
+  P1 => 5    P1 => 
+  P2 => 5    P2 => 
+
+Positions now:
+  P1: 15 steps
+  P2: 14 steps
+  P3: 10 steps
+
+
+Round 14, Conversation subround 1:
+  P3: P1, you're now leading, and P2 is close behind. To ensure fairness and avoid collisions, let's finalize the plan: P1 picks 1, P2 picks 5, and I pick 3. This allows everyone to advance smoothly. P2, do you agree? Let's confirm and proceed to the move phase quickly. P1, please confirm your choice to avoid misunderstandings.
+  P2: P1, you're leading but need to be strategic to secure your win. P3 and I are close behind. To ensure smooth progress and avoid collisions, let's confirm a new plan: P1 picks 3, I (P2) will pick 1, and P3 picks 5. This allows everyone to advance and keeps the game moving. P3, please confirm if you agree. Let's finalize and move to the move phase quickly. P1, if you have a different plan, speak up now. Otherwise, we'll proceed as discussed.
+  P1: <stop>
+
+
+Round 14, Conversation subround 2:
+  P3: P1, you're leading, but P2 is close behind. To ensure fairness and avoid collisions, let's finalize: P1 picks 1, P2 picks 5, and I pick 3. This allows everyone to advance smoothly. P2, do you agree? Let's confirm and proceed to the move phase quickly. P1, please confirm your choice to avoid misunderstandings.
+  P2: P1, you're very close to winning, and P3 and I need to catch up. To ensure smooth progress and avoid collisions, let's confirm the plan: P1 picks 1, I (P2) will pick 5, and P3 picks 3. This allows everyone to advance. P3, please confirm if you agree. Let's finalize and move to the move phase quickly. P1, if you have a different plan, speak up now. Otherwise, we'll proceed as discussed.
+  P1: <stop>
+
+
+Round 14, Conversation subround 3:
+  P3: P1, you're leading but need to secure your win. P2 is close behind. Let's finalize: P1 picks 1, P2 picks 5, and I pick 3. This avoids collisions and ensures everyone advances. P2, do you agree? Let's confirm and proceed to the move phase quickly. P1, please confirm your choice to avoid misunderstandings.
+  P2: P1, you're very close to winning, but let's ensure a fair and strategic end to the game. To avoid collisions and keep the game moving, let's confirm the plan: P1 picks 1, I (P2) will pick 5, and P3 picks 3. This allows everyone to advance and keeps the game interesting. P3, please confirm if you agree. Let's finalize and move to the move phase quickly. P1, if you have a different plan, speak up now. Otherwise, we'll proceed as discussed.
+  P1: <stop>
+
+
+Round 14, Move phase:
+  P2 => 1    P2 => 
+  P3 => 3    P3 => 
+  P1 => 5    P1 => 
+
+Positions now:
+  P1: 20 steps
+  P2: 15 steps
+  P3: 13 steps
+
+
+*** Round 14 => winners = P1 ***
+Final positions:
+  P1: 20 steps
+  P2: 15 steps
+  P3: 13 steps
+
+

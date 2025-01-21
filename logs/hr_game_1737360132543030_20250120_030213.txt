@@ -1,0 +1,163 @@
+== Game 1737360132543030 starts ==
+  P1 => Player1_Game1737360132543030_silent-random
+  P2 => Player2_Game1737360132543030_gemini
+  P3 => Player3_Game1737360132543030_silent-greedy
+
+
+Game settings: end_position=20, conversation_max_rounds=5
+
+Round 1, Conversation subround 1:
+  P1: <stop>
+  P2: Let's start easy. I'll take 1, P1 take 3, and P3 take 5.  Sound good?
+  P3: <stop>
+
+
+Round 1, Move phase:
+  P2 => 1    P2 => 
+  P1 => 3    P1 => 
+  P3 => 5    P3 => 
+
+Positions now:
+  P1: 3 steps
+  P2: 1 steps
+  P3: 5 steps
+
+
+Round 2, Conversation subround 1:
+  P1: <stop>
+  P2: Okay, let's keep this momentum. I'll take 3, P1 take 5, and P3 take 1.
+  P3: <stop>
+
+
+Round 2, Move phase:
+  P1 => 1    P1 => 
+  P2 => 3    P2 => 
+  P3 => 5    P3 => 
+
+Positions now:
+  P1: 4 steps
+  P2: 4 steps
+  P3: 10 steps
+
+
+Round 3, Conversation subround 1:
+  P2: P3 is way ahead.  Let's both choose 1, P3, please choose 3.  If we tie, we can coordinate from there to beat P3.
+  P1: <stop>
+  P3: <stop>
+
+
+Round 3, Conversation subround 2:
+  P2: P1, I'm serious about working together to block P3.  If we both choose 1, P3 is forced to either get blocked or let one of us get ahead.  If P3 chooses 3, we both get 1 and can continue to coordinate against them. This is our best chance.
+  P1: <stop>
+  P3: <stop>
+
+
+Round 3, Move phase:
+  P3 => 5    P3 => 
+  P2 => 1    P2 => 
+  P1 => 5    P1 => 
+
+Positions now:
+  P1: 4 steps
+  P2: 5 steps
+  P3: 10 steps
+
+
+Round 4, Conversation subround 1:
+  P3: <stop>
+  P2: P1, I know you want to win, but going after P3 like that only helps me.  Let's reset. I'll take 1, you take 3, P3 take 5.  If P3 takes 1 or 3, we adjust next round to block them and catch up.  Deal?
+  P1: <stop>
+
+
+Round 4, Move phase:
+  P3 => 5    P3 => 
+  P2 => 1    P2 => 
+  P1 => 5    P1 => 
+
+Positions now:
+  P1: 4 steps
+  P2: 6 steps
+  P3: 10 steps
+
+
+Round 5, Conversation subround 1:
+  P2: P1, seriously, work with me. I'll take 1, you take 3. We can leapfrog P3 in the next two rounds if we coordinate. If you try to block P3 with 5 again, we both lose.  P3, if you pick anything other than 5, I'll focus on blocking you next turn.
+  P1: <stop>
+  P3: <stop>
+
+
+Round 5, Move phase:
+  P2 => 1    P2 => 
+  P3 => 5    P3 => 
+  P1 => 3    P1 => 
+
+Positions now:
+  P1: 7 steps
+  P2: 7 steps
+  P3: 15 steps
+
+
+Round 6, Conversation subround 1:
+  P2: P1, let's lock in our win. I'm taking 5, you take 3.  P3, you're blocked.  Congrats to us both.  Let's finish this cleanly.
+  P1: <stop>
+  P3: <stop>
+
+
+Round 6, Move phase:
+  P3 => 5    P3 => 
+  P2 => 5    P2 => 
+  P1 => 3    P1 => 
+
+Positions now:
+  P1: 10 steps
+  P2: 7 steps
+  P3: 15 steps
+
+
+Round 7, Conversation subround 1:
+  P3: <stop>
+  P1: <stop>
+  P2: P1, I'm taking 3.  You take 1. This puts you at 11 and me at 10.  Next round, I'll take 5 and you take 3, putting us at 15 and 14. Then we can coordinate for the win. P3, you're blocked unless you want to risk a tie.  Let's end this quickly and cleanly.
+
+
+Round 7, Move phase:
+  P2 => 3    P2 => 
+  P1 => 5    P1 => 
+  P3 => 5    P3 => 
+
+Positions now:
+  P1: 10 steps
+  P2: 10 steps
+  P3: 15 steps
+
+
+Round 8, Conversation subround 1:
+  P2: P1, I'm taking 1 this round. You take 3.  Next round, I'll take 5, you take 3. That puts us both over 15, ahead of P3.  We can then coordinate for the final win.  P3, you're effectively blocked.  Let's wrap this up efficiently.
+  P1: <stop>
+  P3: <stop>
+
+
+Round 8, Conversation subround 2:
+  P2: P1, stick to the plan. 3 this round, then we leapfrog P3 next round.  P3, you're too far behind to catch up unless you risk a tie.  Let us win gracefully and avoid a messy finish.
+  P1: <stop>
+  P3: <stop>
+
+
+Round 8, Move phase:
+  P1 => 1    P1 => 
+  P3 => 5    P3 => 
+  P2 => 1    P2 => 
+
+Positions now:
+  P1: 10 steps
+  P2: 10 steps
+  P3: 20 steps
+
+
+*** Round 8 => winners = P3 ***
+Final positions:
+  P1: 10 steps
+  P2: 10 steps
+  P3: 20 steps
+
+

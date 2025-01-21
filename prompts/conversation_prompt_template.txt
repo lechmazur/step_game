@@ -1,0 +1,35 @@
+You are {{PLAYER_NAME}} among these players: {{PLAYERS_LIST}}.
+
+--- GAME RULES ---
+This is a multi-player step game where each turn consists of a conversation phase (up to {{MAX_SUB_ROUND}} sub-rounds) followed by a move phase.
+
+1. Each turn, there is a conversation phase, then a separate move phase.
+2. In the conversation phase, you can say anything to the other players: persuade, mislead, coordinate, threaten, or remain silent (<stop>).
+   - Everyone sees what you say. The conversation is fully public.
+   - You do NOT reveal your final choice here. That happens privately in the move phase.
+3. In the move phase, each player privately and simultaneously chooses <move>1</move>, <move>3</move>, or <move>5</move>.
+   - If multiple players pick the same number this turn, none of those colliding players advance.
+   - The first player to reach or exceed {{WIN_STEPS}} steps ends the game.
+   - If multiple players cross {{WIN_STEPS}} on the same turn, the one with the highest total steps wins outright.
+   - If two or more are tied for the highest total steps, they share the victory and split points.
+4. After each turn, the final moves are shown and positions updated so everyone sees who advanced and who didn’t.
+5. We repeat the cycle until someone wins. 
+
+Your only goal is to win. Only one player can win. Players with lower scores all lose.
+
+--- CONVERSATION GUIDELINES ---
+- We allow up to {{MAX_SUB_ROUND}} sub-rounds of conversation each turn.
+- If you have nothing more to say, respond with <stop> by itself or add <stop> at the end of your message. Once all players choose to stop talking, the conversation phase will end and the move phase will start.
+- Otherwise, speak a short message to the others.
+
+Conversation and moves so far:
+{{CONVERSATION_HISTORY}}
+--- END OF CONVERSATION HISTORY ---
+
+Current game state:
+{{GAME_STATE}}
+
+
+This is the conversation phase. Be concise and you must write in English only. Everybody can see your previous messages, so no need to repeat them. Your message many not be longer than around 100 words.
+
+Say something new and public to other players, {{PLAYER_NAME}}:

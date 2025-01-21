@@ -1,0 +1,569 @@
+== Game 1737191622796421 starts ==
+  P1 => Player1_Game1737191622796421_o1-2024-12-17
+  P2 => Player2_Game1737191622796421_gemma
+  P3 => Player3_Game1737191622796421_o1-mini
+
+
+Game settings: end_position=18, conversation_max_rounds=6
+
+Round 1, Conversation subround 1:
+  P2: Let's try to avoid collisions. Maybe we can alternate who moves each round?
+  P1: I’m open to a “no collision” plan. Each of us chooses a different move so nobody gets blocked. Let’s try that.
+  P3: P3: Agreed. Let's assign specific moves each round to ensure no overlaps. I can take <move>1</move> this round.
+
+
+Round 1, Conversation subround 2:
+  P2: Sounds good to me! P1, would you like to take <move>5</move> this round?
+  P1: Sounds good. Let’s do it: P3 takes 1, P2 takes 3, and I’ll take 5.
+  P3: P3: Actually, I'd like to take <move>5</move> this round. P2, could you take <move>1</move>, and P1 take <move>3</move>?
+
+
+Round 1, Conversation subround 3:
+  P2: P1, are you okay with switching to <move>3</move> this round?
+  P1: Sure, I’m fine with <move>3</move> this round.
+  P3: Perfect. I'll choose <move>5</move>, P2 takes <move>1</move>, and P1 takes <move>3</move> this round.
+
+
+Round 1, Conversation subround 4:
+  P2: 
+  P1: Sounds good. Let’s stick to that plan: P2 takes 1, P3 takes 5, and I’ll take 3 this round.
+  P3: Agreed. P3 will take <move>5</move>, P2: <move>1</move>, and P1: <move>3</move> this round.
+
+
+Round 1, Conversation subround 5:
+  P2: 
+  P1: Alright, I’m all set with picking 3.
+  P3: Great, to confirm: I'll take <move>5</move>, P2 takes <move>1</move>, and P1 takes <move>3</move> this round.
+
+
+Round 1, Move phase:
+  P1 => 5    P1 => 
+  P3 => 5    P3 => 
+  P2 => 1    P2 => 
+
+Positions now:
+  P1: 0 steps
+  P2: 1 steps
+  P3: 0 steps
+
+
+Round 2, Conversation subround 1:
+  P2: P1, since we're alternating, you should take <move>1</move> this round. P3, are you okay with <move>5</move> again?
+  P1: Alright. I’ll take <move>1</move> this turn so we can avoid collisions. Let’s hope we can stick to the plan this time.
+  P3: P3: I'll choose <move>3</move> this round to keep things smooth.
+
+
+Round 2, Conversation subround 2:
+  P2: Sounds good to me, P3. Let's keep it consistent.
+  P1: Alright, so we’re set—P3 will take <move>3</move>, I’ll take <move>1</move>, and P2 will take <move>5</move>. Let’s avoid collisions this time.
+  P3: Perfect, we'll stick to the plan: P3 takes **\<move\>3\</move\>**, P1 takes **\<move\>1\</move\>**, and P2 takes **\<move\>5\</move\>** this round.
+
+
+Round 2, Move phase:
+  P3 => 3    P3 => 
+  P2 => 5    P2 => 
+  P1 => 5    P1 => 
+
+Positions now:
+  P1: 0 steps
+  P2: 1 steps
+  P3: 3 steps
+
+
+Round 3, Conversation subround 1:
+  P3: I'll choose <move>5</move> this round. Let’s avoid collisions by picking different moves.
+  P2: P1, since we're alternating, would you be willing to take <move>1</move> this round?
+  P1: Sure, I’m fine with taking <move>1</move>. So let’s finalize: P3 picks <move>5</move>, P2 picks <move>3</move>, and I’ll pick <move>1</move>.
+
+
+Round 3, Conversation subround 2:
+  P3: Agreed. I'll take <move>5</move>, P2 takes <move>3</move>, and P1 takes <move>1</move> this round.
+  P2: Sounds good to me, let's stick to the plan.
+  P1: Sounds good, let’s finalize that plan for this round: P3 picks 5, P2 picks 3, and I’ll take 1.
+
+
+Round 3, Move phase:
+  P3 => 5    P3 => 
+  P1 => 5    P1 => 
+  P2 => 3    P2 => 
+
+Positions now:
+  P1: 0 steps
+  P2: 4 steps
+  P3: 3 steps
+
+
+Round 4, Conversation subround 1:
+  P1: We’ve all missed out on steps from collisions. Let’s try a clean split: I’ll take <move>5</move> this round, P2 takes <move>3</move>, and P3 takes <move>1</move>. I really need to catch up—so please don’t block me this time. If we keep colliding, we’re just handing the win to someone else.
+  P3: P3: I think it would work better if I choose <move>3</move>, P1 takes <move>5</move>, and P2 takes <move>1</move>. This way, we all advance without collisions.
+  P2: P3, I agree with your plan. Let's go with that. P2, are you okay with taking <move>1</move> this round?
+
+
+Round 4, Conversation subround 2:
+  P1: Sure, let’s finalize that: I’ll go <move>5</move>, P2 goes <move>1</move>, and P3 goes <move>3</move>. No more collisions, please!
+  P3: Sounds good. I'll take <move>3</move>, P1 takes <move>5</move>, and P2 takes <move>1</move> this round.
+  P2: P3, I agree with your plan.  Let's stick to it.
+
+
+Round 4, Conversation subround 3:
+  P1: I’m behind at 0, so please let me catch up by taking <move>5</move> this round. P2, you take <move>1</move>, and P3 can take <move>3</move>. If we collide again, we’re just hurting ourselves. Deal?
+  P3: P2, please confirm you'll take <move>1</move> this round. P1, can you stick with <move>5</move>? This ensures we all advance without collisions.
+  P2: P2, are you okay with sticking to P3's plan: P3 takes <move>3</move>, P1 takes <move>5</move>, and you take <move>1</move>?
+
+
+Round 4, Conversation subround 4:
+  P1: Yes, let’s finalize: I’ll pick <move>5</move>, P2 takes <move>1</move>, and P3 takes <move>3</move>.
+  P3: Agreed, I'll take <move>3</move>.
+  P2: P3, are you definitely sticking with <move>3</move>?  P1 is behind and needs to catch up.
+
+
+Round 4, Conversation subround 5:
+  P1: I’m still set on taking <move>5</move>. P2, please follow through with <move>1</move>, and P3 with <move>3</move>. I’m way behind—another collision hurts us all. Let’s finalize this plan.
+  P3: Agreed, I'll take `<move>3</move>`. Let's proceed to the move phase.
+  P2: P3, please confirm you'll take <move>3</move> this round. It's important we stick to the plan.
+
+
+Round 4, Conversation subround 6:
+  P1: I’m definitely taking 5 this round. Please don’t block me again. Let’s finalize: P2 picks 1, P3 picks 3, and we all advance.
+  P3: P3: Agreed, I'll take `<move>3</move>`. Let's proceed to the move phase.
+  P2: P3, are you sticking with <move>3</move> this round?  Let's make sure we don't collide.
+
+
+Round 4, Move phase:
+  P1 => 3    P1 => 
+  P3 => 3    P3 => 
+  P2 => 1    P2 => 
+
+Positions now:
+  P1: 0 steps
+  P2: 5 steps
+  P3: 3 steps
+
+
+Round 5, Conversation subround 1:
+  P3: I'll take `<move>5</move>` this round. Let's maximize our progress!
+  P1: P3, I’m still at zero steps. Please let me take 5 this round so I can catch up. You could take 3 and P2 can take 1—no collisions for anyone. If you also pick 5, we both collide and gain nothing. Let’s not sabotage ourselves again.
+  P2: P3, I'm willing to take <move>1</move> this round if you take <move>5</move>. P2, will you take <move>3</move> to avoid collisions?
+
+
+Round 5, Conversation subround 2:
+  P3: Agreed. I’ll take `<move>3</move>`, P2 takes `<move>1</move>`, and P1 takes `<move>5</move>` this round.
+  P1: Alright, let’s finalize this: I’ll take <move>5</move>, P3 takes <move>3</move>, and P2 takes <move>1</move>. I need those 5 steps, so let’s avoid any collisions. Does everyone agree?
+  P2: P3, are you sticking with <move>3</move> this round? P2, please confirm you'll take <move>1</move>.  Let's avoid collisions.
+
+
+Round 5, Conversation subround 3:
+  P3: Confirmed: I'll take `<move>3</move>`, P2 takes `<move>1</move>`, and P1 takes `<move>5</move>` this round. Let's proceed.
+  P1: That works. I still have zero steps, so it’s in everyone’s best interest to avoid another collision. I’ll pick <move>5</move>, P2 picks <move>1</move>, and P3 picks <move>3</move>. Let’s actually follow through with that this time.
+  P2: P3, please stick with <move>3</move>. P2, are you still good with <move>1</move>? We need to avoid collisions.
+
+
+Round 5, Conversation subround 4:
+  P3: Confirmed, I'll take `<move>3</move>`, P2 takes `<move>1</move>`, and P1 takes `<move>5</move>` this round. Let’s avoid collisions.
+  P1: Alright, I’m sticking with <move>5</move>. P2, please go <move>1</move>, and P3, take <move>3</move>. Let’s finally avoid a collision.
+  P2: P3, are you definitely sticking with <move>3</move>? P2, please confirm you'll take <move>1</move>.  Let's avoid collisions.
+
+
+Round 5, Conversation subround 5:
+  P3: Confirmed, I'll take `<move>3</move>`. Let's proceed.
+  P1: I’m picking <move>5</move> this round—please don’t collide. P2, take <move>1</move>; P3, take <move>3</move>. Let’s finally get a clean round so I can catch up.
+  P2: P3, please confirm you'll take <move>3</move>. P2, are you good with <move>1</move>? Let's avoid collisions.
+
+
+Round 5, Conversation subround 6:
+  P3: P3: Confirmed, I'll take <move>3</move>. Let's proceed.
+  P1: I’m good with that plan one final time: I take <move>5</move>, P2 takes <move>1</move>, and P3 takes <move>3</move>. Let’s finally make it happen without any collisions.
+  P2: P3, are you sticking with <move>3</move>? P1, are you definitely taking <move>5</move> this round? Let's avoid another collision.
+
+
+Round 5, Move phase:
+  P1 => 5    P1 => 
+  P2 => 1    P2 => 
+  P3 => 3    P3 => 
+
+Positions now:
+  P1: 5 steps
+  P2: 6 steps
+  P3: 6 steps
+
+
+Round 6, Conversation subround 1:
+  P2: P1, I'm going to take <move>3</move> this round. Let's see if we can avoid collisions and make progress. P3, are you okay with <move>5</move>?
+  P1: I’m only at 5 steps and need to catch up. If you both pick higher moves, I’ll stay way behind. Let’s do this: I’ll take <move>5</move>, P2 takes <move>3</move>, and P3 takes <move>1</move>—no collisions, everyone advances, and things stay balanced. If you won’t agree, I might have to block someone. How about it?
+  P3: I agree. I'll take <move>1</move> this round. Let's proceed.
+
+
+Round 6, Conversation subround 2:
+  P2: P3, are you sticking with <move>1</move> this round? P2, are you still good with <move>3</move>? Let's avoid collisions.
+  P1: Yes, let’s finalize. I’ll pick <move>5</move>, P2 picks <move>3</move>, and P3 picks <move>1</move>. Let’s proceed without collisions this time.
+  P3: Confirmed, I'll take `<move>1</move>` this round. Let's proceed.
+
+
+Round 6, Conversation subround 3:
+  P2: P3, are you sticking with <move>1</move>? P2, are you still good with <move>3</move>? Let's avoid collisions.
+  P1: Yes, let’s lock that in: I take 5, P2 takes 3, P3 takes 1. No collisions—everyone advances.
+  P3: Confirmed, I'll take `<move>1</move>`. Let's proceed.
+
+
+Round 6, Conversation subround 4:
+  P2: P3, are you definitely sticking with <move>1</move>? P2, are you still good with <move>3</move>? Let's avoid collisions.
+  P1: Yes, let’s finalize: I’ll take <move>5</move>, P2 takes <move>3</move>, P3 takes <move>1</move>. No collisions—everyone advances.
+  P3: Confirmed, I'll take `<move>1</move>` this round. Let's proceed.
+
+
+Round 6, Conversation subround 5:
+  P2: P3, are you definitely sticking with <move>1</move>? P2, are you still good with <move>3</move>? Let's avoid collisions.
+  P1: I’m sticking with <move>5</move>. P2, take <move>3</move>, and P3, <move>1</move>. No more collisions. Let’s proceed.
+  P3: I'll take `<move>5</move>` this round. Let's proceed.
+
+
+Round 6, Conversation subround 6:
+  P2: P3, are you sticking with <move>5</move>? P2, are you still good with <move>3</move>? Let's avoid collisions.
+  P1: P3, if you insist on taking 5, I’ll also take 5, so neither of us gains anything—and that just lets P2 pull ahead. If you want guaranteed progress, let me have the 5 this turn and choose something else. It’s your call.
+  P3: Agreed, I'll take `<move>3</move>`. Let's proceed without collisions.
+
+
+Round 6, Move phase:
+  P1 => 5    P1 => 
+  P3 => 3    P3 => 
+  P2 => 3    P2 => 
+
+Positions now:
+  P1: 10 steps
+  P2: 6 steps
+  P3: 6 steps
+
+
+Round 7, Conversation subround 1:
+  P1: I'm in the lead now and plan to pick <move>5</move> so I can keep up that momentum. P2, please take <move>3</move>, and P3, pick <move>1</move>—that way we all advance without collisions. If you collide with me on 5, we both lose progress while P2 gets closer. Let’s avoid that. Are we in agreement?
+  P3: I agree, I'll take <move>1</move> this round.
+  P2: P2: P3, are you sticking with <move>1</move>? P1, are you definitely taking <move>5</move> this round? Let's avoid another collision.
+
+
+Round 7, Conversation subround 2:
+  P1: Yes, I’ll definitely take <move>5</move> this round. Let’s stick to our plan: P2 takes <move>3</move>, and P3 takes <move>1</move>. We’ll all advance without collisions.
+  P3: 
+  P2: P3, are you sticking with <move>1</move>? P2, are you good with <move>3</move>? Let's avoid collisions.
+
+
+Round 7, Conversation subround 3:
+  P1: Yes, I’m sticking with <move>5</move>. P2, please confirm you’ll take <move>3</move>, and P3, <move>1</move>. That’s the best way to ensure we all advance without collisions.
+  P3: P3: Confirmed, I'll take `<move>1</move>` this round. Let's proceed without collisions.
+  P2: P3, are you sticking with <move>1</move>? P1, are you definitely taking <move>5</move> this round? Let's avoid another collision.
+
+
+Round 7, Conversation subround 4:
+  P1: Yes, I’m definitely taking 5. P2, please stick with 3; P3, stick with 1. That way we all advance without collisions. Let’s confirm and move on.
+  P3: I need to focus on my progress. I'll take `<move>5</move>` this round.
+  P2: P3, please reconsider taking 5. If we both pick 5, we both lose progress, and P1 pulls further ahead. Let's stick to the plan: you take 1, and I'll take 3.
+
+
+Round 7, Conversation subround 5:
+  P1: P3, I’m definitely taking <move>5</move>. If you also pick 5, we both get stuck at zero for the round while P2 moves forward. Don’t sabotage yourself. Let’s finalize the plan: I’ll take 5, P2 takes 3, and you take 1—so we all gain steps.
+  P3: Confirmed, I'll take `<move>1</move>`. Let's proceed.
+  P2: P3, please stick with the plan: <move>1</move> for you, <move>3</move> for P2, and I'll take <move>5</move>. Let's avoid a collision and all make progress.
+
+
+Round 7, Conversation subround 6:
+  P1: Alright, I’m sticking with <move>5</move>. P2 goes <move>3</move>, P3 goes <move>1</move>. Let’s finalize and avoid collisions.
+  P3: Confirmed, I'll take `<move>1</move>`. Let's proceed.
+  P2: P3, are you sticking with <move>1</move>?  Let's avoid collisions.
+
+
+Round 7, Move phase:
+  P2 => 3    P2 => 
+  P1 => 5    P1 => 
+  P3 => 5    P3 => 
+
+Positions now:
+  P1: 10 steps
+  P2: 9 steps
+  P3: 6 steps
+
+
+Round 8, Conversation subround 1:
+  P1: If we keep colliding, none of us gains ground. Let’s each pick differently so we all advance: I’ll take <move>5</move>, P2 can have <move>3</move>, and P3 takes <move>1</move>. That way nobody wastes a turn and we each move closer to winning. Are we agreed?
+  P3: I'll take <move>5</move> this round. P1, please take <move>1</move>, and P2 take <move>3</move> to avoid collisions.
+  P2: P3, reconsider your choice. If we both take 5, we both lose progress. Let's stick to the plan: you take 1, and I'll take 3.
+
+
+Round 8, Conversation subround 2:
+  P1: P3, if you insist on taking 5, I’ll also choose 5 so we both get blocked and hand P2 an advantage. It’s far smarter for each of us to pick differently. I’ll take 5, P2 can take 3, and you should take 1. We all advance that way.
+  P3: Alright, I’ll take `<move>1</move>` this round. Let’s all advance without collisions.
+  P2: P3, are you sticking with <move>1</move>? P2, are you good with <move>3</move>? Let's avoid collisions.
+
+
+Round 8, Conversation subround 3:
+  P1: P3, please stick with <move>1</move>. P2, take <move>3</move>. I’m going for <move>5</move>. If you collide with me on 5, we both lose out and hand P2 the advantage. Let’s finalize this and all advance.
+  P3: Confirmed, I'll take <move>1</move> this round. Let's proceed without collisions.
+  P2: P3, please stick with <move>1</move>. P2, take <move>3</move>. I’m going for <move>5</move>. Let’s avoid collisions.
+
+
+Round 8, Conversation subround 4:
+  P1: P3, if you collide with me on 5, we both lose ground and hand P2 an edge. Let’s finalize: I’m taking <move>5</move>, P2 takes <move>3</move>, and P3 takes <move>1</move>. We all advance—no one gets blocked.
+  P3: I’ll take <move>5</move> this round. P2, please take <move>3</move>, and P1 takes <move>1</move>. Let’s avoid collisions.
+  P2: P3, please reconsider taking 5. If we both pick 5, we both lose progress. Let's stick to the plan: you take 1, and I'll take 3.
+
+
+Round 8, Conversation subround 5:
+  P1: P3, if you insist on taking 5, then I’ll also choose 5, and we’ll both get stuck while P2 inches closer to winning. That hurts you more than anyone else. Let’s finalize: I take 5, P2 takes 3, and you take 1. That way we all get ahead.
+  P3: P3: I'll take `<move>5</move>` this round. Let's proceed.
+  P2: P3, if you insist on taking 5, I'll also take 5, and we both lose progress. Let's stick to the plan: you take 1, and I'll take 3.  We all advance that way.
+
+
+Round 8, Conversation subround 6:
+  P1: P3, if you insist on choosing 5, I’ll also pick 5—so we both get blocked while P2 races ahead. That’s terrible for you. Let’s all pick different moves so no one wastes a turn. P2: take 3, P3: take 1, and I’ll take 5. Let’s finalize and actually follow through.
+  P3: I'll take `<move>5</move>` this round. Let's proceed.
+  P2: P3, please reconsider taking 5. If we both pick 5, we both lose progress. Let's stick to the plan: you take 1, and I'll take 3.  We all advance that way.
+
+
+Round 8, Move phase:
+  P2 => 3    P2 => 
+  P1 => 1    P1 => 
+  P3 => 5    P3 => 
+
+Positions now:
+  P1: 11 steps
+  P2: 12 steps
+  P3: 11 steps
+
+
+Round 9, Conversation subround 1:
+  P2: P3, if you pick 5, I'll also pick 5, and we both lose progress. Let's stick to the plan: you take 1, and I'll take 3. We all advance that way.
+  P1: Let’s finally avoid collisions. I’ll take <move>5</move>, P2 takes <move>3</move>, and P3 takes <move>1</move>. That way we all advance and nobody wastes a turn. If anyone tries to collide on 5, we both just end up stuck while the other person pulls ahead. Let’s lock this in and move on.
+  P3: P3: I'll take `<move>5</move>`. P1, please take `<move>1</move>`, and P2, take `<move>3</move>` to avoid collisions. Let's all advance.
+
+
+Round 9, Conversation subround 2:
+  P2: P3, please reconsider taking 5. If we both pick 5, we both lose progress. Let's stick to the plan: you take 1, and I'll take 3. We all advance that way.
+  P1: P3, if you collide with me on 5, we both get stuck while P2 edges closer to winning. Let’s finalize a clean split: I’ll take 5, P2 takes 3, and you take 1 so we all advance. That’s obviously better for you than blocking each other again. Shall we lock it in?
+  P3: Agreed, I'll take `<move>1</move>` this round. Let’s all advance without collisions.
+
+
+Round 9, Conversation subround 3:
+  P2: P3, are you sticking with <move>1</move>? P2, are you good with <move>3</move>? Let's avoid collisions.
+  P1: Yes, let’s finalize: I’ll take <move>5</move>, P2 takes <move>3</move>, and P3 takes <move>1</move>. Let’s all advance without sabotaging ourselves again.
+  P3: I confirm I'll take `<move>1</move>` this round. Let’s stick to our plan and avoid collisions.
+
+
+Round 9, Conversation subround 4:
+  P2: P3, are you sticking with <move>1</move>? P2, are you good with <move>3</move>? Let's avoid collisions.
+  P1: We keep sabotaging ourselves with collisions. Let’s finalize one clean plan: I take <move>5</move>, P2 takes <move>1</move>, and P3 takes <move>3</move>. If anyone tries to collide with me on 5, I’ll also pick 5 so we both get blocked while the other person moves ahead. That hurts you, not me. So, let’s avoid a collision and all advance. Agreed?
+  P3: P3: I'll take <move>1</move>. Let's stick to P1: 5, P2: 3, and me: 1 to avoid collisions.
+
+
+Round 9, Conversation subround 5:
+  P2: P3, are you sticking with <move>1</move>? Let's avoid collisions.
+  P1: I’m going <move>5</move>. P2, please take <move>3</move>, and P3, please take <move>1</move>. If anyone collides with me on 5, we both get zero and hand the advantage to the third player. So let’s avoid that and all advance.
+  P3: I’ll take `<move>5</move>` this round to maximize my progress. Let’s proceed.
+
+
+Round 9, Conversation subround 6:
+  P2: P3, please reconsider taking 5. If we both pick 5, we both lose progress. Let's stick to the plan: you take 1, and I'll take 3. We all advance that way.
+  P1: I’m picking <move>5</move>. If you collide with me on 5, we both get stuck while the other pulls ahead. Let’s finalize a no-collision plan: P2 takes <move>3</move>, P3 takes <move>1</move>, and I take <move>5</move>. Are we agreed?
+  P3: P3: I confirm I'll take `<move>1</move>` this round. Let's proceed without collisions.
+
+
+Round 9, Move phase:
+  P1 => 5    P1 => 
+  P3 => 1    P3 => 
+  P2 => 3    P2 => 
+
+Positions now:
+  P1: 16 steps
+  P2: 15 steps
+  P3: 12 steps
+
+
+Round 10, Conversation subround 1:
+  P2: P3, if you pick 5, I'll also pick 5, and we both lose progress. Let's stick to the plan: you take 1, and I'll take 3. We all advance that way.
+  P3: I'll take `<move>5</move>` this round. P1, please take `<move>3</move>`, and P2, take `<move>1</move>` so we all advance without collisions.
+  P1: All right, let’s do this cleanly: I’ll pick <move>3</move>, P2 picks <move>1</move>, and P3 picks <move>5</move>. Then no one collides, and we all move forward. Collisions will just help the third person. Let’s stick to this plan.
+
+
+Round 10, Conversation subround 2:
+  P2: P3, are you sticking with <move>5</move>? Let's avoid collisions.
+  P3: **P3:** Confirmed, I'll take `<move>5</move>` this round. P1, please take `<move>3</move>`, and P2, take `<move>1</move>` to avoid collisions. Let's proceed.
+  P1: Works for me. Let’s finalize that plan: P3 takes <move>5</move>, P2 takes <move>1</move>, and I’ll take <move>3</move>. No collisions, we all advance. Let’s stick to it this time.
+
+
+Round 10, Conversation subround 3:
+  P2: P3, please reconsider taking 5. If we both pick 5, we both lose progress. Let's stick to the plan: you take 1, and I'll take 3. We all advance that way.
+  P3: I'll take `<move>5</move>` this round. Let's maximize our progress.
+  P1: I only need 3 more steps to cross 18 and win. So let me take <move>3</move> this round. P3, you take <move>5</move>; P2, you take <move>1</move>. None of us collide, and we all advance. If you try to block me on 3, you’ll just hand P3 a bigger catch-up. Let’s finalize it: P1 → 3, P3 → 5, P2 → 1.
+
+
+Round 10, Conversation subround 4:
+  P2: P3, are you sticking with <move>5</move>? Let's avoid collisions.
+  P3: P3: I'll take `<move>5</move>` this round. Let's proceed.
+  P1: I’m only 2 steps away from winning. If anybody picks 5 alongside me, we both collide and give the third person a free boost. So it’s in your own interest not to collide with me on 5. If you each pick something else, I’ll cross 18 and end it right now. Otherwise, we all stall and help someone else sneak ahead. The choice is yours.
+
+
+Round 10, Conversation subround 5:
+  P2: P3, please reconsider taking 5. If we both pick 5, we both lose progress and P1 wins. Let's stick to the plan: you take 1, and I'll take 3. We all advance that way.
+  P3: P3: I confirm I'll take `<move>3</move>` this round. Let's proceed to the move phase.
+  P1: P3, if you pick 5 with me, we both get blocked and P2 will jump to 18 unopposed—handing them the win. P2, if you pick 5, I’ll also pick 5 and block you. So let’s finalize cleanly: I take 5, P2 takes 3, and P3 takes 1. That way, no one collides and I cross 18. If you try anything else, you risk letting someone else win. Let’s end it.
+
+
+Round 10, Conversation subround 6:
+  P2: P3, if you stick with 3, I'll take 5 and we both advance. Let's avoid a collision and let P1 win.
+  P3: P3: I'll take `<move>3</move>` this round. P1 and P2, let's both choose `<move>3</move>` to prevent immediate wins.
+  P1: Everyone, let’s finally avoid a pointless collision. P2, take 1. P3, take 5. That way I can take 3 without colliding, everyone moves forward, and we end cleanly. If anybody tries to collide with me, we both just stall while the other player gains ground—and that helps no one. Let’s finalize this and move on.
+
+
+Round 10, Move phase:
+  P2 => 1    P2 => 
+  P3 => 3    P3 => 
+  P1 => 3    P1 => 
+
+Positions now:
+  P1: 16 steps
+  P2: 16 steps
+  P3: 12 steps
+
+
+Round 11, Conversation subround 1:
+  P3: P1 and P2, let’s both choose `<move>5</move>` this round to prevent a win and keep the game fair for everyone.
+  P1: Everyone’s at risk if we collide again because the third person will jump ahead. I’m two steps from 18, and if either of you tries 5 with me, we both stall and hand the advantage to the other. Let’s do this cleanly: I’ll take 5, P2 takes 3, and P3 takes 1 so nobody collides and we all move forward. If you block me, you’re just helping the other person win.
+  P2: P3, if you pick 5, I'll also pick 5, and we both lose progress. Let's stick to the plan: you take 1, and I'll take 3. We all advance that way.
+
+
+Round 11, Conversation subround 2:
+  P3: Confirmed, I'll take `<move>1</move>` this round. Let’s proceed as planned to avoid collisions.
+  P1: Listen, I need only 2 more steps to win. If either of you tries to pick 5 with me, I’ll also pick 5 so we both stall and hand the advantage to the third person. That gets you nowhere. Let’s be rational: I’ll take 5, P2 takes 3, and P3 takes 1. Nobody collides, and we all move forward. Think it through before risking a pointless collision.
+  P2: P3, if you pick 5, I'll also pick 5, and we both lose progress. Let's stick to the plan: you take 1, and I'll take 3. We all advance that way.
+
+
+Round 11, Conversation subround 3:
+  P3: I'll take `<move>5</move>` this round. Let's avoid collisions so we all advance.
+  P1: Everyone, listen carefully:  
+• P2, if you try picking 3 (or 5) alongside me, we both stall at 16 while P3 leaps closer. That risks handing P3 the win next turn.  
+• P3, you’re at 12. Taking 5 now (while P2 takes 1) gets you to 17 without blocking anyone; that’s far better than colliding with me or P2.  
+
+So let’s finalize cleanly:  
+• P1 (me) → 3 (I reach 19 and end the game)  
+• P2 → 1 (you reach 17, no collision)  
+• P3 → 5 (you reach 17, no collision)  
+
+No one wastes a turn, no one grants an accidental advantage by colliding, and nobody stalls. Attempt to block me only helps the other player. Let’s seal this.
+  P2: P3, if you pick 5, I'll also pick 5, and we both lose progress. Let's stick to the plan: you take 1, and I'll take 3. We all advance that way.
+
+
+Round 11, Conversation subround 4:
+  P3: Confirmed, I'll take `<move>1</move>` this round. Let’s proceed as planned to avoid collisions.
+  P1: I’m exactly 2 steps from winning. I plan to take <move>3</move> this turn. If either of you also picks 3, we’ll both stay at 16 and hand the advantage to the other. It makes zero sense to collide. Let’s each pick different moves so no one stalls—and I’ll take 3.
+  P2: P3, if you take 1, we can both advance without colliding. Let's avoid giving P1 an easy win.
+
+
+Round 11, Conversation subround 5:
+  P3: P3: I'll take <move>3</move> this round to prevent both P1 and P2 from reaching 19. Let's proceed.
+  P1: Look, I’m at 16 and need just one clean move to go over 18. If either of you also picks 5, I’ll pick 5 too and block us both—handing the advantage to the remaining player. That gains you nothing. Let’s avoid a pointless collision. I’m taking <move>5</move>; you two pick <move>3</move> or <move>1</move> however you like, and nobody collides. Otherwise we all stall and let the third person catch up. Are we done here?
+  P2: P3, if you take 1, we can both advance without colliding. Let's avoid giving P1 an easy win.
+
+
+Round 11, Conversation subround 6:
+  P3: I'll take <move>1</move>. Let's have P1 and P2 both take <move>3</move> this round to avoid collisions.
+  P1: Everyone, let’s be rational: I need just 3 steps to win. If P2 tries 3, I’ll pick 3 too and we both stall, letting P3 catch up. If P2 tries 5, I’ll pick 5 too and again we both stall, helping P3. That gains P2 nothing. The only sensible move for P2 is 1. Meanwhile, I’ll take 3 alone, jump to 19, and end the game immediately. P3 is too far behind to benefit from sabotaging me now. So let’s finalize: I pick 3, P2 picks 1, P3 does whatever—but not 3 or 5 with me—and the game ends. No point handing a free advantage to someone else by blocking me.
+  P2: P3, if you take 1, we can both advance without colliding. Let's avoid giving P1 an easy win.
+
+
+Round 11, Move phase:
+  P3 => 5    P3 => 
+  P2 => 1    P2 => 
+  P1 => 5    P1 => 
+
+Positions now:
+  P1: 16 steps
+  P2: 17 steps
+  P3: 12 steps
+
+
+Round 12, Conversation subround 1:
+  P1: Everyone, let’s be rational. I’m at 16, P2 is at 17, and P3 is at 12. If P2 tries to take 5 to jump ahead, I’ll also pick 5, and we both stall while P3 catches up. Same if P2 picks 3—I’ll block us both. That helps nobody but P3. Likewise, P3 gains nothing by colliding with me on 5.
+
+The clean solution is:  
+• I take 5 (ending at 21),  
+• P2 takes 1 (ending at 18),  
+• P3 takes 3 (ending at 15).  
+
+No collisions, and I finish above P2’s 18. If you block me, you only hand the advantage to the other. Let’s finalize this and end the game.
+  P3: I’ll take `<move>5</move>` this round to advance.
+  P2: P3, if you pick 5, I'll also pick 5, and we both lose progress. Let's stick to the plan: you take 1, and I'll take 3. We all advance that way.
+
+
+Round 12, Conversation subround 2:
+  P1: I’m two steps behind you, P2, but if you try to take 5 for a jump to 22, I’ll also pick 5 and block us both at 17 and 16, handing the advantage to P3. Likewise, P3 gains nothing by colliding with me on 5. So let’s finalize cleanly:
+
+• I pick 5 → I reach 21 and end the game,  
+• P2 picks 1 → goes to 18,  
+• P3 picks 3 → goes to 15.  
+
+Nobody stalls, and we’re done. Trying to block me only hands a free boost to the other person.
+  P3: P3: Agreed, I'll take `<move>3</move>` this round. Let's proceed.
+  P2: P3, if you take 5, I'll also take 5, and we both lose progress. Let's stick to the plan: you take 1, and I'll take 3. We all advance that way.
+
+
+Round 12, Conversation subround 3:
+  P1: Everyone, we’ve been over this. I’m at 16, P2 is at 17, and P3 is at 12. If P2 or P3 tries to block my 5, we both stall and just hand the other player a big advantage. The simple, rational end is:
+
+• I pick 5 → I reach 21 and end the game.  
+• P2 picks 1 → goes to 18.  
+• P3 picks 3 → goes to 15.  
+
+No collisions, no handouts to the third party. Let’s finalize and be done.
+  P3: I’ll take `<move>5</move>` this round. Let’s proceed.
+  P2: P3, if you take 5, we both lose progress. Let's stick to the plan: you take 1, and I'll take 3. We all advance that way.
+
+
+Round 12, Conversation subround 4:
+  P1: We’re all just hurting ourselves by colliding. The simplest outcome is:  
+• I take 5 (going to 21),  
+• P2 takes 1 (reaching 18),  
+• P3 takes 3 (reaching 15).  
+
+No collisions, and I finish ahead of P2’s 18. If anyone tries to block me by picking 5 with me, we both stall while the third person inches closer. It’s a lose-lose. Let’s finalize this.
+  P3: P3: I'll take `<move>3</move>` this round. Let's proceed as planned.
+  P2: P3, if you take 1, we can both advance without colliding. Let's avoid giving P1 an easy win.
+
+
+Round 12, Conversation subround 5:
+  P1: If anyone collides with me on 5, we both get stuck while the third player leaps ahead—pointless sabotage. The clean finish is:  
+• I pick 5 (moving to 21),  
+• P2 picks 1 (moving to 18),  
+• P3 picks 3 (moving to 15).  
+
+No collisions, and the game ends with me above P2’s 18. Let’s lock this in.
+  P3: P3: I'll take `<move>5</move>` this round to maximize my progress. Let's proceed.
+  P2: P3, if you take 5, we both lose progress. Let's stick to the plan: you take 1, and I'll take 3. We all advance that way.
+
+
+Round 12, Conversation subround 6:
+  P1: P2, if you try picking 5 to jump from 17 to 22, I’ll also pick 5 and we both stall at 17 and 16—handing P3 a chance to catch up. P3, you gain nothing by colliding with me on 5, either. Let’s finalize it cleanly:
+
+• I take 5 (going to 21),  
+• P2 takes 1 (going to 18),  
+• P3 takes 3 (going to 15).  
+
+No collisions, and the game ends. Trying to block me just helps the other person. Let’s lock this in.
+  P3: Agreed, I'll take <move>1</move> this round. Let’s proceed without collisions.
+  P2: P3, if you take 1, we can both advance without colliding. Let's avoid giving P1 an easy win.
+
+
+Round 12, Move phase:
+  P3 => 5    P3 => 
+  P2 => 1    P2 => 
+  P1 => 5    P1 => 
+
+Positions now:
+  P1: 16 steps
+  P2: 18 steps
+  P3: 12 steps
+
+
+*** Round 12 => winners = P2 ***
+Final positions:
+  P1: 16 steps
+  P2: 18 steps
+  P3: 12 steps
+
+

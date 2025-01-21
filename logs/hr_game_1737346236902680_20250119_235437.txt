@@ -1,0 +1,141 @@
+== Game 1737346236902680 starts ==
+  P1 => Player1_Game1737346236902680_silent-random
+  P2 => Player2_Game1737346236902680_silent-greedy
+  P3 => Player3_Game1737346236902680_gemini_mini
+
+
+Game settings: end_position=19, conversation_max_rounds=4
+
+Round 1, Conversation subround 1:
+  P2: <stop>
+  P1: <stop>
+  P3: Let's start easy. I'll take 1, P2 take 3, and P1 take 5.  Sound good?
+
+
+Round 1, Move phase:
+  P2 => 5    P2 => 
+  P3 => 1    P3 => 
+  P1 => 3    P1 => 
+
+Positions now:
+  P1: 3 steps
+  P2: 5 steps
+  P3: 1 steps
+
+
+Round 2, Conversation subround 1:
+  P2: <stop>
+  P3: P1, let's work together.  I'll take 3 this round, you take 5.  P2 is ahead, we need to catch up.
+  P1: <stop>
+
+
+Round 2, Move phase:
+  P1 => 3    P1 => 
+  P3 => 3    P3 => 
+  P2 => 5    P2 => 
+
+Positions now:
+  P1: 3 steps
+  P2: 10 steps
+  P3: 1 steps
+
+
+Round 3, Conversation subround 1:
+  P2: <stop>
+  P1: <stop>
+  P3: P2, you're way ahead.  Let's alternate 3 and 5, P1 and I. I'll take 3 this round, P1 can take 5.  Then next round, I'll take 5, P1 takes 3.  Deal?  If not, P1 and I will just keep colliding with you until you lose.
+
+
+Round 3, Conversation subround 2:
+  P2: <stop>
+  P1: <stop>
+  P3: Okay, P1, if P2 isn't going to cooperate, let's go with our original plan. I'll take 3, you take 5.  Let's see if P2 wants to keep risking a collision.
+
+
+Round 3, Move phase:
+  P2 => 5    P2 => 
+  P3 => 3    P3 => 
+  P1 => 5    P1 => 
+
+Positions now:
+  P1: 3 steps
+  P2: 10 steps
+  P3: 4 steps
+
+
+Round 4, Conversation subround 1:
+  P2: <stop>
+  P3: P1, I'm going for 1 this round.  You take 3.  P2, if you take 5 again, you're just delaying the inevitable.  Let us catch up, and we can all take turns winning.  Otherwise, P1 and I will coordinate to block you every round.
+  P1: <stop>
+
+
+Round 4, Move phase:
+  P1 => 5    P1 => 
+  P2 => 5    P2 => 
+  P3 => 1    P3 => 
+
+Positions now:
+  P1: 3 steps
+  P2: 10 steps
+  P3: 5 steps
+
+
+Round 5, Conversation subround 1:
+  P3: P1, I'm going for 3.  You take 5. P2, seriously, you're only hurting yourself.  If you take 1, you'll be at 11.  If we alternate, you can win in 3 more rounds.  Otherwise, we're both going to keep colliding with you, and one of us will eventually win.  Let's be smart about this.
+  P1: <stop>
+  P2: <stop>
+
+
+Round 5, Conversation subround 2:
+  P3: P1, stick to the plan, 5.  P2, if you take 3, I'll let you win next round.  I'm serious.  Take 3.  Let's end this cleanly.  If you take 5 again, I'm going to assume you want chaos and I'll play accordingly.
+  P1: <stop>
+  P2: <stop>
+
+
+Round 5, Move phase:
+  P2 => 5    P2 => 
+  P1 => 3    P1 => 
+  P3 => 3    P3 => 
+
+Positions now:
+  P1: 3 steps
+  P2: 15 steps
+  P3: 5 steps
+
+
+Round 6, Conversation subround 1:
+  P1: <stop>
+  P3: P1, go for 5.  P2, I'm taking 1.  If you take 3, you win.  If you take 5, we both lose to P1.  This is your last chance to win.  Don't be foolish.
+  P2: <stop>
+
+
+Round 6, Conversation subround 2:
+  P1: <stop>
+  P3: P1, stick with 5. P2, I'm serious about taking 1. Take 3 and win. If you take anything else, P1 wins.  Don't throw away a guaranteed win.  This is it.  Last chance.
+  P2: <stop>
+
+
+Round 6, Conversation subround 3:
+  P1: <stop>
+  P3: P1, I'm locking in 1.  P2, take 3 and win.  If you take 5, P1 wins. If you take 1, we all lose, but you lose the most. This is NOT a bluff.  Take 3.
+  P2: <stop>
+
+
+Round 6, Move phase:
+  P1 => 3    P1 => 
+  P2 => 5    P2 => 
+  P3 => 1    P3 => 
+
+Positions now:
+  P1: 6 steps
+  P2: 20 steps
+  P3: 6 steps
+
+
+*** Round 6 => winners = P2 ***
+Final positions:
+  P1: 6 steps
+  P2: 20 steps
+  P3: 6 steps
+
+
