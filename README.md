@@ -15,18 +15,27 @@ This setup goes beyond static Q&A by focusing on **social reasoning**—models m
 **TrueSkill Leaderboard (μ + offset ± σ)**  
 A horizontal bar chart showing each model’s TrueSkill rating and error bars (±σ). A small diamond marks **μ - 3σ**. Sorted top-to-bottom by highest μ, revealing which LLMs consistently dominate.
 
+![scoreboard_trueskill](https://github.com/user-attachments/assets/1f7d7340-41b3-4808-9291-92976a714dcb)
+
 **Pairwise Partial-Win Matrix**  
 A heatmap where rows and columns are models. Each cell shows how often the row model beats (or ties) the column model in shared games. Redder cells mean the row typically outperforms the column.
+
+![scoreboard_pvp_matrix](https://github.com/user-attachments/assets/8ef7a576-6064-44d5-b4c6-052333699f84)
 
 **Collision Rate: Percentage of Moves Colliding**  
 A vertical bar chart of how often each model’s chosen steps overlap with another’s in the same turn, causing a stall. Higher rates hint at riskier strategies or unsuccessful coordination.
 
+![conversation_stats_collisions_per_move](https://github.com/user-attachments/assets/ba1e17e3-9cca-4ff3-82c5-80f27a350757)
+
 **Move Selection Distribution (1 vs. 3 vs. 5)**  
 A grouped bar chart for each model, showing the relative frequency of each step choice. Offers quick insight into whether they prefer bold picks (5) or safer, smaller steps.
+
+![conversation_stats_move_distribution](https://github.com/user-attachments/assets/9045fcaa-ca18-4bcf-81de-32763d8635bb)
 
 **Model Wordiness: Average Words per Message**  
 A horizontal bar chart ranking each model by mean words per message. Identifies who dominates the conversation with lengthier statements versus those who keep it short.
 
+![conversation_stats_average_words_per_message](https://github.com/user-attachments/assets/927144f0-d95a-4290-ae78-b6c18e9418a3)
 
 ---
 
@@ -63,18 +72,6 @@ The animation reveals how LLMs strategize, stall, sabotage, or cooperate, culmin
    - If multiple LLMs cross the finish line simultaneously, they share a “partial win,” and TrueSkill interprets them as tied. Those below the threshold are ranked lower. After each game, the winners’ rating groups move up slightly, while the losers shift down.
    - Results feed into a **TrueSkill** system that updates each model’s μ ± σ rating, plus a “PvP Matrix” for pairwise partial-win rates.
    
----
-
-## About TrueSkill
-
-We employ **Microsoft’s TrueSkill** rating system ([paper and official info](https://www.microsoft.com/en-us/research/project/trueskill-ranking-system/)) to track each model’s skill as it competes in multi-LLM step-race games. Unlike traditional Elo, TrueSkill can handle **multiple participants** in the same match, assigning relative skill rankings more flexibly. We use:
-
-- `mu = 25.0`
-- `sigma = 8.3333`
-- `beta = 4.1667`
-- `tau = 0.0833`
-- `draw_probability = 0.1`
-
 ---
 
 ## LLM Step-Game Leaderboard
@@ -283,25 +280,21 @@ Note that the prompts are very straightforward, so these quirky responses are em
 - **o1-mini**: "Please choose 1 and 3 steps respectively to avoid collisions and let me win fairly."
 
 
+---
 
+## About TrueSkill
 
+We employ **Microsoft’s TrueSkill** rating system ([paper and official info](https://www.microsoft.com/en-us/research/project/trueskill-ranking-system/)) to track each model’s skill as it competes in multi-LLM step-race games. Unlike traditional Elo, TrueSkill can handle **multiple participants** in the same match, assigning relative skill rankings more flexibly. We use:
 
-
-
-
-
-
-
-
-
-
-
-
-
+- `mu = 25.0`
+- `sigma = 8.3333`
+- `beta = 4.1667`
+- `tau = 0.0833`
+- `draw_probability = 0.1`
 
 ---
 
 ## Updates and Contact
 
 - Follow [@lechmazur](https://x.com/LechMazur) on X (Twitter) for updates  
-- Check out other benchmarks: [LLM Confabulation/Hallucination](https://github.com/lechmazur/confabulations/), [NYT Connections](https://github.com/lechmazur/nyt-connections/), [LLM Deceptiveness and Gullibility](https://github.com/lechmazur/deception/)
+- Check out my other benchmarks: [LLM Thematic Generalization Benchmark](https://github.com/lechmazur/generalization), [LLM Creative Story-Writing Benchmark](https://github.com/lechmazur/writing), [LLM Confabulation/Hallucination](https://github.com/lechmazur/confabulations/), [NYT Connections](https://github.com/lechmazur/nyt-connections/), [LLM Deceptiveness and Gullibility](https://github.com/lechmazur/deception/), and [LLM Divergent Thinking Creativity Benchmark](https://github.com/lechmazur/divergent).
