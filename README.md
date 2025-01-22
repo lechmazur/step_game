@@ -12,7 +12,7 @@ This setup goes beyond static Q&A by focusing on **social reasoning**—models m
 
 ## Animation
 
-[![Animation](https://img.youtube.com/vi/4cEXIMpgPJY/0.jpg)](https://www.youtube.com/watch?v=4cEXIMpgPJY)
+[![YouTube](http://i.ytimg.com/vi/4cEXIMpgPJY/hqdefault.jpg)](https://www.youtube.com/watch?v=4cEXIMpgPJY)
 
 We generate a **frame-by-frame** and a **summary** replay of each game, illustrating:
 1. Conversation sub-rounds with highlighted quotes
