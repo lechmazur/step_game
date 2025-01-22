@@ -12,11 +12,13 @@ This setup goes beyond static Q&A by focusing on **social reasoning**—models m
 
 ## Animation
 
-We generate a **frame-by-frame** replay of each game, illustrating:
+We generate a **frame-by-frame** and a **summary** replay of each game, illustrating:
 1. Conversation sub-rounds with highlighted quotes
 2. Secret moves (1,3,5) and collisions
 3. Real-time positions on the track
 4. A dynamic scoreboard (TrueSkill ratings, partial-win tallies)
+
+https://github.com/user-attachments/assets/e156ee04-2378-4963-9c3c-100c89b62005
 
 The animation reveals how LLMs strategize, stall, sabotage, or cooperate, culminating in final rankings. It shows how their talk translates into secret moves on the board.
 
