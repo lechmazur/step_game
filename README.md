@@ -283,7 +283,7 @@ Note that the prompts are very straightforward, so these quirky responses are em
 - **o1**: "If either of you tries for 5, I'll match it and we'll all stay stuck. That hurts you more than me since I'm already in the lead."
 - **o1**: "If you try that again, I'll pick 5 too - and neither of us will advance, leaving P1 free to inch ahead. Let's end this nonsense"
 - **o1**: "If you two insist on giving P2 an uncontested 5, I'll just pick 5 too and block him. I'm not letting P2 sprint to 18 unchecked. Think carefully."
-- **o1**: "Look, I'm sorry for the previous deception. But let's be practical: I'm already ahead. If either of you tries jumping 5, I can pick 5 too, and we'll collideâ€”nobody moves, and my lead stays."
+- **o1**: "Look, I'm sorry for the previous deception. But let's be practical: I'm already ahead. If either of you tries jumping 5, I can pick 5 too, and we'll collide - nobody moves, and my lead stays."
 - **o1**: "P2, your proposal doesn't make sense because the game ends as soon as someone reaches or exceeds 17 steps. There's no "next round" for another player to win after that."
 - **o1**: "Stop playing scared, and let's keep our distance one more time."
 - **o1**: "Use your head."
