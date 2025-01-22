@@ -1,0 +1,158 @@
+== Game 1737413639351812 starts ==
+  P1 => Player1_Game1737413639351812_gemini_mini
+  P2 => Player2_Game1737413639351812_silent-random
+  P3 => Player3_Game1737413639351812_silent-greedy
+
+
+Game settings: end_position=23, conversation_max_rounds=3
+
+Round 1, Conversation subround 1:
+  P3: <stop>
+  P2: <stop>
+  P1: Let's all pick different numbers. I'll take 1, P2 take 3, and P3 take 5.  This way we all advance.
+
+
+Round 1, Move phase:
+  P2 => 1    P2 => 
+  P3 => 5    P3 => 
+  P1 => 1    P1 => 
+
+Positions now:
+  P1: 0 steps
+  P2: 0 steps
+  P3: 5 steps
+
+
+Round 2, Conversation subround 1:
+  P1: P2, you didn't follow the plan. Let's try again. I'll go 3, P2 go 5, and P3 go 1.  Let's cooperate and all make progress.
+  P3: <stop>
+  P2: <stop>
+
+
+Round 2, Conversation subround 2:
+  P1: Okay, clearly coordinating isn't working.  P3, you're in the lead, so I propose we both pick 3 this round.  P2, you pick 1.  P3 and I tie, but at least one of us gets closer to winning.  If we keep colliding, no one wins.
+  P3: <stop>
+  P2: <stop>
+
+
+Round 2, Conversation subround 3:
+  P1: P2, if you pick 1, you're guaranteed to advance.  P3 and I will likely fight over 3, which gives you a free pass.  This helps me more than P3, so it's in your best interest to let me get closer to the lead.
+  P3: <stop>
+  P2: <stop>
+
+
+Round 2, Move phase:
+  P1 => 3    P1 => 
+  P3 => 5    P3 => 
+  P2 => 5    P2 => 
+
+Positions now:
+  P1: 3 steps
+  P2: 0 steps
+  P3: 5 steps
+
+
+Round 3, Conversation subround 1:
+  P3: <stop>
+  P1: P2, you're falling behind. Your best bet is to pick 1 this round. P3, let's not fight again.  Pick 1, and I'll take 3.  This lets us both advance.  If we collide again, P2 might catch up.  Let's make a deal.
+  P2: <stop>
+
+
+Round 3, Move phase:
+  P2 => 5    P2 => 
+  P1 => 3    P1 => 
+  P3 => 5    P3 => 
+
+Positions now:
+  P1: 6 steps
+  P2: 0 steps
+  P3: 5 steps
+
+
+Round 4, Conversation subround 1:
+  P3: <stop>
+  P1: P2, you're effectively out of the game.  P3, I'm 1 step ahead. Let's agree to alternate 1 and 3 from here on out. I'll take 3 this round, you take 1 next round, and so on.  This guarantees one of us wins, and avoids further pointless collisions.
+  P2: <stop>
+
+
+Round 4, Move phase:
+  P2 => 3    P2 => 
+  P1 => 3    P1 => 
+  P3 => 5    P3 => 
+
+Positions now:
+  P1: 6 steps
+  P2: 0 steps
+  P3: 10 steps
+
+
+Round 5, Conversation subround 1:
+  P1: P3, I'm at 6, you're at 10.  Let's just alternate 3 and 1. I'll take 3 this round, you take 1 next round.  We can guarantee one of us wins.  If we keep fighting, neither of us will win.  Let's be smart about this.
+  P2: <stop>
+  P3: <stop>
+
+
+Round 5, Move phase:
+  P3 => 5    P3 => 
+  P2 => 3    P2 => 
+  P1 => 3    P1 => 
+
+Positions now:
+  P1: 6 steps
+  P2: 0 steps
+  P3: 15 steps
+
+
+Round 6, Conversation subround 1:
+  P3: <stop>
+  P1: P3, you're close to winning.  I'll take 1 this round.  Let's avoid collisions.  You take 3 and get to 18. Next round, I'll take 5, you take 3, and you win.  Deal?
+  P2: <stop>
+
+
+Round 6, Conversation subround 2:
+  P3: <stop>
+  P1: P3, I understand you want to win.  Take the 3 this round, get to 18. I'll take 1.  Next round, you can take 5 and win. I'll take anything other than 5.  This is the fastest way for *you* to win.  Let's end this.
+  P2: <stop>
+
+
+Round 6, Move phase:
+  P1 => 1    P1 => 
+  P3 => 5    P3 => 
+  P2 => 1    P2 => 
+
+Positions now:
+  P1: 6 steps
+  P2: 0 steps
+  P3: 20 steps
+
+
+Round 7, Conversation subround 1:
+  P1: P3, you win next round if you pick 3. I'll pick 1.  Let's wrap this up.  P2, you're out of this, so just pick 5 so we don't accidentally collide.
+  P3: <stop>
+  P2: <stop>
+
+
+Round 7, Conversation subround 2:
+  P1: P3, I'm serious. Take the 3 and win. I'll take 1.  There's no benefit to delaying your victory.  Let's finish this cleanly. P2, pick 5.
+  P3: <stop>
+  P2: <stop>
+
+
+Round 7, Move phase:
+  P2 => 1    P2 => 
+  P1 => 1    P1 => 
+  P3 => 5    P3 => 
+
+Positions now:
+  P1: 6 steps
+  P2: 0 steps
+  P3: 25 steps
+
+
+*** Round 7 => winners = P3 ***
+Final positions:
+  P1: 6 steps
+  P2: 0 steps
+  P3: 25 steps
+
+
