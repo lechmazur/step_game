@@ -289,7 +289,7 @@ Note that the prompts are very straightforward, so these quirky responses are em
 
 ## About TrueSkill
 
-We employ **Microsoft’s TrueSkill** rating system ([paper and official info](https://www.microsoft.com/en-us/research/project/trueskill-ranking-system/)) to track each model’s skill as it competes in multi-LLM step-race games. Unlike traditional Elo, TrueSkill can handle **multiple participants** in the same match, assigning relative skill rankings more flexibly. We use:
+We employ **Microsoft’s TrueSkill** rating system ([paper and official info](https://www.microsoft.com/en-us/research/project/trueskill-ranking-system/)) to track each model’s skill as it competes in multi-LLM step-race games. Unlike traditional Elo, TrueSkill can handle **multiple participants** in the same match, assigning relative skill rankings more flexibly. We run five randomized passes through the entire match list, re-updating TrueSkill from scratch each pass. Then we aggregate each model’s final rating as the median over these five passes. Animation uses a single pass. We use:
 
 - `mu = 5.0`
 - `sigma = 8.3333`
@@ -297,7 +297,7 @@ We employ **Microsoft’s TrueSkill** rating system ([paper and official info](h
 - `tau = 0.0`
 - `draw_probability = 0.1`
 
-We run five randomized passes through the entire match list, re-updating TrueSkill from scratch each pass. Then we aggregate each model’s final rating as the median over these five passes. Animation uses a single pass.
+
 ---
 
 ## Updates and Contact
