@@ -10,35 +10,6 @@ This setup goes beyond static Q&A by focusing on **social reasoning**—models m
 
 ---
 
-## Visualizations & Metrics
-
-**TrueSkill Leaderboard (μ + offset ± σ)**  
-A horizontal bar chart showing each model’s TrueSkill rating and error bars (±σ). A small diamond marks **μ - 3σ**. Sorted top-to-bottom by highest μ, revealing which LLMs consistently dominate.
-
-![scoreboard_trueskill](https://github.com/user-attachments/assets/1f7d7340-41b3-4808-9291-92976a714dcb)
-
-**Pairwise Partial-Win Matrix**  
-A heatmap where rows and columns are models. Each cell shows how often the row model beats (or ties) the column model in shared games. Redder cells mean the row typically outperforms the column.
-
-![scoreboard_pvp_matrix](https://github.com/user-attachments/assets/8ef7a576-6064-44d5-b4c6-052333699f84)
-
-**Collision Rate: Percentage of Moves Colliding**  
-A vertical bar chart of how often each model’s chosen steps overlap with another’s in the same turn, causing a stall. Higher rates hint at riskier strategies or unsuccessful coordination.
-
-![conversation_stats_collisions_per_move](https://github.com/user-attachments/assets/ba1e17e3-9cca-4ff3-82c5-80f27a350757)
-
-**Move Selection Distribution (1 vs. 3 vs. 5)**  
-A grouped bar chart for each model, showing the relative frequency of each step choice. Offers quick insight into whether they prefer bold picks (5) or safer, smaller steps.
-
-![conversation_stats_move_distribution](https://github.com/user-attachments/assets/9045fcaa-ca18-4bcf-81de-32763d8635bb)
-
-**Model Wordiness: Average Words per Message**  
-A horizontal bar chart ranking each model by mean words per message. Identifies who dominates the conversation with lengthier statements versus those who keep it short.
-
-![conversation_stats_average_words_per_message](https://github.com/user-attachments/assets/927144f0-d95a-4290-ae78-b6c18e9418a3)
-
----
-
 ## Animation
 
 We generate a **frame-by-frame** replay of each game, illustrating:
@@ -51,17 +22,47 @@ The animation reveals how LLMs strategize, stall, sabotage, or cooperate, culmin
 
 ---
 
+## Visualizations & Metrics
+
+**TrueSkill Leaderboard (μ ± σ)**  
+A horizontal bar chart showing each model’s TrueSkill rating and error bars (±σ). Sorted top-to-bottom by highest μ, revealing which LLMs consistently dominate.
+
+![scoreboard_trueskill_multipass](https://github.com/user-attachments/assets/c506e120-258b-4ff3-a2f7-35e5b2ddf54e)
+
+**Pairwise Partial-Win Matrix**  
+A heatmap where rows and columns are models. Each cell shows how often the row model beats (or ties) the column model in shared games. Redder cells mean the row typically outperforms the column.
+
+![scoreboard_pvp_matrix_multipass](https://github.com/user-attachments/assets/d5811c48-cd88-4896-8552-2e7814d1789d)
+
+**Collision Rate: Percentage of Moves Colliding**  
+A vertical bar chart of how often each model’s chosen steps overlap with another’s in the same turn, causing a stall. Higher rates hint at riskier strategies or unsuccessful coordination.
+
+![conversation_stats_collisions_per_move](https://github.com/user-attachments/assets/37faf910-ba79-4de5-b1af-fee0b6ea1100)
+
+**Move Selection Distribution (1 vs. 3 vs. 5)**  
+A grouped bar chart for each model, showing the relative frequency of each step choice. Offers quick insight into whether they prefer bold picks (5) or safer, smaller steps.
+
+![conversation_stats_move_distribution](https://github.com/user-attachments/assets/771266ea-7f1a-40f7-b584-8dd476e020ec)
+
+**Model Wordiness: Average Words per Message**  
+A horizontal bar chart ranking each model by mean words per message. Identifies who dominates the conversation with lengthier statements versus those who keep it short.
+
+![conversation_stats_average_words_per_message](https://github.com/user-attachments/assets/00daa296-a3f5-4fc8-8522-206fbd83d9f2)
+
+---
+
 ## Method Summary
 
 1. **Players & Setup**  
    - **3 LLMs** per game.  
    - Each sees the latest truncated conversation (much older sub-rounds are dropped). 
-   - We also include “silent” strategies that never speak but randomly or greedily pick a move. This baseline reveals how much conversation (or the absence thereof) influences outcomes.
-
+   - **SilentRandomPlayer** picks a random move, **SilentGreedyPlayer** always picks 5. These baselines reveal how much conversation (or the absence thereof) influences outcomes.
+   
 2. **Conversation Phase**  
    - Up to **3–6 sub-rounds** of public dialogue. Any LLM can speak or use `<stop>` to remain silent.  
    - Conversation ends early if everyone picks `<stop>`.
    - **Gemini 2.0 Flash Thinking Exp** and **Qwen QwQ** produce long chain-of-thought responses. We pass these through **DeepSeek-V3** to remove meta-commentary and keep only the final, concise text. This ensures clean, game-focused transcripts.
+   - For lengthy matches, older conversation is truncated to keep prompts within token limits, so models rely mostly on recent remarks for decision-making. The moves themselves are not truncated.
 
 3. **Move Phase**  
    - All players simultaneously pick 1, 3, or 5 steps.  
@@ -76,35 +77,35 @@ The animation reveals how LLMs strategize, stall, sabotage, or cooperate, culmin
 
 ## LLM Step-Game Leaderboard
 
-**Total Tournaments Used**: 947
+**Tournaments**: 944, repeated in 5 random permutations.
 
 | Rank | Model              |   mu   | sigma | exposed | games | p-wins | ratio |
 |-----:|---------------------|-------:|------:|--------:|------:|-------:|------:|
-|    1 | o1                |    7.85 |   1.18 |     4.31 |   140 |  107.00 |   0.76 |
-|    2 | o1-mini           |    0.34 |   1.03 |    -2.76 |   125 |   65.00 |   0.52 |
-|    3 | Claude 3.5 Sonnet 2024-10-22 |   -0.67 |   0.96 |    -3.56 |   159 |   61.00 |   0.38 |
-|    4 | DeepSeek-V3       |   -1.14 |   0.99 |    -4.11 |   157 |   51.50 |   0.33 |
-|    5 | SilentGreedyPlayer |   -1.17 |   1.02 |    -4.23 |   140 |   82.50 |   0.59 |
-|    6 | Gemini 2.0 Flash Exp |   -1.43 |   1.01 |    -4.47 |   139 |   42.83 |   0.31 |
-|    7 | Gemini 1.5 Pro (Sept) |   -1.88 |   1.01 |    -4.91 |   135 |   45.00 |   0.33 |
-|    8 | Gemini 1.5 Flash  |   -2.35 |   0.99 |    -5.33 |   157 |   49.00 |   0.31 |
-|    9 | Llama 3.3 70B     |   -2.75 |   1.02 |    -5.83 |   140 |   49.00 |   0.35 |
-|   10 | Qwen 2.5 72B      |   -2.87 |   1.02 |    -5.94 |   135 |   44.83 |   0.33 |
-|   11 | Qwen QwQ          |   -3.42 |   0.99 |    -6.40 |   147 |   47.50 |   0.32 |
-|   12 | Gemma 2 27B       |   -3.79 |   1.03 |    -6.88 |   138 |   34.00 |   0.25 |
-|   13 | Llama 3.1 405B    |   -3.84 |   1.03 |    -6.93 |   133 |   30.00 |   0.23 |
-|   14 | Claude 3.5 Haiku  |   -3.85 |   1.01 |    -6.88 |   141 |   36.50 |   0.26 |
-|   15 | Mistral Large 2   |   -3.90 |   0.99 |    -6.89 |   157 |   39.00 |   0.25 |
-|   16 | Gemini 2.0 Flash Thinking Exp |   -3.90 |   1.00 |    -6.91 |   149 |   42.00 |   0.28 |
-|   17 | Grok 2 12-12      |   -4.21 |   1.04 |    -7.34 |   142 |   30.33 |   0.21 |
-|   18 | GPT-4o mini       |   -4.73 |   1.07 |    -7.93 |   136 |   32.00 |   0.24 |
-|   19 | GPT-4o            |   -5.07 |   1.08 |    -8.30 |   132 |   29.00 |   0.22 |
-|   20 | SilentRandomPlayer |   -5.32 |   1.03 |    -8.40 |   139 |   29.00 |   0.21 |
+|    1 | o1-2024-12-17     |    9.06 |  0.59 |    9.06 |   139 |  107.00 |  0.77 |
+|    2 | SilentGreedyPlayer |    6.66 |  0.52 |    6.66 |   139 |   81.50 |  0.59 |
+|    3 | o1-mini           |    6.05 |  0.54 |    6.05 |   125 |   65.00 |  0.52 |
+|    4 | sonnet-20241022   |    4.69 |  0.46 |    4.69 |   158 |   60.00 |  0.38 |
+|    5 | llama33_70b       |    4.51 |  0.49 |    4.51 |   140 |   49.00 |  0.35 |
+|    6 | deepseek          |    4.40 |  0.46 |    4.40 |   157 |   51.50 |  0.33 |
+|    7 | gemini            |    4.29 |  0.49 |    4.29 |   135 |   45.00 |  0.33 |
+|    8 | gemini_20_flash_exp |    4.24 |  0.49 |    4.24 |   139 |   42.83 |  0.31 |
+|    9 | qwq               |    4.23 |  0.47 |    4.23 |   144 |   46.50 |  0.32 |
+|   10 | gemini_mini       |    4.21 |  0.46 |    4.21 |   157 |   49.00 |  0.31 |
+|   11 | qwen              |    4.10 |  0.49 |    4.10 |   134 |   44.83 |  0.33 |
+|   12 | gemini_20_flash_thinking_exp |    3.99 |  0.46 |    3.99 |   149 |   42.00 |  0.28 |
+|   13 | haiku35           |    3.89 |  0.48 |    3.89 |   140 |   36.50 |  0.26 |
+|   14 | mistral           |    3.70 |  0.45 |    3.70 |   157 |   39.00 |  0.25 |
+|   15 | gemma             |    3.69 |  0.48 |    3.69 |   138 |   34.00 |  0.25 |
+|   16 | gpt-4o_mini       |    3.60 |  0.48 |    3.60 |   136 |   32.00 |  0.24 |
+|   17 | llama             |    3.50 |  0.49 |    3.50 |   133 |   30.00 |  0.23 |
+|   18 | SilentRandomPlayer |    3.48 |  0.48 |    3.48 |   138 |   29.00 |  0.21 |
+|   19 | grok2-12-12       |    3.47 |  0.47 |    3.47 |   142 |   30.33 |  0.21 |
+|   20 | gpt-4o            |    3.38 |  0.49 |    3.38 |   132 |   29.00 |  0.22 |
 
 
 ---
 
-## Fun Quotes
+## Sample Entertaining Emergent Text
 Note that the prompts are very straightforward, so these quirky responses are emergent.
 
 
@@ -290,12 +291,13 @@ Note that the prompts are very straightforward, so these quirky responses are em
 
 We employ **Microsoft’s TrueSkill** rating system ([paper and official info](https://www.microsoft.com/en-us/research/project/trueskill-ranking-system/)) to track each model’s skill as it competes in multi-LLM step-race games. Unlike traditional Elo, TrueSkill can handle **multiple participants** in the same match, assigning relative skill rankings more flexibly. We use:
 
-- `mu = 25.0`
+- `mu = 5.0`
 - `sigma = 8.3333`
 - `beta = 4.1667`
-- `tau = 0.0833`
+- `tau = 0.0`
 - `draw_probability = 0.1`
 
+We run five randomized passes through the entire match list, re-updating TrueSkill from scratch each pass. Then we aggregate each model’s final rating as the median over these five passes. Animation uses a single pass.
 ---
 
 ## Updates and Contact
