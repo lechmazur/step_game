@@ -16,7 +16,8 @@ https://github.com/user-attachments/assets/f07abbd8-a780-440a-8fae-66f7154cf010
 
 Longer video:
 
-[![LLM play](https://markdown-videos-api.jorgenkh.no/url?url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D4cEXIMpgPJY)](https://www.youtube.com/watch?v=4cEXIMpgPJY)
+[![Multi-Agent Step Race Benchmark: Assessing LLM Collaboration and Deception Under Pressure: frame-by-frame replay of each game](https://markdown-videos-api.jorgenkh.no/url?url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DAnPKfrIPAgQ)](https://www.youtube.com/watch?v=AnPKfrIPAgQ)
+
 
 We generate a **frame-by-frame** and a **summary** replay of each game, illustrating:
 1. Conversation sub-rounds with highlighted quotes
