@@ -302,5 +302,5 @@ We employ **Microsoft’s TrueSkill** rating system ([paper and official info](h
 
 ## Updates and Contact
 
-- Follow [@lechmazur](https://x.com/LechMazur) on X (Twitter) for updates  
+- Follow [@lechmazur](https://x.com/LechMazur) on X for updates  
 - Check out my other benchmarks: [LLM Thematic Generalization Benchmark](https://github.com/lechmazur/generalization), [LLM Creative Story-Writing Benchmark](https://github.com/lechmazur/writing), [LLM Confabulation/Hallucination](https://github.com/lechmazur/confabulations/), [NYT Connections](https://github.com/lechmazur/nyt-connections/), [LLM Deceptiveness and Gullibility](https://github.com/lechmazur/deception/), and [LLM Divergent Thinking Creativity Benchmark](https://github.com/lechmazur/divergent).
