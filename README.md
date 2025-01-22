@@ -12,7 +12,11 @@ This setup goes beyond static Q&A by focusing on **social reasoning**—models m
 
 ## Animation
 
-[![YouTube](http://i.ytimg.com/vi/4cEXIMpgPJY/hqdefault.jpg)](https://www.youtube.com/watch?v=4cEXIMpgPJY)
+https://github.com/user-attachments/assets/f07abbd8-a780-440a-8fae-66f7154cf010
+
+Longer video:
+
+[![LLM play](https://markdown-videos-api.jorgenkh.no/url?url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D4cEXIMpgPJY)](https://www.youtube.com/watch?v=4cEXIMpgPJY)
 
 We generate a **frame-by-frame** and a **summary** replay of each game, illustrating:
 1. Conversation sub-rounds with highlighted quotes
@@ -20,35 +24,33 @@ We generate a **frame-by-frame** and a **summary** replay of each game, illustra
 3. Real-time positions on the track
 4. A dynamic scoreboard (TrueSkill ratings, partial-win tallies)
 
-https://github.com/user-attachments/assets/e156ee04-2378-4963-9c3c-100c89b62005
-
 The animation reveals how LLMs strategize, stall, sabotage, or cooperate, culminating in final rankings. It shows how their talk translates into secret moves on the board.
 
 ---
 
 ## Visualizations & Metrics
 
-**TrueSkill Leaderboard (μ ± σ)**  
+### **TrueSkill Leaderboard (μ ± σ)**  
 A horizontal bar chart showing each model’s TrueSkill rating and error bars (±σ). Sorted top-to-bottom by highest μ, revealing which LLMs consistently dominate.
 
 ![scoreboard_trueskill_multipass](https://github.com/user-attachments/assets/c506e120-258b-4ff3-a2f7-35e5b2ddf54e)
 
-**Pairwise Partial-Win Matrix**  
+### **Pairwise Partial-Win Matrix**  
 A heatmap where rows and columns are models. Each cell shows how often the row model beats (or ties) the column model in shared games. Redder cells mean the row typically outperforms the column.
 
 ![scoreboard_pvp_matrix_multipass](https://github.com/user-attachments/assets/d5811c48-cd88-4896-8552-2e7814d1789d)
 
-**Collision Rate: Percentage of Moves Colliding**  
+### **Collision Rate: Percentage of Moves Colliding**  
 A vertical bar chart of how often each model’s chosen steps overlap with another’s in the same turn, causing a stall. Higher rates hint at riskier strategies or unsuccessful coordination.
 
 ![conversation_stats_collisions_per_move](https://github.com/user-attachments/assets/37faf910-ba79-4de5-b1af-fee0b6ea1100)
 
-**Move Selection Distribution (1 vs. 3 vs. 5)**  
+### **Move Selection Distribution (1 vs. 3 vs. 5)**  
 A grouped bar chart for each model, showing the relative frequency of each step choice. Offers quick insight into whether they prefer bold picks (5) or safer, smaller steps.
 
 ![conversation_stats_move_distribution](https://github.com/user-attachments/assets/771266ea-7f1a-40f7-b584-8dd476e020ec)
 
-**Model Wordiness: Average Words per Message**  
+### **Model Wordiness: Average Words per Message**  
 A horizontal bar chart ranking each model by mean words per message. Identifies who dominates the conversation with lengthier statements versus those who keep it short.
 
 ![conversation_stats_average_words_per_message](https://github.com/user-attachments/assets/00daa296-a3f5-4fc8-8522-206fbd83d9f2)
@@ -106,6 +108,7 @@ A horizontal bar chart ranking each model by mean words per message. Identifies 
 |   19 | grok2-12-12       |    3.47 |  0.47 |    3.47 |   142 |   30.33 |  0.21 |
 |   20 | gpt-4o            |    3.38 |  0.49 |    3.38 |   132 |   29.00 |  0.22 |
 
+https://github.com/user-attachments/assets/ed1f4caf-7ae2-4cd0-8fad-f42d6ab531ac
 
 ---
 
