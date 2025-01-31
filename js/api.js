@@ -1,4 +1,6 @@
-const API_ENDPOINT = 'https://text.pollinations.ai';
+// const API_ENDPOINT = 'https://text.pollinations.ai';
+
+const API_ENDPOINT = 'http://localhost:16385';
 
 function removeThink(text, playerIdx, playerName) {
     // Check for content after last </think>

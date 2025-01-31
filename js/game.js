@@ -11,8 +11,35 @@ let gameState = {
     conversation: [],
     stopCount: 0,
     lastMoves: [],
-    currentRound: 1
+    currentRound: 1,
+    reasoningEnabled: [true, true, true]
 };
+
+// Memoization cache for prompts
+const promptCache = {
+    common: null,
+    reasoning: null,
+    conversation: null,
+    move: null
+};
+
+async function loadPrompt(type) {
+    if (promptCache[type]) {
+        return promptCache[type];
+    }
+    
+    try {
+        // Use _rules.txt for common and reasoning, _prompt_template.txt for conversation and move
+        const suffix = type === 'common' || type === 'reasoning' ? '_rules.txt' : '_prompt_template.txt';
+        const response = await fetch(`prompts/${type}${suffix}`);
+        const text = await response.text();
+        promptCache[type] = text;
+        return text;
+    } catch (error) {
+        console.error(`Error loading ${type} prompt:`, error);
+        return '';
+    }
+}
 
 function getOrCreatePlayerStats(model, playerIdx, characterType) {
     if (!playerStats[playerIdx]) {
@@ -42,16 +69,19 @@ function getPlayerDisplayName(player) {
 
 function replaceTemplateVariables(template, playerNames, playerIdx, gameState) {
     const characterType = gameState.players[playerIdx].characterType;
-    return template
+    const result = template
         .replace(/{{PLAYER_NAME}}/g, playerNames[playerIdx])
         .replace(/{{PLAYERS_LIST}}/g, playerNames.join(', '))
         .replace(/{{CHARACTER_TYPE}}/g, characterType)
         .replace(/{{CHARACTER_DESCRIPTION}}/g, CHARACTER_TYPES[characterType])
         .replace(/{{MAX_SUB_ROUND}}/g, MAX_SUB_ROUNDS)
-        .replace(/{{WIN_STEPS}}/g, FINISH_LINE)
-        .replace(/{{CONVERSATION_HISTORY}}/g, gameState.conversation.join('\n'))
-        .replace(/{{GAME_STATE}}/g, `Scores: ${gameState.scores.map((score, idx) => 
-            `${playerNames[idx]}: ${score}`).join(', ')}`);
+        .replace(/{{WIN_STEPS}}/g, FINISH_LINE);
+    
+    // Add reasoning rules if enabled for this player
+    if (gameState.reasoningEnabled[playerIdx]) {
+        return result + '\n' + (promptCache.reasoning || '');
+    }
+    return result;
 }
 
 async function processMoves() {
@@ -313,9 +343,42 @@ async function nextTurn() {
 }
 
 function startGame() {
-    // Reset game state
+    const players = [];
+    const reasoningEnabled = [];
+    
+    for (let i = 1; i <= 3; i++) {
+        const model = document.getElementById(`player${i}`).value;
+        const characterType = document.getElementById(`character${i}`).value;
+        reasoningEnabled.push(document.getElementById(`reasoning${i}`).checked);
+        
+        if (!model || !characterType) {
+            alert('Please select model and character type for all players');
+            return;
+        }
+        
+        players.push({
+            model,
+            characterType,
+            playerIdx: i - 1
+        });
+    }
+    
+    // Load all prompts at game start
+    loadPrompt('common').then(commonPrompt => {
+        promptCache.common = commonPrompt;
+    });
+    loadPrompt('reasoning').then(reasoningPrompt => {
+        promptCache.reasoning = reasoningPrompt;
+    });
+    loadPrompt('conversation').then(conversationPrompt => {
+        promptCache.conversation = conversationPrompt;
+    });
+    loadPrompt('move').then(movePrompt => {
+        promptCache.move = movePrompt;
+    });
+    
     gameState = {
-        players: [],
+        players,
         scores: [0, 0, 0],
         currentTurn: 0,
         subRound: 0,
@@ -323,20 +386,9 @@ function startGame() {
         conversation: [],
         stopCount: 0,
         lastMoves: [],
-        currentRound: 1
+        currentRound: 1,
+        reasoningEnabled
     };
-    
-    // Get player selections and validate
-    const selections = getPlayerSelections();
-    for (let i = 0; i < selections.length; i++) {
-        const { model, characterType } = selections[i];
-        if (!model || !characterType) {
-            alert('Please select both a model and character type for all players');
-            return;
-        }
-        getOrCreatePlayerStats(model, i, characterType);
-        gameState.players.push({ model, characterType, playerIdx: i });
-    }
     
     // Randomize player order
     gameState.players = gameState.players.sort(() => Math.random() - 0.5);
