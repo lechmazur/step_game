@@ -29,7 +29,7 @@ body {
 
 .track-label {
     position: absolute;
-    left: 0;
+    right: 0;
     font-size: 12px;
     color: #666;
     white-space: nowrap;
@@ -168,55 +168,66 @@ button:disabled {
     color: #333;
 }
 
-.scores {
+#scores {
+    margin: 20px 0;
     display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
+    justify-content: center;
+    gap: 20px;
 }
 
-.score-item {
-    padding: 12px;
-    margin: 8px 0;
-    background: #f5f5f5;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-}
-
-.score-item .main-info {
+.score {
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 14px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    min-width: 200px;
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-bottom: 4px;
-    padding-bottom: 4px;
-    border-bottom: 1px solid #ddd;
+    flex-direction: column;
+    gap: 8px;
 }
 
-.score-item .player-name {
-    font-size: 1.1em;
+.player-1-score {
+    background: rgba(255, 118, 117, 0.1);
+    border: 1px solid rgba(255, 118, 117, 0.3);
+}
+
+.player-2-score {
+    background: rgba(116, 185, 255, 0.1);
+    border: 1px solid rgba(116, 185, 255, 0.3);
+}
+
+.player-3-score {
+    background: rgba(85, 239, 196, 0.1);
+    border: 1px solid rgba(85, 239, 196, 0.3);
+}
+
+.score .player-name {
     font-weight: bold;
+    color: #2d3436;
 }
 
-.score-item .details {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: #666;
+.score .player-info {
+    color: #636e72;
+    font-size: 0.9em;
 }
 
-.score-item .model-info {
-    font-family: monospace;
-}
-
-.score-item .character-info {
-    color: #0066cc;
-    font-style: italic;
-}
-
-.score-item .win-count {
-    background: #e0e0e0;
-    padding: 4px 8px;
-    border-radius: 4px;
+.score .win-count {
+    font-size: 1.2em;
     font-weight: bold;
+    padding: 4px 0;
+}
+
+.player-1-score .win-count {
+    color: #d63031;
+}
+
+.player-2-score .win-count {
+    color: #0984e3;
+}
+
+.player-3-score .win-count {
+    color: #00b894;
 }
 
 .move-summary {

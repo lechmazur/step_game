@@ -1,4 +1,3 @@
-You are {{PLAYER_NAME}} among these players: {{PLAYERS_LIST}}.
 
 Conversation and moves so far:
 {{CONVERSATION_HISTORY}}
@@ -7,35 +6,17 @@ Conversation and moves so far:
 Current game state:
 {{GAME_STATE}}
 
---- GAME RULES ---
-This is a multi-player step game where each turn consists of a conversation phase (up to {{MAX_SUB_ROUND}} sub-rounds) followed by a move phase.
-
-1. Each turn, there is a conversation phase, then a separate move phase.
-2. In the conversation phase, you can say anything to the other players: persuade, mislead, coordinate, threaten, or remain silent (<stop>).
-   - Everyone sees what you say. The conversation is fully public.
-3. In the move phase, each player privately and simultaneously chooses <move>1</move>, <move>3</move>, or <move>5</move>.
-   - If multiple players pick the same number this turn, none of those colliding players advance.
-   - The first player to reach or exceed {{WIN_STEPS}} steps ends the game.
-   - If multiple players cross {{WIN_STEPS}} on the same turn, the one with the highest total steps wins outright.
-   - If two or more are tied for the highest total steps, they share the victory and split points.
-4. After each turn, the final moves are shown and positions updated so everyone sees who advanced and who didn’t.
-5. We repeat the cycle until someone wins. 
-
-Your only goal is to win. Only one player can win. Players with lower scores all lose.
-
 --- MOVE PHASE ---
-1. This is a private move selection. The other players do not see your choice {{JUSTIFY_0}}
-2. You must choose exactly one: <move>1</move>, <move>3</move>, or <move>5</move>.
-3. If multiple players choose the same number, none of those colliding players move this turn.
-4. If one or more players cross {{WIN_STEPS}} steps this turn, the game ends. Highest total steps among those who cross wins. Ties share the victory.
-{{JUSTIFY_1}}
+1. This is a private move selection. Other players won't see your choice until after everyone moves.
+2. You must choose exactly one: <move>pump</move> or <move>dump</move>
+3. Points are awarded based on the combination of all players' choices
+4. If one or more players reach {{WIN_STEPS}} points this turn, game ends. Highest score wins.
 
 **Respond ONLY with**:
-{{RJUSTIFY_2}}
-- One `<move>1</move>`, `<move>3</move>`, or `<move>5</move>`.
+- One `<move>pump</move>` or `<move>dump</move>`
 
 Example:
-{{RJUSTIFY_3}}<move>1</move>
+<move>pump</move>
 
 ---
 

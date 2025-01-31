@@ -68,83 +68,93 @@ async function fetchApiResponse(url, model, messages) {
 
 async function getConversationResponse(playerIdx, gameState, getPlayerDisplayName) {
     try {
-        const template = await fetch('/prompts/conversation_prompt_template.txt').then(r => r.text());
-        const playerNames = gameState.players.map(p => getPlayerDisplayName(p));
-        const player = gameState.players[playerIdx];
-        const characterDesc = CHARACTER_TYPES[player.characterType] || '';
+        const [commonRules, template] = await Promise.all([
+            fetch('/prompts/common_rules.txt').then(r => r.text()),
+            fetch('/prompts/conversation_prompt_template.txt').then(r => r.text())
+        ]);
         
-        const prompt = `- You are playing a step game. 
-- You are ${playerNames[playerIdx]}. ${characterDesc}
-- You must respond in character and follow the game rules exactly.
-- Before responding please think step by step between <think> </think>.
-
-${replaceTemplateVariables(template, playerNames, playerIdx, gameState)}`;
+        const playerNames = gameState.players.map(getPlayerDisplayName);
+        const fullTemplate = commonRules + '\n\n' + template;
+        const prompt = replaceTemplateVariables(fullTemplate, playerNames, playerIdx, gameState);
         
-        console.log('[API Request]', `Getting conversation response for ${getPlayerDisplayName(player)}`, { model: player.model, prompt, seed: Math.random() });
+        console.log('[API Request]', `Getting conversation response for ${getPlayerDisplayName(gameState.players[playerIdx])}`, { model: gameState.players[playerIdx].model, prompt, seed: Math.random() });
+        
         try {
-            const response = await fetchApiResponse(API_ENDPOINT, player.model, [
+            const response = await fetchApiResponse(API_ENDPOINT, gameState.players[playerIdx].model, [
                 { role: 'user', content: prompt }
             ]);
             if (!response.ok) {
                 const errorText = await response.text();
-                console.log('[API Error]', `Error getting conversation response for ${getPlayerDisplayName(player)}`, errorText);
+                console.log('[API Error]', `Error getting conversation response for ${getPlayerDisplayName(gameState.players[playerIdx])}`, errorText);
                 return '<stop>';
             }
             const result = await response.json();
             console.log('[API Debug]', `Raw API response:`, result);
-            const content = result.choices[0].message.content;
-            const trimmedContent = removeThink(content.trim(), playerIdx, getPlayerDisplayName(player));
-            console.log('[API Response]', `Got conversation response for ${getPlayerDisplayName(player)}`, { 
+            
+            // Add null check for content
+            const content = result?.choices?.[0]?.message?.content;
+            if (!content) {
+                console.log('[API Error]', `No content in response for ${getPlayerDisplayName(gameState.players[playerIdx])}`, result);
+                return '<stop>';
+            }
+            
+            const trimmedContent = removeThink(content.trim(), playerIdx, getPlayerDisplayName(gameState.players[playerIdx]));
+            console.log('[API Response]', `Got conversation response for ${getPlayerDisplayName(gameState.players[playerIdx])}`, { 
                 originalContent: content,
                 trimmedContent 
             });
             return trimmedContent;
         } catch (error) {
-            console.log('[API Error]', `Exception getting conversation response for ${getPlayerDisplayName(player)}`, error);
+            console.log('[API Error]', `Exception getting conversation response for ${getPlayerDisplayName(gameState.players[playerIdx])}`, error);
             return '<stop>';
         }
     } catch (error) {
-        console.log('[API Error]', `Exception getting conversation response for ${getPlayerDisplayName(player)}`, error);
+        console.log('[API Error]', `Exception getting conversation response for ${getPlayerDisplayName(gameState.players[playerIdx])}`, error);
         return '<stop>';
     }
 }
 
 async function getMoveResponse(playerIdx, gameState, getPlayerDisplayName) {
-    const template = await fetch('/prompts/move_prompt_template.txt').then(r => r.text());
-    const playerNames = gameState.players.map(p => getPlayerDisplayName(p));
-    const player = gameState.players[playerIdx];
-    const characterDesc = CHARACTER_TYPES[player.characterType] || '';
-    
-    const prompt = `You are playing a step game. You are ${playerNames[playerIdx]}. ${characterDesc}
-You must respond with a valid move in the format <move>N</move> where N is 1, 3, or 5.\n\n${replaceTemplateVariables(template, playerNames, playerIdx, gameState)}`;
-    
-    console.log('[API Request]', `Getting move response for ${getPlayerDisplayName(player)}`, { model: player.model, prompt, seed: Math.random() });
     try {
-        const response = await fetchApiResponse(API_ENDPOINT, player.model, [
-            { role: 'user', content: prompt }
+        const [commonRules, template] = await Promise.all([
+            fetch('/prompts/common_rules.txt').then(r => r.text()),
+            fetch('/prompts/move_prompt_template.txt').then(r => r.text())
         ]);
-        if (!response.ok) {
-            const errorText = await response.text();
-            console.log('[API Error]', `Error getting move response for ${getPlayerDisplayName(player)}`, errorText);
+        
+        const playerNames = gameState.players.map(getPlayerDisplayName);
+        const fullTemplate = commonRules + '\n\n' + template;
+        const prompt = replaceTemplateVariables(fullTemplate, playerNames, playerIdx, gameState);
+        
+        console.log('[API Request]', `Getting move response for ${getPlayerDisplayName(gameState.players[playerIdx])}`, { model: gameState.players[playerIdx].model, prompt, seed: Math.random() });
+        
+        try {
+            const response = await fetchApiResponse(API_ENDPOINT, gameState.players[playerIdx].model, [
+                { role: 'user', content: prompt }
+            ]);
+            if (!response.ok) {
+                const errorText = await response.text();
+                console.log('[API Error]', `Error getting move response for ${getPlayerDisplayName(gameState.players[playerIdx])}`, errorText);
+                return null;
+            }
+            const result = await response.json();
+            
+            // Add null check for content
+            const content = result?.choices?.[0]?.message?.content;
+            if (!content) {
+                console.log('[API Error]', `No content in response for ${getPlayerDisplayName(gameState.players[playerIdx])}`, result);
+                return null;
+            }
+            
+            const moveText = removeThink(content.trim(), playerIdx, getPlayerDisplayName(gameState.players[playerIdx]));
+            
+            console.log('[API Response]', `Got move response for ${getPlayerDisplayName(gameState.players[playerIdx])}`, { rawResponse: moveText });
+            return moveText;
+        } catch (error) {
+            console.log('[API Error]', `Exception getting move response for ${getPlayerDisplayName(gameState.players[playerIdx])}`, error);
             return null;
         }
-        const result = await response.json();
-        const moveText = removeThink(result.choices[0].message.content.trim(), playerIdx, getPlayerDisplayName(player));
-        
-        // Get the last match instead of the first one
-        const moveMatches = [...moveText.matchAll(/<move>(\d)<\/move>/g)];
-        const moveMatch = moveMatches.length > 0 ? moveMatches[moveMatches.length - 1] : null;
-        
-        const move = moveMatch ? parseInt(moveMatch[1]) : null;
-        
-        // Store the moves for next round's context
-        if (!gameState.lastMoves) gameState.lastMoves = [];
-        gameState.lastMoves[playerIdx] = move;
-        
-        console.log('[API Response]', `Got move response for ${getPlayerDisplayName(player)}`, { rawResponse: moveText, parsedMove: move });
-        return move;
     } catch (error) {
-        console.log('[API Error]', `Exception getting move response for ${getPlayerDisplayName(player)}`, error);
+        console.log('[API Error]', `Exception getting move response for ${getPlayerDisplayName(gameState.players[playerIdx])}`, error);
         return null;
     }
 }
@@ -161,6 +171,6 @@ function replaceTemplateVariables(template, playerNames, playerIdx, gameState) {
         .replace(/{{MAX_SUB_ROUND}}/g, MAX_SUB_ROUNDS)
         .replace(/{{WIN_STEPS}}/g, FINISH_LINE)
         .replace(/{{CONVERSATION_HISTORY}}/g, gameState.conversation.join('\n'))
-        .replace(/{{GAME_STATE}}/g, `Positions: ${gameState.positions.map((pos, idx) => 
-            `${playerNames[idx]}: ${pos}`).join(', ')}`);
+        .replace(/{{GAME_STATE}}/g, `Scores: ${gameState.scores.map((score, idx) => 
+            `${playerNames[idx]}: ${score}`).join(', ')}`);
 }

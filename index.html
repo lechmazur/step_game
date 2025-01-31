@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LLM Step Game</title>
+    <title>Pump and Dump Game</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="game-container">
-        <h1>LLM Step Game</h1>
+        <h1>Pump and Dump Game</h1>
         
         <div class="setup" id="setup">
             <h2>Select 3 LLMs to compete:</h2>
@@ -48,7 +48,7 @@
             <div class="status" id="status">Game starting...</div>
             <div class="scoreboard" id="scoreboard">
                 <h3>Win Count</h3>
-                <div class="scores"></div>
+                <div class="scores" id="scores"></div>
             </div>
             <div class="track">
                 <div class="track-label track-label-1" id="track-label-1"></div>
@@ -73,6 +73,7 @@
     </div>
     <script src="js/constants.js"></script>
     <script src="js/utils.js"></script>
+    <script src="js/dom.js"></script>
     <script src="js/api.js"></script>
     <script src="js/game.js"></script>
 </body>

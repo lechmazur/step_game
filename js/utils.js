@@ -20,3 +20,23 @@ function log(category, message, data = null) {
         console.log('Data:', data);
     }
 }
+
+function logWithTimestamp(prefix, ...args) {
+    const now = new Date();
+    const timestamp = now.toLocaleTimeString('en-US', { 
+        hour12: false, 
+        hour: '2-digit', 
+        minute: '2-digit',
+        second: '2-digit',
+        fractionalSecondDigits: 3 
+    });
+    console.log(`[${timestamp}] ${prefix}:`, ...args);
+}
+
+function logData(data) {
+    if (typeof data === 'object') {
+        console.log('Data:', JSON.stringify(data, null, 2));
+    } else {
+        console.log('Data:', data);
+    }
+}
