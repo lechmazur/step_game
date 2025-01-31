@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LLM ASCII Art Evolution</title>
+    <style>
+        body {
+            font-family: system-ui, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f5f5f5;
+            line-height: 1.5;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        .mono {
+            font-family: 'Courier New', Courier, monospace;
+            white-space: pre;
+            display: block;
+            width: 720px;
+            height: 600px;
+            overflow: auto;
+            background: #f8f8f8;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 1.1;
+            letter-spacing: 0.02em;
+        }
+        .state-block {
+            border: 2px solid #ccc;
+            border-radius: 4px;
+            padding: 10px;
+            margin: 20px 0;
+            background: white;
+            display: inline-block;
+            min-width: min-content;
+        }
+        textarea, select {
+            width: 100%;
+            padding: 8px;
+            margin: 8px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-family: inherit;
+        }
+        button {
+            padding: 8px 16px;
+            background: #2196f3;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-right: 8px;
+        }
+        button:disabled {
+            background: #ccc;
+        }
+        #history {
+            max-height: 400px;
+            overflow-y: auto;
+        }
+        .history-item {
+            padding: 10px;
+            border-bottom: 1px solid #eee;
+            width: auto;
+            height: auto;
+        }
+        label {
+            display: block;
+            margin: 8px 0;
+        }
+        #speed-slider {
+            -webkit-appearance: none;
+            background: #ddd;
+            height: 2px;
+            direction: rtl;
+        }
+        
+        #speed-slider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background: #666;
+            cursor: pointer;
+        }
+
+        #speed-slider::-moz-range-thumb {
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background: #666;
+            cursor: pointer;
+            border: none;
+        }
+
+        #speed-slider::-moz-range-progress {
+            background-color: transparent;
+        }
+    </style>
+</head>
+<body>
+    <h1>LLM ASCII Art Evolution</h1>
+    
+    <div class="container">
+        <label for="preset-select">Select Preset:</label>
+        <select id="preset-select">
+            <option value="conway">Conway's Game of Life</option>
+            <option value="calligram">Calligrammatic Style (Apollinaire)</option>
+            <option value="fragments">Fragmented Minimalism (Mallarmé)</option>
+            <option value="futurism">Dynamic Explosions (Futurism)</option>
+            <option value="concrete">Geometric Precision (Concrete)</option>
+            <option value="flowing">Flowing Representations (Carroll)</option>
+            <option value="quantum">Quantum Interference Patterns</option>
+            <option value="glitch">Digital Glitch Artifacts</option>
+            <option value="neural">Neural Activity Maps</option>
+            <option value="tictactoe">Tic Tac Toe Game</option>
+            <option value="weather">Weather System Patterns</option>
+        </select>
+        
+        <label for="base-prompt">Animation Prompt:</label>
+        <textarea id="base-prompt" rows="4"></textarea>
+        
+        <label for="model-select">Model:</label>
+        <select id="model-select"></select>
+
+        <div style="display: flex; align-items: center; gap: 20px; margin: 10px 0;">
+            <div style="display: flex; align-items: center; gap: 10px;">
+                <label for="temperature">Temperature:</label>
+                <input type="range" id="temperature" min="0" max="2" step="0.1" value="0.8">
+                <span id="temperature-value">0.8</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: 10px;">
+                <label for="seed">Seed:</label>
+                <input type="number" id="seed" value="42">
+            </div>
+        </div>
+
+        <div id="preview-window" class="mono"></div>
+        
+        <div style="display: flex; align-items: center; gap: 10px; margin-top: 10px;">
+            <label for="speed-slider">Speed:</label>
+            <input type="range" id="speed-slider" min="100" max="2000" value="700" step="100" style="direction: rtl;">
+        </div>
+        
+        <div>
+            <button id="startBtn">Start Evolution</button>
+            <button id="stopBtn" disabled>Stop Evolution</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>History</h2>
+        <div id="history"></div>
+    </div>
+
+    <script>
+        // Simplified presets
+        const presets = {
+            conway: {
+                prompt: `Simulate one generation of Conway's Game of Life on a 5x5 grid.
+Initial state (O = alive, . = dead):
+
+\`\`\`
+Gen #001
+.....
+.....
+.OOO.
+.....
+.....
+\`\`\`
+
+
+
+Apply Conway's Game of Life rules:
+1. Any live cell with 2-3 live neighbors survives
+2. Any dead cell with exactly 3 live neighbors becomes alive
+3. All other cells die or stay dead
+
+- Simulate a 5x5 grid
+- If no state is provided below the prompt, simply return the initial state.
+- Display and increment the generation number on each response.
+- Your response should start with 'Gen #'
+- Each state should be wrapped in code blocks
+`,
+                temperature: 0.1
+            },
+            calligram: {
+                prompt: "Guillaume Apollinaire's Calligrammes: Interconnected ASCII designs where words and letters flow into abstract or figurative forms. Words and shapes merge into visual poetry, balanced and meaningful, like a fountain, starburst, or tree.",
+                temperature: 0.8
+            },
+            fragments: {
+                prompt: "Stéphane Mallarmé's Un Coup de Dés: Scattered ASCII characters utilizing negative space in random, abstract patterns. Like weightless fragments suspended in air, forming loose narratives - a constellation or shattered object floating between coherence and chaos.",
+                temperature: 0.9
+            },
+            futurism: {
+                prompt: "Futurist Parole in Libertà: Chaotic, energetic compositions with sharp angles and overlapping symbols. ASCII art expressing speed and modernity, industrial machinery, urban energy, objects in motion - like a sonic boom or shattering glass.",
+                temperature: 0.9
+            },
+            concrete: {
+                prompt: "Concrete Poetry Movement: Precise, symmetrical arrangements of ASCII characters in geometric patterns - grids, tessellations, spirals. Mathematical and controlled designs emphasizing repetition and form, structured yet organic.",
+                temperature: 0.7
+            },
+            flowing: {
+                prompt: "Lewis Carroll's The Mouse's Tale: Organic, flowing ASCII patterns that wind and curve across space. Serpentine arrangements of characters forming narrative shapes, like a winding river or climbing vine.",
+                temperature: 0.8
+            },
+            quantum: {
+                prompt: "Quantum wave function interference: ASCII patterns showing probability clouds and wave-particle duality. Rippling interference fringes, quantum tunneling effects, and probability density distributions emerge and collapse. Characters form Schrödinger equation solutions and quantum uncertainty visualizations.",
+                temperature: 0.95
+            },
+            glitch: {
+                prompt: "Corrupted digital artifacts: ASCII patterns of broken data and compression artifacts. Glitch art aesthetics with misaligned characters, data corruption patterns, and broken encodings. Like damaged VHS tapes, corrupted memory dumps, and digital decay - both systematic and chaotic.",
+                temperature: 1.0
+            },
+            neural: {
+                prompt: "Brain activity visualization: ASCII patterns depicting neural firing patterns and synaptic connections. Dynamic networks of neurons lighting up in waves of activation, showing thought patterns emerging from chaos. Like EEG readings mixed with neural network architectures and consciousness emergence patterns.",
+                temperature: 0.85
+            },
+            tictactoe: {
+                prompt: "ASCII Tic Tac Toe game simulation: Create a 3x3 grid using | and - characters for the board. Place X and O moves strategically, showing game progression. Include empty spaces for potential moves. Make it feel like a real game in progress, with moves that follow valid Tic Tac Toe rules. Sometimes show near-wins or blocking moves.",
+                temperature: 0.7
+            },
+            weather: {
+                prompt: "Dynamic weather system visualization: ASCII patterns showing atmospheric conditions and weather fronts. Create swirling cloud formations, precipitation patterns, and pressure systems. Show wind flows with arrows (← → ↑ ↓), storm cells with symbols (* # @), and temperature gradients. Like a weather radar map coming alive with movement and transformation.",
+                temperature: 0.85
+            }
+        };
+
+        // DOM Elements
+        const elements = {
+            start: document.getElementById('startBtn'),
+            stop: document.getElementById('stopBtn'),
+            temperature: document.getElementById('temperature'),
+            seed: document.getElementById('seed'),
+            history: document.getElementById('history'),
+            preset: document.getElementById('preset-select'),
+            prompt: document.getElementById('base-prompt'),
+            preview: document.getElementById('preview-window'),
+            modelSelect: document.getElementById('model-select'),
+            speedSlider: document.getElementById('speed-slider')
+        };
+
+        // Initialize model selector
+        fetch('https://text.pollinations.ai/models')
+            .then(r => r.json())
+            .then(models => {
+                elements.modelSelect.innerHTML = models
+                    .map(m => `<option value="${m.name}" ${m.name === 'openai' ? 'selected' : ''}>${m.name} - ${m.description}</option>`)
+                    .join('');
+            })
+            .catch(() => elements.modelSelect.innerHTML = '<option value="openai" selected>OpenAI (Default)</option>');
+
+        // Get selected model
+        function getSelectedModel() {
+            return elements.modelSelect.value;
+        }
+
+        // State
+        let isRunning = false;
+        let frames = [];
+        let frameIndex = 0;
+        let animationInterval;
+
+        // Core functions
+        function createEmptyCanvas() {
+            return 'no input yet. please create the first state';
+            // return '.'.repeat(40) + '\n' + 
+            //        ('.' + ' '.repeat(38) + '.' + '\n').repeat(18) +
+            //      '.'.repeat(40);
+        }
+
+        function removeThink(text) {
+            // Check for content before </think>
+            const thinkMatch = text.split('</think>');
+            if (thinkMatch.length > 1) 
+                return thinkMatch[1].trim();
+            return text;
+        }
+
+        function extractDisplayContent(text) {
+            text = removeThink(text);
+
+            // Extract content from code blocks
+            const codeMatch = text.match(/```([\s\S]*?)```/);
+            if (codeMatch) 
+                return codeMatch[1];
+            
+            // If no code blocks, return the cleaned text
+            return text;
+        }
+
+        function startPreviewAnimation() {
+            frameIndex = 0;
+            if (animationInterval) clearInterval(animationInterval);
+            
+            animationInterval = setInterval(() => {
+                if (frames.length > 0) {
+                    elements.preview.textContent = extractDisplayContent(frames[frameIndex]);
+                    frameIndex = (frameIndex + 1) % frames.length;
+                }
+            }, parseInt(elements.speedSlider.value));
+        }
+
+        async function generateText(prompt, currentState) {
+            const formatInstructions = `- You create an output state from an input state according to the prompt. It will be visualized in a 30x15 grid.
+- You may output explanations but wrap the next state in triple backticks \`\`\` so we can parse it for display
+- If there is an input state, transform it gradually according to the prompt.
+- If there is no input state, use the prompt to come up with a starting state. Be creative
+- Maintain consistent style and theme
+- Before outputting anything spend some time thinking between <think> </think> tags. Please think step by step maybe decomposing the job.
+
+Prompt:
+${prompt}`;
+
+            try {
+                // console.log('Prompt:', prompt);
+                // console.log('System instructions:', formatInstructions);
+                
+                elements.start.textContent = 'Generating...';
+                
+                let seed = elements.seed.value && elements.seed.value !== '-1' ? 
+                    parseInt(elements.seed.value) : 
+                    42;
+
+                const model = getSelectedModel();
+                const messages = model === 'deepseek-r1' ? 
+                    [{
+                        role: "user",
+                        content: formatInstructions + "\n\n# Current State\n\n" + removeThink(currentState)
+                    }] : 
+                    [{
+                        role: "system",
+                        content: formatInstructions
+                    },
+                    {
+                        role: "user",
+                        content: currentState
+                    }];
+
+
+                console.log('Generating text... for message:', JSON.stringify(messages, null, 2));
+                const response = await fetch('https://text.pollinations.ai/', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        messages: messages,
+                        model: model,
+                        temperature: parseFloat(elements.temperature.value),
+                        seed: seed
+                    })
+                });
+                
+                if (!response.ok) {
+                    console.error(`Failed to generate text: ${response.status} ${response.statusText}`);
+                    elements.start.textContent = 'Start Evolution';
+                    return '';
+                }
+                
+                const text = await response.text();
+                console.log('Raw response:', text);
+                elements.start.textContent = 'Start Evolution';
+                return text;
+            } catch (error) {
+                console.error('Generation error:', error);
+                elements.start.textContent = 'Start Evolution';
+                return '';
+            }
+        }
+
+        async function evolve() {
+            console.log('Starting evolution');
+            let currentState = createEmptyCanvas();
+            console.log('Initial state created:', currentState);
+            
+            while (isRunning) {
+                try {
+                    console.log('--- New iteration ---');
+                    const prompt = elements.prompt.value;
+                    console.log('Getting next state for prompt:', prompt);
+                    
+                    const text = await generateText(prompt, currentState);
+                    console.log('Generation completed');
+                    
+                    if (!isRunning) {
+                        console.log('Breaking loop:', !text ? 'no text' : 'stopped');
+                        break;
+                    }
+
+                    if (!text) {
+                        console.error("No text. Trying again...");
+                        continue;
+                    }
+
+                    // Extract the state from between backticks if present
+                    const stateMatch = text.match(/```([\s\S]*?)```/);
+                    const state = stateMatch ? stateMatch[1] : text;
+                    
+                    // Split into lines and ensure correct dimensions (35x20)
+                    const lines = state.split('\n').map(line => line.padEnd(35, ' ').slice(0, 35));
+                    const paddedState = lines.slice(0, 20).join('\n');
+                    const finalState = paddedState.padEnd(35 * 20 + 19, '\n' + ' '.repeat(35)).slice(0, 35 * 20 + 19);
+
+                    frames.push(finalState);
+                    currentState = text; // Keep full text for LLM context
+                    console.log('State updated, frame count:', frames.length);
+                    
+                    const container = document.createElement('div');
+                    container.style.marginBottom = '30px';
+                    
+                    const iterationLabel = document.createElement('div');
+                    iterationLabel.style.marginBottom = '5px';
+                    iterationLabel.style.color = '#666';
+                    iterationLabel.textContent = `Iteration ${frames.length}`;
+                    
+                    const historyItem = document.createElement('div');
+                    historyItem.className = 'history-item state-block mono';
+                    historyItem.textContent = text;
+                    
+                    container.appendChild(iterationLabel);
+                    container.appendChild(historyItem);
+                    elements.history.insertBefore(container, elements.history.firstChild);
+                    
+                    console.log('UI updated');
+                    
+                    // Wait 3 seconds before next iteration
+                    console.log('Waiting 3 seconds...');
+                    await new Promise(resolve => setTimeout(resolve, 200));
+                    console.log('Wait complete');
+                } catch (error) {
+                    console.error('Evolution error:', error);
+                    if (!isRunning) {
+                        console.log('Breaking loop due to error');
+                        break;
+                    }
+                }
+            }
+            console.log('Evolution stopped');
+        }
+
+        async function startEvolution() {
+            frames = []; // Clear frames array
+            frameIndex = 0; // Reset frame index
+            isRunning = true;
+            elements.start.disabled = true;
+            elements.stop.disabled = false;
+            await evolve();
+        }
+
+        function stopEvolution() {
+            isRunning = false;
+            elements.start.disabled = false;
+            elements.stop.disabled = true;
+        }
+
+        // Event Listeners
+        elements.start.addEventListener('click', startEvolution);
+        elements.stop.addEventListener('click', stopEvolution);
+        elements.temperature.addEventListener('input', (e) => {
+            document.getElementById('temperature-value').textContent = e.target.value;
+        });
+        elements.preset.addEventListener('change', () => {
+            const preset = presets[elements.preset.value];
+            elements.prompt.value = preset.prompt;
+            elements.temperature.value = preset.temperature;
+            document.getElementById('temperature-value').textContent = preset.temperature;
+        });
+        
+        elements.prompt.addEventListener('input', () => {
+            // Don't clear frames on prompt change anymore
+        });
+
+        elements.speedSlider.addEventListener('change', () => {
+            if (frames.length > 0) startPreviewAnimation();
+        });
+
+        // Initialize
+        elements.preset.value = 'conway';
+        elements.prompt.value = presets.conway.prompt;
+        startPreviewAnimation();
+
+        // No need for cleanup of preview interval since it runs for the lifetime of the page
+    </script>
+</body>
+</html>

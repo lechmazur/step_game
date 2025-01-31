@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LLM Step Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>LLM Step Game</h1>
+        
+        <div class="setup" id="setup">
+            <h2>Select 3 LLMs to compete:</h2>
+            <div class="player-setup">
+                <div class="player-select-group">
+                    <label>Player 1:</label>
+                    <select class="player-select" id="player1">
+                        <option value="">Loading models...</option>
+                    </select>
+                    <select class="character-select" id="character1">
+                        <option value="">Select character type...</option>
+                    </select>
+                </div>
+                <div class="player-select-group">
+                    <label>Player 2:</label>
+                    <select class="player-select" id="player2">
+                        <option value="">Loading models...</option>
+                    </select>
+                    <select class="character-select" id="character2">
+                        <option value="">Select character type...</option>
+                    </select>
+                </div>
+                <div class="player-select-group">
+                    <label>Player 3:</label>
+                    <select class="player-select" id="player3">
+                        <option value="">Loading models...</option>
+                    </select>
+                    <select class="character-select" id="character3">
+                        <option value="">Select character type...</option>
+                    </select>
+                </div>
+            </div>
+            <button onclick="startGame()" id="startButton">Start Game</button>
+        </div>
+
+        <div id="game">
+            <div class="status" id="status">Game starting...</div>
+            <div class="scoreboard" id="scoreboard">
+                <h3>Win Count</h3>
+                <div class="scores"></div>
+            </div>
+            <div class="track">
+                <div class="track-label track-label-1" id="track-label-1"></div>
+                <div class="track-label track-label-2" id="track-label-2"></div>
+                <div class="track-label track-label-3" id="track-label-3"></div>
+                <div class="player player-1" id="player1-marker"></div>
+                <div class="player player-2" id="player2-marker"></div>
+                <div class="player player-3" id="player3-marker"></div>
+            </div>
+            <div class="conversation" id="conversation"></div>
+            <div class="controls">
+                <button onclick="nextTurn()" id="nextButton" disabled>Next Turn</button>
+                <label style="margin-left: 10px;">
+                    <input type="checkbox" id="autoAdvance" checked> Auto-advance mode
+                </label>
+            </div>
+        </div>
+    </div>
+    <script src="js/game.js"></script>
+</body>
+</html>

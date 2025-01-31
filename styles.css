@@ -1,0 +1,277 @@
+body {
+    font-family: system-ui, sans-serif;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #f5f5f5;
+}
+
+.game-container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.setup {
+    margin-bottom: 20px;
+}
+
+.track {
+    display: flex;
+    margin: 20px 0;
+    position: relative;
+    height: 120px;
+    background: #eee;
+    border-radius: 30px;
+    padding-left: 160px; /* Space for labels */
+}
+
+.track-label {
+    position: absolute;
+    left: 0;
+    font-size: 12px;
+    color: #666;
+    white-space: nowrap;
+    width: 150px; /* Fixed width for labels */
+    text-align: right;
+    padding-right: 10px;
+}
+
+.track-label-1 { top: 15px; }
+.track-label-2 { top: 50px; }
+.track-label-3 { top: 85px; }
+
+.player {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    transition: left 0.5s ease;
+    left: 160px; /* Align with track padding */
+}
+
+:root {
+    --player1-color: #4CAF50;
+    --player1-light: #E8F5E9;
+    --player2-color: #F44336;
+    --player2-light: #FFEBEE;
+    --player3-color: #2196F3;
+    --player3-light: #E3F2FD;
+}
+
+.player-1 { background: var(--player1-color); top: 10px; }
+.player-2 { background: var(--player2-color); top: 45px; }
+.player-3 { background: var(--player3-color); top: 85px; }
+
+.controls {
+    display: flex;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background: #2196F3;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #1976D2;
+}
+
+button:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
+.status {
+    margin: 20px 0;
+    padding: 10px;
+    border-radius: 4px;
+    background: #f8f8f8;
+}
+
+.conversation {
+    margin: 20px 0;
+    max-height: 300px;
+    overflow-y: auto;
+    padding: 10px;
+    background: #f8f8f8;
+    border-radius: 4px;
+}
+
+.message {
+    margin: 5px 0;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.player-select {
+    margin: 10px 0;
+    padding: 8px;
+    width: 200px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+.player-name {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.player-1-msg { 
+    background: var(--player1-light);
+    border-left: 4px solid var(--player1-color);
+}
+.player-2-msg { 
+    background: var(--player2-light);
+    border-left: 4px solid var(--player2-color);
+}
+.player-3-msg { 
+    background: var(--player3-light);
+    border-left: 4px solid var(--player3-color);
+}
+
+.player-move.player-1-move {
+    border-left: 3px solid var(--player1-color);
+}
+.player-move.player-2-move {
+    border-left: 3px solid var(--player2-color);
+}
+.player-move.player-3-move {
+    border-left: 3px solid var(--player3-color);
+}
+
+.system-message {
+    background: #f8f9fa;
+    border-left: 4px solid #6c757d;
+    padding: 10px;
+    margin: 5px 0;
+    font-family: monospace;
+}
+
+.scoreboard {
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin: 20px 0;
+}
+
+.scoreboard h3 {
+    margin: 0 0 10px 0;
+    color: #333;
+}
+
+.scores {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.score-item {
+    padding: 12px;
+    margin: 8px 0;
+    background: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.score-item .main-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 4px;
+    padding-bottom: 4px;
+    border-bottom: 1px solid #ddd;
+}
+
+.score-item .player-name {
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.score-item .details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #666;
+}
+
+.score-item .model-info {
+    font-family: monospace;
+}
+
+.score-item .character-info {
+    color: #0066cc;
+    font-style: italic;
+}
+
+.score-item .win-count {
+    background: #e0e0e0;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.move-summary {
+    background: #e3f2fd;
+    border-left: 4px solid #2196F3;
+    padding: 10px;
+    margin: 5px 0;
+    font-family: monospace;
+}
+
+.move-collision {
+    color: #d32f2f;
+    font-weight: bold;
+}
+
+.move-success {
+    color: #388e3c;
+}
+
+.player-move {
+    display: inline-block;
+    padding: 2px 6px;
+    margin: 0 2px;
+    border-radius: 3px;
+    background: #e8eaf6;
+}
+
+label {
+    margin-left: 10px;
+}
+
+#game {
+    display: none;
+}
+
+.player-setup {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.player-select-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.player-select-group label {
+    min-width: 70px;
+}
+
+.player-select, .character-select {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    min-width: 200px;
+}
