@@ -15,15 +15,16 @@ Each turn has a conversation phase (up to {{MAX_SUB_ROUND}} sub-rounds) followed
 
 ## Move Phase
 - Each player privately and simultaneously chooses to pump or dump
-- **All Pump:** everyone gets 1 point
-- **One Dumper:** dumper gets 3 points, pumpers get 0
-- **Two Dumpers:** dumpers get 0.5 points each, pumper gets 0
-- **All Dump:** everyone gets 0 points
+- **All Pump:** pumpers get 1 point
+- **One Dumper:** dumper gets 2 points, pumpers get 0
+- **Two Dumpers:** pumpers get 1.5 points, dumpers get 0
+- **All Dump:** dumpers get 0.5 points
 
 ## Winning
 - First to reach {{WIN_STEPS}} points wins
 - If multiple players cross {{WIN_STEPS}} on the same turn, highest score wins
 - Ties share the victory
+- Important! Winner takes all!
 
 After each turn, all moves are revealed and scores updated.
 We repeat until someone wins.

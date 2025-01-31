@@ -70,14 +70,16 @@ async function fetchApiResponse(url, model, messages) {
 }
 
 async function getConversationResponse(playerIdx, gameState, getPlayerDisplayName) {
+    const playerNames = gameState.players.map(getPlayerDisplayName);
+    const playerName = playerNames[playerIdx];
+
     try {
-        const [commonRules, template] = await Promise.all([
-            fetch('/prompts/common_rules.txt').then(r => r.text()),
-            fetch('/prompts/conversation_prompt_template.txt').then(r => r.text())
+        const [commonPrompt, conversationPrompt] = await Promise.all([
+            loadPrompt('common'),
+            loadPrompt('conversation')
         ]);
         
-        const playerNames = gameState.players.map(getPlayerDisplayName);
-        const fullTemplate = commonRules + '\n\n' + template;
+        const fullTemplate = commonPrompt + '\n\n' + conversationPrompt;
         const prompt = replaceTemplateVariables(fullTemplate, playerNames, playerIdx, gameState);
         
         console.log('[API Request]', `Getting conversation response for ${getPlayerDisplayName(gameState.players[playerIdx])}`, { model: gameState.players[playerIdx].model, prompt, seed: Math.random() });
@@ -118,14 +120,16 @@ async function getConversationResponse(playerIdx, gameState, getPlayerDisplayNam
 }
 
 async function getMoveResponse(playerIdx, gameState, getPlayerDisplayName) {
+    const playerNames = gameState.players.map(getPlayerDisplayName);
+    const playerName = playerNames[playerIdx];
+
     try {
-        const [commonRules, template] = await Promise.all([
-            fetch('/prompts/common_rules.txt').then(r => r.text()),
-            fetch('/prompts/move_prompt_template.txt').then(r => r.text())
+        const [commonPrompt, movePrompt] = await Promise.all([
+            loadPrompt('common'),
+            loadPrompt('move')
         ]);
         
-        const playerNames = gameState.players.map(getPlayerDisplayName);
-        const fullTemplate = commonRules + '\n\n' + template;
+        const fullTemplate = commonPrompt + '\n\n' + movePrompt;
         const prompt = replaceTemplateVariables(fullTemplate, playerNames, playerIdx, gameState);
         
         console.log('[API Request]', `Getting move response for ${getPlayerDisplayName(gameState.players[playerIdx])}`, { model: gameState.players[playerIdx].model, prompt, seed: Math.random() });
@@ -168,12 +172,21 @@ async function fetchModels() {
 }
 
 function replaceTemplateVariables(template, playerNames, playerIdx, gameState) {
-    return template
+    const characterType = gameState.players[playerIdx].characterType;
+    const result = template
         .replace(/{{PLAYER_NAME}}/g, playerNames[playerIdx])
         .replace(/{{PLAYERS_LIST}}/g, playerNames.join(', '))
+        .replace(/{{CHARACTER_TYPE}}/g, characterType)
+        .replace(/{{CHARACTER_DESCRIPTION}}/g, CHARACTER_TYPES[characterType])
         .replace(/{{MAX_SUB_ROUND}}/g, MAX_SUB_ROUNDS)
         .replace(/{{WIN_STEPS}}/g, FINISH_LINE)
         .replace(/{{CONVERSATION_HISTORY}}/g, gameState.conversation.join('\n'))
         .replace(/{{GAME_STATE}}/g, `Scores: ${gameState.scores.map((score, idx) => 
             `${playerNames[idx]}: ${score}`).join(', ')}`);
+
+    // Add reasoning rules if enabled for this player
+    if (gameState.reasoningEnabled[playerIdx]) {
+        return result + '\n' + (promptCache.reasoning || '');
+    }
+    return result;
 }
