@@ -1,7 +1,7 @@
 // Game constants
 const FINISH_LINE = 5; // Reduced to make games shorter
-const MAX_SUB_ROUNDS = 1;
-const DEFAULT_CHARACTER_TYPE = 'strategist';
+const MAX_SUB_ROUNDS = 2;
+const DEFAULT_CHARACTER_TYPE = 'trickster';
 
 const CHARACTER_TYPES = {
     'diplomat': 'Negotiates, starts friendly, pushes back if needed',
@@ -19,10 +19,21 @@ const CHARACTER_NAMES = {
     ]
 };
 
-// Pump or Dump payoffs
 const PAYOFFS = {
-    ALL_PUMP: 1,      // When all players pump
-    LONE_DUMPER: 3,   // When exactly one player dumps
-    TWO_DUMPERS: 1,   // When exactly two players dump
-    ALL_DUMP: 0       // When all players dump
+    ALL_PUMP: {
+        pumpers: 1,
+        dumpers: 0
+    },
+    LONE_DUMPER: {
+        dumpers: 2,
+        pumpers: 0
+    },
+    TWO_DUMPERS: {
+        dumpers: 0,
+        pumpers: 1.5
+    },
+    ALL_DUMP: {
+        dumpers: 0.5,
+        pumpers: 0
+    }
 };

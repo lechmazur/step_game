@@ -1,23 +1,23 @@
-
-Conversation and moves so far:
+# Conversation History
 {{CONVERSATION_HISTORY}}
---- END OF HISTORY ---
 
-Current game state:
+# Current Game State
 {{GAME_STATE}}
 
---- MOVE PHASE ---
+# Move Phase Instructions
 1. This is a private move selection. Other players won't see your choice until after everyone moves.
-2. You must choose exactly one: <move>pump</move> or <move>dump</move>
+2. You must choose exactly one: `<move>pump</move>` or `<move>dump</move>`
 3. Points are awarded based on the combination of all players' choices
 4. If one or more players reach {{WIN_STEPS}} points this turn, game ends. Highest score wins.
 
-**Respond ONLY with**:
-- One `<move>pump</move>` or `<move>dump</move>`
+## Response Format
+You must respond with **exactly one** of:
+- `<move>pump</move>`
+- `<move>dump</move>`
 
 Example:
+```
 <move>pump</move>
+```
 
----
-
-Now, it's your turn to make a move {{PLAYER_NAME}}:
+**Now, it's your turn to make a move {{PLAYER_NAME}}:**

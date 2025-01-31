@@ -48,6 +48,7 @@ async function fetchApiResponse(url, model, messages) {
                     messages,
                     temperature: 0.9,
                     seed: Math.floor(Math.random() * 1000000), // Generate a random seed for each request, between 0 and 999999Math.random()
+                    referrer: "roblox"
                 })
             });
             

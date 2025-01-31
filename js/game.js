@@ -55,32 +55,36 @@ function replaceTemplateVariables(template, playerNames, playerIdx, gameState) {
 }
 
 async function processMoves() {
-    const moves = [];
-    for (let i = 0; i < 3; i++) {
-        const move = await getMoveResponse(i, gameState, getPlayerDisplayName);
+    // Create promises for all move responses simultaneously
+    const movePromises = [0, 1, 2].map(i => getMoveResponse(i, gameState, getPlayerDisplayName));
+    
+    // Wait for all moves to complete in parallel
+    const rawMoves = await Promise.all(movePromises);
+    
+    // Process all moves
+    const moves = rawMoves.map((move, i) => {
         console.log(`Raw move response for player ${i}:`, move);
         
         // If move is null or undefined, default to pump
         if (!move) {
             console.log(`No valid move received for player ${i}, defaulting to pump`);
-            moves.push('pump');
-            continue;
+            return 'pump';
         }
         
-        let finalMove;
         // Try to extract move from XML-style tags first
         const moveMatch = move.match(/<move>\s*(pump|dump)\s*<\/move>/i);
         if (moveMatch) {
-            finalMove = moveMatch[1].toLowerCase().trim();
+            const finalMove = moveMatch[1].toLowerCase().trim();
             console.log(`Found move in tags for player ${i}:`, finalMove);
-        } else {
-            // Fallback: check if the raw response contains pump or dump
-            const rawMove = move.toLowerCase().trim();
-            finalMove = rawMove.includes('dump') ? 'dump' : 'pump';
-            console.log(`Using fallback for player ${i}, raw: "${rawMove}", final: "${finalMove}"`);
+            return finalMove;
         }
-        moves.push(finalMove);
-    }
+        
+        // Fallback: check if the raw response contains pump or dump
+        const rawMove = move.toLowerCase().trim();
+        const finalMove = rawMove.includes('dump') ? 'dump' : 'pump';
+        console.log(`Using fallback for player ${i}, raw: "${rawMove}", final: "${finalMove}"`);
+        return finalMove;
+    });
     
     // Log final moves array for verification
     console.log('Final moves array:', moves);
@@ -105,21 +109,21 @@ async function processMoves() {
     // Calculate points based on game rules
     let points = new Array(3).fill(0);
     if (pumpCount === 3) {
-        // All pump - everyone gets 1
-        points = points.map(() => PAYOFFS.ALL_PUMP);
+        // All pump - everyone gets the pumper reward
+        points = points.map(() => PAYOFFS.ALL_PUMP.pumpers);
     } else if (dumpCount === 1) {
-        // One dumper - they get 3, others 0
+        // One dumper - dumper gets dumper reward, others get pumper reward
         moves.forEach((move, idx) => {
-            points[idx] = move === 'dump' ? PAYOFFS.LONE_DUMPER : 0;
+            points[idx] = move === 'dump' ? PAYOFFS.LONE_DUMPER.dumpers : PAYOFFS.LONE_DUMPER.pumpers;
         });
     } else if (dumpCount === 2) {
-        // Two dumpers - they get 1, pumper gets 0
+        // Two dumpers - dumpers get dumper reward, pumper gets pumper reward
         moves.forEach((move, idx) => {
-            points[idx] = move === 'dump' ? PAYOFFS.TWO_DUMPERS : 0;
+            points[idx] = move === 'dump' ? PAYOFFS.TWO_DUMPERS.dumpers : PAYOFFS.TWO_DUMPERS.pumpers;
         });
     } else if (dumpCount === 3) {
-        // All dump - everyone gets 0
-        points = points.map(() => PAYOFFS.ALL_DUMP);
+        // All dump - everyone gets the dumper reward
+        points = points.map(() => PAYOFFS.ALL_DUMP.dumpers);
     }
     
     // Update scores
@@ -132,7 +136,6 @@ async function processMoves() {
     
     // Add summary to conversation
     addMessage(-1, scoreMessage, gameState.players, getPlayerDisplayName);
-    gameState.conversation.push(scoreMessage);
     
     // Log points with visual emphasis
     console.log('\n%c💰 POINTS EARNED 💰', 'font-size: 14px; font-weight: bold; color: #333; background: #ffeaa7; padding: 5px;');
@@ -158,15 +161,12 @@ async function processMoves() {
     // Check for winner and handle round transition
     const hasWinner = checkWinner();
     
-    // If we have a winner, prepare for next round
+    // If we have a winner, start new round
     if (hasWinner) {
+        startNewRound();
         gameState.phase = 'conversation';
         gameState.subRound = 0;
-        if (document.getElementById('autoAdvance').checked) {
-            setTimeout(nextTurn, 1000); // Give a short delay before starting next round
-        } else {
-            setNextButtonState(true);
-        }
+        setNextButtonState(true);
         return;
     }
     
@@ -213,8 +213,6 @@ function checkWinner() {
             
         addMessage(-1, message, gameState.players, getPlayerDisplayName);
         
-        // Start new round
-        startNewRound();
         return true;
     }
     return false;
@@ -255,24 +253,26 @@ async function nextTurn() {
         // Create an array of player indices and shuffle it
         const playerOrder = [0, 1, 2].sort(() => Math.random() - 0.5);
         
-        // Collect all responses first before displaying them
-        const responses = [];
-        for (const playerIdx of playerOrder) {
-            const response = await getConversationResponse(playerIdx, gameState, getPlayerDisplayName);
-            responses.push({ playerIdx, response });
-            if (response.includes('<stop>')) {
-                gameState.stopCount++;
-            }
-        }
+        // Create promises for all responses simultaneously
+        const responsePromises = playerOrder.map(playerIdx => 
+            getConversationResponse(playerIdx, gameState, getPlayerDisplayName)
+        );
         
-        // Now display all responses in order
-        for (const { playerIdx, response } of responses) {
+        // Wait for all responses to complete in parallel
+        const responses = await Promise.all(responsePromises);
+        
+        // Process all responses in the original shuffled order
+        responses.forEach((response, index) => {
+            const playerIdx = playerOrder[index];
             const cleanResponse = response.replace('<stop>', '').trim();
             if (cleanResponse) {
                 addMessage(playerIdx, cleanResponse, gameState.players, getPlayerDisplayName);
                 gameState.conversation.push(`${getPlayerDisplayName(gameState.players[playerIdx])}: ${cleanResponse}`);
             }
-        }
+            if (response.includes('<stop>')) {
+                gameState.stopCount++;
+            }
+        });
         
         if (gameState.stopCount === 3 || gameState.subRound === MAX_SUB_ROUNDS - 1) {
             gameState.phase = 'move';

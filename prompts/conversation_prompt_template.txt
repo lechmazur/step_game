@@ -1,17 +1,17 @@
-
-Conversation and moves so far:
+# Conversation History
 {{CONVERSATION_HISTORY}}
---- END OF CONVERSATION HISTORY ---
 
-Current game state:
+# Current Game State
 {{GAME_STATE}}
 
---- CONVERSATION GUIDELINES ---
-- We allow up to {{MAX_SUB_ROUND}} sub-rounds of conversation each turn.
-- If you have nothing more to say, respond with <stop> by itself or add <stop> at the end of your message.
-- Once all players choose to stop talking, the conversation phase will end and the move phase will start.
-- Otherwise, speak a short message to the others.
+# Conversation Guidelines
+- We allow up to {{MAX_SUB_ROUND}} sub-rounds of conversation each turn
+- If you have nothing more to say, respond with `<stop>` by itself or add `<stop>` at the end of your message
+- Once all players choose to stop talking, the conversation phase will end and the move phase will start
+- Otherwise, speak a short message to the others
 
-This is the conversation phase. Be concise and you must write in English only. Everybody can see your previous messages, so no need to repeat them. Your message may not be longer than around 20 words.
+This is the conversation phase. Be concise and you must write in English only. 
+Everybody can see your previous messages, so no need to repeat them. 
+Your message may not be longer than around 20 words.
 
-Say something new and public to other players, {{PLAYER_NAME}}:
+**Say something new and public to other players, {{PLAYER_NAME}}:**
