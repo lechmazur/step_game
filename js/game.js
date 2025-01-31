@@ -77,23 +77,14 @@ async function getConversationResponse(playerIdx) {
         const player = gameState.players[playerIdx];
         const characterDesc = CHARACTER_TYPES[player.characterType] || '';
         
-        // Add strategy-specific context
-        let strategyContext = '';
-        if (gameState.positions[playerIdx] > 0) {
-            const position = gameState.positions[playerIdx];
-            const otherPositions = gameState.positions.filter((_, i) => i !== playerIdx);
-            const maxOtherPosition = Math.max(...otherPositions);
-            const minOtherPosition = Math.min(...otherPositions);
-            
-            strategyContext = `\nCurrent game state analysis:
-- You are at position ${position}
-- Leading player is at ${Math.max(...gameState.positions)}
-- Trailing player is at ${Math.min(...gameState.positions)}
-- You are ${position > maxOtherPosition ? 'leading' : position < minOtherPosition ? 'trailing' : 'in the middle'}`;
-        }
 
-        const prompt = `You are playing a step game. You are ${playerNames[playerIdx]}. ${characterDesc}
-You must respond in character and follow the game rules exactly.${strategyContext}\n\n${replaceTemplateVariables(template, playerNames, playerIdx, gameState)}`;
+
+        const prompt = `- You are playing a step game. 
+- You are ${playerNames[playerIdx]}. ${characterDesc}
+- You must respond in character and follow the game rules exactly.
+- Before responding please think step by step between <think> </think>.
+
+${replaceTemplateVariables(template, playerNames, playerIdx, gameState)}`;
         
         log('API Request', `Getting conversation response for ${getPlayerDisplayName(player)}`, { model: player.model, prompt, seed: generateSeed() });
         try {
@@ -154,7 +145,11 @@ You must respond with a valid move in the format <move>N</move> where N is 1, 3,
         }
         const result = await response.json();
         const moveText = removeThink(result.choices[0].message.content.trim());
-        const moveMatch = moveText.match(/<move>(\d)<\/move>/);
+        
+        // Get the last match instead of the first one
+        const moveMatches = [...moveText.matchAll(/<move>(\d)<\/move>/g)];
+        const moveMatch = moveMatches.length > 0 ? moveMatches[moveMatches.length - 1] : null;
+        
         const move = moveMatch ? parseInt(moveMatch[1]) : null;
         
         // Store the moves for next round's context
@@ -191,12 +186,21 @@ function addMessage(playerIdx, message) {
     conv.scrollTop = conv.scrollHeight;
 }
 
+// Helper function to shuffle array
+function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
+}
+
 // Helper function to create a delay
 const delay = ms => new Promise(resolve => setTimeout(resolve, ms));
 
 async function fetchApiResponse(url, model, messages) {
-    const maxRetries = 15;
-    const initialDelay = 500; // Initial delay of 5 seconds
+    const maxRetries = 3;
+    const initialDelay = 1000; // Initial delay of 5 seconds
     
     for (let attempt = 0; attempt < maxRetries; attempt++) {
         try {
@@ -472,8 +476,12 @@ function startGame() {
         gameState.players.push({ model, characterType, playerIdx: i - 1 });
     }
     
-    // Update track labels with player names
+    // Randomize player order
+    shuffleArray(gameState.players);
+    
+    // Update track labels with player names and reassign playerIdx based on new order
     gameState.players.forEach((player, idx) => {
+        player.playerIdx = idx;
         document.getElementById(`track-label-${idx + 1}`).textContent = 
             getPlayerDisplayName(player);
     });
