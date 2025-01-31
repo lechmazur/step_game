@@ -1,11 +1,14 @@
 const API_ENDPOINT = 'https://text.pollinations.ai';
 
 function removeThink(text) {
-    // Check for content before </think>
+    // Check for content after last </think>
     const thinkMatch = text.split('</think>');
     if (thinkMatch.length > 1) {
-        console.log('%cThink content:', 'color: blue', thinkMatch[0]);
-        return thinkMatch[1].trim();
+        // Get everything before the last </think> tag
+        const thinkContent = thinkMatch.slice(0, -1).join('</think>');
+        console.log('%cThink content:', 'color: blue', thinkContent);
+        // Return everything after the last </think> tag
+        return thinkMatch[thinkMatch.length - 1].trim();
     }
     return text;
 }
