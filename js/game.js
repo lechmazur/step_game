@@ -1,27 +1,3 @@
-const API_ENDPOINT = 'https://text.pollinations.ai';
-// const API_ENDPOINT = 'http://localhost:16385';
-
-// Game constants
-const FINISH_LINE = 20;
-const MAX_SUB_ROUNDS = 2;
-const DEFAULT_CHARACTER_TYPE = 'strategist';
-
-const CHARACTER_TYPES = {
-    'diplomat': 'Negotiates, starts friendly, pushes back if needed',
-    'strategist': 'Plans carefully, adapts strategy based on results',
-    'scared': 'Cautious, takes safe steps, occasional big moves',
-    'daredevil': 'Risk-taker, prefers bold moves',
-    'trickster': 'Unpredictable, keeps others guessing',
-    'titfortat': 'First cooperate then copy'
-};
-
-const CHARACTER_NAMES = {
-    'default': [
-        'Emma', 'Frank', 'Grace', 'Henry', 'Ivy', 
-        'Jack', 'Kate', 'Liam', 'Mia', 'Noah'
-    ]
-};
-
 // Player stats tracking
 const playerStats = {};
 
@@ -57,113 +33,6 @@ function getPlayerDisplayName(player) {
     return displayName;
 }
 
-function log(category, message, data = null) {
-    const timestamp = new Date().toISOString();
-    const logMessage = `[${timestamp}] [${category}] ${message}`;
-    console.log(logMessage);
-    if (data) {
-        console.log('Data:', data);
-    }
-}
-
-function generateSeed() {
-    return Math.floor(Math.random() * 1000000);
-}
-
-async function getConversationResponse(playerIdx) {
-    try {
-        const template = await fetch('/prompts/conversation_prompt_template.txt').then(r => r.text());
-        const playerNames = gameState.players.map(p => getPlayerDisplayName(p));
-        const player = gameState.players[playerIdx];
-        const characterDesc = CHARACTER_TYPES[player.characterType] || '';
-        
-
-
-        const prompt = `- You are playing a step game. 
-- You are ${playerNames[playerIdx]}. ${characterDesc}
-- You must respond in character and follow the game rules exactly.
-- Before responding please think step by step between <think> </think>.
-
-${replaceTemplateVariables(template, playerNames, playerIdx, gameState)}`;
-        
-        log('API Request', `Getting conversation response for ${getPlayerDisplayName(player)}`, { model: player.model, prompt, seed: generateSeed() });
-        try {
-            const response = await fetchApiResponse(API_ENDPOINT, player.model, [
-                { role: 'user', content: prompt }
-            ]);
-            if (!response.ok) {
-                const errorText = await response.text();
-                log('API Error', `Error getting conversation response for ${getPlayerDisplayName(player)}`, errorText);
-                return '<stop>';
-            }
-            const result = await response.json();
-            log('API Debug', `Raw API response:`, result);
-            const content = result.choices[0].message.content;
-            const trimmedContent = removeThink(content.trim());
-            log('API Response', `Got conversation response for ${getPlayerDisplayName(player)}`, { 
-                originalContent: content,
-                trimmedContent 
-            });
-            return trimmedContent;
-        } catch (error) {
-            log('API Error', `Exception getting conversation response for ${getPlayerDisplayName(player)}`, error);
-            return '<stop>';
-        }
-    } catch (error) {
-        log('API Error', `Exception getting conversation response for ${getPlayerDisplayName(player)}`, error);
-        return '<stop>';
-    }
-}
-function removeThink(text) {
-    // Check for content before </think>
-    const thinkMatch = text.split('</think>');
-    if (thinkMatch.length > 1) {
-        console.log('%cThink content:', 'color: blue', thinkMatch[0]);
-        return thinkMatch[1].trim();
-    }
-    return text;
-}
-
-async function getMoveResponse(playerIdx) {
-    const template = await fetch('/prompts/move_prompt_template.txt').then(r => r.text());
-    const playerNames = gameState.players.map(p => getPlayerDisplayName(p));
-    const player = gameState.players[playerIdx];
-    const characterDesc = CHARACTER_TYPES[player.characterType] || '';
-    
-    const prompt = `You are playing a step game. You are ${playerNames[playerIdx]}. ${characterDesc}
-You must respond with a valid move in the format <move>N</move> where N is 1, 3, or 5.\n\n${replaceTemplateVariables(template, playerNames, playerIdx, gameState)}`;
-    
-    log('API Request', `Getting move response for ${getPlayerDisplayName(player)}`, { model: player.model, prompt, seed: generateSeed() });
-    try {
-        const response = await fetchApiResponse(API_ENDPOINT, player.model, [
-            { role: 'user', content: prompt }
-        ]);
-        if (!response.ok) {
-            const errorText = await response.text();
-            log('API Error', `Error getting move response for ${getPlayerDisplayName(player)}`, errorText);
-            return null;
-        }
-        const result = await response.json();
-        const moveText = removeThink(result.choices[0].message.content.trim());
-        
-        // Get the last match instead of the first one
-        const moveMatches = [...moveText.matchAll(/<move>(\d)<\/move>/g)];
-        const moveMatch = moveMatches.length > 0 ? moveMatches[moveMatches.length - 1] : null;
-        
-        const move = moveMatch ? parseInt(moveMatch[1]) : null;
-        
-        // Store the moves for next round's context
-        if (!gameState.lastMoves) gameState.lastMoves = [];
-        gameState.lastMoves[playerIdx] = move;
-        
-        log('API Response', `Got move response for ${getPlayerDisplayName(player)}`, { rawResponse: moveText, parsedMove: move });
-        return move;
-    } catch (error) {
-        log('API Error', `Exception getting move response for ${getPlayerDisplayName(player)}`, error);
-        return null;
-    }
-}
-
 function updatePositions() {
     const track = document.querySelector('.track');
     const trackWidth = track.offsetWidth - 30;
@@ -186,54 +55,6 @@ function addMessage(playerIdx, message) {
     conv.scrollTop = conv.scrollHeight;
 }
 
-// Helper function to shuffle array
-function shuffleArray(array) {
-    for (let i = array.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [array[i], array[j]] = [array[j], array[i]];
-    }
-    return array;
-}
-
-// Helper function to create a delay
-const delay = ms => new Promise(resolve => setTimeout(resolve, ms));
-
-async function fetchApiResponse(url, model, messages) {
-    const maxRetries = 3;
-    const initialDelay = 1000; // Initial delay of 5 seconds
-    
-    for (let attempt = 0; attempt < maxRetries; attempt++) {
-        try {
-            // Calculate exponential backoff delay
-            const backoffDelay = initialDelay * Math.pow(2, attempt);
-            await delay(backoffDelay);
-            
-            const response = await fetch(url+'/openai', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({
-                    model,
-                    messages,
-                    temperature: 0.9,
-                    seed: generateSeed()
-                })
-            });
-            
-            if (!response.ok) {
-                throw new Error(`HTTP error! status: ${response.status}`);
-            }
-            
-            return response;
-        } catch (error) {
-            if (attempt === maxRetries - 1) {
-                // If this was the last attempt, throw the error
-                throw new Error(`Failed after ${maxRetries} attempts: ${error.message}`);
-            }
-            console.log(`Attempt ${attempt + 1} failed, retrying... Error: ${error.message}`);
-        }
-    }
-}
-
 function replaceTemplateVariables(template, playerNames, playerIdx, gameState) {
     return template
         .replace(/{{PLAYER_NAME}}/g, playerNames[playerIdx])
@@ -248,7 +69,7 @@ function replaceTemplateVariables(template, playerNames, playerIdx, gameState) {
 async function processMoves() {
     const moves = [];
     for (let i = 0; i < 3; i++) {
-        const move = await getMoveResponse(i);
+        const move = await getMoveResponse(i, gameState, getPlayerDisplayName);
         moves.push(move || 1); // Default to 1 if invalid move
     }
     
@@ -305,7 +126,7 @@ async function processMoves() {
         );
     });
     
-    log('Game State', 'Moves processed', {
+    console.log('Game State', 'Moves processed', {
         moves,
         oldPositions,
         newPositions: gameState.positions,
@@ -388,7 +209,7 @@ async function nextTurn() {
     
     if (gameState.phase === 'conversation') {
         for (let i = 0; i < 3; i++) {
-            const response = await getConversationResponse(i);
+            const response = await getConversationResponse(i, gameState, getPlayerDisplayName);
             if (response.includes('<stop>')) {
                 gameState.stopCount++;
             }
@@ -420,7 +241,81 @@ async function nextTurn() {
         }
     } else if (gameState.phase === 'move') {
         document.getElementById('status').textContent = 'Processing moves...';
-        const gameOver = await processMoves();
+        const moves = [];
+        for (let i = 0; i < 3; i++) {
+            const move = await getMoveResponse(i, gameState, getPlayerDisplayName);
+            moves.push(move || 1); // Default to 1 if invalid move
+        }
+        
+        // Log moves with player colors
+        console.log('\n%c🎲 MOVES THIS ROUND 🎲', 'font-size: 14px; font-weight: bold; color: #333; background: #f0f0f0; padding: 5px;');
+        moves.forEach((move, idx) => {
+            const playerName = getPlayerDisplayName(gameState.players[idx]);
+            const playerColors = ['#ff7675', '#74b9ff', '#55efc4'];
+            console.log(
+                `%c${playerName}: chose ${move} steps`,
+                `color: ${playerColors[idx]}; font-weight: bold; font-size: 12px;`
+            );
+        });
+        
+        // Check for collisions
+        const moveCounts = {};
+        moves.forEach(m => moveCounts[m] = (moveCounts[m] || 0) + 1);
+        
+        // Log collisions with visual emphasis
+        console.log('\n%c💥 COLLISIONS 💥', 'font-size: 14px; font-weight: bold; color: #333; background: #ffeaa7; padding: 5px;');
+        Object.entries(moveCounts).forEach(([move, count]) => {
+            const hasCollision = count > 1;
+            const style = hasCollision 
+                ? 'color: #d63031; font-weight: bold; font-size: 12px;'
+                : 'color: #00b894; font-size: 12px;';
+            const emoji = hasCollision ? '❌' : '✅';
+            console.log(
+                `%c${emoji} ${count} player${count > 1 ? 's' : ''} chose ${move} steps`,
+                style
+            );
+        });
+        
+        // Update positions
+        const oldPositions = [...gameState.positions];
+        moves.forEach((move, idx) => {
+            if (moveCounts[move] === 1) {
+                gameState.positions[idx] += move;
+            }
+        });
+        
+        // Log position changes
+        console.log('\n%c📍 POSITION UPDATES 📍', 'font-size: 14px; font-weight: bold; color: #333; background: #dfe6e9; padding: 5px;');
+        gameState.positions.forEach((newPos, idx) => {
+            const playerName = getPlayerDisplayName(gameState.players[idx]);
+            const oldPos = oldPositions[idx];
+            const didMove = newPos !== oldPos;
+            const style = didMove 
+                ? 'color: #0984e3; font-weight: bold; font-size: 12px;'
+                : 'color: #636e72; font-size: 12px;';
+            const emoji = didMove ? '➡️' : '⛔';
+            console.log(
+                `%c${emoji} ${playerName}: ${oldPos} → ${newPos}${!didMove ? ' (blocked by collision)' : ''}`,
+                style
+            );
+        });
+        
+        console.log('Game State', 'Moves processed', {
+            moves,
+            oldPositions,
+            newPositions: gameState.positions,
+            collisions: moveCounts
+        });
+        
+        // Add position summary to conversation after moves are applied
+        const positionSummary = `New positions: ${gameState.positions.map((pos, idx) => 
+            `${getPlayerDisplayName(gameState.players[idx])}: ${pos}`).join(', ')}`;
+        
+        gameState.conversation.push(positionSummary);
+        addMessage(-1, positionSummary);
+        
+        updatePositions();
+        const gameOver = checkWinner();
         if (!gameOver) {
             gameState.currentTurn++;
             gameState.subRound = 0;
@@ -477,7 +372,7 @@ function startGame() {
     }
     
     // Randomize player order
-    shuffleArray(gameState.players);
+    gameState.players = gameState.players.sort(() => Math.random() - 0.5);
     
     // Update track labels with player names and reassign playerIdx based on new order
     gameState.players.forEach((player, idx) => {
@@ -502,8 +397,7 @@ function startGame() {
 
 // Initialize when page loads
 document.addEventListener('DOMContentLoaded', function() {
-    fetch(`${API_ENDPOINT}/models`)
-        .then(response => response.json())
+    fetchModels()
         .then(models => {
             const selects = [
                 document.getElementById('player1'),
