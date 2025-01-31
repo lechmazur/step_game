@@ -208,15 +208,19 @@ async function nextTurn() {
     document.getElementById('status').textContent = 'Processing...';
     
     if (gameState.phase === 'conversation') {
-        for (let i = 0; i < 3; i++) {
-            const response = await getConversationResponse(i, gameState, getPlayerDisplayName);
+        // Create an array of player indices and shuffle it
+        const playerOrder = [0, 1, 2].sort(() => Math.random() - 0.5);
+        
+        // Process responses in the randomized order
+        for (const playerIdx of playerOrder) {
+            const response = await getConversationResponse(playerIdx, gameState, getPlayerDisplayName);
             if (response.includes('<stop>')) {
                 gameState.stopCount++;
             }
             const cleanResponse = response.replace('<stop>', '').trim();
             if (cleanResponse) {
-                addMessage(i, cleanResponse);
-                gameState.conversation.push(`${getPlayerDisplayName(gameState.players[i])}: ${cleanResponse}`);
+                addMessage(playerIdx, cleanResponse);
+                gameState.conversation.push(`${getPlayerDisplayName(gameState.players[playerIdx])}: ${cleanResponse}`);
             }
         }
         

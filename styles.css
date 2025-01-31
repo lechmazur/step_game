@@ -275,3 +275,43 @@ label {
     border-radius: 4px;
     min-width: 200px;
 }
+
+#player-thoughts {
+    margin: 20px 0;
+    padding: 10px;
+    background: #f8f9fa;
+    border-radius: 8px;
+}
+
+#player-thoughts h3 {
+    margin: 0 0 10px 0;
+    color: #343a40;
+}
+
+.thoughts {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.thought {
+    padding: 8px;
+    border-radius: 6px;
+    white-space: pre-line;
+    font-size: 0.9em;
+}
+
+.player-1-thought {
+    background: rgba(255, 118, 117, 0.1);
+    border-left: 3px solid #ff7675;
+}
+
+.player-2-thought {
+    background: rgba(116, 185, 255, 0.1);
+    border-left: 3px solid #74b9ff;
+}
+
+.player-3-thought {
+    background: rgba(85, 239, 196, 0.1);
+    border-left: 3px solid #55efc4;
+}

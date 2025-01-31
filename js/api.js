@@ -1,12 +1,29 @@
 const API_ENDPOINT = 'https://text.pollinations.ai';
 
-function removeThink(text) {
+function removeThink(text, playerIdx, playerName) {
     // Check for content after last </think>
     const thinkMatch = text.split('</think>');
     if (thinkMatch.length > 1) {
         // Get everything before the last </think> tag
         const thinkContent = thinkMatch.slice(0, -1).join('</think>');
         console.log('%cThink content:', 'color: blue', thinkContent);
+        
+        // Update the thoughts display
+        const thoughtsDiv = document.querySelector('#player-thoughts .thoughts');
+        const playerThoughtId = `player-${playerIdx + 1}-thought`;
+        let playerThought = document.getElementById(playerThoughtId);
+        
+        if (!playerThought) {
+            playerThought = document.createElement('div');
+            playerThought.id = playerThoughtId;
+            playerThought.className = `thought player-${playerIdx + 1}-thought`;
+            thoughtsDiv.appendChild(playerThought);
+        }
+
+        if (thinkContent) {
+            playerThought.innerHTML = `<strong>${playerName}:</strong> ${thinkContent}`;
+        }
+        
         // Return everything after the last </think> tag
         return thinkMatch[thinkMatch.length - 1].trim();
     }
@@ -76,7 +93,7 @@ ${replaceTemplateVariables(template, playerNames, playerIdx, gameState)}`;
             const result = await response.json();
             console.log('[API Debug]', `Raw API response:`, result);
             const content = result.choices[0].message.content;
-            const trimmedContent = removeThink(content.trim());
+            const trimmedContent = removeThink(content.trim(), playerIdx, getPlayerDisplayName(player));
             console.log('[API Response]', `Got conversation response for ${getPlayerDisplayName(player)}`, { 
                 originalContent: content,
                 trimmedContent 
@@ -112,7 +129,7 @@ You must respond with a valid move in the format <move>N</move> where N is 1, 3,
             return null;
         }
         const result = await response.json();
-        const moveText = removeThink(result.choices[0].message.content.trim());
+        const moveText = removeThink(result.choices[0].message.content.trim(), playerIdx, getPlayerDisplayName(player));
         
         // Get the last match instead of the first one
         const moveMatches = [...moveText.matchAll(/<move>(\d)<\/move>/g)];
