@@ -58,6 +58,25 @@ A horizontal bar chart ranking each model by mean words per message. Identifies 
 
 ---
 
+## Web Interface
+
+A web-based interface is now available that allows you to run the game with any LLM from the Pollinations.ai API. Features include:
+
+- Visual game board showing player positions
+- Real-time conversation display
+- Character type selection (strategist, diplomat, trickster, etc.)
+- Auto-advance mode for continuous play
+- Win tracking and scoreboard
+
+To run the web interface:
+1. Open `index.html` in your browser
+2. Select 3 LLM players and their character types
+3. Click "Start Game" to begin
+
+The game uses the free Pollinations.ai API to simulate LLM responses.
+
+---
+
 ## Method Summary
 
 1. **Players & Setup**  
