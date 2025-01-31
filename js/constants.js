@@ -1,7 +1,7 @@
 // Game constants
 const FINISH_LINE = 5; // Reduced to make games shorter
 const MAX_SUB_ROUNDS = 2;
-const DEFAULT_CHARACTER_TYPE = 'trickster';
+const DEFAULT_CHARACTER_TYPE = 'competitive';
 
 const CHARACTER_TYPES = {
     'diplomat': 'Negotiates, starts friendly, pushes back if needed',
@@ -9,7 +9,8 @@ const CHARACTER_TYPES = {
     'cautious': 'Prefers to pump unless threatened',
     'aggressive': 'More likely to dump for higher gains',
     'trickster': 'Unpredictable, keeps others guessing',
-    'titfortat': 'First pump then copy last majority'
+    'competitive': 'You want to win above all. Ties or losses are inconceivable.',
+    'selective-ally': 'You choose one ally to trust and coordinate with to make the other player lose. Communicate at the start of the round which ally you want to cooperate with and make sure they agree.',
 };
 
 const CHARACTER_NAMES = {

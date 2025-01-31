@@ -48,7 +48,7 @@ async function fetchApiResponse(url, model, messages) {
                 body: JSON.stringify({
                     model,
                     messages,
-                    temperature: 0.9,
+                    temperature: 0.5,
                     seed: Math.floor(Math.random() * 1000000), // Generate a random seed for each request, between 0 and 999999Math.random()
                     referrer: "roblox"
                 })
@@ -71,7 +71,6 @@ async function fetchApiResponse(url, model, messages) {
 
 async function getConversationResponse(playerIdx, gameState, getPlayerDisplayName) {
     const playerNames = gameState.players.map(getPlayerDisplayName);
-    const playerName = playerNames[playerIdx];
 
     try {
         const [commonPrompt, conversationPrompt] = await Promise.all([
@@ -121,7 +120,6 @@ async function getConversationResponse(playerIdx, gameState, getPlayerDisplayNam
 
 async function getMoveResponse(playerIdx, gameState, getPlayerDisplayName) {
     const playerNames = gameState.players.map(getPlayerDisplayName);
-    const playerName = playerNames[playerIdx];
 
     try {
         const [commonPrompt, movePrompt] = await Promise.all([
