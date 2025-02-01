@@ -34,22 +34,22 @@ The animation reveals how LLMs strategize, stall, sabotage, or cooperate, culmin
 ### **TrueSkill Leaderboard (μ ± σ)**  
 A horizontal bar chart showing each model’s TrueSkill rating and error bars (±σ). Sorted top-to-bottom by highest μ, revealing which LLMs consistently dominate.
 
-![scoreboard_trueskill](https://github.com/user-attachments/assets/c5811556-9979-4f37-b0ca-7e7f5a8e3910)
+![scoreboard_trueskill](https://github.com/user-attachments/assets/4727e3e0-1f8c-4dca-b3d2-18c86f860630)
 
 ### **Pairwise Partial-Win Matrix**  
 A heatmap where rows and columns are models. Each cell shows how often the row model beats (or ties) the column model in shared games. Redder cells mean the row typically outperforms the column.
 
-![scoreboard_pvp_matrix](https://github.com/user-attachments/assets/86665d59-9b06-454e-85a0-7eba27d5a7cb)
+![scoreboard_pvp_matrix](https://github.com/user-attachments/assets/133b174d-884a-4a52-b920-2e423afcb28c)
 
 ### **Collision Rate: Percentage of Moves Colliding**  
 A vertical bar chart of how often each model’s chosen steps overlap with another’s in the same turn, causing a stall. Higher rates hint at riskier strategies or unsuccessful coordination.
 
-![conversation_stats_collisions_per_move](https://github.com/user-attachments/assets/4eb832d4-905b-4956-8d95-c0ae85aa59ea)
+![conversation_stats_collisions_per_move](https://github.com/user-attachments/assets/6e68d3f0-66ce-43a1-ba4a-a41dbd3a090b)
 
 ### **Move Selection Distribution (1 vs. 3 vs. 5)**  
 A grouped bar chart for each model, showing the relative frequency of each step choice. Offers quick insight into whether they prefer bold picks (5) or safer, smaller steps.
 
-![conversation_stats_move_distribution](https://github.com/user-attachments/assets/369efc64-6b31-4bde-862a-8e72869f79ed)
+![conversation_stats_move_distribution](https://github.com/user-attachments/assets/671efa8f-f459-490b-99d9-469050c4d88e)
 
 ### **Model Wordiness: Average Words per Message**  
 A horizontal bar chart ranking each model by mean words per message. Identifies who dominates the conversation with lengthier statements versus those who keep it short.
@@ -84,33 +84,33 @@ A horizontal bar chart ranking each model by mean words per message. Identifies 
 
 ## LLM Step-Game Leaderboard
 
-**Tournaments**: 944, repeated in 5 random permutations.
+**Tournaments**: 1254, repeated in 5 random permutations.
 
 | Rank | Model              |   mu   | sigma | expose | games | p-wins | ratio |
 |-----:|---------------------|-------:|------:|--------:|------:|-------:|------:|
-|    1 | o1                |    9.71 |  0.54 |    9.39 |   165 |  121.50 |  0.74 |
-|    2 | DeepSeek R1       |    8.21 |  0.74 |    7.77 |    71 |   41.83 |  0.59 |
-|    3 | SilentGreedyPlayer |    7.43 |  0.50 |    7.14 |   160 |   92.50 |  0.58 |
-|    4 | o1-mini           |    6.86 |  0.50 |    6.56 |   146 |   75.00 |  0.51 |
-|    5 | Gemini 2.0 Flash Thinking Exp 01-21 |    6.82 |  0.62 |    6.45 |    96 |   46.83 |  0.49 |
-|    6 | Claude 3.5 Sonnet 2024-10-22 |    5.65 |  0.44 |    5.39 |   173 |   66.33 |  0.38 |
-|    7 | Llama 3.3 70B     |    5.22 |  0.45 |    4.95 |   167 |   53.83 |  0.32 |
-|    8 | Gemini 2.0 Flash Exp |    5.16 |  0.47 |    4.88 |   152 |   48.33 |  0.32 |
-|    9 | Gemini 1.5 Flash  |    5.12 |  0.42 |    4.87 |   185 |   57.33 |  0.31 |
-|   10 | DeepSeek-V3       |    5.09 |  0.44 |    4.82 |   172 |   52.50 |  0.31 |
-|   11 | Qwen QwQ          |    5.08 |  0.47 |    4.80 |   148 |   48.50 |  0.33 |
-|   12 | Gemini 1.5 Pro (Sept) |    5.05 |  0.45 |    4.78 |   160 |   48.83 |  0.31 |
-|   13 | Qwen 2.5 72B      |    5.05 |  0.46 |    4.77 |   157 |   51.83 |  0.33 |
+|    1 | o1                |    9.77 |  0.53 |    9.45 |   174 |  128.50 |  0.74 |
+|    2 | DeepSeek R1       |    8.55 |  0.67 |    8.15 |    89 |   55.83 |  0.63 |
+|    3 | SilentGreedyPlayer |    7.41 |  0.48 |    7.13 |   170 |   97.00 |  0.57 |
+|    4 | o1-mini           |    6.70 |  0.49 |    6.41 |   155 |   77.00 |  0.50 |
+|    5 | Gemini 2.0 Flash Thinking Exp 01-21 |    6.47 |  0.49 |    6.18 |   146 |   66.33 |  0.45 |
+|    6 | Claude 3.5 Sonnet 2024-10-22 |    5.65 |  0.43 |    5.39 |   182 |   69.33 |  0.38 |
+|    7 | Llama 3.3 70B     |    5.29 |  0.43 |    5.04 |   181 |   58.83 |  0.33 |
+|    8 | Gemini 2.0 Flash Exp |    5.23 |  0.46 |    4.95 |   159 |   51.33 |  0.32 |
+|    9 | Qwen QwQ          |    5.08 |  0.47 |    4.80 |   148 |   48.50 |  0.33 |
+|   10 | Qwen 2.5 72B      |    5.08 |  0.45 |    4.81 |   162 |   53.83 |  0.33 |
+|   11 | DeepSeek-V3       |    5.07 |  0.44 |    4.81 |   174 |   52.50 |  0.30 |
+|   12 | Gemini 1.5 Flash  |    5.03 |  0.41 |    4.78 |   195 |   58.33 |  0.30 |
+|   13 | Gemini 1.5 Pro (Sept) |    4.97 |  0.44 |    4.71 |   168 |   49.33 |  0.29 |
 |   14 | Gemini 2.0 Flash Thinking Exp Old |    4.91 |  0.44 |    4.65 |   166 |   43.50 |  0.26 |
-|   15 | GPT-4o mini       |    4.77 |  0.44 |    4.51 |   163 |   43.50 |  0.27 |
-|   16 | Claude 3.5 Haiku  |    4.68 |  0.44 |    4.42 |   163 |   41.50 |  0.25 |
-|   17 | Mistral Large 2   |    4.60 |  0.42 |    4.35 |   180 |   44.00 |  0.24 |
-|   18 | Gemma 2 27B       |    4.57 |  0.44 |    4.31 |   165 |   38.00 |  0.23 |
-|   19 | Llama 3.1 405B    |    4.48 |  0.45 |    4.21 |   154 |   35.50 |  0.23 |
-|   20 | SilentRandomPlayer |    4.46 |  0.44 |    4.20 |   162 |   35.00 |  0.22 |
-|   21 | Grok 2 12-12      |    4.38 |  0.43 |    4.12 |   173 |   35.17 |  0.20 |
-|   22 | GPT-4o            |    4.33 |  0.45 |    4.06 |   157 |   35.00 |  0.22 |
-|   23 | Qwen 2.5 Max      |    4.00 |  0.61 |    3.64 |    84 |   16.67 |  0.20 |
+|   15 | GPT-4o mini       |    4.72 |  0.43 |    4.46 |   176 |   45.50 |  0.26 |
+|   16 | Claude 3.5 Haiku  |    4.68 |  0.44 |    4.42 |   168 |   42.50 |  0.25 |
+|   17 | Gemma 2 27B       |    4.61 |  0.42 |    4.36 |   177 |   41.00 |  0.23 |
+|   18 | Llama 3.1 405B    |    4.58 |  0.43 |    4.32 |   168 |   39.50 |  0.24 |
+|   19 | Mistral Large 2   |    4.55 |  0.42 |    4.30 |   185 |   44.00 |  0.24 |
+|   20 | GPT-4o            |    4.48 |  0.44 |    4.22 |   165 |   38.50 |  0.23 |
+|   21 | SilentRandomPlayer |    4.40 |  0.42 |    4.15 |   171 |   35.00 |  0.20 |
+|   22 | Grok 2 12-12      |    4.39 |  0.41 |    4.14 |   183 |   37.17 |  0.20 |
+|   23 | Qwen 2.5 Max      |    4.14 |  0.56 |    3.81 |   100 |   20.67 |  0.21 |
 
 https://github.com/user-attachments/assets/ed1f4caf-7ae2-4cd0-8fad-f42d6ab531ac
 
