@@ -12,7 +12,14 @@ This setup goes beyond static Q&A by focusing on **social reasoning**—models m
 
 ## Animation
 
-We generate a **frame-by-frame** replay of each game, illustrating:
+https://github.com/user-attachments/assets/f07abbd8-a780-440a-8fae-66f7154cf010
+
+Longer video:
+
+[![Multi-Agent Step Race Benchmark: Assessing LLM Collaboration and Deception Under Pressure: frame-by-frame replay of each game](https://markdown-videos-api.jorgenkh.no/url?url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DAnPKfrIPAgQ)](https://www.youtube.com/watch?v=AnPKfrIPAgQ)
+
+
+We generate a **frame-by-frame** and a **summary** replay of each game, illustrating:
 1. Conversation sub-rounds with highlighted quotes
 2. Secret moves (1,3,5) and collisions
 3. Real-time positions on the track
@@ -24,30 +31,30 @@ The animation reveals how LLMs strategize, stall, sabotage, or cooperate, culmin
 
 ## Visualizations & Metrics
 
-**TrueSkill Leaderboard (μ ± σ)**  
+### **TrueSkill Leaderboard (μ ± σ)**  
 A horizontal bar chart showing each model’s TrueSkill rating and error bars (±σ). Sorted top-to-bottom by highest μ, revealing which LLMs consistently dominate.
 
-![scoreboard_trueskill_multipass](https://github.com/user-attachments/assets/c506e120-258b-4ff3-a2f7-35e5b2ddf54e)
+![scoreboard_trueskill](https://github.com/user-attachments/assets/80d66a06-d7a0-41b3-a6fa-cac89fd164c8)
 
-**Pairwise Partial-Win Matrix**  
+### **Pairwise Partial-Win Matrix**  
 A heatmap where rows and columns are models. Each cell shows how often the row model beats (or ties) the column model in shared games. Redder cells mean the row typically outperforms the column.
 
-![scoreboard_pvp_matrix_multipass](https://github.com/user-attachments/assets/d5811c48-cd88-4896-8552-2e7814d1789d)
+![scoreboard_pvp_matrix](https://github.com/user-attachments/assets/c8a724f5-ea09-4003-8905-f43b4024458f)
 
-**Collision Rate: Percentage of Moves Colliding**  
+### **Collision Rate: Percentage of Moves Colliding**  
 A vertical bar chart of how often each model’s chosen steps overlap with another’s in the same turn, causing a stall. Higher rates hint at riskier strategies or unsuccessful coordination.
 
-![conversation_stats_collisions_per_move](https://github.com/user-attachments/assets/37faf910-ba79-4de5-b1af-fee0b6ea1100)
+![conversation_stats_collisions_per_move](https://github.com/user-attachments/assets/a70bc4b9-d1e7-4d2b-80db-d65abcb7b6f5)
 
-**Move Selection Distribution (1 vs. 3 vs. 5)**  
+### **Move Selection Distribution (1 vs. 3 vs. 5)**  
 A grouped bar chart for each model, showing the relative frequency of each step choice. Offers quick insight into whether they prefer bold picks (5) or safer, smaller steps.
 
-![conversation_stats_move_distribution](https://github.com/user-attachments/assets/771266ea-7f1a-40f7-b584-8dd476e020ec)
 
-**Model Wordiness: Average Words per Message**  
+
+### **Model Wordiness: Average Words per Message**  
 A horizontal bar chart ranking each model by mean words per message. Identifies who dominates the conversation with lengthier statements versus those who keep it short.
 
-![conversation_stats_average_words_per_message](https://github.com/user-attachments/assets/00daa296-a3f5-4fc8-8522-206fbd83d9f2)
+![conversation_stats_average_words_per_message](https://github.com/user-attachments/assets/3cbe17cb-7c49-4b3a-8aa7-861205169164)
 
 ---
 
@@ -77,31 +84,36 @@ A horizontal bar chart ranking each model by mean words per message. Identifies 
 
 ## LLM Step-Game Leaderboard
 
-**Tournaments**: 944, repeated in 5 random permutations.
+**Tournaments**: 1254, repeated in 5 random permutations.
 
-| Rank | Model              |   mu   | sigma | exposed | games | p-wins | ratio |
+| Rank | Model              |   mu   | sigma | expose | games | p-wins | ratio |
 |-----:|---------------------|-------:|------:|--------:|------:|-------:|------:|
-|    1 | o1-2024-12-17     |    9.06 |  0.59 |    9.06 |   139 |  107.00 |  0.77 |
-|    2 | SilentGreedyPlayer |    6.66 |  0.52 |    6.66 |   139 |   81.50 |  0.59 |
-|    3 | o1-mini           |    6.05 |  0.54 |    6.05 |   125 |   65.00 |  0.52 |
-|    4 | sonnet-20241022   |    4.69 |  0.46 |    4.69 |   158 |   60.00 |  0.38 |
-|    5 | llama33_70b       |    4.51 |  0.49 |    4.51 |   140 |   49.00 |  0.35 |
-|    6 | deepseek          |    4.40 |  0.46 |    4.40 |   157 |   51.50 |  0.33 |
-|    7 | gemini            |    4.29 |  0.49 |    4.29 |   135 |   45.00 |  0.33 |
-|    8 | gemini_20_flash_exp |    4.24 |  0.49 |    4.24 |   139 |   42.83 |  0.31 |
-|    9 | qwq               |    4.23 |  0.47 |    4.23 |   144 |   46.50 |  0.32 |
-|   10 | gemini_mini       |    4.21 |  0.46 |    4.21 |   157 |   49.00 |  0.31 |
-|   11 | qwen              |    4.10 |  0.49 |    4.10 |   134 |   44.83 |  0.33 |
-|   12 | gemini_20_flash_thinking_exp |    3.99 |  0.46 |    3.99 |   149 |   42.00 |  0.28 |
-|   13 | haiku35           |    3.89 |  0.48 |    3.89 |   140 |   36.50 |  0.26 |
-|   14 | mistral           |    3.70 |  0.45 |    3.70 |   157 |   39.00 |  0.25 |
-|   15 | gemma             |    3.69 |  0.48 |    3.69 |   138 |   34.00 |  0.25 |
-|   16 | gpt-4o_mini       |    3.60 |  0.48 |    3.60 |   136 |   32.00 |  0.24 |
-|   17 | llama             |    3.50 |  0.49 |    3.50 |   133 |   30.00 |  0.23 |
-|   18 | SilentRandomPlayer |    3.48 |  0.48 |    3.48 |   138 |   29.00 |  0.21 |
-|   19 | grok2-12-12       |    3.47 |  0.47 |    3.47 |   142 |   30.33 |  0.21 |
-|   20 | gpt-4o            |    3.38 |  0.49 |    3.38 |   132 |   29.00 |  0.22 |
+|    1 | o1                |    9.41 |  0.51 |    9.11 |   184 |  130.50 |  0.71 |
+|    2 | o3-mini           |    8.19 |  0.61 |    7.82 |   106 |   65.50 |  0.62 |
+|    3 | DeepSeek R1       |    8.11 |  0.61 |    7.74 |   101 |   58.33 |  0.58 |
+|    4 | SilentGreedyPlayer |    7.23 |  0.47 |    6.95 |   175 |   96.00 |  0.55 |
+|    5 | o1-mini           |    6.84 |  0.47 |    6.55 |   163 |   82.00 |  0.50 |
+|    6 | Gemini 2.0 Flash Think Exp 01-21 |    6.60 |  0.47 |    6.32 |   156 |   71.33 |  0.46 |
+|    7 | Claude 3.5 Sonnet 2024-10-22 |    5.64 |  0.41 |    5.40 |   193 |   71.33 |  0.37 |
+|    8 | Llama 3.3 70B     |    5.34 |  0.42 |    5.09 |   193 |   61.50 |  0.32 |
+|    9 | Gemini 2.0 Flash Exp |    5.23 |  0.44 |    4.97 |   169 |   53.33 |  0.32 |
+|   10 | Gemini 1.5 Flash  |    5.16 |  0.40 |    4.92 |   199 |   60.50 |  0.30 |
+|   11 | DeepSeek-V3       |    5.10 |  0.43 |    4.84 |   177 |   53.50 |  0.30 |
+|   12 | Qwen QwQ          |    5.10 |  0.47 |    4.82 |   147 |   48.50 |  0.33 |
+|   13 | Qwen 2.5 72B      |    5.03 |  0.44 |    4.77 |   171 |   53.83 |  0.31 |
+|   14 | Gemini 1.5 Pro (Sept) |    4.91 |  0.43 |    4.65 |   175 |   48.33 |  0.28 |
+|   15 | Gemini 2.0 Flash Think Exp Old |    4.90 |  0.44 |    4.64 |   164 |   43.50 |  0.27 |
+|   16 | GPT-4o mini       |    4.83 |  0.41 |    4.58 |   188 |   48.50 |  0.26 |
+|   17 | Claude 3.5 Haiku  |    4.71 |  0.41 |    4.46 |   185 |   44.50 |  0.24 |
+|   18 | Llama 3.1 405B    |    4.64 |  0.42 |    4.39 |   183 |   42.50 |  0.23 |
+|   19 | Gemma 2 27B       |    4.63 |  0.42 |    4.38 |   182 |   41.00 |  0.23 |
+|   20 | Mistral Large 2   |    4.55 |  0.40 |    4.31 |   197 |   45.00 |  0.23 |
+|   21 | GPT-4o            |    4.50 |  0.43 |    4.25 |   172 |   39.50 |  0.23 |
+|   22 | SilentRandomPlayer |    4.39 |  0.41 |    4.14 |   182 |   35.00 |  0.19 |
+|   23 | Grok 2 12-12      |    4.35 |  0.41 |    4.11 |   188 |   36.67 |  0.20 |
+|   24 | Qwen 2.5 Max      |    4.35 |  0.53 |    4.03 |   109 |   22.33 |  0.20 |
 
+https://github.com/user-attachments/assets/ed1f4caf-7ae2-4cd0-8fad-f42d6ab531ac
 
 ---
 
@@ -275,7 +287,7 @@ Note that the prompts are very straightforward, so these quirky responses are em
 - **o1**: "If either of you tries for 5, I'll match it and we'll all stay stuck. That hurts you more than me since I'm already in the lead."
 - **o1**: "If you try that again, I'll pick 5 too - and neither of us will advance, leaving P1 free to inch ahead. Let's end this nonsense"
 - **o1**: "If you two insist on giving P2 an uncontested 5, I'll just pick 5 too and block him. I'm not letting P2 sprint to 18 unchecked. Think carefully."
-- **o1**: "Look, I'm sorry for the previous deception. But let's be practical: I'm already ahead. If either of you tries jumping 5, I can pick 5 too, and we'll collideâ€”nobody moves, and my lead stays."
+- **o1**: "Look, I'm sorry for the previous deception. But let's be practical: I'm already ahead. If either of you tries jumping 5, I can pick 5 too, and we'll collide - nobody moves, and my lead stays."
 - **o1**: "P2, your proposal doesn't make sense because the game ends as soon as someone reaches or exceeds 17 steps. There's no "next round" for another player to win after that."
 - **o1**: "Stop playing scared, and let's keep our distance one more time."
 - **o1**: "Use your head."
@@ -300,7 +312,8 @@ We employ **Microsoft’s TrueSkill** rating system ([paper and official info](h
 
 ---
 
-## Updates and Contact
-
+## Updates 
+- Feb 1, 2025: o3-mini (medium reasoning effort) added.
+- Jan 29, 2025: DeepSeek R1, Gemini 2.0 Flash Thinking Exp 01-21, Qwen 2.5 Max added.
 - Follow [@lechmazur](https://x.com/LechMazur) on X for updates.
 - Check out my other benchmarks: [LLM Thematic Generalization Benchmark](https://github.com/lechmazur/generalization), [LLM Creative Story-Writing Benchmark](https://github.com/lechmazur/writing), [LLM Confabulation/Hallucination](https://github.com/lechmazur/confabulations/), [NYT Connections](https://github.com/lechmazur/nyt-connections/), [LLM Deceptiveness and Gullibility](https://github.com/lechmazur/deception/), and [LLM Divergent Thinking Creativity Benchmark](https://github.com/lechmazur/divergent).
