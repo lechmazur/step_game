@@ -49,7 +49,7 @@ A vertical bar chart of how often each model’s chosen steps overlap with anoth
 ### **Move Selection Distribution (1 vs. 3 vs. 5)**  
 A grouped bar chart for each model, showing the relative frequency of each step choice. Offers quick insight into whether they prefer bold picks (5) or safer, smaller steps.
 
-
+![conversation_stats_move_distribution](https://github.com/user-attachments/assets/adfac825-8974-4bd5-8a52-cc46d1575088)
 
 ### **Model Wordiness: Average Words per Message**  
 A horizontal bar chart ranking each model by mean words per message. Identifies who dominates the conversation with lengthier statements versus those who keep it short.
