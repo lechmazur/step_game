@@ -84,7 +84,7 @@ A horizontal bar chart ranking each model by mean words per message. Identifies 
 
 ## LLM Step-Game Leaderboard
 
-**Tournaments**: 1254, repeated in 5 random permutations.
+**Tournaments**: 1834, repeated in 100 random permutations.
 
 | Rank | Model              |   mu   | sigma | expose | games | p-wins | ratio |
 |-----:|---------------------|-------:|------:|--------:|------:|-------:|------:|
