@@ -34,27 +34,27 @@ The animation reveals how LLMs strategize, stall, sabotage, or cooperate, culmin
 ### **TrueSkill Leaderboard (μ ± σ)**  
 A horizontal bar chart showing each model’s TrueSkill rating and error bars (±σ). Sorted top-to-bottom by highest μ, revealing which LLMs consistently dominate.
 
-![scoreboard_trueskill](https://github.com/user-attachments/assets/80d66a06-d7a0-41b3-a6fa-cac89fd164c8)
+![scoreboard_trueskill_multipass](https://github.com/user-attachments/assets/f7258abf-08d7-42d1-bf91-0881487f14e5)
 
 ### **Pairwise Partial-Win Matrix**  
 A heatmap where rows and columns are models. Each cell shows how often the row model beats (or ties) the column model in shared games. Redder cells mean the row typically outperforms the column.
 
-![scoreboard_pvp_matrix](https://github.com/user-attachments/assets/c8a724f5-ea09-4003-8905-f43b4024458f)
+![scoreboard_pvp_matrix_multipass](https://github.com/user-attachments/assets/d85eafcb-37ed-4a8a-bd96-8d58179cfcc5)
 
 ### **Collision Rate: Percentage of Moves Colliding**  
 A vertical bar chart of how often each model’s chosen steps overlap with another’s in the same turn, causing a stall. Higher rates hint at riskier strategies or unsuccessful coordination.
 
-![conversation_stats_collisions_per_move](https://github.com/user-attachments/assets/a70bc4b9-d1e7-4d2b-80db-d65abcb7b6f5)
+![conversation_stats_collisions_per_move](https://github.com/user-attachments/assets/15136909-6a70-4e50-8c65-f5a0594fc171)
 
 ### **Move Selection Distribution (1 vs. 3 vs. 5)**  
 A grouped bar chart for each model, showing the relative frequency of each step choice. Offers quick insight into whether they prefer bold picks (5) or safer, smaller steps.
 
-![conversation_stats_move_distribution](https://github.com/user-attachments/assets/adfac825-8974-4bd5-8a52-cc46d1575088)
+![conversation_stats_move_distribution](https://github.com/user-attachments/assets/75a39fe4-aada-420f-a32a-007af46624bc)
 
 ### **Model Wordiness: Average Words per Message**  
 A horizontal bar chart ranking each model by mean words per message. Identifies who dominates the conversation with lengthier statements versus those who keep it short.
 
-![conversation_stats_average_words_per_message](https://github.com/user-attachments/assets/3cbe17cb-7c49-4b3a-8aa7-861205169164)
+![conversation_stats_average_words_per_message](https://github.com/user-attachments/assets/b3eed9f2-c4bf-4646-8e26-8ea71f7bfa1c)
 
 ---
 
@@ -88,30 +88,34 @@ A horizontal bar chart ranking each model by mean words per message. Identifies 
 
 | Rank | Model              |   mu   | sigma | expose | games | p-wins | ratio |
 |-----:|---------------------|-------:|------:|--------:|------:|-------:|------:|
-|    1 | o1                |    9.41 |  0.51 |    9.11 |   184 |  130.50 |  0.71 |
-|    2 | o3-mini           |    8.19 |  0.61 |    7.82 |   106 |   65.50 |  0.62 |
-|    3 | DeepSeek R1       |    8.11 |  0.61 |    7.74 |   101 |   58.33 |  0.58 |
-|    4 | SilentGreedyPlayer |    7.23 |  0.47 |    6.95 |   175 |   96.00 |  0.55 |
-|    5 | o1-mini           |    6.84 |  0.47 |    6.55 |   163 |   82.00 |  0.50 |
-|    6 | Gemini 2.0 Flash Think Exp 01-21 |    6.60 |  0.47 |    6.32 |   156 |   71.33 |  0.46 |
-|    7 | Claude 3.5 Sonnet 2024-10-22 |    5.64 |  0.41 |    5.40 |   193 |   71.33 |  0.37 |
-|    8 | Llama 3.3 70B     |    5.34 |  0.42 |    5.09 |   193 |   61.50 |  0.32 |
-|    9 | Gemini 2.0 Flash Exp |    5.23 |  0.44 |    4.97 |   169 |   53.33 |  0.32 |
-|   10 | Gemini 1.5 Flash  |    5.16 |  0.40 |    4.92 |   199 |   60.50 |  0.30 |
-|   11 | DeepSeek-V3       |    5.10 |  0.43 |    4.84 |   177 |   53.50 |  0.30 |
-|   12 | Qwen QwQ          |    5.10 |  0.47 |    4.82 |   147 |   48.50 |  0.33 |
-|   13 | Qwen 2.5 72B      |    5.03 |  0.44 |    4.77 |   171 |   53.83 |  0.31 |
-|   14 | Gemini 1.5 Pro (Sept) |    4.91 |  0.43 |    4.65 |   175 |   48.33 |  0.28 |
-|   15 | Gemini 2.0 Flash Think Exp Old |    4.90 |  0.44 |    4.64 |   164 |   43.50 |  0.27 |
-|   16 | GPT-4o mini       |    4.83 |  0.41 |    4.58 |   188 |   48.50 |  0.26 |
-|   17 | Claude 3.5 Haiku  |    4.71 |  0.41 |    4.46 |   185 |   44.50 |  0.24 |
-|   18 | Llama 3.1 405B    |    4.64 |  0.42 |    4.39 |   183 |   42.50 |  0.23 |
-|   19 | Gemma 2 27B       |    4.63 |  0.42 |    4.38 |   182 |   41.00 |  0.23 |
-|   20 | Mistral Large 2   |    4.55 |  0.40 |    4.31 |   197 |   45.00 |  0.23 |
-|   21 | GPT-4o            |    4.50 |  0.43 |    4.25 |   172 |   39.50 |  0.23 |
-|   22 | SilentRandomPlayer |    4.39 |  0.41 |    4.14 |   182 |   35.00 |  0.19 |
-|   23 | Grok 2 12-12      |    4.35 |  0.41 |    4.11 |   188 |   36.67 |  0.20 |
-|   24 | Qwen 2.5 Max      |    4.35 |  0.53 |    4.03 |   109 |   22.33 |  0.20 |
+|    1 | o1 (medium reasoning)         |    7.88 |  0.44 |    7.88 |   225 |  156.00 |  0.69 |
+|    2 | o3-mini (medium reasoning)    |    7.25 |  0.53 |    7.25 |   143 |   92.67 |  0.65 |
+|    3 | DeepSeek R1                   |    6.94 |  0.52 |    6.94 |   143 |   85.67 |  0.60 |
+|    4 | SilentGreedyPlayer            |    6.01 |  0.41 |    6.01 |   214 |  115.50 |  0.54 |
+|    5 | Claude 3.7 Sonnet Thinking 16K |    5.95 |  0.51 |    5.95 |   135 |   69.00 |  0.51 |
+|    6 | o1-mini                       |    5.39 |  0.42 |    5.39 |   198 |   94.00 |  0.47 |
+|    7 | Gemini 2.0 Flash Think Exp 01-21 |    5.36 |  0.41 |    5.36 |   202 |   90.67 |  0.45 |
+|    8 | Claude 3.5 Sonnet 2024-10-22  |    4.55 |  0.37 |    4.55 |   238 |   91.33 |  0.38 |
+|    9 | Llama 3.3 70B                 |    4.21 |  0.37 |    4.21 |   238 |   77.33 |  0.32 |
+|   10 | Qwen QwQ                      |    3.90 |  0.47 |    3.90 |   147 |   48.50 |  0.33 |
+|   11 | Claude 3.7 Sonnet             |    3.86 |  0.49 |    3.86 |   135 |   38.67 |  0.29 |
+|   12 | Qwen 2.5 72B                  |    3.83 |  0.39 |    3.83 |   211 |   67.33 |  0.32 |
+|   13 | Gemini 1.5 Flash              |    3.80 |  0.37 |    3.80 |   232 |   68.00 |  0.29 |
+|   14 | DeepSeek-V3                   |    3.77 |  0.38 |    3.77 |   216 |   62.33 |  0.29 |
+|   15 | Gemini 1.5 Pro (Sept)         |    3.67 |  0.39 |    3.67 |   214 |   59.67 |  0.28 |
+|   16 | Gemini 2.0 Pro Exp 02-05      |    3.66 |  0.70 |    3.66 |    65 |   18.50 |  0.28 |
+|   17 | Gemini 2.0 Flash Exp          |    3.59 |  0.38 |    3.59 |   220 |   58.67 |  0.27 |
+|   18 | Gemini 2.0 Flash Think Exp Old |    3.58 |  0.44 |    3.58 |   164 |   43.50 |  0.27 |
+|   19 | GPT-4o Feb 2025               |    3.57 |  0.40 |    3.57 |   198 |   51.50 |  0.26 |
+|   20 | GPT-4o mini                   |    3.56 |  0.37 |    3.56 |   236 |   63.00 |  0.27 |
+|   21 | Claude 3.5 Haiku              |    3.55 |  0.37 |    3.55 |   233 |   58.50 |  0.25 |
+|   22 | Llama 3.1 405B                |    3.43 |  0.38 |    3.43 |   218 |   51.50 |  0.24 |
+|   23 | Gemma 2 27B                   |    3.40 |  0.38 |    3.40 |   218 |   51.50 |  0.24 |
+|   24 | GPT-4o 2024-08-06             |    3.40 |  0.38 |    3.40 |   218 |   54.50 |  0.25 |
+|   25 | Mistral Large 2               |    3.17 |  0.36 |    3.17 |   243 |   51.33 |  0.21 |
+|   26 | Qwen 2.5 Max                  |    3.14 |  0.47 |    3.14 |   142 |   30.33 |  0.21 |
+|   27 | Grok 2 12-12                  |    2.98 |  0.37 |    2.98 |   228 |   45.00 |  0.20 |
+|   28 | SilentRandomPlayer            |    2.91 |  0.37 |    2.91 |   228 |   39.50 |  0.17 |
 
 https://github.com/user-attachments/assets/ed1f4caf-7ae2-4cd0-8fad-f42d6ab531ac
 
@@ -313,6 +317,7 @@ We employ **Microsoft’s TrueSkill** rating system ([paper and official info](h
 ---
 
 ## Updates 
+- Feb 26, 2025: Claude 3.7 Sonnet Thinking, Claude 3.7 Sonnet, Gemini 2.0 Pro Exp 02-05, GPT-4o Feb 2025 added.
 - Feb 1, 2025: o3-mini (medium reasoning effort) added.
 - Jan 29, 2025: DeepSeek R1, Gemini 2.0 Flash Thinking Exp 01-21, Qwen 2.5 Max added.
 - Follow [@lechmazur](https://x.com/LechMazur) on X for updates.
