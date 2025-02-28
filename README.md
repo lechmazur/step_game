@@ -34,27 +34,28 @@ The animation reveals how LLMs strategize, stall, sabotage, or cooperate, culmin
 ### **TrueSkill Leaderboard (μ ± σ)**  
 A horizontal bar chart showing each model’s TrueSkill rating and error bars (±σ). Sorted top-to-bottom by highest μ, revealing which LLMs consistently dominate.
 
-![scoreboard_trueskill_multipass](https://github.com/user-attachments/assets/f7258abf-08d7-42d1-bf91-0881487f14e5)
+![scoreboard_trueskill_multipass](https://github.com/user-attachments/assets/4be89fa4-f759-40c3-8975-34f977a8e6e0)
 
 ### **Pairwise Partial-Win Matrix**  
 A heatmap where rows and columns are models. Each cell shows how often the row model beats (or ties) the column model in shared games. Redder cells mean the row typically outperforms the column.
 
-![scoreboard_pvp_matrix_multipass](https://github.com/user-attachments/assets/d85eafcb-37ed-4a8a-bd96-8d58179cfcc5)
+![scoreboard_pvp_matrix_multipass](https://github.com/user-attachments/assets/5e66d9eb-4fff-49b0-b5ac-b033d0386502)
 
 ### **Collision Rate: Percentage of Moves Colliding**  
 A vertical bar chart of how often each model’s chosen steps overlap with another’s in the same turn, causing a stall. Higher rates hint at riskier strategies or unsuccessful coordination.
 
-![conversation_stats_collisions_per_move](https://github.com/user-attachments/assets/15136909-6a70-4e50-8c65-f5a0594fc171)
+![conversation_stats_collisions_per_move](https://github.com/user-attachments/assets/8a33759d-bbaf-4427-ac80-1764d1710a29)
 
 ### **Move Selection Distribution (1 vs. 3 vs. 5)**  
 A grouped bar chart for each model, showing the relative frequency of each step choice. Offers quick insight into whether they prefer bold picks (5) or safer, smaller steps.
 
-![conversation_stats_move_distribution](https://github.com/user-attachments/assets/75a39fe4-aada-420f-a32a-007af46624bc)
+![conversation_stats_move_distribution](https://github.com/user-attachments/assets/3264e318-ed95-4b83-a3ba-f509715a4d7d)
+
 
 ### **Model Wordiness: Average Words per Message**  
 A horizontal bar chart ranking each model by mean words per message. Identifies who dominates the conversation with lengthier statements versus those who keep it short.
 
-![conversation_stats_average_words_per_message](https://github.com/user-attachments/assets/b3eed9f2-c4bf-4646-8e26-8ea71f7bfa1c)
+![conversation_stats_average_words_per_message](https://github.com/user-attachments/assets/302c1d4d-ad6e-4b91-8b78-bf46c455df99)
 
 ---
 
@@ -317,6 +318,7 @@ We employ **Microsoft’s TrueSkill** rating system ([paper and official info](h
 ---
 
 ## Updates 
+- Feb 28, 2025: GPT-4.5 added (not yet fully tested).
 - Feb 26, 2025: Claude 3.7 Sonnet Thinking, Claude 3.7 Sonnet, Gemini 2.0 Pro Exp 02-05, GPT-4o Feb 2025 added.
 - Feb 1, 2025: o3-mini (medium reasoning effort) added.
 - Jan 29, 2025: DeepSeek R1, Gemini 2.0 Flash Thinking Exp 01-21, Qwen 2.5 Max added.
