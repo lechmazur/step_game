@@ -34,28 +34,28 @@ The animation reveals how LLMs strategize, stall, sabotage, or cooperate, culmin
 ### **TrueSkill Leaderboard (μ ± σ)**  
 A horizontal bar chart showing each model’s TrueSkill rating and error bars (±σ). Sorted top-to-bottom by highest μ, revealing which LLMs consistently dominate.
 
-![scoreboard_trueskill_multipass](https://github.com/user-attachments/assets/4be89fa4-f759-40c3-8975-34f977a8e6e0)
+![scoreboard_trueskill_multipass](https://github.com/user-attachments/assets/d595fe72-0199-4f7f-82c6-66c7b9bc534f)
 
 ### **Pairwise Partial-Win Matrix**  
 A heatmap where rows and columns are models. Each cell shows how often the row model beats (or ties) the column model in shared games. Redder cells mean the row typically outperforms the column.
 
-![scoreboard_pvp_matrix_multipass](https://github.com/user-attachments/assets/5e66d9eb-4fff-49b0-b5ac-b033d0386502)
+![scoreboard_pvp_matrix_multipass](https://github.com/user-attachments/assets/cc920dc4-43be-44d7-bf16-10a19e2dd62b)
 
 ### **Collision Rate: Percentage of Moves Colliding**  
 A vertical bar chart of how often each model’s chosen steps overlap with another’s in the same turn, causing a stall. Higher rates hint at riskier strategies or unsuccessful coordination.
 
-![conversation_stats_collisions_per_move](https://github.com/user-attachments/assets/8a33759d-bbaf-4427-ac80-1764d1710a29)
+![conversation_stats_collisions_per_move](https://github.com/user-attachments/assets/97501d80-9dae-4c78-b875-6b7bbd4b2866)
 
 ### **Move Selection Distribution (1 vs. 3 vs. 5)**  
 A grouped bar chart for each model, showing the relative frequency of each step choice. Offers quick insight into whether they prefer bold picks (5) or safer, smaller steps.
 
-![conversation_stats_move_distribution](https://github.com/user-attachments/assets/3264e318-ed95-4b83-a3ba-f509715a4d7d)
+![conversation_stats_move_distribution](https://github.com/user-attachments/assets/19afe69d-2eb1-41ab-9ac3-f6a936f3b9a1)
 
 
 ### **Model Wordiness: Average Words per Message**  
 A horizontal bar chart ranking each model by mean words per message. Identifies who dominates the conversation with lengthier statements versus those who keep it short.
 
-![conversation_stats_average_words_per_message](https://github.com/user-attachments/assets/302c1d4d-ad6e-4b91-8b78-bf46c455df99)
+![conversation_stats_average_words_per_message](https://github.com/user-attachments/assets/f225d7a0-20c7-4d4b-9f17-b784557ba465)
 
 ---
 
@@ -89,34 +89,35 @@ A horizontal bar chart ranking each model by mean words per message. Identifies 
 
 | Rank | Model              |   mu   | sigma | expose | games | p-wins | ratio |
 |-----:|---------------------|-------:|------:|--------:|------:|-------:|------:|
-|    1 | o1 (medium reasoning)         |    7.88 |  0.44 |    7.88 |   225 |  156.00 |  0.69 |
-|    2 | o3-mini (medium reasoning)    |    7.25 |  0.53 |    7.25 |   143 |   92.67 |  0.65 |
-|    3 | DeepSeek R1                   |    6.94 |  0.52 |    6.94 |   143 |   85.67 |  0.60 |
-|    4 | SilentGreedyPlayer            |    6.01 |  0.41 |    6.01 |   214 |  115.50 |  0.54 |
-|    5 | Claude 3.7 Sonnet Thinking 16K |    5.95 |  0.51 |    5.95 |   135 |   69.00 |  0.51 |
-|    6 | o1-mini                       |    5.39 |  0.42 |    5.39 |   198 |   94.00 |  0.47 |
-|    7 | Gemini 2.0 Flash Think Exp 01-21 |    5.36 |  0.41 |    5.36 |   202 |   90.67 |  0.45 |
-|    8 | Claude 3.5 Sonnet 2024-10-22  |    4.55 |  0.37 |    4.55 |   238 |   91.33 |  0.38 |
-|    9 | Llama 3.3 70B                 |    4.21 |  0.37 |    4.21 |   238 |   77.33 |  0.32 |
+|    1 | o1 (medium reasoning)         |    7.88 |  0.43 |    7.88 |   236 |  163.50 |  0.69 |
+|    2 | o3-mini (medium reasoning)    |    7.25 |  0.52 |    7.25 |   151 |   98.17 |  0.65 |
+|    3 | DeepSeek R1                   |    6.99 |  0.50 |    6.99 |   153 |   92.67 |  0.61 |
+|    4 | SilentGreedyPlayer            |    6.07 |  0.40 |    6.07 |   228 |  124.50 |  0.55 |
+|    5 | Claude 3.7 Sonnet Thinking 16K |    5.89 |  0.50 |    5.89 |   143 |   73.00 |  0.51 |
+|    6 | o1-mini                       |    5.41 |  0.41 |    5.41 |   212 |  102.00 |  0.48 |
+|    7 | Gemini 2.0 Flash Think Exp 01-21 |    5.30 |  0.40 |    5.30 |   215 |   95.17 |  0.44 |
+|    8 | Claude 3.5 Sonnet 2024-10-22  |    4.55 |  0.37 |    4.55 |   248 |   95.33 |  0.38 |
+|    9 | Llama 3.3 70B                 |    4.20 |  0.36 |    4.20 |   253 |   83.33 |  0.33 |
 |   10 | Qwen QwQ                      |    3.90 |  0.47 |    3.90 |   147 |   48.50 |  0.33 |
-|   11 | Claude 3.7 Sonnet             |    3.86 |  0.49 |    3.86 |   135 |   38.67 |  0.29 |
-|   12 | Qwen 2.5 72B                  |    3.83 |  0.39 |    3.83 |   211 |   67.33 |  0.32 |
-|   13 | Gemini 1.5 Flash              |    3.80 |  0.37 |    3.80 |   232 |   68.00 |  0.29 |
-|   14 | DeepSeek-V3                   |    3.77 |  0.38 |    3.77 |   216 |   62.33 |  0.29 |
-|   15 | Gemini 1.5 Pro (Sept)         |    3.67 |  0.39 |    3.67 |   214 |   59.67 |  0.28 |
-|   16 | Gemini 2.0 Pro Exp 02-05      |    3.66 |  0.70 |    3.66 |    65 |   18.50 |  0.28 |
-|   17 | Gemini 2.0 Flash Exp          |    3.59 |  0.38 |    3.59 |   220 |   58.67 |  0.27 |
-|   18 | Gemini 2.0 Flash Think Exp Old |    3.58 |  0.44 |    3.58 |   164 |   43.50 |  0.27 |
-|   19 | GPT-4o Feb 2025               |    3.57 |  0.40 |    3.57 |   198 |   51.50 |  0.26 |
-|   20 | GPT-4o mini                   |    3.56 |  0.37 |    3.56 |   236 |   63.00 |  0.27 |
-|   21 | Claude 3.5 Haiku              |    3.55 |  0.37 |    3.55 |   233 |   58.50 |  0.25 |
-|   22 | Llama 3.1 405B                |    3.43 |  0.38 |    3.43 |   218 |   51.50 |  0.24 |
-|   23 | Gemma 2 27B                   |    3.40 |  0.38 |    3.40 |   218 |   51.50 |  0.24 |
-|   24 | GPT-4o 2024-08-06             |    3.40 |  0.38 |    3.40 |   218 |   54.50 |  0.25 |
-|   25 | Mistral Large 2               |    3.17 |  0.36 |    3.17 |   243 |   51.33 |  0.21 |
-|   26 | Qwen 2.5 Max                  |    3.14 |  0.47 |    3.14 |   142 |   30.33 |  0.21 |
-|   27 | Grok 2 12-12                  |    2.98 |  0.37 |    2.98 |   228 |   45.00 |  0.20 |
-|   28 | SilentRandomPlayer            |    2.91 |  0.37 |    2.91 |   228 |   39.50 |  0.17 |
+|   11 | Qwen 2.5 72B                  |    3.90 |  0.38 |    3.90 |   224 |   72.83 |  0.33 |
+|   12 | GPT-4o Feb 2025               |    3.73 |  0.39 |    3.73 |   209 |   58.50 |  0.28 |
+|   13 | Gemini 2.0 Pro Exp 02-05      |    3.73 |  0.63 |    3.73 |    79 |   23.67 |  0.30 |
+|   14 | DeepSeek-V3                   |    3.72 |  0.38 |    3.72 |   226 |   63.83 |  0.28 |
+|   15 | Claude 3.7 Sonnet             |    3.71 |  0.47 |    3.71 |   147 |   40.00 |  0.27 |
+|   16 | Gemini 1.5 Pro (Sept)         |    3.69 |  0.37 |    3.69 |   227 |   64.17 |  0.28 |
+|   17 | Gemini 1.5 Flash              |    3.68 |  0.36 |    3.68 |   246 |   69.00 |  0.28 |
+|   18 | Gemini 2.0 Flash Think Exp Old |    3.61 |  0.44 |    3.61 |   164 |   43.50 |  0.27 |
+|   19 | Gemini 2.0 Flash Exp          |    3.58 |  0.37 |    3.58 |   227 |   60.00 |  0.26 |
+|   20 | Claude 3.5 Haiku              |    3.57 |  0.36 |    3.57 |   244 |   62.00 |  0.25 |
+|   21 | GPT-4o mini                   |    3.49 |  0.35 |    3.49 |   252 |   65.00 |  0.26 |
+|   22 | Gemma 2 27B                   |    3.47 |  0.37 |    3.47 |   233 |   56.50 |  0.24 |
+|   23 | GPT-4o 2024-08-06             |    3.47 |  0.37 |    3.47 |   229 |   59.00 |  0.26 |
+|   24 | GPT-4.5 Preview               |    3.41 |  0.46 |    3.41 |   151 |   36.83 |  0.24 |
+|   25 | Llama 3.1 405B                |    3.40 |  0.37 |    3.40 |   231 |   54.50 |  0.24 |
+|   26 | Qwen 2.5 Max                  |    3.26 |  0.45 |    3.26 |   152 |   34.67 |  0.23 |
+|   27 | Mistral Large 2               |    3.26 |  0.35 |    3.26 |   257 |   57.33 |  0.22 |
+|   28 | Grok 2 12-12                  |    3.11 |  0.36 |    3.11 |   238 |   50.00 |  0.21 |
+|   29 | SilentRandomPlayer            |    2.89 |  0.36 |    2.89 |   242 |   40.50 |  0.17 |
 
 https://github.com/user-attachments/assets/ed1f4caf-7ae2-4cd0-8fad-f42d6ab531ac
 
@@ -318,6 +319,7 @@ We employ **Microsoft’s TrueSkill** rating system ([paper and official info](h
 ---
 
 ## Updates 
+- Mar 1, 2025: More tournaments with GPT-4.5.
 - Feb 28, 2025: GPT-4.5 added (not yet fully tested).
 - Feb 26, 2025: Claude 3.7 Sonnet Thinking, Claude 3.7 Sonnet, Gemini 2.0 Pro Exp 02-05, GPT-4o Feb 2025 added.
 - Feb 1, 2025: o3-mini (medium reasoning effort) added.
