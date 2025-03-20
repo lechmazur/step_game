@@ -315,6 +315,19 @@ We employ **Microsoft’s TrueSkill** rating system ([paper and official info](h
 - `tau = 0.0`
 - `draw_probability = 0.1`
 
+---
+
+## Other multi-agent LLM benchmarks
+- [Public Goods Game (PGG) Benchmark: Contribute & Punish](https://github.com/lechmazur/pgg_bench/)
+- [Elimination Game: Social Reasoning and Deception in Multi-Agent LLMs](https://github.com/lechmazur/elimination_game/)
+
+## Other benchmarks
+- [Extended NYT Connections](https://github.com/lechmazur/nyt-connections/)
+- [LLM Thematic Generalization Benchmark](https://github.com/lechmazur/generalization/)
+- [LLM Creative Story-Writing Benchmark](https://github.com/lechmazur/writing/)
+- [LLM Confabulation/Hallucination Benchmark](https://github.com/lechmazur/confabulations/)
+- [LLM Deceptiveness and Gullibility](https://github.com/lechmazur/deception/)
+- [LLM Divergent Thinking Creativity Benchmark](https://github.com/lechmazur/divergent/)
 
 ---
 
@@ -325,4 +338,4 @@ We employ **Microsoft’s TrueSkill** rating system ([paper and official info](h
 - Feb 1, 2025: o3-mini (medium reasoning effort) added.
 - Jan 29, 2025: DeepSeek R1, Gemini 2.0 Flash Thinking Exp 01-21, Qwen 2.5 Max added.
 - Follow [@lechmazur](https://x.com/LechMazur) on X for updates.
-- Check out my other benchmarks: [Multi-Agent Elimination Game LLM Benchmark](https://github.com/lechmazur/elimination_game/), [LLM Public Goods Game](https://github.com/lechmazur/goods), [LLM Thematic Generalization Benchmark](https://github.com/lechmazur/generalization), [LLM Creative Story-Writing Benchmark](https://github.com/lechmazur/writing), [LLM Confabulation/Hallucination](https://github.com/lechmazur/confabulations/), [NYT Connections](https://github.com/lechmazur/nyt-connections/), [LLM Deceptiveness and Gullibility](https://github.com/lechmazur/deception/), and [LLM Divergent Thinking Creativity Benchmark](https://github.com/lechmazur/divergent).
+
