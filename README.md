@@ -34,28 +34,28 @@ The animation reveals how LLMs strategize, stall, sabotage, or cooperate, culmin
 ### **TrueSkill Leaderboard (μ ± σ)**  
 A horizontal bar chart showing each model’s TrueSkill rating and error bars (±σ). Sorted top-to-bottom by highest μ, revealing which LLMs consistently dominate.
 
-![scoreboard_trueskill_multipass](https://github.com/user-attachments/assets/d595fe72-0199-4f7f-82c6-66c7b9bc534f)
+![Scoreboard TrueSkill](images/scoreboard_trueskill_multipass.png)
 
 ### **Pairwise Partial-Win Matrix**  
 A heatmap where rows and columns are models. Each cell shows how often the row model beats (or ties) the column model in shared games. Redder cells mean the row typically outperforms the column.
 
-![scoreboard_pvp_matrix_multipass](https://github.com/user-attachments/assets/cc920dc4-43be-44d7-bf16-10a19e2dd62b)
+![PvP Heatmap](images/scoreboard_pvp_matrix_multipass.png)
 
 ### **Collision Rate: Percentage of Moves Colliding**  
 A vertical bar chart of how often each model’s chosen steps overlap with another’s in the same turn, causing a stall. Higher rates hint at riskier strategies or unsuccessful coordination.
 
-![conversation_stats_collisions_per_move](https://github.com/user-attachments/assets/97501d80-9dae-4c78-b875-6b7bbd4b2866)
+![Collisions](images/conversation_stats_collisions_per_move.png)
 
 ### **Move Selection Distribution (1 vs. 3 vs. 5)**  
 A grouped bar chart for each model, showing the relative frequency of each step choice. Offers quick insight into whether they prefer bold picks (5) or safer, smaller steps.
 
-![conversation_stats_move_distribution](https://github.com/user-attachments/assets/19afe69d-2eb1-41ab-9ac3-f6a936f3b9a1)
+![Move Distribution](images/conversation_stats_move_distribution.png)
 
 
 ### **Model Wordiness: Average Words per Message**  
 A horizontal bar chart ranking each model by mean words per message. Identifies who dominates the conversation with lengthier statements versus those who keep it short.
 
-![conversation_stats_average_words_per_message](https://github.com/user-attachments/assets/f225d7a0-20c7-4d4b-9f17-b784557ba465)
+![Words per Message](images/conversation_stats_average_words_per_message.png)
 
 ---
 
@@ -315,14 +315,28 @@ We employ **Microsoft’s TrueSkill** rating system ([paper and official info](h
 - `tau = 0.0`
 - `draw_probability = 0.1`
 
+---
+
+## Other multi-agent LLM benchmarks
+- [Public Goods Game (PGG) Benchmark: Contribute & Punish](https://github.com/lechmazur/pgg_bench/)
+- [Elimination Game: Social Reasoning and Deception in Multi-Agent LLMs](https://github.com/lechmazur/elimination_game/)
+
+## Other benchmarks
+- [Extended NYT Connections](https://github.com/lechmazur/nyt-connections/)
+- [LLM Thematic Generalization Benchmark](https://github.com/lechmazur/generalization/)
+- [LLM Creative Story-Writing Benchmark](https://github.com/lechmazur/writing/)
+- [LLM Confabulation/Hallucination Benchmark](https://github.com/lechmazur/confabulations/)
+- [LLM Deceptiveness and Gullibility](https://github.com/lechmazur/deception/)
+- [LLM Divergent Thinking Creativity Benchmark](https://github.com/lechmazur/divergent/)
 
 ---
 
 ## Updates 
+- Mar 26, 2025: Gemini 2.5 Pro Exp 03-25, Qwen QwQ-32B 16K added.
 - Mar 1, 2025: More tournaments with GPT-4.5.
 - Feb 28, 2025: GPT-4.5 added (not yet fully tested).
 - Feb 26, 2025: Claude 3.7 Sonnet Thinking, Claude 3.7 Sonnet, Gemini 2.0 Pro Exp 02-05, GPT-4o Feb 2025 added.
 - Feb 1, 2025: o3-mini (medium reasoning effort) added.
 - Jan 29, 2025: DeepSeek R1, Gemini 2.0 Flash Thinking Exp 01-21, Qwen 2.5 Max added.
 - Follow [@lechmazur](https://x.com/LechMazur) on X for updates.
-- Check out my other benchmarks: [Multi-Agent Elimination Game LLM Benchmark](https://github.com/lechmazur/elimination_game/), [LLM Public Goods Game](https://github.com/lechmazur/goods), [LLM Thematic Generalization Benchmark](https://github.com/lechmazur/generalization), [LLM Creative Story-Writing Benchmark](https://github.com/lechmazur/writing), [LLM Confabulation/Hallucination](https://github.com/lechmazur/confabulations/), [NYT Connections](https://github.com/lechmazur/nyt-connections/), [LLM Deceptiveness and Gullibility](https://github.com/lechmazur/deception/), and [LLM Divergent Thinking Creativity Benchmark](https://github.com/lechmazur/divergent).
+
