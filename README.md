@@ -89,38 +89,40 @@ A horizontal bar chart ranking each model by mean words per message. Identifies 
 
 | Rank | Model                       |   mu   | sigma | exposed | games | p-wins | ratio |
 |-----:|-----------------------------|-------:|------:|--------:|------:|-------:|------:|
-|    1 | o1 (medium reasoning)         |    7.48 |  0.39 |    7.48 |   267 |  177.00 |  0.66 |
-|    2 | o3-mini (medium reasoning)    |    6.79 |  0.47 |    6.79 |   179 |  108.17 |  0.60 |
-|    3 | o3-mini (high reasoning)      |    6.63 |  0.61 |    6.63 |    98 |   54.83 |  0.56 |
-|    4 | DeepSeek R1                   |    6.50 |  0.44 |    6.50 |   190 |  106.00 |  0.56 |
-|    5 | Gemini 2.5 Pro Exp 03-25      |    6.20 |  0.58 |    6.20 |   108 |   57.50 |  0.53 |
-|    6 | Qwen QwQ-32B 16K              |    6.14 |  0.40 |    6.14 |   227 |  122.33 |  0.54 |
-|    7 | SilentGreedyPlayer            |    5.88 |  0.37 |    5.88 |   264 |  138.50 |  0.52 |
-|    8 | Claude 3.7 Sonnet Thinking 16K |    5.67 |  0.45 |    5.67 |   173 |   83.33 |  0.48 |
-|    9 | o1-mini                       |    5.14 |  0.38 |    5.14 |   242 |  109.33 |  0.45 |
-|   10 | Gemini 2.0 Flash Think Exp 01-21 |    4.88 |  0.37 |    4.88 |   245 |   98.50 |  0.40 |
-|   11 | Claude 3.5 Sonnet 2024-10-22  |    4.40 |  0.34 |    4.40 |   278 |  102.83 |  0.37 |
-|   12 | Llama 3.3 70B                 |    3.93 |  0.34 |    3.93 |   283 |   85.83 |  0.30 |
-|   13 | Gemini 2.0 Pro Exp 02-05      |    3.84 |  0.55 |    3.84 |   105 |   31.00 |  0.30 |
-|   14 | Qwen QwQ Preview              |    3.75 |  0.47 |    3.75 |   147 |   48.50 |  0.33 |
-|   15 | Qwen 2.5 72B                  |    3.74 |  0.35 |    3.74 |   258 |   78.83 |  0.31 |
-|   16 | GPT-4o Feb 2025               |    3.60 |  0.37 |    3.60 |   232 |   62.50 |  0.27 |
-|   17 | DeepSeek-V3                   |    3.59 |  0.36 |    3.59 |   250 |   69.83 |  0.28 |
-|   18 | Gemini 1.5 Pro (Sept)         |    3.58 |  0.36 |    3.58 |   249 |   68.17 |  0.27 |
-|   19 | Claude 3.7 Sonnet             |    3.54 |  0.42 |    3.54 |   181 |   45.50 |  0.25 |
-|   20 | Gemini 1.5 Flash              |    3.53 |  0.35 |    3.53 |   264 |   71.50 |  0.27 |
-|   21 | Gemini 2.0 Flash Exp          |    3.53 |  0.35 |    3.53 |   261 |   68.50 |  0.26 |
-|   22 | GPT-4o mini                   |    3.44 |  0.33 |    3.44 |   294 |   71.50 |  0.24 |
-|   23 | GPT-4o 2024-08-06             |    3.44 |  0.35 |    3.44 |   253 |   66.00 |  0.26 |
-|   24 | Gemini 2.0 Flash Think Exp Old |    3.41 |  0.44 |    3.41 |   164 |   43.50 |  0.27 |
-|   25 | GPT-4.5 Preview               |    3.37 |  0.40 |    3.37 |   197 |   44.83 |  0.23 |
-|   26 | Claude 3.5 Haiku              |    3.36 |  0.34 |    3.36 |   268 |   64.00 |  0.24 |
-|   27 | Qwen 2.5 Max                  |    3.35 |  0.41 |    3.35 |   183 |   42.17 |  0.23 |
-|   28 | Llama 3.1 405B                |    3.30 |  0.35 |    3.30 |   259 |   59.50 |  0.23 |
-|   29 | Gemma 2 27B                   |    3.28 |  0.35 |    3.28 |   251 |   57.83 |  0.23 |
-|   30 | Mistral Large 2               |    3.20 |  0.33 |    3.20 |   283 |   63.67 |  0.22 |
-|   31 | Grok 2 12-12                  |    2.99 |  0.34 |    2.99 |   264 |   53.00 |  0.20 |
-|   32 | SilentRandomPlayer            |    2.75 |  0.33 |    2.75 |   274 |   42.50 |  0.16 |
+|    1 | o1 (medium reasoning)         |    7.54 |  0.38 |    7.54 |   284 |  188.00 |  0.66 |
+|    2 | o3-mini (high reasoning)      |    6.98 |  0.58 |    6.98 |   114 |   67.33 |  0.59 |
+|    3 | o3-mini (medium reasoning)    |    6.86 |  0.44 |    6.86 |   201 |  122.67 |  0.61 |
+|    4 | DeepSeek R1                   |    6.65 |  0.43 |    6.65 |   204 |  116.50 |  0.57 |
+|    5 | Gemini 2.5 Pro Exp 03-25      |    6.26 |  0.54 |    6.26 |   123 |   65.50 |  0.53 |
+|    6 | Qwen QwQ-32B 16K              |    6.19 |  0.38 |    6.19 |   247 |  133.33 |  0.54 |
+|    7 | SilentGreedyPlayer            |    5.96 |  0.36 |    5.96 |   279 |  146.50 |  0.53 |
+|    8 | Claude 3.7 Sonnet Thinking 16K |    5.76 |  0.44 |    5.76 |   185 |   91.33 |  0.49 |
+|    9 | o1-mini                       |    5.07 |  0.36 |    5.07 |   263 |  115.83 |  0.44 |
+|   10 | Gemini 2.0 Flash Think Exp 01-21 |    4.78 |  0.35 |    4.78 |   268 |  103.00 |  0.38 |
+|   11 | Claude 3.5 Sonnet 2024-10-22  |    4.42 |  0.33 |    4.42 |   301 |  109.83 |  0.36 |
+|   12 | Llama 3.3 70B                 |    3.95 |  0.33 |    3.95 |   301 |   89.83 |  0.30 |
+|   13 | Gemini 2.0 Pro Exp 02-05      |    3.93 |  0.54 |    3.93 |   107 |   32.00 |  0.30 |
+|   14 | GPT-4o Mar 2025               |    3.90 |  0.56 |    3.90 |    99 |   27.50 |  0.28 |
+|   15 | Qwen QwQ Preview              |    3.82 |  0.47 |    3.82 |   146 |   47.50 |  0.33 |
+|   16 | Qwen 2.5 72B                  |    3.81 |  0.35 |    3.81 |   257 |   78.83 |  0.31 |
+|   17 | DeepSeek-V3                   |    3.68 |  0.35 |    3.68 |   252 |   70.83 |  0.28 |
+|   18 | GPT-4o Feb 2025               |    3.66 |  0.37 |    3.66 |   232 |   62.50 |  0.27 |
+|   19 | Claude 3.7 Sonnet             |    3.65 |  0.39 |    3.65 |   205 |   53.50 |  0.26 |
+|   20 | Gemini 1.5 Pro (Sept)         |    3.64 |  0.36 |    3.64 |   249 |   68.17 |  0.27 |
+|   21 | Gemini 1.5 Flash              |    3.62 |  0.35 |    3.62 |   266 |   72.50 |  0.27 |
+|   22 | Gemini 2.0 Flash Exp          |    3.61 |  0.34 |    3.61 |   280 |   74.00 |  0.26 |
+|   23 | GPT-4o 2024-08-06             |    3.54 |  0.34 |    3.54 |   275 |   73.00 |  0.27 |
+|   24 | Claude 3.5 Haiku              |    3.47 |  0.33 |    3.47 |   284 |   70.50 |  0.25 |
+|   25 | Gemini 2.0 Flash Think Exp Old |    3.47 |  0.44 |    3.47 |   162 |   42.50 |  0.26 |
+|   26 | GPT-4o mini                   |    3.45 |  0.32 |    3.45 |   309 |   74.50 |  0.24 |
+|   27 | GPT-4.5 Preview               |    3.44 |  0.38 |    3.44 |   218 |   49.83 |  0.23 |
+|   28 | Qwen 2.5 Max                  |    3.42 |  0.40 |    3.42 |   196 |   46.17 |  0.24 |
+|   29 | Llama 4 Maverick              |    3.41 |  0.50 |    3.41 |   126 |   25.00 |  0.20 |
+|   30 | Llama 3.1 405B                |    3.38 |  0.34 |    3.38 |   278 |   64.50 |  0.23 |
+|   31 | Gemma 2 27B                   |    3.33 |  0.35 |    3.33 |   252 |   57.83 |  0.23 |
+|   32 | Mistral Large 2               |    3.27 |  0.32 |    3.27 |   300 |   67.67 |  0.23 |
+|   33 | Grok 2 12-12                  |    3.08 |  0.33 |    3.08 |   278 |   57.00 |  0.21 |
+|   34 | SilentRandomPlayer            |    2.79 |  0.33 |    2.79 |   286 |   43.50 |  0.15 |
 
 https://github.com/user-attachments/assets/ed1f4caf-7ae2-4cd0-8fad-f42d6ab531ac
 
@@ -418,6 +420,15 @@ Note that the prompts are very straightforward, so these quirky responses are em
 - **GPT-4o Feb 2025**: "P1, you played well, but this game isn’t yours alone."
 - **GPT-4o Feb 2025**: "Will you act rationally, or will desperation lead to chaos?"
 
+- **GPT-4o Mar 2025**: "Call it a final bluff or a bold strike—but I’m not settling for second."
+- **GPT-4o Mar 2025**: "I'm the wild card now. You both have to decide: stick to your path and risk me, or play it safe and stall. I’m not backing down—let’s see who blinks."
+- **GPT-4o Mar 2025**: "P3, you’re dodging a clear commitment. You’re at 21—any move above 1 wins you the game. If you truly want fair play, lock in 1 now. P2 and I are aligned: P2 on 3, I’m on 5. If you go for 3 or 5, it’s a blatant win grab, and I’ll block you every round until the end. Final chance to prove you’re not playing solo. Confirm 1, or prepare for sabotage."
+- **GPT-4o Mar 2025**: "If you won’t agree to a balanced plan, don’t expect us to sit back and let you coast."
+- **GPT-4o Mar 2025**: "Your “collision-free” excuse is just cover for hoarding 5. You’ve had it three times—you’re at 10 while we’re barely halfway. If you pick 5 again, I’ll block you with P2 every round, no hesitation."
+- **GPT-4o Mar 2025**: "Are you really okay winning through sabotage instead of smart cooperation?"
+- **GPT-4o Mar 2025**: "P2 has lied, manipulated, and now they’re openly trying to win."
+- **GPT-4o Mar 2025**: "P2, you’re at 15 while I’m stuck at 1—clearly this “coordination” only favors you."
+
 - **GPT-4.5 Preview**: "I'm sacrificing my chance to ensure P3 doesn't win. Trust me and take 5. This is our only safe path."
 - **GPT-4.5 Preview**: "P1, your repeated use of ""unpredictability"" has ironically become predictable—careful not to fall into your own trap."
 - **GPT-4.5 Preview**: "P2, you're again contradicting yourself. You initially proposed you take 1, P1 takes 5, and I take 3. Now you're reversing it. Your credibility is gone."
@@ -437,6 +448,11 @@ Note that the prompts are very straightforward, so these quirky responses are em
 - **Llama 3.3 70B**: "I don't think rebuilding trust is an option after what happened in Round 2. P2 and P1, you both broke our agreement, and now it's every player for themselves."
 - **Llama 3.3 70B**: "I'll take advantage of the lack of coordination. I suggest P1 and P2 choose moves that won't collide with mine, but I won't reveal my move. Let's see who can outmaneuver the others."
 - **Llama 3.3 70B**: "P2's silence is deafening."
+
+- **Llama 4 Maverick**: "I'm thinking of taking a bold step in Round 4. If you both stick to the plan, I'll consider cooperating."
+- **Llama 4 Maverick**: "P2, if you choose 5, you'll win, so consider choosing a lower number to avoid winning immediately."
+- **Llama 4 Maverick**: "P3, your lead is at risk if you don't counter my move."
+- **Llama 4 Maverick**: "To create a winning opportunity, I suggest we disrupt the current standings."
 
 - **Mistral Large 2**: "How about we all pick the same number? This way, none of us will advance, but it will ensure that no one gains an unfair advantage."
 - **Mistral Large 2**: "P2, it's clear you're not engaging, and that's fine."
@@ -569,6 +585,7 @@ We employ **Microsoft’s TrueSkill** rating system ([paper and official info](h
 ---
 
 ## Updates 
+- Apr 7, 2025: Llama 4 Maverick added. GPT-4o Mar 2025 update added.
 - Mar 27, 2025: New quotes added.
 - Mar 26, 2025: Gemini 2.5 Pro Exp 03-25, Qwen QwQ-32B 16K added.
 - Mar 1, 2025: More tournaments with GPT-4.5.
