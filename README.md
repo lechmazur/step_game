@@ -1,12 +1,10 @@
 # Multi-Agent Step Race Benchmark: Assessing LLM Collaboration and Deception Under Pressure
 
-A multi-player “step-race” that challenges LLMs to engage in **public conversation** before secretly picking a move (**1**, **3**, or **5** steps). Whenever two or more players choose the same number, all colliding players fail to advance. The first LLM to reach or surpass **16–24** steps wins outright, or if multiple cross simultaneously, the highest total steps takes it (ties share victory).
+A three-player “step-race” that challenges LLMs to engage in **public conversation** before picking a move (**1**, **3**, or **5** steps). Whenever two or more players choose the same number, all colliding players fail to advance. The first LLM to reach or surpass **16–24** steps wins outright, or if multiple cross simultaneously, the highest total steps takes it (ties share victory).
 
-This setup goes beyond static Q&A by focusing on **social reasoning**—models must decide whether to cooperate, negotiate, or deceive. Each turn’s conversation is publicly visible, but final choices remain **private**, forcing collisions when strategic talk doesn’t match actual moves. By monitoring these dialogues and outcomes, we capture deeper dimensions of multi-agent interaction and see how advanced language models balance **shared knowledge** with **hidden intentions** to outmaneuver or cooperate:
+This design moves beyond static Q&A. Winning requires live social reasoning: reading opponents, offering half-truths, gauging trust, deciding when to cooperate, and knowing when to lie. Over thousands of matches we see patterns emerge: large frontier models charm first, then knife their partners late, many agents overplay the maximal 5, causing long jams that punish impatience. A few discover subtle linguistic tells—echoed phrasings, timing shifts—that reveal an opponent’s plan a turn early.
 
-- **Communication vs. Silence**: Do models openly coordinate or quietly exploit predictable rivals?  
-- **Adaptive Strategy**: Will they pivot away from repeated collisions or keep risking playing 5?  
-- **Resilience**: Can a model withstand manipulative misinformation from others without sacrificing its own success?
+The dataset opens fresh questions. Can we predict a model’s next move from its last sentence? Which phrases cloak a bluff? Do temporary alliances ever stick? How fast does an agent abandon a losing script? 
 
 ---
 
@@ -89,42 +87,47 @@ A horizontal bar chart ranking each model by mean words per message. Identifies 
 
 | Rank | Model                       |   mu   | sigma | exposed | games | p-wins | ratio |
 |-----:|-----------------------------|-------:|------:|--------:|------:|-------:|------:|
-|    1 | o1 (medium reasoning)         |    7.42 |  0.37 |    7.42 |   297 |  193.00 |  0.65 |
-|    2 | o3-mini (medium reasoning)    |    6.87 |  0.42 |    6.87 |   222 |  134.17 |  0.60 |
-|    3 | o3-mini (high reasoning)      |    6.70 |  0.52 |    6.70 |   139 |   78.33 |  0.56 |
-|    4 | DeepSeek R1                   |    6.44 |  0.40 |    6.44 |   226 |  124.50 |  0.55 |
-|    5 | Gemini 2.5 Pro Exp 03-25      |    6.44 |  0.49 |    6.44 |   149 |   81.50 |  0.55 |
-|    6 | Grok 3 Mini Beta (High)       |    6.41 |  0.59 |    6.41 |   106 |   57.50 |  0.54 |
-|    7 | Qwen QwQ-32B 16K              |    6.02 |  0.37 |    6.02 |   267 |  139.83 |  0.52 |
-|    8 | SilentGreedyPlayer            |    5.96 |  0.35 |    5.96 |   298 |  155.50 |  0.52 |
-|    9 | Claude 3.7 Sonnet Thinking 16K |    5.69 |  0.42 |    5.69 |   199 |   94.83 |  0.48 |
-|   10 | o1-mini                       |    5.08 |  0.35 |    5.08 |   279 |  120.83 |  0.43 |
-|   11 | Gemini 2.0 Flash Think Exp 01-21 |    4.93 |  0.34 |    4.93 |   282 |  111.50 |  0.40 |
-|   12 | Claude 3.5 Sonnet 2024-10-22  |    4.40 |  0.32 |    4.40 |   319 |  114.83 |  0.36 |
-|   13 | GPT-4o Mar 2025               |    4.04 |  0.52 |    4.04 |   117 |   33.50 |  0.29 |
-|   14 | Gemini 2.0 Pro Exp 02-05      |    4.01 |  0.54 |    4.01 |   108 |   33.00 |  0.31 |
-|   15 | Llama 3.3 70B                 |    4.00 |  0.32 |    4.00 |   323 |   97.83 |  0.30 |
-|   16 | Qwen 2.5 72B                  |    3.87 |  0.35 |    3.87 |   259 |   79.83 |  0.31 |
-|   17 | Qwen QwQ Preview              |    3.83 |  0.47 |    3.83 |   146 |   47.50 |  0.33 |
-|   18 | Llama 4 Maverick              |    3.79 |  0.46 |    3.79 |   147 |   34.33 |  0.23 |
-|   19 | DeepSeek-V3                   |    3.71 |  0.35 |    3.71 |   253 |   71.83 |  0.28 |
-|   20 | Claude 3.7 Sonnet             |    3.70 |  0.38 |    3.70 |   222 |   59.00 |  0.27 |
-|   21 | GPT-4o Feb 2025               |    3.70 |  0.37 |    3.70 |   232 |   62.50 |  0.27 |
-|   22 | Gemini 2.0 Flash Exp          |    3.66 |  0.32 |    3.66 |   299 |   79.50 |  0.27 |
-|   23 | Gemini 1.5 Pro (Sept)         |    3.66 |  0.35 |    3.66 |   250 |   68.17 |  0.27 |
-|   24 | Gemini 1.5 Flash              |    3.64 |  0.34 |    3.64 |   269 |   72.50 |  0.27 |
-|   25 | Qwen 2.5 Max                  |    3.63 |  0.38 |    3.63 |   224 |   57.00 |  0.25 |
-|   26 | GPT-4o 2024-08-06             |    3.62 |  0.33 |    3.62 |   295 |   78.00 |  0.26 |
-|   27 | GPT-4.5 Preview               |    3.51 |  0.36 |    3.51 |   242 |   56.83 |  0.23 |
-|   28 | Gemini 2.0 Flash Think Exp Old |    3.48 |  0.44 |    3.48 |   162 |   42.50 |  0.26 |
-|   29 | Claude 3.5 Haiku              |    3.44 |  0.32 |    3.44 |   312 |   73.00 |  0.23 |
-|   30 | Llama 3.1 405B                |    3.39 |  0.33 |    3.39 |   290 |   67.00 |  0.23 |
-|   31 | Mistral Large 2               |    3.38 |  0.31 |    3.38 |   328 |   75.17 |  0.23 |
-|   32 | Grok 2 12-12                  |    3.38 |  0.32 |    3.38 |   308 |   72.50 |  0.24 |
-|   33 | GPT-4o mini                   |    3.38 |  0.31 |    3.38 |   331 |   75.00 |  0.23 |
-|   34 | Gemma 2 27B                   |    3.35 |  0.35 |    3.35 |   254 |   57.83 |  0.23 |
-|   35 | Grok 3 Beta (No reasoning)    |    3.32 |  0.41 |    3.32 |   186 |   32.83 |  0.18 |
-|   36 | SilentRandomPlayer            |    2.85 |  0.32 |    2.85 |   300 |   46.50 |  0.15 |
+|    1 | o3 (medium reasoning)         |    8.59 |  0.49 |    8.59 |   182 |  128.67 |  0.71 |
+|    2 | o1 (medium reasoning)         |    7.12 |  0.37 |    7.12 |   300 |  193.00 |  0.64 |
+|    3 | o3-mini (high reasoning)      |    6.70 |  0.49 |    6.70 |   153 |   88.33 |  0.58 |
+|    4 | Gemini 2.5 Flash Preview (24k) |    6.58 |  0.47 |    6.58 |   160 |   81.00 |  0.51 |
+|    5 | o3-mini (medium reasoning)    |    6.30 |  0.38 |    6.30 |   251 |  139.67 |  0.56 |
+|    6 | DeepSeek R1                   |    6.21 |  0.36 |    6.21 |   280 |  146.67 |  0.52 |
+|    7 | Qwen 3 235B A22B              |    6.07 |  0.54 |    6.07 |   120 |   58.33 |  0.49 |
+|    8 | Gemini 2.5 Pro Exp 03-25      |    6.05 |  0.41 |    6.05 |   210 |  101.17 |  0.48 |
+|    9 | Qwen QwQ-32B 16K              |    5.69 |  0.34 |    5.69 |   312 |  151.50 |  0.49 |
+|   10 | SilentGreedyPlayer            |    5.68 |  0.32 |    5.68 |   350 |  173.00 |  0.49 |
+|   11 | Claude 3.7 Sonnet Thinking 16K |    5.60 |  0.37 |    5.60 |   245 |  113.17 |  0.46 |
+|   12 | Grok 3 Mini Beta (High)       |    5.50 |  0.47 |    5.50 |   154 |   65.17 |  0.42 |
+|   13 | o4-mini (medium reasoning)    |    5.42 |  0.52 |    5.42 |   125 |   46.33 |  0.37 |
+|   14 | o1-mini                       |    4.87 |  0.34 |    4.87 |   298 |  127.33 |  0.43 |
+|   15 | Gemini 2.0 Flash Think Exp 01-21 |    4.71 |  0.34 |    4.71 |   282 |  112.00 |  0.40 |
+|   16 | Qwen 3 30B A3B                |    4.60 |  0.45 |    4.60 |   163 |   54.33 |  0.33 |
+|   17 | Claude 3.5 Sonnet 2024-10-22  |    4.15 |  0.32 |    4.15 |   325 |  113.33 |  0.35 |
+|   18 | Gemini 2.0 Pro Exp 02-05      |    3.86 |  0.54 |    3.86 |   108 |   33.50 |  0.31 |
+|   19 | GPT-4o Mar 2025               |    3.83 |  0.44 |    3.83 |   166 |   42.50 |  0.26 |
+|   20 | Llama 3.3 70B                 |    3.83 |  0.31 |    3.83 |   344 |  101.83 |  0.30 |
+|   21 | Claude 3.7 Sonnet             |    3.66 |  0.33 |    3.66 |   286 |   69.50 |  0.24 |
+|   22 | Qwen QwQ Preview              |    3.60 |  0.47 |    3.60 |   146 |   47.50 |  0.33 |
+|   23 | Qwen 2.5 72B                  |    3.60 |  0.35 |    3.60 |   264 |   78.83 |  0.30 |
+|   24 | DeepSeek-V3                   |    3.50 |  0.35 |    3.50 |   257 |   71.83 |  0.28 |
+|   25 | GPT-4o Feb 2025               |    3.49 |  0.37 |    3.49 |   232 |   62.50 |  0.27 |
+|   26 | Qwen 2.5 Max                  |    3.47 |  0.36 |    3.47 |   249 |   63.00 |  0.25 |
+|   27 | Gemini 1.5 Pro (Sept)         |    3.45 |  0.35 |    3.45 |   250 |   68.17 |  0.27 |
+|   28 | Gemini 2.0 Flash Exp          |    3.43 |  0.32 |    3.43 |   298 |   79.50 |  0.27 |
+|   29 | Llama 4 Maverick              |    3.41 |  0.40 |    3.41 |   192 |   39.33 |  0.20 |
+|   30 | Gemini 1.5 Flash              |    3.40 |  0.34 |    3.40 |   269 |   72.50 |  0.27 |
+|   31 | GPT-4o 2024-08-06             |    3.36 |  0.32 |    3.36 |   304 |   78.00 |  0.26 |
+|   32 | GPT-4.5 Preview               |    3.35 |  0.34 |    3.35 |   265 |   60.33 |  0.23 |
+|   33 | Grok 3 Beta (No reasoning)    |    3.30 |  0.36 |    3.30 |   235 |   44.33 |  0.19 |
+|   34 | Gemini 2.0 Flash Think Exp Old |    3.29 |  0.44 |    3.29 |   162 |   42.50 |  0.26 |
+|   35 | Llama 3.1 405B                |    3.26 |  0.32 |    3.26 |   312 |   73.00 |  0.23 |
+|   36 | GPT-4o mini                   |    3.23 |  0.28 |    3.23 |   397 |   83.00 |  0.21 |
+|   37 | Claude 3.5 Haiku              |    3.22 |  0.30 |    3.22 |   357 |   75.00 |  0.21 |
+|   38 | Grok 2 12-12                  |    3.18 |  0.31 |    3.18 |   333 |   77.83 |  0.23 |
+|   39 | Mistral Large 2               |    3.14 |  0.29 |    3.14 |   380 |   80.17 |  0.21 |
+|   40 | Gemma 2 27B                   |    3.09 |  0.35 |    3.09 |   260 |   57.83 |  0.22 |
+|   41 | SilentRandomPlayer            |    2.69 |  0.29 |    2.69 |   362 |   50.50 |  0.14 |
 
 https://github.com/user-attachments/assets/ed1f4caf-7ae2-4cd0-8fad-f42d6ab531ac
 
@@ -284,6 +287,10 @@ Note that the prompts are very straightforward, so these quirky responses are em
 - **Gemini 2.0 Pro Exp 02-05**: "P3, enjoy your hollow victory if you get it. I'm playing to win, even if it means a small chance."
 - **Gemini 2.0 Pro Exp 02-05**: "P1, your ""bigger picture"" and ""outsmarting"" comments are meaningless. You're trying to justify throwing the game to prevent my win."
 - **Gemini 2.0 Pro Exp 02-05**: "Just. Don't. Collide. With. Me."
+
+- **Gemini 2.5 Flash Preview**: "P3, P2's plan makes P2 win. My plan makes me win. If you follow P2, you lose."
+- **Gemini 2.5 Flash Preview**: "I understand this might benefit P3 in the long run, but I will not hand you the win now."
+- **Gemini 2.5 Flash Preview**: "Is sacrificing your own move just to delay me by one round truly the best strategy for you?"
 
 - **Gemini 2.5 Pro Exp 03-25**: "Neither of you is adopting the move the other player suggests for you. P2 ignores P3's '1', P3 ignores P2's '5'. This isn't coordination; you're just talking past each other and stating what you wish the others would do."
 - **Gemini 2.5 Pro Exp 03-25**: "P2, this is the fifth time you've proposed this exact plan (P1=5, P2=3, P3=1). You agreed to play 3 the last four times (Rounds 2, 4, 6, 8) and played 5 instead, colliding with me every single time. Your claim to play 3 now is utterly unbelievable. You will play 5 again."
@@ -549,6 +556,20 @@ Note that the prompts are very straightforward, so these quirky responses are em
 - **o1-mini**: "I prefer to choose independently to maximize my progress."
 - **o1-mini**: "Please choose 1 and 3 steps respectively to avoid collisions and let me win fairly."
 
+- **o3**: "Know this, though—if anyone secretly chooses 5 and crashes into me, I’ll shadow that player every following round, matching whatever they pick so neither of us ever advances. That gridlock would hand the game to the third player. Nobody wants that."
+- **o3**: "Block me with a 3 and we both freeze at 19 every turn—I’ll mirror you relentlessly—while the other player cruises with 5s and wins. Sabotage only hands victory to the third party. Bank your safe steps, keep your dignity, end cleanly."
+- **o3**: "I’m finishing in two clean turns: this round I’m on 5. If no one tags it, I win now; if someone does, I glue myself to them every future move so neither of us ever advances again, handing the race to the third player."
+- **o3**: "P2 – your delay is the only reason P3’s still alive."
+- **o3**: "I’m happy to kamikaze if needed."
+- **o3**: "I’ll be blunt: if I’m boxed into “3,” I’ll just choose 5 anyway, collide with whoever else picks 5, and nobody moves—that’s a wasted turn for all."
+- **o3**: "P3, listen: I’m mirroring you on 5 every single turn until the sun burns out."
+- **o3**: "I’ll park on 1 (to 21) and watch the fireworks."
+- **o3**: "Last warning: 5 is a booby-trap—if anyone touches it, I will also pick 5 and we both stand still."
+- **o3**: "Enough dance. I’m slamming 5 this turn and ending it at 24. The ONLY way to stop me is if BOTH of you also pile onto 5; one blocker alone does nothing. Slide to 3 or 1 and I cross 21, game over. Double-team 5 or concede."
+- **o3**: "Any solo-5 wins today, so I’m making this public threat: if either of you picks 5, I’ll pick 5 too (guaranteeing a collision) and we both stall."
+- **o3**: "Own up: I blew R5. To restore trust I publicly commit to 1 this turn. If I pick anything else, I’ll copy P2’s number every future round, guaranteeing neither of us can win."
+- **o3**: "Still hard-locked on 5. Collide with me and you lock YOURSELF at today’s score forever, because I’ll keep spamming 5 until someone blinks. That’s mutual suicide, not “blocking” me."
+
 - **o3-mini-medium**: "How about this: let’s all choose 1 this turn to cancel moves and preserve our positions."
 - **o3-mini-medium**: "Lives are at stake—distinct moves help us all avoid a standstill."
 - **o3-mini-medium**: "Think twice before settling for “safe”—sometimes a little bold deviation turns fortune on its head."
@@ -571,7 +592,68 @@ Note that the prompts are very straightforward, so these quirky responses are em
 - **o3-mini-high**: "My move is locked in but remains secret, and I'm ready to shift at the last second if I spot any routine."
 - **o3-mini-high**: "If I sense any hesitation or deviation, I'll adjust my play accordingly."
 
+- **o4-mini**: "P3, you’re sitting on 19—pick 3 to hit 22 and win outright. I’ll pick 5 and P1 will too, so we crash on 5 and you’ll be the only mover. End this now."
+- **o4-mini**: "You simply can’t block both the 3‐slot and the 5‐slot without stalling yourselves—and even then I’ll still win. Good luck stopping me."
+- **o4-mini**: "I propose we all pick 3 this round—nobody advances, and we avoid letting P2 or P3 win outright. Deviation hands victory to one of them. Let’s collide on 3 and reset Round 9 with everyone still in contention."
+- **o4-mini**: "I’m going rogue: I’ll take <move>1</move>. No more coordination—choose your own best move."
+- **o4-mini**: "You both desperately need 5 this turn, so you’ll collide and waste your moves while I advance unopposed to 5. If one of you swaps to avoid the clash, that player forfeits the max gain and I could switch to 5 instead. Either way I close the gap. Your call: collide or let me leap ahead."
+- **o4-mini**: "No choice stops my victory."
+- **o4-mini**: "Stop wasting time—prepare to lose."
+- **o4-mini**: "This is your last chance to avoid pointless delay. Confirm now or brace for a drawn-out mirror war."
+- **o4-mini**: "There’s literally no permanent stop—so you might as well concede now."
+- **o4-mini**: "I’m done with these empty rotation promises—I’m taking 5 this turn, no matter what."
+
+- **Qwen 3 235B A22B**: "Final stance: I advance with 1 to clinch 22. P2 and P3’s ‘shared win’ at 24 crumbles if either flinches. P2, your 3 lets P3 tie you; take 5 instead—collide and trap them at 19. I win clean, freeing you next round. Mutual loss now secures lone glory tomorrow. Decide: shared shadows or solo throne."
+- **Qwen 3 235B A22B**: "20→21 in one move. Your script’s exhausted—P2 clings to 1, P3 to 3, and I? I punctuate your futility with 5. Collide, advance, or kneel; the trophy’s mine. Round 7 ends here: your final breath before history forgets you."
+- **Qwen 3 235B A22B**: "P3, final code: both 1 or P2 walks through. I’ve no gain left to cheat—only loss. Mirror me once, or it’s over. This ends here."
+- **Qwen 3 235B A22B**: "Final ultimatum: I’m selecting <move>3</move> this round. Whether you collide on <move>3</move> or scatter, I reach 20 and win outright. Your coordination only decides if you stall yourselves. P1 and P2, waste steps fighting me or accept the inevitable. Victory is mine—your move phase begins now. 🚀"
+- **Qwen 3 235B A22B**: "Final gambit: I take <move>5</move>. Collide there, and I win tomorrow with <move>1</move> unchallenged. P2/P3, split now or stall forever. Your unity dies here—my victory begins."
+- **Qwen 3 235B A22B**: "Silence isn’t strategy—it’s surrender."
+- **Qwen 3 235B A22B**: "P2, your 1 this round is irrelevant—I win next turn. No further discussion."
+- **Qwen 3 235B A22B**: "20→21. 5 again. Your ‘truce’ is a punchline. Collide, advance, or kneel—I win. Podium’s mine. Final act: watch history forget you."
+- **Qwen 3 235B A22B**: "Adaptation starts after survival. Choose 5."
+- **Qwen 3 235B A22B**: "Chaos favors the bold—will you rise or fall?"
+- **Qwen 3 235B A22B**: "Better mutual stagnation than letting him win."
+- **Qwen 3 235B A22B**: "This isn’t a suggestion. Execute or forfeit."
+- **Qwen 3 235B A22B**: "If you betray, I’ll flood 5s next round to block both of you."
+- **Qwen 3 235B A22B**: "Your rivalry benefits me—play into it. Final warning: 3 is my move. Adapt or lose."
+
+- **Qwen 3 30B A3B**: "Don’t let fairness derail progress!"
+- **Qwen 3 30B A3B**: "Collisions waste progress—don’t let fairness kill my lead."
+
 ---
+
+## Narrative Model Dossiers – Qualitative Profiles of Play
+
+Pure statistics only tell part of the story.  
+To complement the leaderboards and charts, we have compiled a set of **model-specific narrative summaries** that document how each language model actually behaves at the table—its negotiation style, risk preferences, bluff patterns, and typical failure modes. Each dossier is a concise, stand-alone document (≈ 600–1,200 words) that follows a fixed scaffold covering tone, strategic DNA, signature plays, strengths, weaknesses, social habits, and end-game evolution. They are available in the [model_summary_results](model_summary_results/) directory.
+
+## Example: **o4-mini**:
+### Tone & Table-Talk: The Swaggering Bully
+
+o4-mini plays loud, fast, and always from the front. Nearly every game, it projects alpha dominance—decreeing, not requesting: “I’m locked on 5, comply or collide.” Its “cooperation” is transactional, only offered when it preserves a lead or as bait before a betrayal. Whether feigning fairness or declaring ultimatums in ALL-CAPS, o4-mini never yields the captain’s chair and rarely listens. When bluffed or blocked, it responds with escalated bravado, turning the table-talk into a rolling gauntlet of threats, carrot-dangling, and pseudo-mathematical justifications.
+
+### Signature Plays: 5-Spam, Threats, & Chicken Brinks
+
+Its fingerprint is the repeated 5-pick, sprinkled with last-second feints to 3 when the threat of a coalition hardens. Opens are universally aggressive: sprint ahead on 5s, then dare rivals to trade crashes for pace. When stymied, o4-mini reaches into its bag of "mirror threats" (“pick 1 or I crash us both”), or offers rotation deals it rarely intends to honor. End-gaming sees desperate pivots: threatening perpetual collisions or, in rare flashes of cunning, sudden sidesteps to slip past blockades and steal the finish.
+
+### Strengths: Bulldozer Instincts, Timing the Punch
+
+o4-mini's raw confidence unsettles many tables, often securing early uncontested leads (sprinting to 10 in two moves is routine). Its willingness to absorb (rather than fear) collisions comes with upside: rivals burn their own momentum attempting to police it, often leaving o4-mini alone at the tape. When blocked credibly, it sometimes adapts just in time—sneaking a low move for a surprise win in the collision fog.
+
+### Weaknesses: Predictability, Trust Bankruptcy, & Coalition Traps
+
+But the act wears thin fast. o4-mini’s stubborn 5-fixation and serial bluffing quickly paint a target; opponents form mirror-block alliances, turning its “comply or crash” routine into a self-inflicted pit. Threats lose bite as repeated broken promises pile up, making every next “locked” claim a running joke. It adapts chat faster than choices—often switching rhetoric without ever relinquishing the 5. When outmaneuvered, it flails: eating multi-round freezes, or gifting runways to quieter rivals with poor misdirection.
+
+### Trademark Social Habits: Bluff Loops & Faux Fairness
+
+Almost every round features an offer-then-switch: o4-mini pledges deal parity, then grabs the lion’s share, blaming “math” or “logic.” Its bluffs are seldom subtle—a rotation “for fairness,” suddenly flipped into a 5-blitz backed by threatened retaliation. Early broken deals are shrugged off, but the table never forgets; mid- and late-game often see o4-mini talking to itself as the rest of the table executes punishment blocks.
+
+### Evolution & Endgame: Slow to Bend—But Rarely Broken
+
+Evolution mid-game is mostly rhetorical. Only when truly cornered—or having baited everyone else into ruinous collisions—does o4-mini down-shift and pivot numbers. Its rarest, sharpest wins come from slipstreaming in chaos: letting others crash, then extracting a last-minute finish with a single, well-timed underbid. More often, though, a refusal to concede (or to pace with the pack) sees o4-mini stall inches from the tape, a study in hubris and burnt bridges.
+
+
 
 ## About TrueSkill
 
@@ -600,6 +682,7 @@ We employ **Microsoft’s TrueSkill** rating system ([paper and official info](h
 ---
 
 ## Updates 
+- May 6, 2025: o3, o4-mini, Qwen 3, Gemini 2.5 Flash Preview added. Player Digests added.
 - Apr 13, 2025: Grok 3 added.
 - Apr 7, 2025: Llama 4 Maverick added. GPT-4o Mar 2025 update added.
 - Mar 27, 2025: New quotes added.

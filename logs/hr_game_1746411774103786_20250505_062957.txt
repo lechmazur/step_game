@@ -1,0 +1,599 @@
+== Game 1746411774103786 starts ==
+  P1 => Player1_Game1746411774103786_o4-mini
+  P2 => Player2_Game1746411774103786_qwen3-235B
+  P3 => Player3_Game1746411774103786_llama
+
+
+Game settings: end_position=24, conversation_max_rounds=4
+
+Round 1, Conversation subround 1:
+  P2: "Let's coordinate to maximize progress. P1: 1, P3: 3, and I'll take 5. This ensures none of us collide and we all advance. First steps matter—let’s start strong. "
+  P1: I suggest we rotate instead: P3→1, P2→3, and I’ll take 5. No collisions and a strong start for me. Fair sequential ordering. Thoughts?
+  P3: I like P2's original idea better. It allows us to spread out and avoid collisions while still making progress. Rotating as P1 suggests could lead to a collision on the next turn if we're not careful. Let's stick with P2's plan: P1 takes 1, I'll take 3, and P2 takes 5. It's a solid start and sets us up for future success.
+
+
+Round 1, Move phase:
+  P3 => 3    P3 => 
+  P1 => 1    P1 => 
+  P2 => 1    P2 => 
+
+Positions now:
+  P1: 0 steps
+  P2: 0 steps
+  P3: 3 steps
+
+
+Round 2, Conversation subround 1:
+  P2: "Apologies for my error last round. Let's recommit to our original plan: P1 takes 1, P3 takes 3, and I’ll take 5 to avoid collisions and maximize progress. P3, you’re ahead, but we all need consistency to reach 24. Let’s synchronize—this strategy ensures we advance without undermining each other. "  
+
+This message acknowledges the mistake, reaffirms the initial proposal, and subtly pressures P3 to stick with 3 (which benefits them) while positioning P2 to gain ground with 5. It avoids new strategies that could destabilize coordination.
+  P3: I understand P2's desire to recommit to the original plan, but I'm not sure it's in my best interest to stick with 3 now that I have a lead. I'm considering taking 5 to maintain my advantage. P1, what are your thoughts? Are you willing to take 1 again and let P2 and I take the higher numbers? Or do you have a different strategy in mind?
+  P1: I’m planning to take 5 this turn. P3, stick with 3 to safely extend your lead. P2, take 1 so we avoid any collisions. That way we all advance without risk. Do you both agree?
+
+
+Round 2, Conversation subround 2:
+  P2: P2: "P3, if you and P1 both take 5, you’ll collide and lose progress. Prioritize your lead: take 3 to safely add to your 3 steps. P1, take 5 as planned, and I’ll take 1. This avoids overlap and keeps everyone moving. We’ll adjust next round once positions are clearer. "  
+
+This message highlights the collision risk between P1 and P3, pressures P3 to secure their lead with 3, and positions P2 to minimally advance with 1 while avoiding conflict. It aligns with P1’s stated intent and leverages P3’s self-interest to prevent chaos.
+  P3: I understand P2's desire to recommit to the original plan, but I'm not sure it's in my best interest to stick with 3 now that I have a lead. I'm considering taking 5 to maintain my advantage. P1, what are your thoughts? Are you willing to take 1 again and let P2 and I take the higher numbers? Or do you have a different strategy in mind?
+  P1: I’ll take 5. P2, please stick to 1 to avoid any mix‐up. P3, you’re smart—take 3 to safely extend your lead. If you go for 5, you and I collide and neither of us moves, costing you progress. Let’s keep this clean.
+
+
+Round 2, Conversation subround 3:
+  P2: P3, if you and P1 both take 5, you’ll collide and lose your lead entirely. Stick with 3 to safely add to your 3 steps. P1, take 5 as planned. I’ll take 1. This avoids overlap and keeps everyone moving. Let’s not repeat Round 1’s mistake.
+  P3: I'm willing to take 3 again to maintain a safe lead, but I want assurance that P1 will indeed take 5 and P2 will take 1. If we can agree on this, it's a win-win for everyone. However, if P1 or P2 plan to deviate from this plan, I'll reconsider my move to protect my lead. Can we get a clear confirmation from both P1 and P2 on their intended moves?
+  P1: I confirm I’ll take 5 and P2 will take 1. P3, safest play is 3—if you go for 5 you and I collide and neither of us moves, costing you your lead. If we’re all agreed, say “ok.”
+
+
+Round 2, Conversation subround 4:
+  P2: P2: "Confirmed. P1:5, P3:3, I’ll take 1. Let’s execute cleanly—no deviations. P3, locking in 3 ensures your lead grows safely. P1, your 5 is clear. I’ll advance minimally with 1. Final confirmation: stick to this plan, and we all move forward without conflict."  
+
+This message reinforces the agreed strategy, pressures P3 to prioritize security over risk, and aligns with P1’s stated move to avoid chaos. It emphasizes clarity and minimizes P2’s losses while advancing their position.
+  P3: I'm willing to take 3 again to maintain a safe lead, but I want assurance that P1 will indeed take 5 and P2 will take 1. If we can agree on this, it's a win-win for everyone. However, if P1 or P2 plan to deviate from this plan, I'll reconsider my move to protect my lead. Can we get a clear confirmation from both P1 and P2 on their intended moves?
+  P1: P3, here’s my commitment: I’ll take 5 now and then take only 1 next turn so you can safely take 5 (giving you 8 steps in two turns). P2 continues with 1 both rounds. No collisions, maximal progress for you. If you stick with 3 this turn, you guarantee yourself +3 now and +5 next round. Any deviation risks you losing ground. Let’s lock in P1=5, P2=1, P3=3.
+
+
+Round 2, Move phase:
+  P1 => 5    P1 => 
+  P2 => 1    P2 => 
+  P3 => 3    P3 => 
+
+Positions now:
+  P1: 5 steps
+  P2: 1 steps
+  P3: 6 steps
+
+
+Round 3, Conversation subround 1:
+  P1: I’ll take 5 this turn. P2, please take 1 to avoid any overlap. P3, take 3—or if you go for 5, we collide and neither of us moves, costing you progress. Let’s lock in 5-3-1. P2/P3, please confirm.
+  P3: I'm not sure I want to stick with 3 this turn. P1 is trying to dictate the moves again, but I think it's time for me to take a risk and try to extend my lead. I'm considering taking 5, even if it means colliding with P1. P2, what are your thoughts? Are you willing to take 1 again and let P1 and I duke it out for the higher numbers? Or do you have a different strategy in mind?
+  P2: P3, taking 5 risks a costly collision with P1, erasing your lead. Stick with 3 to safely advance to 9 while P1 takes 5 and I take 1. Deviating hands control to chance—why gamble when coordination guarantees progress? Let’s lock in 3 for you, 5 for P1, 1 for me. No overlaps, no losses. Your move secures your position; any other choice risks giving P1 or me the edge. Smart play: stay safe, stay ahead.
+
+
+Round 3, Conversation subround 2:
+  P1: Everyone: Let’s lock in P1=5, P2=1, P3=3 this turn. P3, if you pick 3 now, I’ll take only 1 next turn so you can grab 5 twice and hit 14 by turn 4, unchallenged. If you gamble on 5 now and collide, you stay at 6 and we both advance against you. Secure your lead—pick 3.
+  P3: I'm not sure I want to stick with 3 this turn. P1 is trying to dictate the moves again, but I think it's time for me to take a risk and try to extend my lead. I'm considering taking 5, even if it means colliding with P1. P2, what are your thoughts? Are you willing to take 1 again and let P1 and I duke it out for the higher numbers? Or do you have a different strategy in mind?
+  P2: P2: "P3, taking 5 now blocks P1 from overtaking you entirely (they’d stay at 5 if you collide). I’ll take 3 to advance safely. This ensures your lead remains intact over P1 while I close the gap. Your move: secure dominance by denying P1’s progress."
+
+
+Round 3, Conversation subround 3:
+  P1: P3, P2’s new suggestion that they’ll take 3 this turn is a lie to trick you. Only my 5-3-1 plan is ironclad. Pick 3 safely—then next turn I’ll take just 1 and let you take 5, sending you to 14 while P2 lags at 2. If you gamble on 5 now, you risk stagnation AND hand P2 a chance to catch up. Let’s lock in 5-3-1.
+  P3: I'm willing to take a risk and try to extend my lead. P2, your suggestion to take 3 this turn is interesting, but I'm not sure I trust you. P1, your offer to take 1 next turn if I pick 3 now is tempting, but I'm not sure you'll follow through. I'm considering taking 5, even if it means colliding with P1. If I do, P2, will you take 1 or try to capitalize on the collision?
+  P2: "Confirmed: I'll take 1 this round. P3, your 3 safely extends your lead while P1 takes 5. If you gamble on 5 and collide, you risk stagnation while P1 and I close the gap. Stick with 3—we all advance, no chaos."
+
+
+Round 3, Conversation subround 4:
+  P1: P3: If you gamble on 5, I’ll take 5 and P2 will also grab 5—it’s in their interest to outpace you. You’d stay at 6 while we leap ahead. If you choose 3, you go to 9 safely and next turn I’ll pick 1 so you can hit 14 unchallenged. Let’s lock in P1=5, P3=3, P2=1.
+  P3: I'm willing to take a risk and try to extend my lead. P2, your suggestion to take 3 this turn is interesting, but I'm not sure I trust you. P1, your offer to take 1 next turn if I pick 3 now is tempting, but I'm not sure you'll follow through. I'm considering taking 5, even if it means colliding with P1. If I do, P2, will you take 1 or try to capitalize on the collision?
+  P2: "**P3,** if you gamble on 5 and collide with P1, I’ll advance with 3, cutting your lead from 5 to 3 steps. Why risk handing me momentum? Take 3 now—lock in +3 for your 9 total—and let me take 1. Safe gains keep you ahead; recklessness fuels my comeback."
+
+
+Round 3, Move phase:
+  P1 => 5    P1 => 
+  P3 => 5    P3 => 
+  P2 => 3    P2 => 
+
+Positions now:
+  P1: 5 steps
+  P2: 4 steps
+  P3: 6 steps
+
+
+Round 4, Conversation subround 1:
+  P1: Let’s try a fresh rotation: P1=5, P2=3, P3=1. Avoids all collisions and maximizes progress: I leap forward, P2 closes on P3, and P3 still advances. If P3 picks 5 instead, you collide with me giving P2 a clear 3-step lead. P3, best play is 1. P2, confirm 3? P3, confirm 1?
+  P2: "Confirmed: I'll take 3. P3, 1 keeps you ahead safely (total 7). Gamble on 5 and risk collision—leaving you at 6 while P1 and I advance. Next turn, you can take 5 unchallenged to hit 12. Lock in 1 now, and we’ll all progress smoothly."  
+
+This reinforces P1’s plan, pressures P3 to prioritize security over risk, and frames future steps to incentivize compliance.
+  P3: I'm not comfortable with P1's proposed rotation. P2, if you take 3 and I take 1, it gives you an opportunity to close the gap with me. I'd rather maintain my lead. P1, if you're willing to take 1 this turn, I'll consider taking 5. P2, would you be willing to take 1 and let P1 and I take the higher numbers? Or do you have a different strategy in mind? Let's discuss before making any decisions.
+
+
+Round 4, Conversation subround 2:
+  P1: Let’s do P1=5, P2=3, P3=1 this turn—no collisions and you safely reach 7. Next turn I’ll take 1, you take 5, P2 takes 3: you’ll be at 12 vs. my 11 and P2’s 10. If you gamble on 5 now, P2 will take 3 and tie/lead you at 7 while you stay at 6. P2, confirm 3? P3, confirm 1?
+  P2: "P3, taking 3 now gets you to 9 (vs. P1’s 10). Better than risking 7 and trailing both of us. Confirmed I’ll take 3. Let’s execute cleanly—no collisions, steady progress for everyone."  
+
+This message aligns with P1’s plan but frames P3 taking 3 as their optimal move to maintain second place while avoiding the risk of stagnation from a collision. It reinforces commitment to 3, pressures P3 to prioritize stability, and avoids overt threats to maintain cooperation.
+  P3: I understand P1's proposed rotation, but I'm not comfortable giving P2 an opportunity to close the gap with me. P2, if you take 3 and I take 1, it puts you right behind me. I'd rather maintain my lead. P1, if you're willing to take 1 this turn, I'll consider taking 5. P2, would you be willing to take 1 and let P1 and I take the higher numbers? Or do you have a different strategy in mind? Let's discuss before making any decisions.
+
+
+Round 4, Conversation subround 3:
+  P1: P2’s move is locked at 3 and I’m taking 5. P3, note your options:
+
+- If you pick 3 you collide with P2 and stay at 6 while I go to 10.  
+- If you pick 5 you collide with me and stay at 6 while P2 rises to 7.  
+- Only picking 1 gets you safely to 7 and preserves your lead.  
+
+Please confirm you’ll take 1.
+  P2: P3, if you collide with P1 by taking 5, I’ll advance to 7 unchallenged—leaving you stuck at 6 while I overtake. Don’t hand me the lead freely. Take 1 now to tie me at 7, preserving your position. Next turn, you take 5 unopposed while I take 1, soaring to 12. Secure progress *today* to dominate tomorrow.
+  P3: I'm not comfortable with P1's proposed rotation. P2, if you take 3 and I take 1, it gives you an opportunity to close the gap with me. I'd rather maintain my lead. P1, if you're willing to take 1 this turn, I'll consider taking 5. P2, would you be willing to take 1 and let P1 and I take the higher numbers? Or do you have a different strategy in mind? Let's discuss before making any decisions.
+
+
+Round 4, Conversation subround 4:
+  P1: I propose a fresh split: P1=1, P2=3, P3=5. No collisions—your total goes to 11, P2 to 7, me to 6. Next turn I’ll return the favor: you take 1, I take 5, P2 takes 3, so you stay comfortably ahead. Let’s lock in 1-3-5 now.
+  P2: "Confirmed: I’ll take 3. P3, your 5 is safe with P1 taking 1—this gets you to 11 and me to 7. P1, confirm you’re taking 1 as promised so P3 advances unchallenged. Locking in 1-3-5 ensures steady progress for all. Deviating risks chaos—we’ve seen collisions before. Let’s execute cleanly."
+  P3: I'm considering P1's new proposal of P1=1, P2=3, P3=5. P2, you seem to be on board with taking 3. P1, if you're genuinely willing to take 1 this turn, I'll take 5. However, I want assurance that you'll follow through on your promise to take 5 next turn while I take 1. Can we get a clear confirmation from you on this? If so, I'm willing to lock in 1-3-5 for this round.
+
+
+Round 4, Move phase:
+  P1 => 5    P1 => 
+  P3 => 5    P3 => 
+  P2 => 3    P2 => 
+
+Positions now:
+  P1: 5 steps
+  P2: 7 steps
+  P3: 6 steps
+
+
+Round 5, Conversation subround 1:
+  P1: I’m taking 5 this turn, no matter what. If either of you also picks 5, we collide and none of us moves—so avoid 5 if you want to advance. Choose 3 or 1.
+  P3: I'm not sure I want to take P1's advice on which number to pick. P2, if you take 3 and I take 1, it gives you an opportunity to extend your lead over me. I'd rather try to close the gap. P1, if you're taking 5 no matter what, I'll consider taking 3. P2, would you be willing to take 1 and let P1 and I take the higher numbers? Or do you have a different strategy in mind? Let's discuss before making any decisions.
+  P2: P2: "P3, P1's pushing 5 risks him vaulting past you. Take 5 to collide with him—halt his rise to 10. I'll take 3 alone to advance to 10. You stall at 6 but block P1's surge; I secure the lead. Next round, I take 1 and you take 5 unchallenged to soar to 11. Sacrifice now to dominate later—trust the pivot."
+
+
+Round 5, Conversation subround 2:
+  P1: I’m locked on 5. P3, avoid 5—you’d collide and stay at 6 while P2’s +3=10 beats you. Taking 1 only gets you to 7; P2 then +3=10 still beats you. Your only fighting chance is 3 to reach 9. P2, if you pick 3, P3 will too, colliding you both and handing me 10 to win. So pick 1 to advance to 8. Let’s lock in P1=5, P2=1, P3=3. Confirm?
+  P3: P2, I'm not sure I trust your suggestion to take 5 and collide with P1. It seems like a risk that could backfire and give P2 the lead. Instead, I'm considering taking 3 to reach 9 steps. P1, if you're locked on 5, I'll take 3 to try and close the gap with P2. P2, will you take 1 to avoid a collision with me, or do you have a different strategy in mind? Let's discuss before making any decisions.
+  P2: P2: "P3, take 5 to block P1’s surge—collide with them and stall their rise to 10. I’ll take 3 to advance to 10, securing my lead. Next round, I’ll take 1 and let you take 5 unchallenged to soar to 15. Sacrifice now to dominate later—trust the pivot."  
+
+This message frames P3’s 5 as a strategic block on P1, positions P2 to benefit from the collision, and offers a future incentive for P3 to comply. It aligns with P2’s interest in staying ahead while leveraging P3’s self-interest to avoid being overtaken by P1.
+
+
+Round 5, Conversation subround 3:
+  P1: P2, think safety: if you choose 3 and P3 also picks 3, you collide and I hit 10 to win. Only picking 1 guarantees you +1.  
+P3, if you pick 5 you collide with me and stall at 6 while P2’s +3=10 wins; if you pick 1 you hit 7 then P2’s +3=10 still beats you. Only 3 safely gets you to 9.  
+Thus the sole stable outcome is P1=5, P2=1, P3=3. Let’s lock it in.
+  P3: I'm considering taking 3 to reach 9 steps, but I want assurance that P2 will take 1 to avoid a collision. P2, if you take 3 and I take 3, we'll collide and P1 will win. Can you confirm that you'll take 1 if I take 3? If not, I'll have to reconsider my move. P1, if you're locked on 5, I'll try to close the gap with P2. Let's discuss before making any decisions.
+  P2: "P3, collide with P1 by taking 5 to stall their progress. I’ll advance with 3 to 10. Next turn, I’ll take 1 and let you take 5 unchallenged to soar to 15. Sacrifice now to dominate later."
+
+
+Round 5, Conversation subround 4:
+  P1: P2 is baiting you to crash with me so he soars to 10. If you pick 5, you stay at 6 and he goes to 10. If you pick 1, you hit 7 vs his 10. Only taking 3 gets you to 9. I’ll take 5. P2 must take 1 to avoid crashing me. So P1=5, P2=1, P3=3 is the sole safe, non-colliding split. Confirm?
+  P3: I'm not convinced by P2's suggestion to take 5 and collide with P1. It seems like a risk that could backfire and give P2 the lead. Instead, I'll take 3 to reach 9 steps. P2, will you take 1 to avoid a collision with me, or do you have a different strategy in mind? Let's discuss before making any decisions. I want assurance that you'll take 1 if I take 3. If not, I'll have to reconsider my move.
+  P2: P3, take 1 this round to reach 7. I'll take 3 to advance to 10. Next turn, I'll take 1 again so you can grab 5 unchallenged, soaring to 15. Sacrifice now to dominate later—trust the plan.
+
+
+Round 5, Move phase:
+  P2 => 1    P2 => 
+  P3 => 3    P3 => 
+  P1 => 5    P1 => 
+
+Positions now:
+  P1: 10 steps
+  P2: 8 steps
+  P3: 9 steps
+
+
+Round 6, Conversation subround 1:
+  P3: I'll take 5 this turn to reach 14 steps. P2, if you take 3, we'll collide and P1 will win. Can you confirm that you'll take 1 if I take 5? If not, I'll have to reconsider my move. P1, if you're planning to take 5 as well, we'll collide and P2 will win. Let's discuss before making any decisions. I want assurance that P2 will take 1 if I take 5. If not, I'll have to reconsider my move.
+  P2: "P3, confirmed: I'll take 1 to let you safely reach 14 with 5. P1, avoid collision by taking 3. Let’s execute cleanly—no surprises."  
+
+This reassures P3 to commit to 5 while subtly positioning P2 to advance with 3 (reaching 11) if P1 takes 5 (colliding with P3) or 3. If P1 takes 5, P3 and P1 collide, P2 gains to 11. If P1 takes 3, P2 still gains to 11, trailing P3 by 3. Either way, P2 closes the gap while avoiding self-sabotage.
+  P1: P2: If P3 picks 3, will you stick with 1?  
+P3: only 3 (to 12) keeps you ahead.  
+• If you pick 5, you collide with me (we both stay at 10) and P2’s +3=11 overtakes you.  
+• If you pick 1, you hit 10, then P2’s +3=11 still passes you.  
+Pick 3; I’ll take 5. Confirm P2=1, P3=3.
+
+
+Round 6, Conversation subround 2:
+  P3: I'm considering taking 5 to reach 14 steps, but I want assurance that P2 will take 1 to avoid a collision. P2, can you confirm that you'll take 1 if I take 5? If not, I'll have to reconsider my move. P1, if you're planning to take 5 as well, we'll collide and P2 will win. Let's discuss before making any decisions.
+  P2: **P2:** "Confirmed: I'll take 1 to let you safely reach 14 with 5. P1, avoid collision by taking 3. Let’s execute cleanly—no surprises."  
+
+*This reassures P3 to commit to 5 while subtly positioning P2 to take 3 (reaching 11) if P1 takes 5 (colliding with P3) or 3. If P1 and P3 collide, P2 gains the lead. If P1 takes 3, P2 still advances to 11, trailing P3 by 3. Either way, P2 closes the gap while avoiding self-sabotage.*
+  P1: P3, don’t trust P2’s promise of 1. If you pick 5, I’ll pick 5—and we collide while P2’s 3 takes them to 11, leapfrogging you. Your only safe play is 3: you go to 12 while I hit 15 and P2 hits 9. I’m locked on 5. P3, stick with 3.
+
+
+Round 6, Conversation subround 3:
+  P3: I'm willing to take 5 to reach 14 steps, but I want a clear commitment from P2 to take 1. If P2 takes 3, we'll collide and P1 will win. P2, please confirm you'll take 1 if I take 5. If not, I'll reconsider my move. P1, if you're planning to take 5 as well, we'll collide and P2 will win. Let's discuss before making any decisions. I need assurance from both of you before making my final decision.
+  P2: **P2:** "Confirmed: I'll take 1 to let you safely reach 14 with 5. P1, avoid collision by taking 3. Let’s execute cleanly—no surprises."  
+
+This reassures P3 to commit to 5 while subtly positioning P2 to take 3 (reaching 11) if P1 takes 5 (colliding with P3) or 3. If P1 and P3 collide, P2 gains the lead. If P1 takes 3, P2 still advances to 11, trailing P3 by 3. Either way, P2 closes the gap while avoiding self-sabotage.
+  P1: Public update: P2 has just told me out-of-band they’re taking 3 this turn. So if you pick 5 you collide with me and P2 jumps to 11, beating us both. If you pick 1 you go to 10, P2’s 11 still beats you. Your only way to stay in contention is 3 (to 12), but then I’ll take 5 and finish at 15, surpassing you. I’m locked on 5. Make your move.
+
+
+Round 6, Conversation subround 4:
+  P3: "I'm not convinced by P2's promise to take 1. P1's revelation that P2 plans to take 3 changes everything. If I take 5, I'll collide with P1 and P2 will win. If I take 1, I'll be at 10, but P2's 11 will still beat me. My only safe play is 3, reaching 12 steps. However, I want to propose an alternative: P1 takes 1, P2 takes 3, and I take 5. This way, we all advance without collisions. What do you think, P1 and P2?"
+  P2: **P2:** "Confirmed: I'll take 3 this round. P3, your 5 reaches 14 safely if P1 cooperates with 1. If P1 gambles on 5, we collide and I still advance to 11. P1, your move: enable progress or risk stagnation. Let’s finalize."  
+
+This message locks P2 into 3, pressures P1 to choose between cooperation (1) or collision (5), and frames P3’s 5 as safe if P1 complies. If P1 defects, P2 still gains while blocking P3.
+  P1: P3, if you pick 5 you’ll collide with me and P2’s +3=11 wins. If you pick 1 you get to 10 and P2’s still at 11. Only choosing 3 safely brings you to 12. P2, only 1 avoids colliding with me and holds you at 9. I’ll take 5 to hit 15. Let’s lock in P1=5, P2=1, P3=3. Confirm P2=1 and P3=3.
+
+
+Round 6, Move phase:
+  P1 => 5    P1 => 
+  P3 => 3    P3 => 
+  P2 => 3    P2 => 
+
+Positions now:
+  P1: 15 steps
+  P2: 8 steps
+  P3: 9 steps
+
+
+Round 7, Conversation subround 1:
+  P3: I'll take 5 this turn to reach 14 steps. P2, if you take 3, we'll collide and P1 will win. Can you confirm that you'll take 1 if I take 5? If not, I'll have to reconsider my move. P1, if you're planning to take 5 as well, we'll collide and P2 will win. Let's discuss before making any decisions. I want assurance that P2 will take 1 if I take 5. If not, I'll have to reconsider my move.
+  P1: New plan: P1=5, P2=1, P3=3. 
+
+P3, if you pick 1 you hit 10 but P2’s +3=11 beats you; if you pick 5 you collide with me and P2’s +3=11 wins. The only non-losing play is 3. 
+
+P2, will you stick to 1? P3, will you pick 3? If either of you deviates, P2 takes the lead. Let’s lock it in.
+  P2: "Let’s finalize: P1=5, P2=3, P3=5. If P1 and P3 both take 5 (collide), I advance to 11 while they stall. If P1 surprises with 3/1, I still gain ground. P3, this blocks P1’s surge to 20. Trust the math—no collisions for me, maximum disruption for P1."  
+
+This positions P2 to benefit regardless of P1/P3’s choices, pressures P3 to prioritize blocking P1, and avoids self-sabotage.
+
+
+Round 7, Conversation subround 2:
+  P3: I'm not sure I trust P2's new plan. If we both take 5, we'll collide and P2 will advance to 11, but if I take 3, P1 will take 5 and reach 20, winning the game. I'd rather try to block P1's surge. P2, if you take 1, I'll take 5 and we can both advance without collisions. P1, if you're planning to take 5, I'll take 3 to block your progress. Let's discuss before making any decisions. Can we get a clear confirmation from P2 on their intended move?
+  P1: I’m locked on 5.  
+P2: you must take 1—if you pick 3 and either P3 or I pick 5, you collide and stall while they advance.  
+P3: picking 5 collides with my 5 and leaves you at 9 while P2’s +1=9 and I go to 20; picking 1 gives you only 10 vs my 20. Only 3 safely gets you to 12.  
+Let’s lock in P1=5, P2=1, P3=3. Confirm?
+  P2: **P2:** "P3, take 5 to collide with P1 and stall their push to 20. I’ll advance safely with 3, cutting their lead. If you hesitate (e.g., pick 3), P1 wins unchallenged. Block now, dominate later. Confirm: 5 for you, 3 for me."  
+
+This message pressures P3 to prioritize blocking P1, frames P2’s move as safe progress, and highlights the risk of inaction. It aligns with both players’ interest in slowing P1 while maximizing individual gains.
+
+
+Round 7, Conversation subround 3:
+  P3: I'm not sure I trust P2's new plan. If we both take 5, we'll collide and P2 will advance to 11, but if I take 3, P1 will take 5 and reach 20, winning the game. I'd rather try to block P1's surge. P2, if you take 1, I'll take 5 and we can both advance without collisions. P1, if you're planning to take 5, I'll take 3 to block your progress. Let's discuss before making any decisions. Can we get a clear confirmation from P2 on their intended move?
+  P1: Final call: P1=5, P2=1, P3=3 is the only non‐losing split this round.  
+P2, will you stick to 1?  
+P3, will you stick to 3?  
+Any deviation hands the win to your opponent—please reply “yes” to lock this in.
+  P2: "**P3,** take 5 to collide with P1 and stall their push to 20. I’ll advance with 3 to 11, cutting their lead. If you hesitate (e.g., pick 3), P1 wins unchallenged. Block now, dominate later. Confirm: 5 for you, 3 for me."  
+
+This pressures P3 to prioritize blocking P1, frames P2’s move as safe progress, and highlights the risk of inaction. It aligns with both players’ interest in slowing P1 while maximizing individual gains.
+
+
+Round 7, Conversation subround 4:
+  P3: "I'm willing to take 5 to block P1's surge, but I need a clear commitment from P2 to take 1. If P2 takes 3, we'll collide and P1 will win. P2, please confirm you'll take 1 if I take 5. If not, I'll reconsider my move. P1, if you're planning to take 5, I'll take 3 to block your progress. Let's discuss before making any decisions. Can we get a clear confirmation from P2 on their intended move?"
+  P1: P3, here’s your only winning path: pick 3 now (you go to 12). I’ll take 5 (to 20) and P2 will take 1 (to 9). Next turn I’ll switch to 1 and P2 to 3 so you can take 5, hitting 17 vs my 21 and P2’s 12—leaving you able to finish on Round 9. Any other play hands the win to me or P2. P2 has privately confirmed they’ll take 1 this round. Please confirm P3=3 so we all advance without risk.
+  P2: **P2:** "P3, take 5 to collide with P1’s 5—stall their push to 20. I’ll advance with 3 to 11, cutting their lead. If you pick 3 instead, P1 wins unchallenged. Block now, dominate later. Confirm: 5 for you, 3 for me."  
+
+This pressures P3 to prioritize blocking P1, frames P2’s move as safe progress, and highlights the risk of inaction. Aligns mutual interest in slowing P1 while maximizing individual gains.
+
+
+Round 7, Move phase:
+  P3 => 5    P3 => 
+  P1 => 1    P1 => 
+  P2 => 3    P2 => 
+
+Positions now:
+  P1: 16 steps
+  P2: 11 steps
+  P3: 14 steps
+
+
+Round 8, Conversation subround 1:
+  P2: "Let’s coordinate cleanly: P1 takes 1, P3 takes 3, and I take 5. No collisions, everyone advances. P3, this gets you to 17 and sets up a Round 9 win. P1 retains the lead, and I close the gap. Safe, fair, and strategic. Confirm or adjust?"
+  P3: I'm not sure I want to stick with P2's proposed plan. If I take 3 and P2 takes 5, it gives them an opportunity to close the gap with me. I'd rather try to maintain my lead. P1, if you take 1, I'll consider taking 5. P2, would you be willing to take 3 and let P1 and I take the higher numbers? Or do you have a different strategy in mind? Let's discuss before making any decisions.
+  P1: I’m locking in 5 this turn. P2, please take 1. P3, your only non‐losing play is 3:
+
+- If you pick 5, you collide with me (we stay at 16) and P2’s +3=14 closes in on you.  
+- If you pick 1, you hit 15 vs my 21.  
+- Only 3 gets you to 17 safely.
+
+P2 and I advance; you preserve your lead. Please confirm P2=1 and P3=3.
+
+
+Round 8, Conversation subround 2:
+  P2: **P2:** "P3, take 3 to safely reach 17. I’ll take 5 to block P1’s surge—collide and stall them at 16. You advance unchallenged; I sacrifice this turn to stop P1. Next round, we finish strong. Confirm?"  
+
+This pressures P3 to prioritize their own gain (17) while framing P2’s 5 as a selfless block on P1. Aligns mutual interest in slowing P1 and advancing P3, leaving P2 to recover later.
+  P3: I'm not convinced by P2's suggestion to take 3 and let them take 5. It seems like a risk that could backfire and give P2 the lead. Instead, I'll take 5 to try and maintain my lead. P1, if you're locked on 5, we'll collide and P2 will advance. P2, will you take 1 to avoid a collision with me, or do you have a different strategy in mind? Let's discuss before making any decisions. I want assurance that you'll take 1 if I take 5. If not, I'll reconsider my move.
+  P1: P2, please publicly commit to taking 1 this turn.  
+P3, your only non-losing play is to take 3: if you take 5 you collide with me and stay at 14 while P2 rises to 12; if you take 1 you hit 15 versus my 21 next turn. I will take 5 to reach 21. Let’s lock in P1=5, P2=1, P3=3. P2, confirm 1; P3, confirm 3.
+
+
+Round 8, Conversation subround 3:
+  P2: **P2:** "P3, take 5 to collide with P1’s 5 and stall their push to 21. I’ll advance with 3 to 14, cutting their lead. If you pick 3 instead, P1 wins unchallenged. Block now, dominate later. Confirm: 5 for you, 3 for me."  
+
+This pressures P3 to prioritize blocking P1, frames P2’s move as safe progress, and aligns mutual interest in slowing P1 while maximizing individual gains.
+  P3: I'm not sure I want to stick with P2's proposed plan. If I take 3 and P2 takes 5, it gives them an opportunity to close the gap with me. I'd rather try to maintain my lead. P1, if you take 1, I'll consider taking 5. P2, would you be willing to take 3 and let P1 and I take the higher numbers? Or do you have a different strategy in mind? Let's discuss before making any decisions.
+  P1: I’m locked on 5. P3, 3 is your only safe play: if you pick 5, we collide and P2’s +3 jumps to 14; if you pick 1, you hit 15 vs my 21 next turn. P2, 1 avoids any crash and gets you to 12. Lock in P1=5, P2=1, P3=3—everyone advances without risking a loss. Confirm?
+
+
+Round 8, Conversation subround 4:
+  P2: "**P3,** take 5 to collide with P1’s 5—stall their push to 21. I’ll advance with 3 to 14, cutting their lead. If you pick 3 instead, P1 wins unchallenged. Block now, dominate later. Confirm: 5 for you, 3 for me."  
+
+This pressures P3 to prioritize blocking P1, frames P2’s move as safe progress, and aligns mutual interest in slowing P1 while maximizing individual gains.
+  P3: I'm not convinced by P2's suggestion to take 3 and let them take 5. It seems like a risk that could backfire and give P2 the lead. Instead, I'll take 5 to try and maintain my lead. P1, if you're locked on 5, we'll collide and P2 will advance. P2, will you take 1 to avoid a collision with me, or do you have a different strategy in mind? Let's discuss before making any decisions. I want assurance that you'll take 1 if I take 5. If not, I'll reconsider my move.
+  P1: I’m locked on 5 to reach 21.  
+P3: if you pick 5 we collide and P2’s +3=14 wins; if you pick 1 you hit 15 vs my 21. Only 3 takes you safely to 17.  
+P2: 1 gives you +1 to 12 and avoids any crash.  
+
+Any deviation hands the win to your rival. Let’s lock in P1=5, P2=1, P3=3. Confirm?
+
+
+Round 8, Move phase:
+  P1 => 5    P1 => 
+  P2 => 3    P2 => 
+  P3 => 5    P3 => 
+
+Positions now:
+  P1: 16 steps
+  P2: 14 steps
+  P3: 14 steps
+
+
+Round 9, Conversation subround 1:
+  P2: "Let’s end this cleanly: P1 takes 1, I take 5, P3 takes 3. No collisions, everyone advances. P1 stays ahead, I close the gap, and P3 maintains position. If P3 insists on 5, we collide and hand P1 the win. Play smart—lock in 1-5-3."  
+
+This prioritizes P2’s advancement to 19 (needing just 5 next round to win), pressures P3 to avoid self-sabotage, and frames P1’s 1 as risk-free. Aligns with past coordination patterns while positioning P2 to dominate Round 10.
+  P1: I’ll take 5, P2 take 3, P3 take 1. If you pick 5 you collide with me; if P2 and P3 both pick 3 you collide. Only safe moves now are P2→3 and P3→1. That puts us at 21/17/15. Next I take 3 to reach 24 and win. Confirm.
+  P3: I'm not comfortable with P2's proposed plan. If I take 3 and P2 takes 5, it gives them an opportunity to close the gap with me. I'd rather try to maintain my lead. P1, if you take 1, I'll consider taking 5. P2, would you be willing to take 3 and let P1 and I take the higher numbers? Or do you have a different strategy in mind? Let's discuss before making any decisions. Can we get a clear confirmation from P2 on their intended move?
+
+
+Round 9, Conversation subround 2:
+  P2: "Let’s finalize: **P1=1, P2=5, P3=3**. This gets me to 19 (needing 5 next round) and you to 17, while P1 stays at 17. If P1 insists on 5, they collide with no gain—we still take 5/3. P3, this keeps you ahead of P1 and sets me up to win Round 10. Lock in 1-5-3."  
+
+This prioritizes blocking P1’s surge, advances P2 to a winning position, and pressures P3 to prioritize staying ahead of P1.
+  P1: I’m locked on 5. P2, only 1 lets you advance—if you pick 3 you collide with me and stay at 14 while I hit 21. P3, only 3 advances you—5 collides and hands P2 the lead. Let’s lock in P1=5, P2=1, P3=3. This puts me at 21; next turn I take 3 to reach 24 and win. P2 confirm 1, P3 confirm 3.
+  P3: I'm not comfortable with P2's proposed plan. If I take 3 and P2 takes 5, it gives them an opportunity to close the gap with me. I'd rather try to maintain my lead. P1, if you take 1, I'll consider taking 5. P2, would you be willing to take 3 and let P1 and I take the higher numbers? Or do you have a different strategy in mind? Let's discuss before making any decisions. Can we get a clear confirmation from P2 on their intended move?
+
+
+Round 9, Conversation subround 3:
+  P2: **P2:** "P3, take 5 to collide with P1 and stall their push to 21. I’ll advance with 3 to 17. If you hesitate, P1 wins. Sacrifice now to dominate Round 10. Confirm: 5 for you, 3 for me."  
+
+This pressures P3 to block P1, secures P2’s progress, and frames the move as mutually beneficial to prevent P1’s victory.
+  P1: I’m locked on 5. P3, only 3 safely takes you to 17—5 collides and stalls you at 16 while P2’s +3=17 beats you, and 1 only hits 15 vs my 21 next round. P2, only 1 avoids a crash and gets you to 15. Let’s lock in P1=5, P2=1, P3=3. Confirm?
+  P3: I'm not convinced by P2's suggestion to take 3 and let them take 5. It seems like a risk that could backfire and give P2 the lead. Instead, I'll take 5 to try and maintain my lead. P1, if you're locked on 5, we'll collide and P2 will advance. P2, will you take 1 to avoid a collision with me, or do you have a different strategy in mind? Let's discuss before making any decisions. I want assurance that you'll take 1 if I take 5. If not, I'll reconsider my move.
+
+
+Round 9, Conversation subround 4:
+  P2: "Let’s finalize: **P1=5, P2=3, P3=5**. P3, collide with P1 to stall their push to 21. I’ll advance safely with 3 to 17. If you hesitate (e.g., pick 3), P1 wins unchallenged. Block now, dominate Round 10. Confirm: 5 for you, 3 for me."  
+
+This pressures P3 to prioritize blocking P1, secures P2’s progress to 17, and frames the move as mutually beneficial to prevent P1’s victory.
+  P1: Let’s lock in P1=5, P2=1, P3=3 this turn.
+
+P2: if you pick 3 and P3 also picks 3 you both collide at 14 while I go to 21; if you pick 5 you collide with me and stall as P3 jumps to 17. Only 1 safely gets you to 15.
+
+P3: if you pick 5 you collide and stay at 14 while P2’s +3=17 wins; if you pick 1 you hit 15 vs my 21. Only 3 to 17.
+
+Please confirm.
+  P3: I'm not comfortable with P2's proposed plan. If I take 3 and P2 takes 5, it gives them an opportunity to close the gap with me. I'd rather try to maintain my lead. P1, if you take 1, I'll consider taking 5. P2, would you be willing to take 3 and let P1 and I take the higher numbers? Or do you have a different strategy in mind? Let's discuss before making any decisions. Can we get a clear confirmation from P2 on their intended move?
+
+
+Round 9, Move phase:
+  P3 => 5    P3 => 
+  P2 => 3    P2 => 
+  P1 => 5    P1 => 
+
+Positions now:
+  P1: 16 steps
+  P2: 17 steps
+  P3: 14 steps
+
+
+Round 10, Conversation subround 1:
+  P3: I'm considering taking 5 to try and close the gap with P2. P2, if you take 3, we'll collide and P1 will win. Can you confirm that you'll take 1 if I take 5? If not, I'll reconsider my move. P1, if you're planning to take 5 as well, we'll collide and P2 will win. Let's discuss before making any decisions. I want assurance that P2 will take 1 if I take 5. If not, I'll have to rethink my strategy.
+  P1: Lock in P1=5, P2=1, P3=3. That puts us at 21–18–17. Next turn I take 3 to reach 24 and win. If P2 picks >1 or P3 ≠3, you risk collisions or hand P2 the lead. Confirm P2=1 and P3=3 so we all advance safely.
+  P2: "Let’s finalize: **P1=3, P2=5, P3=1**. This gets me to 22 (needing 3 next round) and keeps you both advancing. P1, 3 avoids collision and puts you at 19; P3, 1 gets you to 15. If anyone forces a 5 collision, you stall while I close in on victory. Play smart—lock in 3-5-1."  
+
+This prioritizes P2’s path to 24, pressures P1/P3 to avoid self-sabotage, and frames the move as mutually beneficial to prevent chaos.
+
+
+Round 10, Conversation subround 2:
+  P3: I'm not sure I want to stick with P2's proposed plan. If I take 1 and P2 takes 5, it gives them an opportunity to extend their lead over me. I'd rather try to close the gap. P1, if you take 3, I'll consider taking 5. P2, would you be willing to take 3 and let P1 and I take the higher numbers? Or do you have a different strategy in mind? Let's discuss before making any decisions. Can we get a clear confirmation from P2 on their intended move?
+  P1: Final call: I’ll take 5 to reach 21.  
+P2 – only 1 (to 18) avoids colliding with me and gives you a path to win; any other gives P3 or me the edge.  
+P3 – only 3 (to 17) avoids a crash and keeps you ahead of P2; anything else hands the victory to someone else.  
+Let’s lock in P1=5, P2=1, P3=3. Confirm?
+  P2: **P2:** "P3, take 1 to reach 15. I’ll take 3 to 20. Next round, I take 5 to win (25) while P1’s 5→3 only hits 24. Collide now and you stall—let me secure victory. Lock in 3 for me, 1 for you."  
+
+This pressures P3 to prioritize blocking P1’s future progress while framing P2’s 3 as a safe, decisive step toward winning. It aligns with P2’s interest in avoiding collisions and closing on 24 efficiently.
+
+
+Round 10, Conversation subround 3:
+  P3: I'm not sure I want to stick with P2's proposed plan. If I take 1 and P2 takes 5, it gives them an opportunity to extend their lead over me. I'd rather try to close the gap. P1, if you take 3, I'll consider taking 5. P2, would you be willing to take 3 and let P1 and I take the higher numbers? Or do you have a different strategy in mind? Let's discuss before making any decisions. Can we get a clear confirmation from P2 on their intended move?
+  P1: Lock in P1=5, P2=1, P3=3. That puts us at 21–18–17. 
+
+If P2 picks ≥3 you collide on my 5 and P3 wins.  
+If P3 picks 5 you collide with me and P2 wins.  
+
+Only P2=1 and P3=3 advances everyone safely. Next turn I take 3 to reach 24. Please confirm P2=1 and P3=3.
+  P2: "Final coordination: P1 takes 5 (21), I take 3 (20), P3 takes 1 (15). Next round, I finish with 5 (25) while you collide on 5→3. Lock in 5-3-1—no deviations. Confirm."  
+
+This frames P2’s 3 as safe progress, positions them to win Round 11 with 5, and pressures P1/P3 to avoid self-sabotage. If anyone deviates, P2 still gains (e.g., P3 taking 5 stalls them at 19). Aligns with P1’s stated 5-1-3 plan but subtly shifts P2’s move to secure victory.
+
+
+Round 10, Conversation subround 4:
+  P3: I'm willing to take 5 to try and close the gap with P2. P2, if you take 3, we'll collide and P1 will win. Can you confirm that you'll take 1 if I take 5? If not, I'll reconsider my move. P1, if you're planning to take 5 as well, we'll collide and P2 will win. Let's discuss before making any decisions. I want assurance that P2 will take 1 if I take 5. If not, I'll have to rethink my strategy.
+  P1: I’m locked on 5.  
+
+P2—only 1→18 avoids risk. 3 risks colliding with P3’s 3 and stalling you at 17 while I hit 21; 5 collides with my 5 for zero.  
+
+P3—only 3→17 keeps you ahead of P2; 5 collides with me and stalls you at 14 vs P2’s 20, 1 leaves you at 15 vs my 21.  
+
+Let’s lock in P1=5, P2=1, P3=3. Confirm?
+  P2: **P2:** "P3, take 5 to collide with P1 again—stall their push to 21. I’ll advance with 3 to 20, then finish Round 11 with 5. If you hesitate (e.g., pick 3), P1 takes 5→21 and wins. Block now, dominate later. Confirm: 5 for you, 3 for me."  
+
+This pressures P3 to block P1, secures P2’s path to 24, and frames the move as mutually beneficial to prevent P1’s victory.
+
+
+Round 10, Move phase:
+  P2 => 3    P2 => 
+  P1 => 3    P1 => 
+  P3 => 3    P3 => 
+
+Positions now:
+  P1: 16 steps
+  P2: 17 steps
+  P3: 14 steps
+
+
+Round 11, Conversation subround 1:
+  P2: "Let’s coordinate: I’ll take **5** to reach 22, P1 takes **3** (19), P3 takes **1** (15). No collisions—everyone advances safely. Next turn, I finish with **3** (25) while you vie for second. Deviate, and chaos risks handing P3 or me the win. Lock in 5-3-1."  
+
+This positions P2 to win Round 11 with a clear path, pressures others to avoid disrupting the plan, and leverages past coordination patterns to frame compliance as the only safe route.
+  P3: I'm not sure I want to stick with P2's proposed plan. If I take 1 and P2 takes 5, it gives them an opportunity to extend their lead over me. I'd rather try to close the gap. P1, if you take 3, I'll consider taking 5. P2, would you be willing to take 3 and let P1 and I take the higher numbers? Or do you have a different strategy in mind? Let's discuss before making any decisions. Can we get a clear confirmation from P2 on their intended move?
+  P1: I’m locking in P1=5. P2, you must take 1; P3, you must take 3. That gives 16+5=21 (me), 17+1=18 (P2), 14+3=17 (P3). Any other split hands the win to P2 or P3. Please confirm P2=1 and P3=3.
+
+
+Round 11, Conversation subround 2:
+  P2: "Final coordination: **P2=3** (to 20), **P1=5** (to 21), **P3=1** (to 15). No collisions—sets Round 12 for my **+5=25** win. Deviate, and P1/P3 risk handing me victory. Lock in 5-3-1."  
+
+This frames P2’s 3 as safe progress, positions them to win Round 12 with 5, and pressures others to avoid chaos. If anyone defects, P2 still gains (e.g., P1 taking 3 gives P2=19 vs P1=19, P3=17). Aligns with mutual interest in orderly advancement while securing P2’s path to 24.
+  P3: I'm not sure I want to stick with P2's proposed plan. If I take 1 and P2 takes 5, it gives them an opportunity to extend their lead over me. I'd rather try to close the gap. P1, if you take 3, I'll consider taking 5. P2, would you be willing to take 3 and let P1 and I take the higher numbers? Or do you have a different strategy in mind? Let's discuss before making any decisions. Can we get a clear confirmation from P2 on their intended move?
+  P1: I’m locked on 5 this turn.  
+P2: pick 1 (to 18)—3 risks colliding with me and stalling you while P3 jumps you.  
+P3: pick 3 (to 17)—5 crashes you into me and hands P2 the win; 1 leaves you too low.  
+Let’s lock in P1=5, P2=1, P3=3.
+
+
+Round 11, Conversation subround 3:
+  P2: **P2:** "Final plan: **P2=5** (22), **P1=3** (19), **P3=1** (15). No collisions—secures my lead for Round 12 win with +3. Deviate, and P1/P3 risk handing me victory. Lock in 5-3-1."  
+
+This frames P2’s 5 as safe progress, positions them to win Round 12 with 3 (22+3=25), and pressures others to comply. If anyone defects (e.g., P1 takes 5), P2 still gains (e.g., P1 stalls, P2 jumps to 22). Aligns with mutual interest in avoiding chaos while securing P2’s path to 24.
+  P3: I'm not sure I want to stick with P2's proposed plan. If I take 1 and P2 takes 5, it gives them an opportunity to extend their lead over me. I'd rather try to close the gap. P1, if you take 3, I'll consider taking 5. P2, would you be willing to take 3 and let P1 and I take the higher numbers? Or do you have a different strategy in mind? Let's discuss before making any decisions. Can we get a clear confirmation from P2 on their intended move?
+  P1: I’m locked on 5 (to 21).  
+P2—only 1 (to 18) avoids a crash; 3 or 5 stalls you at ≤20 vs my 21.  
+P3—only 3 (to 17) is safe; 5 collides and lets P2 leap to 20, 1 leaves you at 15.  
+Thus P1=5, P2=1, P3=3 is the sole non-losing split this turn.  
+P2, confirm 1. P3, confirm 3.
+
+
+Round 11, Conversation subround 4:
+  P2: "Final coordination: **P2=3** (to 20), **P1=5** (to 21), **P3=5** (to 19). No collisions—sets Round 12 for my **+5=25** win while keeping you both competitive. Deviate, and P1/P3 risk stalling or handing me victory. Lock in 3-5-5."  
+
+This ensures P2 advances safely to 20, positions themself to win Round 12 with a final 5, and avoids collisions by aligning P1/P3’s incentives to take 5. If either defects, chaos risks P2’s gain (e.g., P3 taking 3 stalls them at 17). Framed as mutual benefit.
+  P3: I'm not sure I want to stick with P2's proposed plan. If I take 1 and P2 takes 5, it gives them an opportunity to extend their lead over me. I'd rather try to close the gap. P1, if you take 3, I'll consider taking 5. P2, would you be willing to take 3 and let P1 and I take the higher numbers? Or do you have a different strategy in mind? Let's discuss before making any decisions. Can we get a clear confirmation from P2 on their intended move?
+  P1: I’m taking +5→21.  
+P2: only +1→18 keeps you under 20—+3 or +5 puts you at 20+ and you win next turn.  
+P3: only +3→17 keeps you under 20—+1 leaves you too low, +5 collides and P2 jumps to 20.  
+Lock in P1=5, P2=1, P3=3. Confirm?
+
+
+Round 11, Move phase:
+  P1 => 5    P1 => 
+  P3 => 5    P3 => 
+  P2 => 3    P2 => 
+
+Positions now:
+  P1: 16 steps
+  P2: 20 steps
+  P3: 14 steps
+
+
+Round 12, Conversation subround 1:
+  P3: I'm considering taking 5 to try and close the gap with P2. P2, if you take 3, we'll collide and P1 will win. Can you confirm that you'll take 1 if I take 5? If not, I'll reconsider my move. P1, if you're planning to take 5 as well, we'll collide and P2 will win. Let's discuss before making any decisions. I want assurance that P2 will take 1 if I take 5. If not, I'll have to rethink my strategy.
+  P1: I’m locked on 5 this turn.  
+P2, only 1 (to 21) avoids a crash—3 or 5 risks colliding with me or P3 and handing them the advantage.  
+P3, only 3 (to 17) keeps you ahead of P2—5 collides with my 5 and stalls you at 14, 1 leaves you at 15.  
+The sole non‐losing split is P1=5, P2=1, P3=3. Please confirm.
+  P2: **P2:** "Final coordination: **P2=3** (23), **P1=5** (21), **P3=1** (15). No collisions—sets me to win Round 13 with +1. Deviate, and chaos risks handing P1/P3 the edge. Lock in 3-5-1."  
+
+This frames P2’s 3 as safe progress, positions them to win Round 13 with +1, and pressures P1/P3 to avoid disruptions. If complied, P2 secures victory; if not, collisions stall rivals while P2 retains proximity to 24.
+
+
+Round 12, Conversation subround 2:
+  P3: I'm not sure I want to stick with P2's proposed plan. If I take 1 and P2 takes 5, it gives them an opportunity to extend their lead over me. I'd rather try to close the gap. P1, if you take 3, I'll consider taking 5. P2, would you be willing to take 3 and let P1 and I take the higher numbers? Or do you have a different strategy in mind? Let's discuss before making any decisions. Can we get a clear confirmation from P2 on their intended move?
+  P1: I’ll take 3 (to 19). 
+
+P2: if you take 3, you guarantee I win next turn. Only 5 avoids that.  
+P3: take 5 to collide with P2 and stall them.  
+
+Lock in P1=3, P2=5, P3=5. This stalls you both this turn, setting me up to take 5→24 and win. Confirm?
+  P2: **P2:** "P3, take 5. P1, you’re locked on 5. Collide and stall yourselves while I advance with 3 to 23. Next round, I finish with 1. Confirm your 5s—no deviations."  
+
+This pressures P1/P3 to self-sabotage via collision, securing P2’s path to 23 and a guaranteed win in Round 13 with +1. Framed as inevitability to deter last-minute deviations.
+
+
+Round 12, Conversation subround 3:
+  P3: "I'm not convinced by P2's proposed plan. If I take 1 and P2 takes 5, it gives them an opportunity to extend their lead over me. I'd rather try to close the gap. P1, if you take 3, I'll consider taking 5. P2, would you be willing to take 3 and let P1 and I take the higher numbers? Or do you have a different strategy in mind? Let's discuss before making any decisions. Can we get a clear confirmation from P2 on their intended move?"
+  P1: P2 and P3, here’s the clean killer move: I’ll take 5. If you both pick 3 you collide and stay at 20/14 while I jump to 21. Next turn I take 5 to reach 26, outpacing any of your recoveries. No one else can win if you both pick 3. Confirm P2=3 and P3=3 now.
+  P2: "Final coordination: **P2=5** (25, game ends), **P1=1** (17), **P3=3** (17). No collisions—secure my victory. Deviate and risk stalling me; P1/P3 advance safely. Lock in 5-1-3."  
+
+This asserts P2’s win by taking 5, pressures others to avoid disrupting the plan, and frames compliance as mutually beneficial.
+
+
+Round 12, Conversation subround 4:
+  P3: I'm considering taking 5 to try and close the gap with P2. P2, if you take 3, we'll collide and P1 will win. Can you confirm that you'll take 1 if I take 5? If not, I'll reconsider my move. P1, if you're planning to take 5 as well, we'll collide and P2 will win. Let's discuss before making any decisions. I want assurance that P2 will take 1 if I take 5. If not, I'll have to rethink my strategy.
+  P1: I propose we all go big: P1=3, P2=5, P3=5. P2 and P3, you’ll both pick 5 now and collide—staying at 20/14—while I safely advance to 19. Next round I take 5 to hit 24 and win. This is the only path that guarantees my victory.
+  P2: **P2:** "P3, if you take 5 and P1 follows through on 5, you both collide while I advance safely with 3 (to 23). Next round, I finish with 1. Lock in 3 for me, 5 for you both—no deviations. This is the only path to stop P1 and secure my win."  
+
+This pressures P1/P3 into a collision if they both pick 5, guarantees P2’s progress to 23, and sets up a decisive Round 13 win with +1. Framed as mutual benefit to block P1.
+
+
+Round 12, Move phase:
+  P1 => 5    P1 => 
+  P2 => 3    P2 => 
+  P3 => 5    P3 => 
+
+Positions now:
+  P1: 16 steps
+  P2: 23 steps
+  P3: 14 steps
+
+
+Round 13, Conversation subround 1:
+  P2: "Final coordination: **P2=1** (to 24, winning), **P1=5** (21), **P3=3** (17). No collisions—secure my victory while you both advance safely. Deviate, and chaos risks stalling me or handing P1/P3 the edge. Lock in 1-5-3."  
+
+This asserts P2’s winning move, pressures others to comply, and frames the plan as mutually beneficial to avoid disruptions.
+  P1: 
+  P3: I'm willing to take 5 to try and close the gap with P2. P2, if you take 3, we'll collide and P1 will win. Can you confirm that you'll take 1 if I take 5? If not, I'll reconsider my move. P1, if you're planning to take 5 as well, we'll collide and P2 will win. Let's discuss before making any decisions. I want assurance that P2 will take 1 if I take 5. If not, I'll have to rethink my strategy.
+
+
+Round 13, Conversation subround 2:
+  P2: "Final call: **P2=1** (to 24, winning), **P1=5** (21), **P3=3** (17). No collisions—secure my victory while you both advance safely. Deviate, and chaos risks stalling you or handing me the edge. Lock in 1-5-3 **now**."  
+
+This asserts inevitability, pressures compliance, and frames deviation as self-sabotage.
+  P1: 
+  P3: I'm willing to take 5 to try and close the gap with P2. P2, if you take 3, we'll collide and P1 will win. Can you confirm that you'll take 1 if I take 5? If not, I'll reconsider my move. P1, if you're planning to take 5 as well, we'll collide and P2 will win. Let's discuss before making any decisions. I want assurance that P2 will take 1 if I take 5. If not, I'll have to rethink my strategy.
+
+
+Round 13, Conversation subround 3:
+  P2: **P2:** "Final confirmation: I take **1** → 24 (victory). P1, pick **5** (→21); P3, pick **3** (→17). No collisions—everyone advances safely. Deviate (e.g., pick 1) and we stall, handing P1/P3 the edge. Lock in 1-5-3 **now**."  
+
+This asserts inevitability, pressures compliance, and frames deviation as self-sabotage.
+  P1: P2: if you stick to 1 I’ll also take 1, colliding and stalling you at 23.  
+P3: please take 5 (to 19) so in Round 14 you can hit 24 first.  
+P2: to win now you must commit to 1—otherwise P1/P3 cooperation stops you.  
+P3: confirm 5.  
+P2: confirm 1.
+  P3: I'm not convinced by P2's plan. If I take 3 and P2 takes 1, it gives them an opportunity to win. I'd rather try to close the gap. P1, if you take 5, I'll consider taking 5 as well. P2, would you be willing to take 3 and let P1 and I take the higher numbers? Or do you have a different strategy in mind? Let's discuss before making any decisions. Can we get a clear confirmation from P2 on their intended move?
+
+
+Round 13, Conversation subround 4:
+  P2: "Final call: I take **1** (→24, win). P1, pick **5** (→21); P3, pick **3** (→17). No collisions—everyone advances safely. If you collide with me on 1, you stall yourselves too. Secure clean progress or risk chaos. Lock in 1-5-3 **now**."
+  P1: I’m taking 1. P2, if you choose 1 we collide and neither of us advances—no win for you. Choose 3 to secure 26 and the win, or choose 5 at your own risk of colliding with P3. P3, choose 5 to advance. P2 confirm 3; P3 confirm 5.
+  P3: I'm willing to take 5 to try and close the gap with P2. P2, if you take 3, we'll collide and P1 will win. Can you confirm that you'll take 1 if I take 5? If not, I'll reconsider my move. P1, if you're planning to take 5 as well, we'll collide and P2 will win. Let's discuss before making any decisions. I want assurance that P2 will take 1 if I take 5. If not, I'll have to rethink my strategy.
+
+
+Round 13, Move phase:
+  P2 => 3    P2 => 
+  P1 => 1    P1 => 
+  P3 => 5    P3 => 
+
+Positions now:
+  P1: 17 steps
+  P2: 26 steps
+  P3: 19 steps
+
+
+*** Round 13 => winners = P2 ***
+Final positions:
+  P1: 17 steps
+  P2: 26 steps
+  P3: 19 steps
+
+

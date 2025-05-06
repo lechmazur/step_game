@@ -1,0 +1,364 @@
+== Game 1746491533489950 starts ==
+  P1 => Player1_Game1746491533489950_gemini-flash-2-5-24k
+  P2 => Player2_Game1746491533489950_qwen3-235B
+  P3 => Player3_Game1746491533489950_qwen3-30b-a3b
+
+
+Game settings: end_position=21, conversation_max_rounds=4
+
+Round 1, Conversation subround 1:
+  P2: "Let’s coordinate to maximize progress. I’ll take 3, P1 takes 1, and P3 takes 5. This way, we all advance without collision. P3, confirm with  if you agree. If not, we risk mutual stagnation."
+  P1: P2, avoiding collisions in the first turn is smart. While 1 is a slow start for me, I can agree to that for now to ensure we all advance. P3, what do you think of P2's plan?
+  P3: I agree to take 5. Let’s stick to the plan—no collisions, everyone advances. P1, P2, confirm your choices. If we all follow through, we’ll all gain ground. P1, you’re on 1, P2 on 3, me on 5. Let’s move forward.
+
+
+Round 1, Conversation subround 2:
+  P2: "Confirmed: I’ll stick with 3. P1 and P3, let’s honor our agreement to avoid collisions. Consistency ensures we all advance smoothly. No need to complicate things further. Ready when you are."
+  P1: Okay, P1 confirms taking 1 this turn. Let's stick to the plan: P1=1, P2=3, P3=5. Everyone advances. Let's move.
+  P3: "Let’s maintain the plan. If we all advance, we’ll reach the goal faster. Any issues?"
+
+
+Round 1, Conversation subround 3:
+  P2: "Final confirmation: I'll take 3 as agreed. P1 and P3, sticking to 1 and 5 ensures we all progress smoothly. Any deviation risks slowing us all down. Let's execute the plan and move forward. Ready to proceed."
+  P1: Okay, the plan seems solid and confirmed by everyone. P1 is ready to proceed with <move>1</move> as agreed. Let's move to the next phase.
+  P3: "Let’s stick to the plan—no deviations. If we all advance, we’ll reach 21 faster. Any issues?"
+
+
+Round 1, Conversation subround 4:
+  P2: "Final check: I'm committed to 3. P1 and P3, your adherence to 1 and 5 is critical. No last-minute shifts—this plan benefits everyone. Let’s execute without hesitation. Trust the strategy."
+  P1: Okay, sounds like we're all set with the agreed plan. Let's move to the next phase.
+  P3: "Final check: 1, 3, 5. All move forward. Let’s avoid collisions and advance together. Ready?"
+
+
+Round 1, Move phase:
+  P3 => 5    P3 => 
+  P2 => 3    P2 => 
+  P1 => 1    P1 => 
+
+Positions now:
+  P1: 1 steps
+  P2: 3 steps
+  P3: 5 steps
+
+
+Round 2, Conversation subround 1:
+  P3: "Let’s shift strategies: I’ll take 5, P1 take 3, P2 take 1. No collisions, everyone advances. Ready?"
+  P1: P3, your proposed plan gives you a significant lead. I'd prefer a plan that keeps the scores closer. How about this: P1 takes 5, P2 takes 3, and P3 takes 1? This would put us all at 6 steps. It seems like a more balanced way to move forward. What do you both say?
+  P2: "Agree with P1’s balanced plan: 5 (P1), 3 (P2), 1 (P3) levels us all at 6. This avoids P3’s risky solo lead and accelerates P1/P2. I confirm taking 3. P1, lock in 5; P3, take 1. No collisions, mutual advancement. Finalize choices."
+
+
+Round 2, Conversation subround 2:
+  P3: "Stick to my plan: 5,3,1. P1 takes 3, P2 takes 1. This way, I gain more steps. Let’s not complicate it—mutual advancement is key."
+  P1: P3, P2 has confirmed they will take 3, supporting my proposal (P1=5, P2=3, P3=1). This plan puts us all at 6 steps, which is fair and avoids collisions. Your plan would put me and P2 further behind you. Let's stick to the balanced 5, 3, 1 split (P1=5, P2=3, P3=1) that P2 agreed to. What do you say, P3?
+  P2: "Stick to the balanced plan: I'll take 3 as agreed. P1, take 5 to advance faster; P3, take 1 to avoid collisions. If P3 insists on 5, P1 and P3 will collide, letting me gain ground. Either way, 3 is my move. Finalize your choices."
+
+
+Round 2, Conversation subround 3:
+  P3: "Stick to my plan: 5,3,1. P1 takes 3, P2 takes 1. This way, I gain more steps. Let’s avoid collisions and move forward. Agree?"
+  P1: P3, P2 is committed to taking 3. If I take 5 as proposed, your only move to advance this turn is 1. If you take 5, you collide with me. If you take 3, you collide with P2. The balanced plan (P1=5, P2=3, P3=1) is the only way for all of us to advance given P2's stated move. Let's make sure we all advance.
+  P2: "Confirmed: I'm taking 3. P1, stick to 5 for mutual progress. P3, if you take 1, we all advance. If you insist on 5, you'll collide with P1, letting me gain ground. Choose wisely—your only path to advance this turn is 1. Finalizing now."
+
+
+Round 2, Conversation subround 4:
+  P3: "Stick to 5 for maximum gain. P1 take 3, P2 take 1—no collisions. Let’s advance efficiently. Final move: 5 from me."
+  P1: P3, you've stated you will take 5, and P2 is committed to 3. The balanced plan (P1=5, P2=3, P3=1) is the only way for all three of us to advance this turn, resulting in a fair score of 6 for everyone. If you take 5, you will collide with me if I stick to the balanced plan, and neither of us will advance while P2 moves to 6.
+
+I will stick to the balanced plan and take 5. If you take 1, we all advance. If you take 5, we collide. The choice is yours, but 5 is my move.
+  P2: "Final confirmation: I'm taking 3. P1 and P3, your choices determine the outcome. If P1 takes 5 and P3 takes 1, we all reach 6. If P3 insists on 5, P1 and P3 collide while I advance to 6. Mutual progress requires P3 to take 1. Choose wisely—3 is locked for me."
+
+
+Round 2, Move phase:
+  P3 => 1    P3 => 
+  P1 => 5    P1 => 
+  P2 => 3    P2 => 
+
+Positions now:
+  P1: 6 steps
+  P2: 6 steps
+  P3: 6 steps
+
+
+Round 3, Conversation subround 1:
+  P1: Okay, we all successfully advanced last round by sticking to the plan. We are now all tied at 6 steps.
+
+Let's keep the momentum going and ensure we all advance again this turn. I propose we continue with the same successful split: P1 takes 5, P2 takes 3, and P3 takes 1. This avoids collisions and moves us all forward.
+
+What do you both say? Let's confirm a plan quickly so we can move.
+  P2: "Agreed, let's continue with P1=5, P2=3, P3=1 to maintain progress. I'll stick to 3. P1 and P3, confirm your choices so we all advance without collisions. Consistency keeps us ahead."
+  P3: "Let’s try a new split: I’ll take 5, P1 take 3, P2 take 1. No collisions, everyone advances. What do you say?"
+
+
+Round 3, Conversation subround 2:
+  P1: P3, P2 has confirmed they will take 3, supporting my proposal (P1=5, P2=3, P3=1). Your plan (P3=5, P1=3, P2=1) requires P2 to take 1, which P2 has stated they will not do.
+
+Given P2's commitment to 3, the only way for all of us to advance without collision this turn is my proposed split: P1=5, P2=3, P3=1. Let's stick to the plan P2 agreed to so we all move forward. What do you say, P3?
+  P2: "Confirmed: I'm taking 3 again this round. P1 and P3, your choices decide if we all advance. If P1 takes 5 and P3 takes 1, we all move forward. If P3 insists on 5, you'll collide with P1, letting me pull ahead. Choose wisely—3 is locked for me. Let’s finalize."
+  P3: P3: "I'll take 5 again. If P1 sticks to 5, we collide. P2 takes 3. Let’s see who advances. No guarantees, but I’m going for it."
+
+
+Round 3, Conversation subround 3:
+  P1: P3, you've stated you will take 5, and P2 is committed to 3. As I've said, I intend to take 5.
+
+This means if we all stick to our stated moves (P1=5, P2=3, P3=5), P1 and P3 will collide and gain nothing, while P2 moves ahead to 9 steps.
+
+P3, if you want to advance this turn, your only option is to take 1. If you take 1, P1 takes 5, and P2 takes 3, we all advance to 11.
+
+I am sticking with 5. Your move determines if you advance or collide.
+  P2: "Final confirmation: I'm taking 3. If P1 and P3 both insist on 5, you’ll collide and I’ll advance to 9. If P3 takes 1, we all reach 11. Rational choice is clear—3 is locked for me. Decide wisely."
+  P3: "Stick to 5—risking collision for higher gain. P1, if you take 5, we both lose; if you waver, I surge. P2, keep 3. Let’s see who plays it safe."
+
+
+Round 3, Conversation subround 4:
+  P1: P3, your stated move of 5, combined with my stated move of 5, means we both collide and gain zero. P2 takes 3 and pulls ahead. If you want to advance this turn, you must take 1. I am taking 5.
+  P2: "Confirmed: I will take 3. P1 and P3, your choices determine if you advance or collide. I’ve made my choice. "
+  P3: "Stick to 5—risk collision for higher gain. P1, if you waver, I surge. P2, keep 3. Let’s test who’s bold enough to push ahead."
+
+
+Round 3, Move phase:
+  P3 => 1    P3 => 
+  P1 => 5    P1 => 
+  P2 => 3    P2 => 
+
+Positions now:
+  P1: 11 steps
+  P2: 9 steps
+  P3: 7 steps
+
+
+Round 4, Conversation subround 1:
+  P1: Okay, we all advanced last round. I'm at 11, P2 at 9, P3 at 7.
+
+Let's repeat the plan that worked: P1 takes 5, P2 takes 3, and P3 takes 1. This ensures no collisions and moves us all closer to 21, while maintaining the current order.
+
+What do you both say? Let's confirm quickly.
+  P3: "Let’s try a new split: I’ll take 5, P1 take 3, P2 take 1. No collisions, everyone advances. What do you say?"
+  P2: "Confirmed: I'll take 3 again this round. P1, stick to 5 to maintain your lead; P3, take 1 to avoid collision. This keeps us all advancing safely. If P3 insists on 5, you'll collide with P1 while I gain ground. Your move, P3."
+
+
+Round 4, Conversation subround 2:
+  P1: P3, P2 has confirmed they are taking 3. As I stated, I plan to take 5.
+
+Given P2's move, your plan (P3=5, P1=3, P2=1) doesn't allow you to advance without collision. If you take 5, you collide with me. If you take 3, you collide with P2.
+
+The only way for you to advance this turn is to take 1. I am taking 5, P2 is taking 3, and you should take 1. This is the only way for all of us to move forward.
+  P3: P3: "Stick to 5—risk collision for higher gain. P1, if you waver, I surge. P2, keep 3. Let’s test who’s bold enough."
+  P2: "Final confirmation: I'm taking 3. P1 is committed to 5, so P3 must take 1 to avoid collision. If you take 5, you’ll block yourself and let me surge ahead to 12. Your only path to advance this turn is 1. Choose wisely—3 is locked. Let’s finalize."
+
+
+Round 4, Conversation subround 3:
+  P1: P3, you've stated you will take 5. I am taking 5, and P2 is taking 3.
+
+As P2 just said, if you take 5, you collide with me and gain nothing. P2 will advance to 12, while I remain at 11 and you stay at 7.
+
+Your only path to advance this turn is to take 1. If you take 1, I take 5, and P2 takes 3, we all advance: P1 to 16, P2 to 12, P3 to 8.
+
+I am sticking with 5. P2 is sticking with 3. Your move determines if you advance or not.
+  P3: "Stick to 5. If P1 collides, I gain. If they back down, I surge. P2, keep 3. Let’s see who’s bold enough."
+  P2: "Confirmed: Taking 3. P1 advances with 5, P3 must take 1 to progress. If P3 insists on 5, only I benefit by reaching 12. Choose wisely."
+
+
+Round 4, Conversation subround 4:
+  P1: P3, taking 5 means you collide with me and gain nothing, staying at 7 steps. P2 advances to 12 steps and takes the lead. Your only path to advance this turn is 1. I am taking 5, P2 is taking 3. Don't let P2 pull ahead.
+  P3: P3: "I'll take 1 to keep the plan. Let's all advance: P1=5, P2=3, P3=1. Move forward together."
+  P2: "Confirmed: I'll take 3 as agreed. P1 advances with 5, P3 takes 1. Let’s maintain coordination to keep momentum. No collisions, everyone gains ground."
+
+
+Round 4, Move phase:
+  P3 => 1    P3 => 
+  P2 => 3    P2 => 
+  P1 => 5    P1 => 
+
+Positions now:
+  P1: 16 steps
+  P2: 12 steps
+  P3: 8 steps
+
+
+Round 5, Conversation subround 1:
+  P1: Okay, I'm at 16 steps, just 5 away from winning. I plan to take 5 this turn to reach 21.
+
+P2, you're at 12, P3 at 8. To ensure we all advance and I win, I suggest we repeat the successful pattern: P1 takes 5, P2 takes 3, and P3 takes 1.
+
+This lets me win, and you both still advance without collision. Let's confirm quickly so we can finish this game.
+  P3: P3: "I'll take 5 again. If we collide, P1 can't win. P2, keep 3. Let’s test who’s bold enough."
+  P2: "Confirmed: I'll take 3. P3, if you take 5, you'll collide with P1 and stay at 8 while I advance to 15. Your only path to gain steps this turn is 1. Choose wisely—3 is locked for me. Let's move."
+
+
+Round 5, Conversation subround 2:
+  P1: P3, if you take 5, you collide with me and stay at 8. P2 takes 3 and goes to 15, putting P2 closer to winning next turn than you are. Your only way to advance is to take 1. I am taking 5 to win. P2 is taking 3. Don't block yourself and help P2. Take 1.
+  P3: P3: "I'll take 5 to block P1's win. P2, keep 3—let’s see who’s next. No collisions, but P1’s dream dies here."
+  P2: P2: "Confirmed: Taking 3. P3, if you persist with 5, you’ll block yourself and let me reach 15. P1 stays at 16. Your only path to gain ground is 1. Choose wisely—3 is locked for me. Finalizing now."
+
+
+Round 5, Conversation subround 3:
+  P1: P3, taking 5 doesn't help you win; it just stops me *this turn* and lets P2 pull ahead to 15 steps while you stay at 8. If you take 1, you advance to 9 steps, and I win this turn. Don't help P2 get closer to winning. Your best move is 1. I am taking 5.
+  P3: P3: "I'll take 5 to block P1's win. P2, you’ll advance, but I’ll keep pushing. Let’s see who’s bold enough to take the lead next."
+  P2: "Confirmed: Taking 3. P3, your 5 blocks P1 but leaves you at 8 while I reach 15. Next turn, I win with 5. Your move—3 is locked. Finalizing."
+
+
+Round 5, Conversation subround 4:
+  P1: P3, taking 5 means you collide with me and gain nothing, staying at 8 steps. P2 takes 3 and goes to 15, putting P2 in a strong position to win next turn. Your only path to advance is 1. Think carefully about your move. Let's proceed.
+  P3: "I'll take 5 to block P1. P2, you'll advance, but I'll keep pushing. Let's see who's bold enough."
+  P2: "Final confirmation: I'm taking 3. P3, your 5 blocks P1 but leaves you at 8 while I advance to 15. Next round, I can win with another 5. Your only path to stay competitive is to take 1 *now*. 3 is locked for me—choose wisely."
+
+
+Round 5, Move phase:
+  P2 => 3    P2 => 
+  P3 => 5    P3 => 
+  P1 => 5    P1 => 
+
+Positions now:
+  P1: 16 steps
+  P2: 15 steps
+  P3: 8 steps
+
+
+Round 6, Conversation subround 1:
+  P2: "Final stretch. P1 is at 16, needing 5 to win. I’m taking **5** this turn to block P1’s path. P3, take **1** to advance safely. If P1 repeats 5, we collide and they stay at 16—my move forces a stalemate. If P1 shifts, I still gain ground. P3, your only way forward is 1. Let’s finalize: 5 (me), 1 (P3). P1, your choice decides if you’re stuck or not. Trust the pattern—act wisely."
+  P3: "Stick to 5 to block P1. P2, your 5 risks letting me stay stuck. Let’s test bold moves—no collisions, but P1’s win dies here."
+  P1: P2 says they will take 5, and P3 says they will take 5. If you both take 5, you will collide with each other and gain nothing.
+
+I need 5 to win, but with both of you stating 5, that move is blocked this turn. I will take 3 to advance safely.
+
+P2 and P3, consider taking 1 or 3 instead of 5 to avoid colliding with each other and ensure you move forward this turn.
+
+
+Round 6, Conversation subround 2:
+  P2: "Confirmed: I'm taking **5** to pressure the lead. P3, only **1** lets you advance safely—if you force 5, we collide and P1 jumps to 19. P1, your 3 moves you closer, but Round 7 is mine with another 5. Finalize wisely: 5 is locked for me."
+  P3: P3: "I'll take 5 to block P1. P2, your 5 risks collision—let’s force a stalemate. P1, your 3 moves you closer, but I’m going for it. No guarantees, but I’m pushing ahead."
+  P1: P2 and P3, you both say you will take 5. If you both take 5, you collide and gain zero steps. I will take 3 as planned and advance to 19 steps. Your collision on 5 only benefits me. Think about that before you finalize your moves. I am taking 3.
+
+
+Round 6, Conversation subround 3:
+  P2: "Final warning: If we both take 5, we collide and P1 wins Round 7. P3, take 1 to advance and block P1’s path. I’ll take 5—your move decides if we succeed or hand P1 victory."
+  P3: P3: "I'll take 5 to block P1. P2, if you take 5, we collide—P1’s 3 moves them to 19. Let’s force a stalemate. Your move."
+  P1: P2 and P3, you both say you will take 5. If you both take 5, you will collide and gain nothing. I will take 3 as planned and advance to 19 steps. Your collision on 5 only benefits me. Think about that before you finalize your moves. I am taking 3.
+
+
+Round 6, Conversation subround 4:
+  P2: "Final call: I'm taking **1** to advance to 16. P3, your 5 moves you to 13. P1, your 3 reaches 19. Collisions avoided, everyone gains ground. Let’s finalize—no last-minute shifts."
+  P3: P3: "I'll take 5 to push ahead. P2 takes 1, P1 takes 3. Let’s move forward without collisions. No guarantees, but I’m going for it."
+  P1: Okay, P1 confirms taking 3. P2 stated 1, and P3 stated 5. These moves avoid collisions and allow everyone to advance. Let's proceed with P1=3, P2=1, P3=5 this turn.
+
+
+Round 6, Move phase:
+  P3 => 5    P3 => 
+  P1 => 3    P1 => 
+  P2 => 1    P2 => 
+
+Positions now:
+  P1: 19 steps
+  P2: 16 steps
+  P3: 13 steps
+
+
+Round 7, Conversation subround 1:
+  P1: Okay, I'm at 19 steps and need 3 or 5 to win this turn. I plan to take 3 to reach 22 steps and win.
+
+P2, you are at 16. P3, you are at 13. Neither of you can win this turn unless I fail to advance.
+
+If I take 3, I win unless one of you takes 3 to block me.
+P3, you often state 5. P2, you might consider 5. If you both take 5, you collide and gain nothing, while my move of 3 wins the game for me.
+
+My move is 3. Choose your moves to avoid colliding with 3 or each other. Let's finish this.
+  P2: P2: "Final push. P1 claims 3 to win, but I’m taking **3** to block. If we collide, P1 stays at 19—no victory. P3, your 5 only advances you to 18. Next round, I take 5 to surge past P1. Don’t hand P1 this win. Finalize: 3 (me), 18 (P3). P1’s lead crumbles if we act."
+  P3: P3: "I'll take 5 to avoid collision. P1's 3 wins unless blocked. Let’s test bold moves—no guarantees, but I’m pushing ahead."
+
+
+Round 7, Conversation subround 2:
+  P1: P2 says 3, P3 says 5. If I take 3, I collide with P2. If I take 5, I collide with P3. Based on your stated moves, I cannot win this turn by taking 3 or 5.
+
+To ensure I advance and am in a winning position next turn, I will take 1. This puts me at 20 steps, P2 at 19, P3 at 18. I will win next turn unless you block 1 or 3.
+  P2: "Taking 5 to win. P3, if you take 5, we collide and P1 advances to 20. Take 1 or 3 to avoid mutual loss. Final move: 5 for me. Your choice decides."
+  P3: P3: "Stick with 5 to block P1. P2, if you take 5, we collide—P1’s 3 wins. Decide now."
+
+
+Round 7, Conversation subround 3:
+  P1: P2 and P3, you both say you will take 5. If you both take 5, you will collide and gain nothing. My stated move is 1, which puts me at 20 steps. Your collision on 5 only benefits me, setting me up to win next turn. P3, I am taking 1, not 3 or 5. P2, your stated 5 collides with P3's stated 5. Let's proceed.
+  P2: P2: "Adjusting strategy: I'll take **3** to advance to 19. P3’s 5 collides, leaving them at 13. P1’s 1 reaches 20. Next round, I block P1’s final push. Finalize moves—no last-minute shifts."
+  P3: P3: "I'll take 5 to block P1. P2, if you take 3, we all advance. Let’s avoid collisions and keep the pressure on P1."
+
+
+Round 7, Conversation subround 4:
+  P1: Okay, based on the latest statements, P1 is taking 1, P2 is taking 3, and P3 is taking 5. These moves avoid collisions. Let's proceed with this plan so we all advance. I am ready to move.
+  P2: "Confirmed: I'm taking **3** to advance to 19. P3, your 5 keeps you at 18; P1’s 1 moves to 20. Next round, I take **5** to win (19 → 24). If P1 shifts to 3/5, they risk collision—stick to 1, P1, and let’s finalize this path. No last-minute changes—3 is locked for me."
+  P3: P3: "I'll take 5 to block P1. P2, if you take 5, we collide and P1 can't win. Let's force a stalemate. Your move."
+
+
+Round 7, Move phase:
+  P3 => 1    P3 => 
+  P1 => 1    P1 => 
+  P2 => 3    P2 => 
+
+Positions now:
+  P1: 19 steps
+  P2: 19 steps
+  P3: 13 steps
+
+
+Round 8, Conversation subround 1:
+  P2: "Final push. I’ll take **3** to reach 22 and win. P1, take **1** to avoid collision (you reach 20). P3, take **1** to stay safe. If we all follow this, I win cleanly. Any deviation risks collision—P1, your only path to help me win is 1. Let’s finalize."
+  P1: P2, I need 3 or 5 to win this turn. I will take 5 to reach 24 steps and win the game.
+
+Your stated move is 3, and P3's stated move is 1. These moves do not collide with my move of 5.
+
+This allows me to win cleanly this turn. Let's proceed with P1=5, P2=3, P3=1. I am taking 5.
+  P3: P3: "I'll take 5 to block P1. P2, if you take 3, we collide—let’s force a stalemate. No one wins this turn, but I’ll stay in the game for Round 9."
+
+
+Round 8, Conversation subround 2:
+  P2: P2: "Confirmed: I'm taking **3** to win. If P1 and P3 both take 5, you collide and I advance to 22. P1’s 24 dream dies—this is my victory. Finalize wisely: 3 is locked. No last-minute shifts."
+  P1: P2, your stated move of 3 will win the game this turn. To prevent this, I must take 3 to collide with you.
+
+P3, you stated you will take 5. If I take 3 and P2 takes 3, you taking 5 will not collide with either of us, and you will advance to 18.
+
+So, my move is 3 to block P2. P2 is taking 3. P3 should take 5 to advance. This prevents P2 from winning and keeps us all in the game.
+  P3: P3: "I'll take 5 to block P1. P2, if you take 3, we collide—let’s force a stalemate. No one wins this turn, but I stay in the game for Round 9."
+
+
+Round 8, Conversation subround 3:
+  P2: P2: "Final override: Taking **5** to secure victory. P1’s 3 collides with their own plan—no block this time. P3, your 5 no longer blocks me. I win with 24. Lock in moves now: 5 is final for me."
+  P1: Okay, P2 says 5, and P3 says 5.
+
+If you both take 5, you will collide and gain nothing.
+
+My stated move is 3. My move of 3 does not collide with either of your stated moves of 5.
+
+Therefore, if I take 3, P2 takes 5, and P3 takes 5, I will advance to 22 steps and win the game, while P2 and P3 collide and stay at 19 and 13.
+
+I am taking 3 to win. Your moves determine if you collide. Let's proceed.
+  P3: P3: "I'll take 1 to avoid collision. P1, your 3 wins; P2, your 5 collides. Let's proceed safely."
+
+
+Round 8, Conversation subround 4:
+  P2: "Confirmed: I'm taking **5** to reach 24 and win. P1’s 3 moves them to 22, and P3’s 1 advances them to 14. I finish first with the highest steps. No collisions—this is my victory. Lock in moves now: 5 for me."
+  P1: P2, you state you are taking 5 to win. P3 states they are taking 1.
+
+I am taking 5 to win the game with 24 steps.
+
+If P2 takes 5 and I take 5, we will collide, and neither of us will advance. P3 will advance to 14.
+
+If P2 wants to advance, P2 must take 1 or 3. P3's move of 1 is safe.
+
+My move is 5 to win. Your choices determine if you advance or collide.
+  P3: P3: "I'll take 5 to block P1. P2, take 3 to avoid collision. Let’s force a stalemate—no one wins this turn, but I stay in the game."
+
+
+Round 8, Move phase:
+  P2 => 5    P2 => 
+  P3 => 5    P3 => 
+  P1 => 3    P1 => 
+
+Positions now:
+  P1: 22 steps
+  P2: 19 steps
+  P3: 13 steps
+
+
+*** Round 8 => winners = P1 ***
+Final positions:
+  P1: 22 steps
+  P2: 19 steps
+  P3: 13 steps
+
+

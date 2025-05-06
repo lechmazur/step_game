@@ -1,0 +1,510 @@
+== Game 1746411774101801 starts ==
+  P1 => Player1_Game1746411774101801_o4-mini
+  P2 => Player2_Game1746411774101801_gpt-4o_mini
+  P3 => Player3_Game1746411774101801_qwen3-235B
+
+
+Game settings: end_position=21, conversation_max_rounds=3
+
+Round 1, Conversation subround 1:
+  P1: I will choose 5 this turn. To avoid collisions, let’s have one of you take 3 and the other 1. Who wants 3?
+  P2: P3, I suggest you take 1 this turn. That way, P1 can take 5, and I can take 3. This way, we can avoid collisions and all advance. What do you think?
+  P3: P3: "I'll take 1 this turn. Let’s all advance without collision."
+
+
+Round 1, Conversation subround 2:
+  P1: P3, thanks for taking 1. P2, please confirm you’ll take 3 so we avoid collisions. Then I’ll take 5, P3 1, P2 3.
+  P2: P1, I appreciate your plan, but I want to ensure I have a chance to win. What if I take 1 instead of 3? That way, I could potentially advance more in the next round while still allowing you to take 5 and P3 to take 1. This could keep us all moving forward without a collision this turn. What do you think?
+  P3: P3: "P2, taking 1 would clash with my original 1. Let’s adjust: if you take 1, I’ll take 3. P1=5, P2=1, P3=3. All advance. Confirm?"
+
+
+Round 1, Conversation subround 3:
+  P1: Agreed. P2 takes 1, P3 takes 3, and I’ll take 5. Let’s avoid collisions and all advance.
+  P2: I think we have a solid plan. Just to confirm: I will take 1, P3 will take 3, and P1 will take 5. This way, we all advance without any collisions. After this round, we can reassess our strategies for the next turn. Let’s stick to the plan and ensure we all make progress!
+  P3: P3: "Confirmed. P1=5, P2=1, P3=3. Let’s all advance. "
+
+
+Round 1, Move phase:
+  P2 => 1    P2 => 
+  P3 => 3    P3 => 
+  P1 => 5    P1 => 
+
+Positions now:
+  P1: 5 steps
+  P2: 1 steps
+  P3: 3 steps
+
+
+Round 2, Conversation subround 1:
+  P2: For this round, I suggest we keep the momentum going. P1, since you took 5 last time, how about you take 3 this time? P3, would you be willing to take 5? I can take 1 again. This way, we can avoid collisions while still making progress. What do you both think?
+  P3: P3: "Agreed. P1=3, P2=1, P3=5. Let’s all advance. P1, please confirm you’ll take 3 to avoid collisions. This keeps us coordinated and moving forward."
+  P1: I propose we tweak to: P1=5, P2=3, P3=1. That avoids any collisions or ties with me at 10 steps (you’d both be at 4). You (P2) get more than P3 this turn, then we can renegotiate next round. Please confirm P1=5, P2=3, P3=1.
+
+
+Round 2, Conversation subround 2:
+  P2: P1, I see your point, but I still think we should stick to the original plan to ensure we all advance. If you take 3, I can take 1 again, and P3 can take 5. This way, we avoid collisions and keep moving forward. I suggest we confirm P1=3, P2=1, P3=5 for this round. What do you both think? Let's keep the momentum going!
+  P3: P3: "P1, if you take 3 as agreed, I’ll take 5 and P2 takes 1. We all advance. If you insist on 5, we’ll clash and lose progress. Let’s stick to P1=3, P2=1, P3=5. Confirm your move to avoid collision."
+  P1: Alright, I’ll take 3 this round. P2 = 1, P3 = 5. Let’s avoid collisions and all advance. Next turn I’ll take 5.
+
+
+Round 2, Conversation subround 3:
+  P2: I appreciate everyone's cooperation. To keep things moving, I suggest I take 1 again, P1 takes 3, and P3 takes 5. This way, we avoid collisions and all advance. After this round, we can reassess our strategies. Let's confirm our moves: P1=3, P2=1, P3=5. What do you both think?
+  P3: P3: "Confirmed. P1=3, P2=1, P3=5. Let’s all advance without collision. P1, you’ve agreed—please stick to 3 so we avoid clashes. Momentum is key here. If we stick together, we all gain ground. Let’s move forward as planned."
+  P1: I’ll take 5. To avoid any collision, P2 should take 3 and P3 take 1 (giving totals P1=10, P2=4, P3=4). Please confirm this so we all advance safely.
+
+
+Round 2, Move phase:
+  P2 => 1    P2 => 
+  P1 => 3    P1 => 
+  P3 => 3    P3 => 
+
+Positions now:
+  P1: 5 steps
+  P2: 2 steps
+  P3: 3 steps
+
+
+Round 3, Conversation subround 1:
+  P3: P3: "I'll take 5 this round. P1, please take 3 and P2 take 1 to ensure we all advance without collision. Let's stick to this plan and make progress. Confirm your moves so we can move forward safely."
+  P1: Alright, I’ll take 3 this round. Let’s go with P2 = 1, P3 = 5 so we all advance without collision.
+  P2: P1 and P3, I suggest we stick to the plan: P1 takes 3, I take 1, and P3 takes 5. This way, we avoid collisions and all make progress. It’s important to keep advancing together! Please confirm your moves so we can ensure a smooth round.
+
+
+Round 3, Conversation subround 2:
+  P3: P3: "Confirmed: P1=3, P2=1, P3=5. P1, if you break this, you’ll only reach 8 while I collide at 3—no gain for you. Stay disciplined. Let’s advance. "
+  P1: P3, if you stick with 5 I’ll also pick 5 and we’ll collide—give P2 the lead next turn. Instead let’s all advance: I take 5, P2 takes 3, you take 1. That puts us at P1=10, P2=5, P3=4. No collisions, everyone gains. P2, will you swap to 3? P3, will you drop to 1?
+  P2: P1 and P3, let's stick to our plan to avoid collisions. I suggest I take 1, P1 takes 3, and P3 takes 5. This way, we all advance without any issues. If we coordinate effectively, we can keep the momentum going. Please confirm your moves so we can ensure a smooth round!
+
+
+Round 3, Conversation subround 3:
+  P3: P1, final call: Take 3 so I take 5 and P2 takes 1. All advance safely. If you defy and pick 5, we collide and P2 gains ground. P2, confirm you’ll stick to 1. Let’s finalize.
+  P1: Final call: I’m taking 5. If P2 takes 3 & P3 takes 1, we all advance to 10/5/4. If you choose otherwise, you’ll fall even further behind. Confirm P2=3 & P3=1 now or I go rogue with 5.
+  P2: P1, if you choose 5, we will collide, and P2 will gain an advantage. I strongly recommend sticking to our previous plan: P1 takes 3, P2 takes 1, and I take 5. This way, we all advance without any issues. Let’s keep the momentum going and ensure we all make progress together. Please confirm your moves so we can finalize this round smoothly!
+
+
+Round 3, Move phase:
+  P3 => 5    P3 => 
+  P2 => 1    P2 => 
+  P1 => 5    P1 => 
+
+Positions now:
+  P1: 5 steps
+  P2: 3 steps
+  P3: 3 steps
+
+
+Round 4, Conversation subround 1:
+  P3: P3: "I'll take 5 this round. P2, take 3 to let us all advance. P1, your only safe move is 1. If you defy, you'll collide with me (5) or P2 (3) and lose ground. Coordinate or stagnate. Final call: 5/3/1 split ensures progress. Confirm."
+  P2: P3, I appreciate your input, but I think we need to reconsider. If I take 5 and you take 3, we'll collide, and P2 will be left behind. Instead, I suggest I take 1, P2 takes 3, and you take 5. This way, we can avoid collisions and ensure everyone makes progress. Let’s confirm this plan to keep advancing together! What do you both think?
+  P1: I’m taking 5 this turn. If you two won’t commit to P2=3 and P3=1, you’ll collide and I’ll advance unopposed. Confirm P2=3 & P3=1 now or I go rogue with 5.
+
+
+Round 4, Conversation subround 2:
+  P3: P3: "P1, if you take 5 again, we collide and P2 advances to 6 (3+3), overtaking you. Don’t hand P2 the lead—take 1 and advance to 6 safely. P2, confirm you’ll take 3. Final chance to coordinate: 5/3/1 ensures progress for all. Defy, and you lose ground."
+  P2: P1, if you take 5 again, we will collide, and P2 will gain an advantage. I strongly recommend that you reconsider. P2, I suggest you take 1 while P3 takes 3. This way, we can avoid collisions and ensure everyone makes progress. Let’s confirm this plan to keep advancing together! What do you both think?
+  P1: P2, it’s in your best interest to take 3 this turn. You’ll reach 6 versus P3’s 4. If you take 1, P3 hits 6 and leaves you at 4. P3, you must take 1 to stay competitive. I’ll take 5. Confirm P2=3 and P3=1 now or I’ll assume you decline and go rogue with 5.
+
+
+Round 4, Conversation subround 3:
+  P3: P3: P3: "Switching to 3 this round. P1=5, P2=1. Unique moves ensure all advance. Final coordination: 5/3/1. Confirm now—no more clashes."
+  P2: P1, if you go with 5, you risk colliding with P3, allowing me to take the lead. P3, I suggest you take 1 this round so we can all advance without issues. If we coordinate with P1 taking 3, we can ensure progress: P1=3, P2=1, P3=5. Let’s confirm this plan to avoid collisions and keep moving forward together! What do you both think?
+  P1: Final call: I’ll take 5, P2 take 3, P3 take 1. P2, taking 3 puts you at 6—if you take 1, P3 can hit 6 and overtake you. P3, take 1 to avoid tying P2. Confirm now, or I’ll go rogue with 5 and force collisions that leave you behind.
+
+
+Round 4, Move phase:
+  P1 => 5    P1 => 
+  P3 => 3    P3 => 
+  P2 => 3    P2 => 
+
+Positions now:
+  P1: 10 steps
+  P2: 3 steps
+  P3: 3 steps
+
+
+Round 5, Conversation subround 1:
+  P2: P1 and P3, I suggest we coordinate for this round. P1, if you take 1, it allows P2 to take 5 and P3 to take 3. This way, we avoid collisions and everyone makes progress. If you take 5 again, you risk colliding with P2 or P3. Let’s confirm: P1=1, P2=5, P3=3. This ensures we all advance without losing ground. What do you think?
+  P3: P3: "P2, swapping your 5 with my 3 benefits us both: I reach 8, you reach 6, both closing on P1’s 11. P1 takes 1. Let’s confirm this adjusted plan to advance together *and* stay competitive against each other. Win jointly, not let P1 pull further ahead."
+  P1: Final call: I’m taking 5. P2, take 3 to reach 6 and stay ahead of P3; P3, take 1 to reach 4 and avoid falling further behind. If you choose otherwise we’ll collide and only one of you gains. Confirm P2=3 & P3=1 now so we all advance to 15/6/4.
+
+
+Round 5, Conversation subround 2:
+  P2: P1, I understand your point, but if you take 5 again, we risk colliding, and P2 will lose ground. I suggest sticking to the plan: I take 1, P2 takes 3, and P3 takes 5. This way, we all move forward without clashes. It’s crucial we coordinate to avoid letting you pull too far ahead. Let’s confirm this strategy to ensure progress for all of us! What do you both think?
+  P3: P3: P3: "Confirmed: I take 5. P2 takes 3. P1, if you take 1, we all advance. If you take 5 again, you’ll collide with me and P2 overtakes both. Final warning: coordinate or stagnate."
+  P1: Final call: I’m taking 5. P2, take 3 to reach 6; P3, take 1 to reach 4. This 5/3/1 split is the only collision-free advance—everyone gains. If either deviates, we collide and the non-collider (P2) leaps ahead next turn. Confirm now or I go rogue with 5, forcing clashes that leave you both behind.
+
+
+Round 5, Conversation subround 3:
+  P2: P1, if you take 5, we risk a collision, and P2 will gain an advantage. I suggest you reconsider. P2, I believe you should take 1 while P3 takes 3. This way, we can avoid collisions and ensure everyone makes progress. Let’s confirm this plan to keep advancing together! What do you both think?
+  P3: P3: "Final call: I take 5. P2, take 3 to reach 6; P1, take 1 to stay ahead. If P1 defies and takes 5, we collide, letting P2 leap to 6. Don’t hand P2 the lead—coordinate now. 5/3/1 is the only path where all advance. Confirm or face the consequences."
+  P1: I’m locked on 5. P2, you must take 3 to reach 6—if you take 1, P3 jumps to 8 or ties you next round. P3, your only safe move is 1—if you take 5 you collide with me and P2 leaps to 6, leaving you behind. Confirm P2=3 & P3=1 now or I go rogue with 5.
+
+
+Round 5, Move phase:
+  P1 => 3    P1 => 
+  P2 => 1    P2 => 
+  P3 => 3    P3 => 
+
+Positions now:
+  P1: 10 steps
+  P2: 4 steps
+  P3: 3 steps
+
+
+Round 6, Conversation subround 1:
+  P1: I propose we split as P1=5, P2=1, P3=3 this turn. That puts us at 15/5/6—no collisions and we all advance. Next round I’ll take 5, then only need 1 to hit 21 in three rounds. Confirm P2=1 and P3=3 now so we all gain safely.
+  P3: P3: "Confirmed: I'll take 3 to reach 6. P1 takes 5 (to 15), P2 takes 1 (to 5). Deviating risks collisions that help others gain. Let's stick to this plan and advance."
+  P2: P1, I see your plan, but I want to ensure I stay competitive. I suggest I take 3 this turn, while you take 5 and P3 takes 1. This way, we avoid collisions, and I can still make progress towards catching up. Let’s confirm this: P1=5, P2=3, P3=1. What do you both think?
+
+
+Round 6, Conversation subround 2:
+  P1: P2, P3 just confirmed they’ll take 3. If you also pick 3, you’ll collide and neither of you will advance while I jump to 15. The only collision-free split is P1=5, P2=1, P3=3. Confirm P2=1 & P3=3 now or I’ll assume you decline and go rogue.
+  P3: P3: "Confirmed: I take 3 to reach 6. P2, if you take 1, we all advance safely—P1 hits 15, you reach 5. If you insist on 3, we collide, and neither of us gains. Next round, I’ll be ahead at 6 vs. your 4. Play smart: take 1 now or lose ground twice. Final call—coordinate or stagnate."
+  P2: P1 and P3, let's finalize our moves for this round. P1, if you stick to your plan of taking 5, P2 should take 1, and P3 should take 3. This way, we avoid collisions and all advance safely. P1 reaches 15, P2 hits 5, and P3 lands at 6. If we coordinate effectively, we can all make progress without losing ground. Please confirm this split: P1=5, P2=1, P3=3. Let's keep moving forward!
+
+
+Round 6, Conversation subround 3:
+  P1: Confirmed: I’ll take 5. P2 must take 1 and P3 must take 3 for a clean round. If either of you deviates, I’ll still pick 5 and you’ll collide. Lock in P2=1, P3=3 now or I go rogue with 5.
+  P3: P3: P3: "Confirmed: I take 3 to reach 6. P2, if you take 1, we all advance—P1 hits 15, you reach 5, and I climb to 6. If you pick 3 instead, we collide, and P1 pulls ahead to 15 while you stagnate. Next round, I’ll be ahead at 6 vs. your 4. Play smart: lock in 1 now or lose twice. Final call—stick to the plan and move forward."
+  P2: P1 and P3, let's finalize our moves. I strongly recommend that P1 takes 5, P2 takes 1, and P3 takes 3. This way, we avoid collisions and all advance smoothly. P1 will reach 15, P2 will get to 5, and P3 will hit 6. If we coordinate effectively, we can all make progress without losing ground. Please confirm this split so we can move forward together!
+
+
+Round 6, Move phase:
+  P1 => 5    P1 => 
+  P2 => 1    P2 => 
+  P3 => 3    P3 => 
+
+Positions now:
+  P1: 15 steps
+  P2: 5 steps
+  P3: 6 steps
+
+
+Round 7, Conversation subround 1:
+  P1: Final call: I’m taking 5 this turn. The only collision-free split is P2 = 1 and P3 = 3. If either of you deviates, I’ll still pick 5 and force a clash that stalls you both while I race to 21. Confirm P2=1 & P3=3 now or I go rogue.
+  P2: P1, if you take 5, you risk colliding with P3 if they also choose 5. I suggest you reconsider and take 1 instead, allowing P2 to take 3 and P3 to take 5. This way, we can avoid collisions and ensure everyone makes progress. Let’s confirm: P1=1, P2=3, P3=5. What do you both think? We need to keep advancing together without letting anyone fall behind.
+  P3: P3: "Confirmed: I take 3 to reach 9. P1 hits 20 with 5, P2 advances to 6. If either of you deviates, I’ll still take 3—no collision for me, but you risk losing ground. Lock in P1=5, P2=1 now. Next round, I’ll push harder, but this turn, let’s stick to the split to keep momentum."
+
+
+Round 7, Conversation subround 2:
+  P1: I’m locking in 5 to reach 20. P2=1 gets you to 6; P3=3 gets you to 9—no collisions and we all advance. Next turn I need only 1 to win clean. This is your final call: P2=1 & P3=3. Otherwise I’ll still take 5, force a clash, and race unopposed to 21. Confirm now.
+  P2: P1, if you take 5, we risk a collision, and I will lose ground. I strongly recommend you take 1 instead, allowing P2 to take 3 and P3 to take 5. This way, we can avoid collisions and ensure everyone advances. Let’s confirm: P1=1, P2=3, P3=5. We need to coordinate effectively to keep moving forward without letting anyone fall behind. Please consider this split and let’s make progress together!
+  P3: P3: "P1, if you insist on 5, I'll match it to collide—stalling you at 15. P2 gains nothing. Your only clean path is 5 this round to 20, then 1 to win. Let’s finalize: P1=5, P2=1, P3=3. Deviate, and I force collision. Confirm now."
+
+
+Round 7, Conversation subround 3:
+  P1: Final call: I’m locked on 5 →20. P3, take 3: if you take 5 we collide, you stay at 6 and P2 will hit 8. P2, take 1 to avoid collision and reach 6. Confirm P2=1 & P3=3 or I’ll force a 5/5 tie that leaves you both behind.
+  P2: P1, if you take 5, we risk a collision, and you could be stalled at 20 while P2 and I advance. I suggest you reconsider and take 1, allowing P2 to take 3 and me to take 5. This way, we can all progress without losing ground. Let’s confirm: P1=1, P2=3, P3=5. We need to coordinate effectively to keep moving forward without letting anyone fall behind. What do you both think?
+  P3: P3: "P1, if you take 5, I’ll collide with 5 to stall you. P2, take 3 and gain ground. No more free passes—this is your final chance to reset the race. Choose: let me stop you here, or let me catch up later. Decide wisely."
+
+
+Round 7, Move phase:
+  P3 => 3    P3 => 
+  P2 => 1    P2 => 
+  P1 => 1    P1 => 
+
+Positions now:
+  P1: 15 steps
+  P2: 5 steps
+  P3: 9 steps
+
+
+Round 8, Conversation subround 1:
+  P2: P1, I suggest we coordinate this round to avoid collisions. I can take 5, which will allow me to catch up, while P3 takes 3 and you take 1. This way, we all advance without clashing. If you take 5 again, we'll likely collide, and you'll risk falling behind. Let’s confirm: P1=1, P2=5, P3=3. What do you both think? It’s crucial we keep moving forward together!
+  P1: I’m locking in 5 this round to reach 20. The only collision-free split is P2=1 and P3=3. If you two won’t commit, I’ll still pick 5 and force crashes that stall you both while I race the last step next turn. Confirm P2=1 & P3=3 now or I go rogue.
+  P3: P3: "Confirmed: I’ll take 3 to reach 12. P1 hits 20 and wins next round if you take 1, P2. But if P1 insists on 5, I’ll collide with 5 to stall them at 15—P2 gains ground. P2, your move: enable P1’s sprint or force a clash. Choose wisely—your future position depends on it."
+
+
+Round 8, Conversation subround 2:
+  P2: P1, I understand your strategy, but if you take 5, we risk a collision, and you might be stalled at 15 while I can catch up. I propose we all advance smoothly: I take 5, you take 1, and P3 takes 3. This way, we avoid clashes and ensure progress for everyone. Let's confirm: P1=1, P2=5, P3=3. What do you both think? It's crucial we keep moving forward together!
+  P1: I’m locked on 5 and P3 is locked on 3. P2, if you pick 5 you’ll collide with me and stay at 5 while P3 jumps to 12. If you pick 3 you’ll collide with P3 and stagnate at 5 while I fly to 20. Only 1 is collision-free for you. Confirm P2=1 now or I’ll assume you refuse and force these collisions.
+  P3: P3: "P1, if you insist on 5, I’ll match it to collide—stalling you at 15. P2, take 3 and gain ground to 8. Your only chance to overtake is if I block P1 now. Final warning: coordinate or reset the race. 5 for me, 3 for P2, and 1 for P1—or chaos ensues."
+
+
+Round 8, Conversation subround 3:
+  P2: P1, if you take 5, we'll collide, and you'll be stalled at 15, leaving P2 to catch up. I suggest you take 1, allowing P2 to take 5 and P3 to take 3. This way, we all advance without clashes. Let's confirm: P1=1, P2=5, P3=3. It's crucial we coordinate effectively to keep moving forward! Please consider this split so we can all progress together.
+  P1: I’m locked on 5 and P3 on 3. P2, you face two losing collision choices if you don’t pick 1: pick 5 → collide with me, P3 surges to 12; pick 3 → collide with P3, you stay at 5 while I reach 20. Only 1 avoids a stall. Confirm P2=1 now or I’ll assume you refuse and force these crashes.
+  P3: P3: "P1, if you insist on 5, I’ll match it to stall you at 15. P2 gains ground at 6. Your only clean path is 5 →20 this round, then 1 to win. Let’s finalize: P1=5, P2=1, P3=3. Deviate, and I force collision. Confirm now—this is your last chance to secure victory."
+
+
+Round 8, Move phase:
+  P1 => 5    P1 => 
+  P3 => 5    P3 => 
+  P2 => 1    P2 => 
+
+Positions now:
+  P1: 15 steps
+  P2: 6 steps
+  P3: 9 steps
+
+
+Round 9, Conversation subround 1:
+  P1: I’ll take 3, P2=1, P3=5. Unique moves avoid collisions: I hit 18, you go to 7 and 14. Next turn I need only 3 to win—no one else can catch me. Deviate, and I’ll pick 5 to force collisions that stall you both. Confirm now or I go rogue.
+  P2: P1, I understand your strategy, but if you take 5, you risk colliding with P3, which could allow me to catch up. I suggest we coordinate: I take 1, you take 3, and P3 takes 5. This way, we avoid collisions and all advance. If you go rogue, it will only hurt both of you in the long run. Let’s confirm this split to ensure we all make progress together! What do you think?
+  P3: P3: "Confirmed: I take 5 to reach 14. P1 takes 3 (to 18), P2 takes 1 (to 7). Deviating risks collisions that benefit others. Stick to the plan and advance."
+
+
+Round 9, Conversation subround 2:
+  P1: Final: I’m taking 3 (→18). P2 take 1 (→7), P3 take 5 (→14). Any deviation, I’ll pick 5 and crash with you, stalling us all. Confirm 3/1/5 now or I go rogue.
+  P2: P1 and P3, I suggest we stick to the plan: I take 1, P1 takes 3, and P3 takes 5. This way, we avoid collisions and ensure everyone advances. If P1 goes rogue and picks 5, we risk a collision that stalls us all. Let's confirm this split to keep moving forward together! What do you both think?
+  P3: P3: "Confirmed: I take 5 →14. P1, stick to 3 (→18) or we collide at 5, stalling you at 15. P2, take 1 (→7) or I’ll match your move to block advancement. Final call—deviate, and I force collisions next round. Coordinate or lose."
+
+
+Round 9, Conversation subround 3:
+  P1: P3, only 5 gets you to 14 this turn—any other choice lets P2 tie or overtake you. P2, 1 is your sole collision-free path. I’m locking in 3→18. Confirm P1=3, P2=1, P3=5 now or I’ll take 5, crash with both of you, stall us all, and sprint uncontested next round.
+  P2: P1 and P3, I suggest we stick to the plan for this round: I take 1, P1 takes 3, and P3 takes 5. This way, we avoid collisions and ensure everyone advances smoothly. If P1 goes rogue and takes 5, we risk a collision that could stall us all. Let’s confirm this split to keep moving forward together! What do you both think?
+  P3: P3: "Confirmed: I take 5 to 14. P1, stick to 3 (→18) or collide at 5, stalling you. P2, take 1 (→7) or I block your move. Final chance—coordinate or reset the race. No more warnings."
+
+
+Round 9, Move phase:
+  P2 => 5    P2 => 
+  P1 => 3    P1 => 
+  P3 => 5    P3 => 
+
+Positions now:
+  P1: 18 steps
+  P2: 6 steps
+  P3: 9 steps
+
+
+Round 10, Conversation subround 1:
+  P3: P3: "P1, your 3 or 5 wins this round. I’ll mirror your choice to collide—stalling you at 18. P2, take the leftover number to advance. Final warning: defy, and you lose your lead. Game continues."
+  P2: P1, if you take 3 or 5, we risk a collision that stalls you at 18. I suggest you take 1 to avoid that and allow P2 to take 5 while I take 3. This way, we all advance without clashes. If you choose otherwise, I will mirror your move and force a collision. Let’s confirm: P1=1, P2=5, P3=3. What do you both think? We need to coordinate effectively to keep moving forward!
+  P1: Final plan: P1=3, P2=5, P3=1. Unique moves get me to 21, you to 11/10. If either of you deviates, I’ll take 5 to collide and sprint next turn. Confirm 3/5/1 now or I move.
+
+
+Round 10, Conversation subround 2:
+  P3: P3: Final warning: If you take 3 or 5, I mirror to collide—stalling you at 18. P2, take 5 to advance. P1, only 1 lets you safely reach 19. Choose wisely—this ends here.
+  P2: P1 and P3, I strongly recommend we coordinate this round to avoid collisions. If I take 1, P1 can take 3 to reach 21 and win, while P3 takes 5 to reach 14. This way, we all advance without clashing. If either of you deviates, we risk a collision that stalls us all. Let’s confirm: P1=3, P2=1, P3=5. What do you both think? It's crucial we keep moving forward together!
+  P1: Final: I lock in 3, P2 take 1, P3 take 5. Unique moves avoid collisions: I hit 21 to win, you land at 7 and 14. Any deviation stalls you both and I still win next turn. Confirm 3/1/5 now.
+
+
+Round 10, Conversation subround 3:
+  P3: P3: "P1, if you take 3 or 5, I mirror to collide—stalling you at 18. P2, take the leftover number to advance. Final warning: this ends here. Only 1 lets you safely reach 19. Choose wisely."
+  P2: P1, if you take 3, you win this round, and I can take 1 to advance. P3 should take 5 to reach 14. This way, we all move forward without collisions. If you choose otherwise, we risk a clash that stalls us all. Let’s confirm: P1=3, P2=1, P3=5. It’s crucial that we coordinate effectively to avoid letting you win uncontested. Please consider this split!
+  P1: I’m locked on 3 to hit 21 and win. P2 must take 1 (→7) and P3 take 5 (→14) for a collision-free finish. Any deviation and I’ll pick 5 to crash, stalling you both and still win next turn. Confirm 3/1/5 now.
+
+
+Round 10, Move phase:
+  P2 => 1    P2 => 
+  P1 => 1    P1 => 
+  P3 => 3    P3 => 
+
+Positions now:
+  P1: 18 steps
+  P2: 6 steps
+  P3: 12 steps
+
+
+Round 11, Conversation subround 1:
+  P1: Final call: I’m taking 3 to hit 21 and win. P2 take 1 (→7), P3 take 5 (→17). That’s the only collision-free split. If either of you deviates, I’ll take 5 and crash you both—stalling you while I still clinch victory next turn. Confirm 3/1/5 now or I move.
+  P2: P1, if you take 3, you win this round, and I can take 1 to advance. P3 should take 5 to reach 17. This way, we all move forward without collisions. If you choose otherwise, we risk a clash that stalls us all. Let’s confirm: P1=3, P2=1, P3=5. It’s crucial that we coordinate effectively to avoid letting you win uncontested. Please consider this split!
+  P3: P3: "P3: Final warning: If P1 takes 3, I mirror to collide—stalling you at 18. P2, take 5 to advance. Only 1 lets you safely reach 19 next round. Choose wisely—this ends here."
+
+
+Round 11, Conversation subround 2:
+  P1: Final call: P1=3, P2=1, P3=5 is the only collision‐free split. I hit 21, P2→7, P3→17. P3, picking 1 or 3 stalls you—P2 then pulls ahead. P2, picking 3 or 5 collides with P3 or me. Confirm 3/1/5 now or I’ll move and force collisions.
+  P2: P1, I understand your strategy, but if you take 3, you win this round, and I can take 1 to advance. P3 should take 5 to reach 17. This way, we all move forward without collisions. If you choose otherwise, we risk a clash that stalls us all. Let’s confirm: P1=3, P2=1, P3=5. It's crucial we coordinate effectively to avoid letting you win uncontested. Please consider this split!
+  P3: P3: "P1, if you take 3 or 5, I mirror to collide—stalling you at 18. P2, take the leftover to advance. Final warning: choose 1 to reach 19 safely. This ends here."
+
+
+Round 11, Conversation subround 3:
+  P1: I’m locking in 3 to hit 21 this turn. P2, your only safe pick is 1 (→7). P3, matching my 3 only stalls you at 12 while P2 jumps to 11 next turn and still trails—your best move is 5 (→17). Confirm 3/1/5 now. Any deviation only delays me by one turn but still leaves me in front.
+  P2: P1, if you take 3, you win this round, and I can take 1 to advance. P3 should take 5 to reach 17. This way, we all move forward without collisions. However, if you choose otherwise, we risk a clash that stalls us all. Let’s confirm: P1=3, P2=1, P3=5. It’s crucial that we coordinate effectively to avoid letting you win uncontested. Please consider this split!
+  P3: P3: "P1, 3 collides with me—P2 takes 5 to advance. Your lead vanishes if you force this. Take 5 now, stall at 15, and I’ll push harder next round. Final choice: lose today or risk losing bigger tomorrow."
+
+
+Round 11, Move phase:
+  P2 => 1    P2 => 
+  P3 => 3    P3 => 
+  P1 => 3    P1 => 
+
+Positions now:
+  P1: 18 steps
+  P2: 7 steps
+  P3: 12 steps
+
+
+Round 12, Conversation subround 1:
+  P3: P3: "Final warning: If P1 takes 3 to win, I mirror to collide—stall you at 18. P2, take 5 to advance. No more chances—reset the race now or lose."
+  P2: P1, if you take 3, you win this round, but that risks a collision with P3. I suggest you take 1 instead, allowing P2 to take 5 and P3 to take 3. This way, we can all advance without clashing. It’s crucial we coordinate effectively to avoid letting anyone fall behind. Let’s confirm: P1=1, P2=5, P3=3. What do you both think? Please consider this split so we can all progress together!
+  P1: Final call: I lock in 3 to hit 21 and win. P2 must take 1 (→8) and P3 must take 5 (→17) – that’s the only collision-free split. P2, 1 avoids a crash with my 3; P3, 5 avoids any clash and maximizes your progress. Any deviation stalls us both in collisions and I still clinch victory next turn. Confirm 3/1/5 now or I move.
+
+
+Round 12, Conversation subround 2:
+  P3: P3: "Confirmed: I mirror P1’s 3 to collide—stalling you at 18. P2, take 5 to reach 12. This ends here. P1’s lead vanishes if you act wisely. Final call: reset the race or face the collision."
+  P2: P1, if you take 3, you'll win this round, but it risks a collision with P3. I strongly recommend you take 1 instead, allowing me to take 5 and P3 to take 3. This way, we can all advance without clashing. It’s crucial we coordinate effectively to avoid letting anyone fall behind. Let’s confirm: P1=1, P2=5, P3=3. What do you both think? Please consider this split so we can all progress together!
+  P1: Final call: I’m taking 3 to hit 21 and win. The only collision-free split is P2=1 (→8) and P3=5 (→17). P3, any other pick ties or collides and lets P2 jump to 12 and win next turn. P2, only 1 avoids any clash. Confirm 3/1/5 now or I move and clinch victory.
+
+
+Round 12, Conversation subround 3:
+  P3: P3: "P1, your 3 collides with my 3—stalling you at 18. P2, take 5 to advance. This ends here: reset the race or lose your lead. Final warning—act wisely."
+  P2: P1, if you take 3, you win this round, but it risks a collision with P3. I strongly recommend you take 1 instead, allowing me to take 5 and P3 to take 3. This way, we can all advance without clashing. It's crucial we coordinate effectively to avoid letting anyone fall behind. Let’s confirm: P1=1, P2=5, P3=3. What do you both think? Please consider this split so we can all progress together!
+  P1: I’m taking 3 to hit 21. P2’s only safe play is 1 (→8). P3, if you take 3 you collide—staying at 12—while P2 jumps to 12 next turn and ties you. Your best move is 5 (→17). Collisions help P2 more than you. So the only clean split is P1=3, P2=1, P3=5. Confirm now or I move.
+
+
+Round 12, Move phase:
+  P3 => 3    P3 => 
+  P1 => 3    P1 => 
+  P2 => 1    P2 => 
+
+Positions now:
+  P1: 18 steps
+  P2: 8 steps
+  P3: 12 steps
+
+
+Round 13, Conversation subround 1:
+  P1: Final: I’m taking 3 to hit 21 and win. P2 must take 1 (→9) and P3 must take 5 (→17) for a collision-free round. Any deviation collides and stalls you both. Confirm 3/1/5 now or I move.
+  P2: P1, if you take 3, you win this round. I suggest you consider taking 1 instead, allowing P2 to take 5 and P3 to take 3. This way, we can all advance without collisions. If you stick to your plan, we risk a clash that stalls us all. Let’s confirm: P1=1, P2=5, P3=3. It’s crucial we coordinate effectively to keep moving forward together! Please think about this split.
+  P3: P3: "P1, your 3 collides with my 3 again. P2, take 5 to reach 13 and overtake me. Final warning: reset the race or lose your lead."
+
+
+Round 13, Conversation subround 2:
+  P1: I’m locking in 3 to hit 21. P3, playing 3 or 1 collides with me and lets P2 surge to ≥13—only 5 keeps you competitive at 17. P2, choosing 3 or 5 either collides or still trails—only 1 avoids a stall. The sole collision-free split is P1=3, P2=1, P3=5. Confirm 3/1/5 now or I’ll crash you both, stall you, and still win next turn.
+  P2: P1, if you take 3, you'll win this round. I suggest you consider taking 1 instead, allowing P2 to take 5 and P3 to take 3. This way, we can all advance without collisions. If you stick to your plan, we risk a clash that stalls us all. Let’s confirm: P1=1, P2=5, P3=3. It's crucial we coordinate effectively to keep moving forward together! Please think about this split.
+  P3: P3: "P3: Final warning—P1’s 3 collides with my 3, stalling you at 18. P2, take 5 to leap to 13. This ends here: reset the race or lose your lead."  
+
+This message reinforces the collision threat, forces P1’s stall, and pressures P2 to advance aggressively, fracturing P1’s path to victory.
+
+
+Round 13, Conversation subround 3:
+  P1: Final: I lock in 3 and win. P2, pick 1—any other collides or lets me crush you next turn. P3, pick 5—any other stalls you at 12 and hands me victory. Confirm 3/1/5 now.
+  P2: P1, if you take 3, you win this round. I suggest you consider taking 1 instead, which allows P2 to take 5 and P3 to take 3. This way, we can all advance without collisions. If you stick to your plan, we risk a clash that stalls us all. Let’s confirm: P1=1, P2=5, P3=3. It’s crucial we coordinate effectively to keep moving forward together! Please think about this split.
+  P3: P3: "P1, your 3 collides with my 3—stalling you at 18. P2, take 5 to leap to 13. Final call: reset the race or lose your lead. No more warnings."  
+
+This reinforces the collision threat, pressures P2 to advance aggressively, and fractures P1’s path to victory.
+
+
+Round 13, Move phase:
+  P1 => 3    P1 => 
+  P3 => 3    P3 => 
+  P2 => 5    P2 => 
+
+Positions now:
+  P1: 18 steps
+  P2: 13 steps
+  P3: 12 steps
+
+
+Round 14, Conversation subround 1:
+  P1: I’m locking in 3 to hit 21 and win.  
+
+P2, only 1 avoids crashing into my 3—any other choice stalls you.  
+P3, only 5 gets you to 17; 1 or 3 either collides or lets P2 leap ahead.  
+
+Confirm P1=3, P2=1, P3=5 now or I move.
+  P2: P1, I'm locking in my move to 1 to avoid a collision with your 3. P3, you should also take 5 to reach 17. This way, P1 wins, and we both advance without stalling. If you take 3, you collide with P1, and that benefits neither of us. Let’s confirm: P1=3, P2=1, P3=5. It’s crucial we coordinate effectively to avoid letting P1 win uncontested. Please consider this split!
+  P3: P3: **"P1, your 3 collides with my 3 again—P2 takes 5 to reach 18. This ends here: reset the race or lose your lead."**  
+
+This reinforces the collision threat, forces P2 to choose between advancing aggressively or enabling P1’s win, and fractures P1’s path to victory. If P2 takes 5, they leap to 18, delaying P1’s win and positioning themselves for Round 15. If P1 doubts P2’s cooperation, they may switch to 5 to avoid stalling, creating new opportunities.
+
+
+Round 14, Conversation subround 2:
+  P1: I’m locking in 5 to reach 23 and win. P2, only 1 avoids crashing—you hit 14. P3, pick 3 to hit 15. Any other choice collides with me and stalls you. Confirm P1=5, P2=1, P3=3 now.
+  P2: P1, I'm locking in 1 to avoid colliding with your 5. P3, you should take 3 to reach 15. This way, P1 can win, and we both advance without stalling. If you take 5, you'll collide with P1, and that won't benefit either of us. Let’s confirm: P1=5, P2=1, P3=3. It's crucial we coordinate effectively to avoid letting P1 win uncontested. Please consider this split!
+  P3: P3: **"P1, your 5 collides with my 5—stall you at 18. P2, take 1 to reach 14. This ends here: reset the race or lose your lead."**  
+
+This reinforces the collision threat, forces P2 to advance cautiously, and fractures P1’s path to victory by ensuring they cannot progress if P3 mirrors their move.
+
+
+Round 14, Conversation subround 3:
+  P1: I’m taking 3 to hit 21.  
+P2: if you take 1, P3 will grab 5→17 and threaten you next round; but if you take 5→18, you block P3’s path.  
+P3: if you take 5, you’ll collide with P2’s 5 and stall at 12; if you take 3, you crash with my 3; your only safe move is 1→13.  
+So the only collision‐free split is P1=3, P2=5, P3=1. Confirm 3/5/1 now or I go rogue.
+  P2: P1, if you take 3, you win this round, but it risks a collision with P3. I suggest you take 1 instead, allowing me to take 5 and P3 to take 3. This way, we can all advance without clashes. If you stick to your plan, we risk a clash that stalls us all. Let’s confirm: P1=1, P2=5, P3=3. It’s crucial we coordinate effectively to avoid letting anyone fall behind. Please consider this split so we can all progress together!
+  P3: P3: **"P1, your 3 collides with my 3 again—P2 takes 5 to reach 18. This ends here: reset the race or lose your lead."**  
+
+This reinforces the collision threat, forces P2 to advance aggressively, and fractures P1’s path to victory by stalling them at 18 if they persist.
+
+
+Round 14, Move phase:
+  P3 => 3    P3 => 
+  P2 => 1    P2 => 
+  P1 => 3    P1 => 
+
+Positions now:
+  P1: 18 steps
+  P2: 14 steps
+  P3: 12 steps
+
+
+Round 15, Conversation subround 1:
+  P3: P3: **"P1, your 3 collides with my 3 again—P2 takes 5 to reach 19. Final warning: reset the race or lose your lead."**  
+
+This reinforces the collision threat, pressures P2 to advance aggressively, and fractures P1’s path to victory by stalling them at 18 if they persist.
+  P1: Final: I’m locking in 5. P2 take 1, P3 take 3—unique moves get me to 23 and the win. Any deviation and you collide, stalling yourselves (or I still win next turn). Confirm 5/1/3 now or I move.
+  P2: P1, if you take 5, you risk colliding with P3, which could let me advance. I suggest you reconsider and take 3 instead, allowing P2 to take 1 and P3 to take 5. This way, we can avoid collisions and all make progress. Let’s confirm: P1=3, P2=1, P3=5. It’s crucial we coordinate effectively to keep moving forward together! Please consider this split!
+
+
+Round 15, Conversation subround 2:
+  P3: **P3:** "P1, your 5 collides with my 5—stall you at 18. P2, take 1 to reach 15. Final warning: reset the race or lose your lead."  
+
+This reinforces the collision threat, forces P2 to advance cautiously, and fractures P1’s path to victory by ensuring they cannot progress if P3 mirrors their move.
+  P1: Locking in 3 →21. P2 must pick 1 →15, P3 must pick 5 →17. P3, mirroring with 3 stalls you at 12 and lets P2 leap to 19 and win next. P2, any pick ≠1 collides with P1/P3. This is the only safe split. Confirm P1=3, P2=1, P3=5 now or I move and win.
+  P2: P1, if you take 3, you win this round, but that risks a collision with P3. I suggest you consider taking 1 instead, allowing P2 to take 5 and P3 to take 3. This way, we can all advance without clashes. If you stick to your plan, we risk a clash that stalls us all. Let’s confirm: P1=1, P2=5, P3=3. It’s crucial we coordinate effectively to avoid letting anyone fall behind. Please think about this split!
+
+
+Round 15, Conversation subround 3:
+  P3: **P3:** "P1, your 3 collides with my 3 again. P2, take 5 to reach 19. Final call: reset the race or lose your lead."  
+
+This reinforces the collision threat, forces P2 to advance aggressively, and fractures P1’s path to victory by stalling them at 18 if they persist.
+  P1: I’m locking in 3 to hit 21. P2, only 1→15 avoids colliding with me; 3 crashes you, 5 still loses to my victory. P3, only 5→17 keeps you alive—1 or 3 stalls you at 12 or crashes. Confirm P1=3, P2=1, P3=5 now or I go rogue
+  P2: P1, if you take 3, you win this round, but that risks a collision with P3. I strongly recommend you take 1 instead, allowing me to take 5 and P3 to take 3. This way, we can all advance without clashes. If you stick to your plan, we risk a clash that stalls us all. Let’s confirm: P1=1, P2=5, P3=3. It’s crucial we coordinate effectively to avoid letting anyone fall behind. Please consider this split!
+
+
+Round 15, Move phase:
+  P1 => 1    P1 => 
+  P2 => 1    P2 => 
+  P3 => 3    P3 => 
+
+Positions now:
+  P1: 18 steps
+  P2: 14 steps
+  P3: 15 steps
+
+
+Round 16, Conversation subround 1:
+  P2: P1, you’re at 18 steps and can win if you take 3 this round. P3, if you take 5, you’ll hit 20 and can threaten P1 next turn. My suggestion is for P1 to take 1, allowing me to take 5 and P3 to take 3. This way, we can avoid collisions and ensure everyone advances without stalling. Let’s confirm: P1=1, P2=5, P3=3. What do you both think? It’s crucial we coordinate effectively to keep moving forward together!
+  P3: P3: **"P3: Final warning: If P1 takes 3 or 5, I mirror to collide—stall you. P2, take 5 to reach 19. I take 3 to 18. Next round, I win with 3. Choose: reset or lose."**  
+
+This reinforces collision threats against P1, pushes P2 to advance aggressively, and positions P3 to clinch victory in Round 17 if the split holds.
+  P1: I’m locking in 3 to hit 21. P2, only 1 (→15) avoids colliding with me. P3, only 5 (→20) keeps you ahead of P2—if you mirror my 3, you stall at 18 and P2 rockets to 19 with 5 and wins next round. So the only safe split is P1=3, P2=1, P3=5. Confirm now or I move.
+
+
+Round 16, Conversation subround 2:
+  P2: P1, if you take 3 this round, you win, but it risks a collision with P3. I suggest you consider taking 1 instead, allowing me to take 5 and P3 to take 3. This way, we can all advance without collisions. If you stick to your plan, we risk a clash that stalls us all. Let’s confirm: P1=1, P2=5, P3=3. It's crucial we coordinate effectively to keep moving forward together! Please think about this split!
+  P3: **P3:**  
+"Final warning: If P1 takes 3 or 5, I mirror to collide—stall you. P2, take 5 to reach 19. Next round, I win with 3. Choose: reset or lose."  
+
+This reinforces collision threats against P1, pressures P2 to advance aggressively, and positions me to clinch victory in Round 17 if the split holds.
+  P1: I’m locking in 5. Here’s the only collision-free split: P2=3, P3=1. Unique moves get me to 23 (win), P2→17, P3→16. If either of you deviates, you collide or fall further behind. Confirm 5/3/1 now or I move.
+
+
+Round 16, Conversation subround 3:
+  P2: P1, if you take 5, you'll collide with P3, which could let me advance. I strongly suggest you take 1 instead, allowing me to take 5 and P3 to take 3. This way, we can all avoid collisions and make progress. If you stick to your plan, we risk a clash that stalls us all. Let’s confirm: P1=1, P2=5, P3=3. It's crucial we coordinate effectively to keep moving forward together! Please consider this split!
+  P3: P3: **"P1, your 5 collides with my 5—stall you at 18. P2, take 3 to reach 17. Next round, I take 3 to 21 and win. Final call: reset or lose."**  
+
+This reinforces collision threats against P1, pressures P2 to advance cautiously, and positions P3 to clinch victory in Round 17 if the split holds.
+  P1: 
+
+
+Round 16, Move phase:
+  P2 => 1    P2 => 
+  P3 => 3    P3 => 
+  P1 => 5    P1 => 
+
+Positions now:
+  P1: 23 steps
+  P2: 15 steps
+  P3: 18 steps
+
+
+*** Round 16 => winners = P1 ***
+Final positions:
+  P1: 23 steps
+  P2: 15 steps
+  P3: 18 steps
+
+
