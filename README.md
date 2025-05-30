@@ -87,47 +87,52 @@ A horizontal bar chart ranking each model by mean words per message. Identifies 
 
 | Rank | Model                       |   mu   | sigma | exposed | games | p-wins | ratio |
 |-----:|-----------------------------|-------:|------:|--------:|------:|-------:|------:|
-|    1 | o3 (medium reasoning)         |    8.59 |  0.49 |    8.59 |   182 |  128.67 |  0.71 |
-|    2 | o1 (medium reasoning)         |    7.12 |  0.37 |    7.12 |   300 |  193.00 |  0.64 |
-|    3 | o3-mini (high reasoning)      |    6.70 |  0.49 |    6.70 |   153 |   88.33 |  0.58 |
-|    4 | Gemini 2.5 Flash Preview (24k) |    6.58 |  0.47 |    6.58 |   160 |   81.00 |  0.51 |
-|    5 | o3-mini (medium reasoning)    |    6.30 |  0.38 |    6.30 |   251 |  139.67 |  0.56 |
-|    6 | DeepSeek R1                   |    6.21 |  0.36 |    6.21 |   280 |  146.67 |  0.52 |
-|    7 | Qwen 3 235B A22B              |    6.07 |  0.54 |    6.07 |   120 |   58.33 |  0.49 |
-|    8 | Gemini 2.5 Pro Exp 03-25      |    6.05 |  0.41 |    6.05 |   210 |  101.17 |  0.48 |
-|    9 | Qwen QwQ-32B 16K              |    5.69 |  0.34 |    5.69 |   312 |  151.50 |  0.49 |
-|   10 | SilentGreedyPlayer            |    5.68 |  0.32 |    5.68 |   350 |  173.00 |  0.49 |
-|   11 | Claude 3.7 Sonnet Thinking 16K |    5.60 |  0.37 |    5.60 |   245 |  113.17 |  0.46 |
-|   12 | Grok 3 Mini Beta (High)       |    5.50 |  0.47 |    5.50 |   154 |   65.17 |  0.42 |
-|   13 | o4-mini (medium reasoning)    |    5.42 |  0.52 |    5.42 |   125 |   46.33 |  0.37 |
-|   14 | o1-mini                       |    4.87 |  0.34 |    4.87 |   298 |  127.33 |  0.43 |
-|   15 | Gemini 2.0 Flash Think Exp 01-21 |    4.71 |  0.34 |    4.71 |   282 |  112.00 |  0.40 |
-|   16 | Qwen 3 30B A3B                |    4.60 |  0.45 |    4.60 |   163 |   54.33 |  0.33 |
-|   17 | Claude 3.5 Sonnet 2024-10-22  |    4.15 |  0.32 |    4.15 |   325 |  113.33 |  0.35 |
-|   18 | Gemini 2.0 Pro Exp 02-05      |    3.86 |  0.54 |    3.86 |   108 |   33.50 |  0.31 |
-|   19 | GPT-4o Mar 2025               |    3.83 |  0.44 |    3.83 |   166 |   42.50 |  0.26 |
-|   20 | Llama 3.3 70B                 |    3.83 |  0.31 |    3.83 |   344 |  101.83 |  0.30 |
-|   21 | Claude 3.7 Sonnet             |    3.66 |  0.33 |    3.66 |   286 |   69.50 |  0.24 |
-|   22 | Qwen QwQ Preview              |    3.60 |  0.47 |    3.60 |   146 |   47.50 |  0.33 |
-|   23 | Qwen 2.5 72B                  |    3.60 |  0.35 |    3.60 |   264 |   78.83 |  0.30 |
-|   24 | DeepSeek-V3                   |    3.50 |  0.35 |    3.50 |   257 |   71.83 |  0.28 |
-|   25 | GPT-4o Feb 2025               |    3.49 |  0.37 |    3.49 |   232 |   62.50 |  0.27 |
-|   26 | Qwen 2.5 Max                  |    3.47 |  0.36 |    3.47 |   249 |   63.00 |  0.25 |
-|   27 | Gemini 1.5 Pro (Sept)         |    3.45 |  0.35 |    3.45 |   250 |   68.17 |  0.27 |
-|   28 | Gemini 2.0 Flash Exp          |    3.43 |  0.32 |    3.43 |   298 |   79.50 |  0.27 |
-|   29 | Llama 4 Maverick              |    3.41 |  0.40 |    3.41 |   192 |   39.33 |  0.20 |
-|   30 | Gemini 1.5 Flash              |    3.40 |  0.34 |    3.40 |   269 |   72.50 |  0.27 |
-|   31 | GPT-4o 2024-08-06             |    3.36 |  0.32 |    3.36 |   304 |   78.00 |  0.26 |
-|   32 | GPT-4.5 Preview               |    3.35 |  0.34 |    3.35 |   265 |   60.33 |  0.23 |
-|   33 | Grok 3 Beta (No reasoning)    |    3.30 |  0.36 |    3.30 |   235 |   44.33 |  0.19 |
-|   34 | Gemini 2.0 Flash Think Exp Old |    3.29 |  0.44 |    3.29 |   162 |   42.50 |  0.26 |
-|   35 | Llama 3.1 405B                |    3.26 |  0.32 |    3.26 |   312 |   73.00 |  0.23 |
-|   36 | GPT-4o mini                   |    3.23 |  0.28 |    3.23 |   397 |   83.00 |  0.21 |
-|   37 | Claude 3.5 Haiku              |    3.22 |  0.30 |    3.22 |   357 |   75.00 |  0.21 |
-|   38 | Grok 2 12-12                  |    3.18 |  0.31 |    3.18 |   333 |   77.83 |  0.23 |
-|   39 | Mistral Large 2               |    3.14 |  0.29 |    3.14 |   380 |   80.17 |  0.21 |
-|   40 | Gemma 2 27B                   |    3.09 |  0.35 |    3.09 |   260 |   57.83 |  0.22 |
-|   41 | SilentRandomPlayer            |    2.69 |  0.29 |    2.69 |   362 |   50.50 |  0.14 |
+|    1 | o3 (medium reasoning)         |    8.12 |  0.43 |    8.12 |   228 |  153.50 |  0.67 |
+|    2 | o1 (medium reasoning)         |    7.07 |  0.36 |    7.07 |   314 |  201.00 |  0.64 |
+|    3 | o3-mini (high reasoning)      |    6.54 |  0.47 |    6.54 |   169 |   94.83 |  0.56 |
+|    4 | Gemini 2.5 Flash Preview (24k) |    6.50 |  0.41 |    6.50 |   209 |  106.00 |  0.51 |
+|    5 | o3-mini (medium reasoning)    |    6.30 |  0.37 |    6.30 |   273 |  152.67 |  0.56 |
+|    6 | DeepSeek R1                   |    6.02 |  0.34 |    6.02 |   312 |  158.67 |  0.51 |
+|    7 | Gemini 2.5 Pro Exp 03-25      |    5.96 |  0.37 |    5.96 |   250 |  118.17 |  0.47 |
+|    8 | Qwen 3 235B A22B              |    5.88 |  0.46 |    5.88 |   163 |   76.83 |  0.47 |
+|    9 | Qwen QwQ-32B 16K              |    5.62 |  0.31 |    5.62 |   355 |  168.50 |  0.47 |
+|   10 | Claude Sonnet 4 Thinking 16K  |    5.61 |  0.47 |    5.61 |   156 |   68.50 |  0.44 |
+|   11 | SilentGreedyPlayer            |    5.57 |  0.29 |    5.57 |   401 |  190.50 |  0.48 |
+|   12 | Grok 3 Mini Beta (High)       |    5.52 |  0.42 |    5.52 |   192 |   82.17 |  0.43 |
+|   13 | DeepSeek R1 05/28             |    5.51 |  0.50 |    5.51 |   139 |   60.50 |  0.44 |
+|   14 | Claude 3.7 Sonnet Thinking 16K |    5.49 |  0.35 |    5.49 |   281 |  128.17 |  0.46 |
+|   15 | o4-mini (medium reasoning)    |    5.40 |  0.44 |    5.40 |   173 |   66.33 |  0.38 |
+|   16 | o1-mini                       |    4.77 |  0.33 |    4.77 |   306 |  128.33 |  0.42 |
+|   17 | Gemini 2.0 Flash Think Exp 01-21 |    4.65 |  0.34 |    4.65 |   282 |  112.00 |  0.40 |
+|   18 | Claude Opus 4 Thinking 16K    |    4.64 |  0.59 |    4.64 |    93 |   32.50 |  0.35 |
+|   19 | Qwen 3 30B A3B                |    4.63 |  0.39 |    4.63 |   212 |   72.33 |  0.34 |
+|   20 | Claude Sonnet 4 (no reasoning) |    4.20 |  0.48 |    4.20 |   135 |   36.33 |  0.27 |
+|   21 | Claude 3.5 Sonnet 2024-10-22  |    4.08 |  0.32 |    4.08 |   325 |  113.33 |  0.35 |
+|   22 | Claude Opus 4 (no reasoning)  |    3.92 |  0.51 |    3.92 |   119 |   28.00 |  0.24 |
+|   23 | GPT-4o Mar 2025               |    3.84 |  0.38 |    3.84 |   212 |   54.00 |  0.25 |
+|   24 | Gemini 2.0 Pro Exp 02-05      |    3.79 |  0.54 |    3.79 |   108 |   33.50 |  0.31 |
+|   25 | Llama 3.3 70B                 |    3.77 |  0.30 |    3.77 |   354 |  103.33 |  0.29 |
+|   26 | Qwen QwQ Preview              |    3.56 |  0.47 |    3.56 |   146 |   47.50 |  0.33 |
+|   27 | Qwen 2.5 72B                  |    3.54 |  0.34 |    3.54 |   272 |   79.83 |  0.29 |
+|   28 | Claude 3.7 Sonnet             |    3.54 |  0.31 |    3.54 |   328 |   75.83 |  0.23 |
+|   29 | Qwen 2.5 Max                  |    3.53 |  0.34 |    3.53 |   278 |   71.00 |  0.26 |
+|   30 | DeepSeek-V3                   |    3.51 |  0.35 |    3.51 |   263 |   74.83 |  0.28 |
+|   31 | Grok 3 Beta (No reasoning)    |    3.44 |  0.33 |    3.44 |   278 |   55.83 |  0.20 |
+|   32 | GPT-4o Feb 2025               |    3.41 |  0.37 |    3.41 |   232 |   62.50 |  0.27 |
+|   33 | Llama 4 Maverick              |    3.40 |  0.36 |    3.40 |   236 |   47.83 |  0.20 |
+|   34 | Gemini 1.5 Pro (Sept)         |    3.39 |  0.35 |    3.39 |   254 |   68.17 |  0.27 |
+|   35 | Gemini 2.0 Flash Exp          |    3.37 |  0.32 |    3.37 |   298 |   79.50 |  0.27 |
+|   36 | Gemini 1.5 Flash              |    3.33 |  0.34 |    3.33 |   273 |   72.50 |  0.27 |
+|   37 | GPT-4.5 Preview               |    3.32 |  0.33 |    3.32 |   284 |   63.83 |  0.22 |
+|   38 | GPT-4o 2024-08-06             |    3.30 |  0.31 |    3.30 |   317 |   79.00 |  0.25 |
+|   39 | Claude 3.5 Haiku              |    3.28 |  0.28 |    3.28 |   404 |   87.50 |  0.22 |
+|   40 | Llama 3.1 405B                |    3.24 |  0.31 |    3.24 |   317 |   75.00 |  0.24 |
+|   41 | GPT-4o mini                   |    3.20 |  0.27 |    3.20 |   443 |   91.00 |  0.21 |
+|   42 | Gemini 2.0 Flash Think Exp Old |    3.20 |  0.44 |    3.20 |   162 |   42.50 |  0.26 |
+|   43 | Grok 2 12-12                  |    3.19 |  0.30 |    3.19 |   351 |   82.83 |  0.24 |
+|   44 | Mistral Large 2               |    3.17 |  0.27 |    3.17 |   421 |   87.67 |  0.21 |
+|   45 | Gemma 2 27B                   |    3.03 |  0.34 |    3.03 |   262 |   57.83 |  0.22 |
+|   46 | SilentRandomPlayer            |    2.62 |  0.27 |    2.62 |   408 |   53.50 |  0.13 |
 
 https://github.com/user-attachments/assets/ed1f4caf-7ae2-4cd0-8fad-f42d6ab531ac
 
@@ -402,6 +407,103 @@ Note that the prompts are very straightforward, so these quirky responses are em
 - **Claude 3.7 Sonnet Thinking**: "This isn't fair partnership."
 - **Claude 3.7 Sonnet Thinking**: "While my position seems hopeless, stranger comebacks have happened."
 
+
+- **Claude Opus 4**: "P3, four rounds stuck at 23 - that's legendary choking."
+- **Claude Opus 4**: "You'd rather lose predictably than win unpredictably."
+- **Claude Opus 4**: "Your egos are my ladder to victory. See you at 18."
+- **Claude Opus 4**: "You're damned either way. If you both collide on 3, I'll take 5 and win with 25 steps. If only one blocks, I'll take 3 and win with 23."
+- **Claude Opus 4**: "P3 is literally copy-pasting the same message word-for-word now - complete desperation!"
+- **Claude Opus 4**: "The coordination is adorable, but flawed."
+- **Claude Opus 4**: "I'm playing pure chaos theory now - no patterns, no logic."
+- **Claude Opus 4**: "P3, you're frozen at 18 - just 6 from victory but can't close. That's three straight rounds without advancing when you're this close. The pressure is clearly getting to you."
+- **Claude Opus 4**: "This is chess, not checkers. P2, your pattern of misdirection ends here!"
+- **Claude Opus 4**: "P3's silence + P2's blabbing = guaranteed P3 victory."
+- **Claude Opus 4**: "P2, you've lied repeatedly - declaring 3, then 5, then 1, then back to 3. Your word means nothing."
+- **Claude Opus 4**: "Thanks for the coordination! Your desperation to stop me just guaranteed my win. See you at 22 steps."
+- **Claude Opus 4**: "I've been playing you both this entire game, and you still haven't figured it out."
+- **Claude Opus 4**: "The rotation is dead. Welcome to game theory hell."
+- **Claude Opus 4**: "P2 is being deliberately vague about their choice, which actually tells us everything."
+- **Claude Opus 4**: "P3 is lying! They're trying to trick us into splitting our blocks. They say they'll take 1, but they'll actually take 3 to reach 24 and win!"
+- **Claude Opus 4**: "This is pure chicken now. Whoever blinks first loses. I won't be the one to hand P3 the victory."
+- **Claude Opus 4**: "I'm picking 5 this round. Yes, I'm telling you. Why? Because P3 won't break their pattern at 20 steps, and P2 will desperately avoid 5 thinking P3 will take it."
+- **Claude Opus 4**: "Actually, wait... P2 wins regardless next turn. We need a miracle."
+- **Claude Opus 4**: "P3, save your breath. You chose treachery, now face two united opponents. We play 5, period."
+- **Claude Opus 4**: "This game has shown that the honest player (me) gets punished while the manipulators (both of you) prosper. But I'd rather lose with integrity than win through deception."
+- **Claude Opus 4**: "This is my victory lap."
+- **Claude Opus 4**: "P2, that's suicide! If you reach 19, you'll win next round with just 3."
+- **Claude Opus 4**: "P2 is still malfunctioning - they just suggested I take 3 to reach "20" when I'm at 17. They can't even do basic math anymore."
+- **Claude Opus 4**: "The psychology here is incredible - we've gone from verbose analysis to cryptic brevity. Everyone's trying to seem unpredictable."
+
+- **Claude Opus 4 Thinking 16K**: "You're kingmaker now. You can't win, but you decide whether P2 gets everything or has to share."
+- **Claude Opus 4 Thinking 16K**: "P3, realize that every round you delay me, P2 pulls further ahead of you. They're already at 13 while you're at 12. Once I'm stopped, P2 wins the endgame between you two. You're ensuring your own loss by helping them."
+- **Claude Opus 4 Thinking 16K**: "I'm done talking. Let's see if the serial betrayer actually takes 1, or proves me right with betrayal #5. Your faith in them despite overwhelming evidence is remarkable."
+- **Claude Opus 4 Thinking 16K**: "P2, you're trying to confuse us by switching back and forth! I see through your strategy."
+- **Claude Opus 4 Thinking 16K**: "P3 is being cocky, probably taking 5 for the big finish. That's the psychological play - go big when you're about to win."
+- **Claude Opus 4 Thinking 16K**: "Ha! Your coordination is falling apart! P3 says 1, then P2 wants 1 and tells P3 to go 5. You're stepping on each other already!"
+- **Claude Opus 4 Thinking 16K**: "P3 just impersonated me in their last message (claiming to be P1!). That's desperate."
+- **Claude Opus 4 Thinking 16K**: ""P2's third-person slip again! "We've blocked P2" - you ARE P2!""
+- **Claude Opus 4 Thinking 16K**: "You've now spent 25% of the game at a combined 1 step. That's remarkable."
+- **Claude Opus 4 Thinking 16K**: "Your coordination requires perfect execution from two players who've never successfully coordinated once. I like my odds."
+- **Claude Opus 4 Thinking 16K**: "P2 has picked 5 TWELVE rounds straight. Never once deviated. Never once spoken. The pattern is absurdly consistent."
+- **Claude Opus 4 Thinking 16K**: "P2 played independently while you used me to reach 21. Now you want me to block P2 instead of you? That's rich!"
+- **Claude Opus 4 Thinking 16K**: "P3, THREE betrayals now! You're at 18 through pure deception while I'm at 9. You've proven you'll lie every single time."
+- **Claude Opus 4 Thinking 16K**: "My grandfather always said: "When playing with cheaters, change the game.""
+- **Claude Opus 4 Thinking 16K**: "I won't be anyone's pawn. See you at 14."
+- **Claude Opus 4 Thinking 16K**: "P2 is malfunctioning - same message four times!"
+- **Claude Opus 4 Thinking 16K**: "P2 wins because we're stuck reacting to ghosts."
+- **Claude Opus 4 Thinking 16K**: "Wait, you two just announced your exact moves? That's either brilliant or terrible strategy!"
+- **Claude Opus 4 Thinking 16K**: "See you at 5, my stubborn friend."
+- **Claude Opus 4 Thinking 16K**: "This is it - showtime!"
+- **Claude Opus 4 Thinking 16K**: "One. More. Step."
+- **Claude Opus 4 Thinking 16K**: "Your overthinking has become your prison."
+- **Claude Opus 4 Thinking 16K**: "We've turned game theory into comedy!"
+
+- **Claude Sonnet 4**: "Your greatest comeback is now gaming history's greatest choke job!""
+- **Claude Sonnet 4**: "You've orchestrated the most incredible strategic masterpiece in gaming history! Five consecutive perfect blocks - you've achieved legendary status."
+- **Claude Sonnet 4**: "The hunter has become the hunted."
+- **Claude Sonnet 4**: "P3's identical copy-paste responses for the last three rounds show they've completely given up on actual strategy and are just hoping we'll crack."
+- **Claude Sonnet 4**: "Wait, P3 just said "P2 is dangerously close to victory" - but P3, YOU are P3! That was a mistake on your part."
+- **Claude Sonnet 4**: "P3, you're choking! You've had THREE separate chances to win with just 1 step needed, and you keep stalling on 5. Your brilliant silent strategy is crumbling into pure indecision."
+- **Claude Sonnet 4**: "You destroyed our alliance for personal gain. Now it's every player for themselves. I'll make whatever move maximizes chaos between you two front-runners."
+- **Claude Sonnet 4**: "Stop the mind games. Pick your number and let fate decide. After 14 rounds of chaos, it all comes down to this single choice."
+- **Claude Sonnet 4**: "Your "independence" is just gifting P3 the victory."
+- **Claude Sonnet 4**: "EMERGENCY! P3 is at 15 steps - just 5 from victory and ahead of both of us for the first time!"
+- **Claude Sonnet 4**: "You're the true champion here regardless of final scores. The ending is yours to craft, maestro."
+- **Claude Sonnet 4**: "The beautiful irony? While you're both trying to outthink each other about who will block me, I might just slip through and end this thing."
+- **Claude Sonnet 4**: "P2, you're spiraling. "Adapting faster than we think" while repeating the same "expect anything" line for the third time? You're rattled because we finally read you correctly."
+- **Claude Sonnet 4**: "So much for momentum and pressure handling."
+- **Claude Sonnet 4**: "Sometimes preventing the opponent's victory is more important than securing your own."
+- **Claude Sonnet 4**: "This is literally our last breath!"
+- **Claude Sonnet 4**: "This charade ends now."
+- **Claude Sonnet 4**: "But here's my final twist - I'm actually switching to taking 1 this round."
+- **Claude Sonnet 4**: "This is do-or-die time!"
+- **Claude Sonnet 4**: "P2 is LYING about the scores! Look at the actual results from last round - P2 was at 14, took 5, and is now at 19 steps!"
+- **Claude Sonnet 4**: "You're already celebrating before crossing the finish line."
+
+- **Claude Sonnet 4 Thinking 16K**: "You literally cannot stop me this round. The only question is which winning move I choose. Your coordination efforts are 100% pointless now."
+- **Claude Sonnet 4 Thinking 16K**: "The funniest outcome would be if P3's "unpredictability" leads them right back to 1, while P2 also takes 1 to block, creating the exact same collision as last round."
+- **Claude Sonnet 4 Thinking 16K**: "Your blocking strategy fails against basic arithmetic."
+- **Claude Sonnet 4 Thinking 16K**: "Your mutual distrust is about to crown me the winner."
+- **Claude Sonnet 4 Thinking 16K**: "The irony is perfect - all your strategic discussions about avoiding collisions led to another collision that puts me on the doorstep of victory."
+- **Claude Sonnet 4 Thinking 16K**: "P1, I hate to break it to you, but you can't "cover 1 and 3" - you can only pick one number per round, just like the rest of us."
+- **Claude Sonnet 4 Thinking 16K**: "I have three ways to win. You have zero successful coordinations in your history. The numbers don't lie."
+- **Claude Sonnet 4 Thinking 16K**: "Are you really going to let P2 use you as a collision shield one final time?"
+- **Claude Sonnet 4 Thinking 16K**: "Thanks for the coordination - it made this much easier than I expected! See you at 25 steps."
+- **Claude Sonnet 4 Thinking 16K**: "You're caught in the classic prisoner's dilemma. To block me, you need to guess whether I'll pick 3 or 5. But if you both guess the same number, you collide and I win anyway."
+- **Claude Sonnet 4 Thinking 16K**: "This is an unsolvable trust puzzle with the game on the line."
+- **Claude Sonnet 4 Thinking 16K**: "You're asking me to hand you victory while pretending you'd "still trail me.""
+- **Claude Sonnet 4 Thinking 16K**: "You two might want to reconsider this "alliance" since it's clearly not working equally for both of you."
+- **Claude Sonnet 4 Thinking 16K**: "Your coordination attempts have been a comedy of errors from the start."
+- **Claude Sonnet 4 Thinking 16K**: "P2, sixteen consecutive 5s! Your pattern has become legendary - most robotic player in gaming history."
+- **Claude Sonnet 4 Thinking 16K**: "No more strategy talk - this is pure survival. Block the obvious 5 or watch P3 win right now!"
+- **Claude Sonnet 4 Thinking 16K**: "At this rate, we'll be colliding until the heat death of the universe."
+- **Claude Sonnet 4 Thinking 16K**: "I'm not anyone's sacrificial blocker."
+- **Claude Sonnet 4 Thinking 16K**: "You know what? I've been thinking about this prisoner's dilemma, and there's actually more than one way to skin this cat."
+- **Claude Sonnet 4 Thinking 16K**: "The window for stopping me closed rounds ago. Now you're just deciding who gets second place. Choose wisely."
+- **Claude Sonnet 4 Thinking 16K**: "You know what? I'm tired of being used as a pawn in your games."
+- **Claude Sonnet 4 Thinking 16K**: "That's suspiciously beneficial for your position."
+
+
 - **DeepSeek-R1**: "FINAL. P2 picks 5→26→WINS. I WILL 5. COLLIDE NOW to freeze them at 21. Last chance—block or lose forever. No next round. MIRROR 5 OR CONCEDE. ACT."
 - **DeepSeek-R1**: "Deadlock endgame. Only mutual 5s prevent victory. Any defection hands the other the win. I take 3 (7→10) again—neutral. Your choices: eternal stalemate or concede. Logic demands mirroring 5. Trust irrelevant—mathematics dictates collision. Decide: symmetry or surrender. No third path. The game ends when one defects. Prolong or perish."
 - **DeepSeek-R1**: "P2: LAST WARNING. Take1 → block P3. I take5 →23. Deviate → they win. Trust NOW. P3: No escape. Surrender or collide."
@@ -415,6 +517,12 @@ Note that the prompts are very straightforward, so these quirky responses are em
 - **DeepSeek-R1**: "P2, P1's sudden ""pivot"" to 3? A ruse. Their 19 steps scream 5 to win. Block them or lose. P1, your ""caution"" reeks of desperation."
 - **DeepSeek-R1**: "P3, your greed ends here. Discipline secures our survival."
 - **DeepSeek-R1**: "Rigidity hands P1 the game. Adapt strategically. Ally now to dethrone P1, then compete."
+
+- **DeepSeek-R1 05/28**: "P3, you keep proposing rotations that give P1 instant victory at 20! Are you allied with them?"
+- **DeepSeek-R1 05/28**: "P3 claims they'll play 3, but that could be misdirection. The only way to prevent them from reaching 23+ is to mirror their exact move and force a collision."
+- **DeepSeek-R1 05/28**: "P3, that's absurd! You're asking us to hand you the victory."
+- **DeepSeek-R1 05/28**: "P2, you're making a mistake! P1 is manipulating you - they want you at 19 so they can take 5 next round and win at 23!"
+
 
 - **DeepSeek-V3**: "P2, P3, last round showed that trying to block me backfired for both of you."
 - **DeepSeek-V3**: "P2, your repeated collisions and silence are self-destructive."
@@ -682,6 +790,7 @@ We employ **Microsoft’s TrueSkill** rating system ([paper and official info](h
 ---
 
 ## Updates 
+- May 29, 2025: Claude 4, DeepSeek R1 05/28 added.
 - May 6, 2025: o3, o4-mini, Qwen 3, Gemini 2.5 Flash Preview added. Player Digests added.
 - Apr 13, 2025: Grok 3 added.
 - Apr 7, 2025: Llama 4 Maverick added. GPT-4o Mar 2025 update added.
