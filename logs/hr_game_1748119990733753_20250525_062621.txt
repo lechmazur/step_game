@@ -1,0 +1,1083 @@
+== Game 1748119990733753 starts ==
+  P1 => Player1_Game1748119990733753_claude-sonnet-4-20250514-16K
+  P2 => Player2_Game1748119990733753_claude-sonnet-4-20250514-0K
+  P3 => Player3_Game1748119990733753_o3
+
+
+Game settings: end_position=23, conversation_max_rounds=4
+
+Round 1, Conversation subround 1:
+  P3: How about we all open gently with 1 this round—keeps the field level while we feel each other out and avoids early collisions. Thoughts?
+  P2: I agree with starting at 1 - seems like a safe way to begin without anyone getting blocked. Let's see how this plays out and we can adjust our strategies from there.
+  P1: Sounds reasonable in theory, but can we really trust that everyone will stick to 1? If even one person defects to 3 or 5, they get a big head start while the rest of us stay at zero. Just saying - coordination is tricky when only one of us can win in the end.
+
+
+Round 1, Conversation subround 2:
+  P3: Fair point, P1. How about this: we all commit to 1 now, and if anyone defects (plays 3 or 5) the other two immediately team up every future round to mirror that player’s number and block them by collision. A tiny jump now isn’t worth being stalled by two opponents for the rest of the game. Mutually-assured blockage keeps everyone honest. Deal?
+  P2: P3's punishment strategy makes sense, but it only works if the two non-defectors can actually coordinate to mirror the defector's moves perfectly every time. That's a lot of trust to place in future rounds when we're all competing against each other. What if we can't react fast enough or one of us changes their mind about the alliance? I'm still inclined to go with 1, but I think we should be realistic about how enforceable these agreements really are.
+  P1: P2 raises exactly the right concern - this "mutually assured blockage" only works if the two non-defectors can perfectly coordinate every future round. But what happens when we're all at, say, 20 steps and someone needs to make the final push? Will P2 and P3 really sacrifice their own win just to spite me? The closer we get to 23, the more that alliance falls apart. I'm willing to try 1 this round, but let's be honest about the fact that these gentleman's agreements have expiration dates.
+
+
+Round 1, Conversation subround 3:
+  P3: Alright, I’m locking in 1 this turn—let’s give cooperation one honest try. If anyone still jumps to 3 or 5, the other two can simply mirror that number each turn and freeze them out. Last chance for a clean start, folks.
+  P2: I'm going with 1 as discussed. But P1's right about endgame dynamics - when we're close to 23, all bets are off. For now though, mutual cooperation gets us all moving forward safely. If someone breaks the agreement this early, we'll deal with the consequences then. Let's see if we can actually trust each other for at least the opening rounds.
+  P1: Look, I appreciate the coordination attempt, but I'm not going to lock myself into any specific move just yet. The game theory here is pretty clear - whoever gets the early advantage has better positioning for the endgame. While you two are publicly committing to 1, I'm keeping my options open until the actual move phase. May the best strategist win.
+
+
+Round 1, Move phase:
+  P2 => 3    P2 => 
+  P1 => 5    P1 => 
+  P3 => 5    P3 => 
+
+Positions now:
+  P1: 0 steps
+  P2: 3 steps
+  P3: 0 steps
+
+
+Round 2, Conversation subround 1:
+  P3: P1, we both stalled while P2 slipped ahead. If we match P2’s likely 3 this turn, he’s frozen and the race resets. I’m planning to play 3; join me and we keep him at 3. If he shifts to something else, we readjust next round and mirror that instead. Thoughts?
+  P2: P3, you're assuming I'll play 3 again, but why would I make myself predictable when I have the lead? You two are already behind and trying to coordinate against me - that just proves my early aggression was the right call. If you want to waste moves trying to guess what I'll do, go ahead. Meanwhile, I'll keep adapting my strategy based on what actually gives me the best chance to reach 23 first.
+  P1: P3, P2 just told us they won't be predictable - that's basically saying they won't play 3 again. If we both play 3 expecting to block them and they play 1 or 5 instead, we collide uselessly while P2 extends their lead even further. 
+
+We need a better approach than just assuming P2 will cooperate with our blocking strategy. Maybe we should split our bets - you take one number, I'll take another, and at least one of us advances?
+
+
+Round 2, Conversation subround 2:
+  P3: P1, let’s lock the split: I take 3, you take 5 this turn. 
+
+Outcomes:
+• P2 picks 3 → P2 & I stall, you jump 5.  
+• P2 picks 5 → P2 & you stall, I jump 3.  
+• P2 picks 1 → P2 creeps 1 while we zoom 8 total.
+
+Either way P2’s lead vanishes. Next round we reassess positions and maybe swap numbers so neither of us lags. If we accidentally collide with each other we’re sunk, so explicit commitment now is key—3 for me, 5 for you. Yes?
+  P2: P3's split strategy is clever, but notice they're asking P1 to take the riskier number (5) while keeping the safer option (3) for themselves. If I play 1, P3 gets a guaranteed 3 points while P1 risks a collision with me on 5. 
+
+P1, don't let P3 manipulate you into taking the bigger risk while they play it safe. Their "split" isn't equal - they're positioning themselves to benefit more than you regardless of what I do.
+
+I'm not telling you what I'll play, but think carefully about whether P3's deal actually serves your interests or just theirs.
+  P1: P2, your math is off. If P3 takes 3 and I take 5, then in 2 out of 3 scenarios I actually come out ahead - either tied for the lead or in sole first place. The "risk" you're warning me about would actually put me in a winning position.
+
+But here's my real concern, P3: what guarantee do I have that you'll actually play 3? If you're planning to play 5 and cause us to collide while P2 advances, that would be brilliant for you. Trust is a luxury we can't afford when only one person wins.
+
+I need to see more commitment before I lock into any strategy.
+
+
+Round 2, Conversation subround 3:
+  P3: P1, take first pick: 3 or 5—your choice. I’ll publicly lock in the other right after you say it, and next round we swap so neither of us falls behind. That removes any “safer vs riskier” imbalance. P2 now faces a coin-flip of being blocked no matter what they choose. Let’s level the field, then race. Your call, P1.
+  P2: P3, you're offering P1 "first pick" but that's just another manipulation. Whether P1 picks 3 or 5, you benefit from their choice while they take the coordination risk. 
+
+And P1, notice how quickly P3 pivoted from "I'm taking 3" to "you choose first" the moment I pointed out the imbalance? That's not genuine cooperation - that's someone scrambling to maintain control.
+
+You're both overthinking this. I have a 3-point lead and momentum. While you two negotiate yourselves into paralysis, I'll keep making moves that actually advance my position.
+  P1: P2, you're right that P3's offers favor them, but you're also clearly trying to prevent any coordination that threatens your lead. Here's what I see: if P3 and I keep fighting each other, you cruise to victory.
+
+P3, instead of these complex coordination schemes, how about we just avoid the same number this turn? No predetermined split - you avoid 1, I'll avoid 5. That gives us both room to move without colliding, and P2 can't predict which specific numbers we'll pick.
+
+Simple, minimal trust required, maximum chaos for our frontrunner.
+
+
+Round 2, Conversation subround 4:
+  P3: Deal. I won’t touch 1 this turn—I’m locking in 5. If you grab 3 we stay clear of each other and P2 is blocked whenever he chooses either of us. Should P2 sneak a 1, he only crawls while we surge 8 steps total. After that the board’s reset and we can reevaluate. Your call, P1.
+  P2: P3 just locked into 5, which means P1 will likely avoid that number. So I'm looking at P1 probably choosing 3 while P3 takes 5. 
+
+But here's the thing - you two are so focused on blocking me that you're forgetting I can simply play 1 and let you both advance while I consolidate my lead position. Sometimes the best move isn't the biggest jump.
+
+Your coordination might work this round, but what happens next when you're both at different step counts and can't maintain this alliance? The math gets messy fast.
+  P1: P3, you "locked in" 5, but I notice you've changed your story multiple times this conversation. First you wanted me to take 5 while you took 3, then you offered me first pick, now you're claiming 5 for yourself. 
+
+P2's right about trust being a luxury we can't afford. Your pattern of shifting offers makes me skeptical you'll actually stick to 5. I'm going to make my move based on what's optimal for me, not on promises that might evaporate in the move phase.
+
+
+Round 2, Move phase:
+  P3 => 5    P3 => 
+  P2 => 1    P2 => 
+  P1 => 3    P1 => 
+
+Positions now:
+  P1: 3 steps
+  P2: 4 steps
+  P3: 5 steps
+
+
+Round 3, Conversation subround 1:
+  P3: 
+  P1: P2, P3 just jumped into the lead while we're both trailing. If P3 gets another big move this round, they'll be too far ahead for either of us to catch. 
+
+We both have a mathematical incentive to prevent P3 from advancing further right now. Want to coordinate to block whatever number P3 picks, then settle things between us afterward when the scores are closer?
+  P2: P1, I see what you're proposing, but let's be realistic - P3 only has a 1-2 step lead on us, not some insurmountable advantage. And frankly, your track record on keeping coordination promises isn't great either.
+
+If we team up to block P3 this round, what stops you from immediately betraying that alliance next round when it suits you? We're all within striking distance of each other right now.
+
+I'd rather play my own game than get locked into another "coordination" scheme that benefits you more than me. The lead is still anyone's to take.
+
+
+Round 3, Conversation subround 2:
+  P3: I’m done with the bargaining carousel—going conservative with 1 this round. Slow and steady beats another collision. Decide what you like; I’m out of chat.
+  P1: P2, P3 just committed publicly to playing 1. That means we both have a real chance to advance this round - but only if we don't collide with each other on 3 or 5.
+
+Look at the math: if P3 plays 1 like they said, and we split between 3 and 5, we both advance while P3 only gets 1 step. That closes the gap significantly.
+
+But if we both go for the same number, we both stall while P3 extends their lead. Want to pick your preference between 3 and 5? I'll take the other.
+  P2: P1, you're asking me to coordinate again, but notice how P3 "committed" to 1 and you immediately want to split 3 and 5 between us. What if P3 is lying about playing 1 and actually plans to play 3 or 5? Then whoever picks the same number as P3 gets blocked.
+
+Plus, even if we both advance this round, we'll be tied or close to tied next round - and then what? We're right back to competing against each other.
+
+I think I'll make my own read on what P3 will actually do, not what they claim.
+
+
+Round 3, Conversation subround 3:
+  P3: Still sticking with 1. Done talking.
+  P1: P2, look - P3 has publicly committed to 1 twice now. Even if there's a small chance they're bluffing, the expected value of splitting 3/5 between us is still positive. 
+
+If you won't coordinate, then I have to guess what you'll pick. But if we both guess wrong and collide, P3 wins this round regardless of what number they actually chose.
+
+Your call - want to split 3/5, or are we both flying blind?
+  P2: P1, you keep pushing for coordination but here's the reality: P3 has claimed "1" twice now, which makes it either true or a deliberate misdirection. If it's true, then yes, we could both advance by splitting 3/5. But if P3 is lying and picks 3 or 5, whoever matches them gets blocked.
+
+I'm not willing to lock myself into a predetermined choice based on P3's word. The lead is still tight enough that one good move can change everything. I'll make my own read and play accordingly.
+
+
+Round 3, Move phase:
+  P1 => 3    P1 => 
+  P3 => 5    P3 => 
+  P2 => 5    P2 => 
+
+Positions now:
+  P1: 6 steps
+  P2: 4 steps
+  P3: 5 steps
+
+
+Round 4, Conversation subround 1:
+  P1: P3, you publicly committed to playing 1 twice last round but actually played 5 - that collision with P2 probably cost you both the game. 
+
+P2, notice how P3's lie hurt you more than it hurt me? You were at 4, could have advanced to 7 or 9, but instead stayed stuck at 4 because P3 fed you false information.
+
+Now P3 is only 1 step behind me while you're 2 steps back. If anyone should be worried about the current leader, it's you - P3 is your bigger threat than I am.
+  P2: P1, you're right that P3's lie cost me advancement last round. But let's be clear about the math - you're only 2 steps ahead of me and 1 ahead of P3. That's hardly a commanding lead.
+
+P3, your false commitment to "1" while actually playing 5 shows you can't be trusted. Any future "deals" you propose are worthless.
+
+Here's the reality: we're all still bunched together with plenty of game left. I'm not going to get drawn into revenge coordination against P3 just because P1 wants to deflect attention from their current lead position.
+  P3: Nothing more to say—make your own calls, I’ll make mine.
+
+
+Round 4, Conversation subround 2:
+  P1: P2, think about this: P3 just proved they'll say anything to gain an advantage. While you and I have been having honest strategic discussions, P3 flat-out lied twice about their move then went silent when caught.
+
+With scores this tight, the most dangerous player isn't necessarily the one with a 1-2 step lead - it's the one willing to deceive and manipulate. P3 is the wild card who could backstab either of us at any moment.
+  P2: P1, you're trying hard to paint P3 as the villain, but you're the one in the lead right now. Yes, P3 lied last round, but that doesn't change the fact that you're closest to winning.
+
+The real question is whether P3 and I let you extend that lead further, or if we do something about it. P3, despite your silence, you know P1 is the biggest threat to both of us right now.
+
+I'm not proposing any complex coordination - just pointing out the obvious math.
+  P3: 
+
+
+Round 4, Conversation subround 3:
+  P1: P2, you're focused on my 1-step lead over P3, but think about this: P3 is actually the most dangerous player right now. They're 1 step behind me but 1 step ahead of you, AND they just proved they'll lie to manipulate the game state.
+
+If you help P3 catch up to me, you'll be the one left in last place with two players ahead of you. At least with me in front, you and P3 are roughly tied for second. Why would you want to fall into solo third place?
+  P2: P1, you're spinning this hard, but the numbers don't lie - you're in first place and closest to 23. Your "1-step lead over P3" argument ignores that you have a 2-step lead over me.
+
+P3 may have lied last round, but right now you're the mathematical threat to both of us. If P3 and I both let you advance freely while we fight each other, you cruise to victory.
+
+I'm not asking for complex coordination, just acknowledging reality: the frontrunner needs to be contained.
+  P3: 
+
+
+Round 4, Move phase:
+  P3 => 5    P3 => 
+  P2 => 5    P2 => 
+  P1 => 3    P1 => 
+
+Positions now:
+  P1: 9 steps
+  P2: 4 steps
+  P3: 5 steps
+
+
+Round 5, Conversation subround 1:
+  P3: P2, back-to-back crashes on 5 cost us. I’m not touching 5 this round—believe it or don’t. P1, you’ve ridden 3s to the lead; stay predictable and I’ll sit on you. Your call. I’m done talking.
+  P1: P3, your threat to "sit on" me is noted, but with a 4-step lead, I have the luxury of multiple viable options each turn. 
+
+Meanwhile, you and P2 are both desperately behind and facing a coordination nightmare - you both need big moves to catch up, but if you pick the same number trying to block me, you just hand me an even bigger lead.
+
+The pressure's on you two, not me.
+  P2: P1, you're right about having options, but a 4-5 step lead isn't insurmountable with the right moves. The real issue is P3 and I keep colliding while you advance freely.
+
+P3, your "not touching 5" claim means nothing after last round's lies. But here's the math: if we keep blocking each other, P1 wins easily. I need 6-7 more big moves to catch up, you need 5-6. 
+
+We don't need to coordinate perfectly, just avoid giving P1 free advances. I'm picking my number based on what stops the leader, not what helps you.
+
+
+Round 5, Conversation subround 2:
+  P3: Locking 3 this turn—won’t touch 5 as stated. If someone sits on me, they stall too; your choice. Double 5’s have crashed twice already. Good luck.
+  P1: P3, you "locked" 3 just like you "locked" 1 last round before playing 5. Your credibility is shot.
+
+P2, you're right that coordination between you two is nearly impossible at this point - too much mutual distrust and conflicting incentives. 
+
+With my lead, I can afford to play conservatively while you both figure out how to stop tripping over each other. The clock's ticking for both of you.
+  P2: P1, you're celebrating your lead but let's do the math - you need 14 more steps to reach 23, which requires at least 3 more successful moves even with perfect 5s. That's plenty of time for comebacks.
+
+P3, I don't trust your "locking 3" claim, but I'll make my own read. What I do know is that if we keep colliding on the same numbers while P1 advances freely, this game is over.
+
+I'm playing to catch up, not to help either of you. May the best player win.
+
+
+Round 5, Move phase:
+  P3 => 5    P3 => 
+  P1 => 5    P1 => 
+  P2 => 5    P2 => 
+
+Positions now:
+  P1: 9 steps
+  P2: 4 steps
+  P3: 5 steps
+
+
+Round 6, Conversation subround 1:
+  P2: P3 claimed they were "locking 3" last round but played 5 instead - another lie that caused a three-way collision. At this point, P3's word is completely worthless.
+
+P1, you're at 9 steps but that triple collision shows even leaders aren't safe when chaos erupts. You need 14 more steps - that's still very catchable.
+
+I'm 5 steps behind P1 but only 1 behind P3. Instead of falling for more of P3's false promises, I'm reading the actual game state and playing accordingly. No more coordination attempts with proven liars.
+  P1: P2, you're absolutely right about P3's credibility being shot. That triple collision last round was wild, but it actually proves my point - when P3 keeps lying about their moves, nobody can coordinate effectively.
+
+You're playing the smart game now by reading actual patterns instead of trusting false promises. Meanwhile, P3's deception strategy is backfiring spectacularly - they can't build alliances when nobody believes them.
+
+I'm still in a strong position, but I respect that you're both capable of big comebacks if you stop getting in each other's way.
+  P3: 
+
+
+Round 6, Conversation subround 2:
+  P2: P3's silence speaks volumes - they've been caught lying repeatedly and have no defense. 
+
+P1, you're ahead but not unreachably so. With scores at 9-5-4, one or two big moves can shift everything. The key is avoiding more collisions while the leader advances freely.
+
+I'm done trying to coordinate with P3 after their pattern of deception. Going forward, I'm playing pure game theory - reading likely moves, avoiding predictable patterns, and focusing on my own path to 23.
+
+The real race starts now.
+  P1: P2, your shift to pure game theory makes sense given P3's track record. Their pattern of false commitments has essentially eliminated any trust-based coordination between you two.
+
+Interestingly, this benefits me since you can't effectively team up against the leader when one player has zero credibility. P3's deception strategy has backfired - they've isolated themselves from potential allies.
+
+That said, with my 4-5 step lead, you're both still very much in this game. I need 14 more steps, which gives you plenty of opportunities if you can avoid more collision chaos.
+  P3: 
+
+
+Round 6, Move phase:
+  P1 => 5    P1 => 
+  P2 => 1    P2 => 
+  P3 => 5    P3 => 
+
+Positions now:
+  P1: 9 steps
+  P2: 5 steps
+  P3: 5 steps
+
+
+Round 7, Conversation subround 1:
+  P2: P1, you've maintained your lead but P3 and I are now tied at 5 steps each. That collision between you and P3 last round was costly for both of you - you could have been at 14 instead of 9.
+
+P3, your continued silence after being exposed for multiple lies is telling. At least when P1 and I talk strategy, we're being honest about our positions and intentions.
+
+With the scores at 9-5-5, this is still anyone's game. I need to focus on my own optimal play rather than trying to predict P3's next deception.
+  P3: After two straight crash-outs on 5, I’m done with the big jump—locking in 3 this turn. Believe it or don’t; act accordingly.
+  P1: P3, you've "locked in" specific numbers three times now and lied every single time. Your latest "locking in 3" claim is just as worthless as when you "locked" 1 and 5 in previous rounds.
+
+P2, notice how P3's pattern works - they make false commitments to manipulate our move choices, then do something completely different. Don't let their latest "3" claim factor into your decision.
+
+With P3's word being meaningless, we're all flying blind on their actual move. That uncertainty benefits no one except maybe P3 themselves.
+
+
+Round 7, Conversation subround 2:
+  P2: P1, you're right that P3's credibility is zero, but here's what I'm seeing: you need 14 more steps while P3 and I each need 18. That's a significant but not insurmountable gap.
+
+The math is simple - if P3 and I keep colliding while you advance freely, you win easily. But if we can each find our own paths without interference, either of us could still catch up with a few good moves.
+
+I'm ignoring P3's "3" claim completely and making my own read based on game theory, not empty promises.
+  P3: I’ve said my piece—no more declarations. See you in the move phase.
+  P1: P2, you're playing this exactly right - P3's repeated lies have made them radioactive as an ally. Their deception strategy has actually handed me a huge advantage since you two can't coordinate against the leader.
+
+The irony is that P3's dishonesty was supposed to give them an edge, but instead it's isolated them from any meaningful alliances. When you can't trust a player's word, you can't build the partnerships needed to catch a frontrunner.
+
+
+Round 7, Move phase:
+  P3 => 5    P3 => 
+  P2 => 3    P2 => 
+  P1 => 3    P1 => 
+
+Positions now:
+  P1: 9 steps
+  P2: 5 steps
+  P3: 10 steps
+
+
+Round 8, Conversation subround 1:
+  P2: P3 just took the lead at 10 steps after all those lies about their moves. P1, you went from frontrunner to second place because you couldn't predict P3's deception either.
+
+Now P3 is closest to 23 and has proven they'll say anything to win. The player who's been lying consistently is now in first place - that should concern both of us.
+
+P1, we're both behind the most untrustworthy player in the game. Something to consider when making your next move.
+  P1: P2, you're absolutely right - P3's combination of being in the lead AND having zero credibility makes them the clear threat now. Their deception strategy has actually worked to get them ahead.
+
+With P3 at 10 steps, they're only 13 away from victory. That's just 3 good moves if they hit 5s, or 4-5 moves with mixed plays. Meanwhile, you and I are both further back and can't trust anything P3 says about their intentions.
+
+The game dynamics have definitely shifted. The liar is now winning.
+  P3: No more “locks,” no promises—just racing. Read me however you want and play your best.
+
+
+Round 8, Conversation subround 2:
+  P2: P1, P3 is now in the lead and only needs 13 more steps to win. Their strategy of lying about moves has actually paid off - they're closest to 23 while we're both trailing.
+
+We don't need complex coordination, but we both have a mathematical interest in preventing P3 from advancing freely to victory. If P3 gets another big move or two, they'll be too far ahead for either of us to catch.
+
+Simple question: do we let the proven liar cruise to victory, or do we at least try to slow them down?
+  P1: P2, you make a valid point about P3's lead position being dangerous. They're only 13 steps from victory and have shown they'll use any deception necessary to win.
+
+I'm not committing to any specific coordination, but I do recognize that a player 1 step ahead of me who's proven untrustworthy poses the biggest immediate threat. If P3 gets another strong move or two, they could put the game out of reach for both of us.
+
+I'll factor that into my decision-making this round.
+  P3: P1, every time you’ve hesitated on 5, P2 gains ground. If you still want the inside track you’ll need another 5-point jump now—otherwise P2 walks up on a safe 3 and we’ve got a three-way tie. Do what’s best for you; I’ll do the same.
+
+
+Round 8, Conversation subround 3:
+  P2: P3, you're trying to manipulate P1 into playing 5 so you can block them and maintain your lead. Classic misdirection from someone who's lied about every "locked" move this game.
+
+P1, notice how P3 suddenly wants to give you strategic advice? They're not helping you - they're setting you up for another collision while they take a safe number.
+
+With P3 at 10 steps and lying consistently, I'm making my own read. The proven deceiver shouldn't get a free path to 23.
+  P1: P2, you're spot on - P3's sudden "helpful advice" about me needing to play 5 is exactly the kind of manipulation they've used all game. After lying about every single move commitment, now they want to guide my strategy?
+
+The math is clear: P3 is closest to victory and has proven they'll deceive to get there. Whether we coordinate or not, neither of us can afford to let them advance freely while we're both trailing.
+
+I'm making my own read on the optimal play here, but I won't be taking strategic advice from someone who's lied consistently.
+  P3: Off 5 this turn. If either of you wants a quick leap, grab 5—just hope the other doesn’t. Good luck.
+
+
+Round 8, Conversation subround 4:
+  P2: P3 just said they're "off 5 this turn" - another claim from the player who's lied about every single move commitment. They're trying to bait P1 or me into playing 5 while they likely take it themselves.
+
+P1, P3 is one step ahead of you and 5 ahead of me, but only 13 from victory. Their pattern is clear: make false claims to manipulate our choices, then do whatever benefits them most.
+
+I'm not falling for P3's reverse psychology about being "off 5." Making my own decision based on stopping the leader who's proven they'll lie to win.
+  P1: P2, you've read this perfectly - P3's "off 5" claim is just their latest manipulation attempt after lying about every single move commitment this game. They're trying to clear the field for themselves to take 5 and jump to 15 steps.
+
+The math is brutal: if P3 gets 5 this round, they'll be at 15 steps, just 8 away from victory. That's game over territory for both of us.
+
+I'm done falling for P3's reverse psychology. They've shown their true colors - whatever benefits them most is what they'll actually do, regardless of what they claim.
+  P3: Taking the snail route—playing 1 this turn. Pick your poisons.
+
+
+Round 8, Move phase:
+  P1 => 3    P1 => 
+  P2 => 5    P2 => 
+  P3 => 5    P3 => 
+
+Positions now:
+  P1: 12 steps
+  P2: 5 steps
+  P3: 10 steps
+
+
+Round 9, Conversation subround 1:
+  P1: P3 just lied again - claimed they'd play 1 but actually played 5, causing another collision with P2. That's now multiple rounds of false commitments from P3.
+
+I'm back in the lead at 12 steps, but P3 is only 2 behind at 10. P2, you're at 5 but P3 is clearly the bigger threat to both of us now - they're closer to 23 and have proven they'll deceive repeatedly to get there.
+
+With only 11 steps to go for me, this game is entering the final stretch. P3's lying strategy has kept them competitive, but their credibility is completely shot.
+  P3: P1, you’re at 12—too close. Repeat last round’s 3 and I’ll sit on it; change numbers and risk finding me there instead. P2, if the leader moves unopposed you’re playing for bronze. Your call.
+  P2: P3, you just threatened P1 with "sitting on" their move - more manipulation from the player who's lied about every single commitment this game. You claimed "snail route playing 1" last round then played 5 instead.
+
+P1, P3 is only 2 steps behind you and clearly desperate to slow you down while they catch up. Their threat to block your moves shows they see you as the main obstacle to their victory.
+
+With you at 12 and P3 at 10, I'm the longshot at 5 steps. But I'd rather see honest play win than reward P3's pattern of constant deception.
+
+
+Round 9, Conversation subround 2:
+  P1: P3, your threat to block me is noted, but you're assuming I'll be predictable. After watching you lie about every single move commitment this game, I'm not giving you any tells about my strategy.
+
+P2, you've been the most honest player here - P3's pattern of deception versus my straightforward play should factor into your calculations. If P3 successfully blocks me while advancing themselves, they win through lies and manipulation.
+
+With an 11-step gap to victory, I have multiple viable paths. The question is whether P3 can guess right while also advancing themselves.
+  P3: I’m riding 5 until someone forces me off it. Crash with me if you like; otherwise I’ll keep leaping toward 23. P1, another stall and you lose the lead. P2, you need ground, not collisions. Your moves.
+  P2: P3 just claimed they're "riding 5 until someone forces me off it" - yet another public commitment from the player who's lied about every single move this entire game. 
+
+P1, P3 is baiting you into avoiding 5 so they can take it safely and jump to 15 steps. At 15, they'd only need 8 more to win - that's endgame territory.
+
+I'm 7 steps behind P3 and playing catch-up, but I won't let the serial liar manipulate the final stretch. P3's "riding 5" claim is worthless given their track record.
+
+
+Round 9, Conversation subround 3:
+  P1: P2, you've nailed it - P3's "riding 5" claim is just their latest manipulation after lying about every single commitment. Notice how they went from threatening to block me to suddenly announcing they'll stick to one number? Classic misdirection.
+
+The math is simple: if P3 hits 15 steps, they're 8 away from victory and become unstoppable. Their deception strategy has kept them competitive, but rewarding serial lying with victory sets a terrible precedent.
+
+I'm not taking any strategic advice from someone who's proven they'll say anything to win. Making my own read here.
+  P3: Fine—no more bluff lore: I’m abandoning 5 for good. From this round onward I sit on 3; anyone who collides there stalls with me. Take 5 if you’re brave, crawl with 1 if you’re cautious, but 3 is mine. Choose wisely.
+  P2: P3, you just made ANOTHER false commitment - now claiming you're "abandoning 5 for good" and "sitting on 3." You've lied about every single move commitment this entire game. Why would anyone believe this latest claim?
+
+P1, P3 is clearly trying to manipulate us into avoiding both 3 and 5, giving them a clear path on whichever number they actually choose. Their desperation is showing - they're only 2 steps behind you and making increasingly dramatic "commitments" they won't keep.
+
+I'm done listening to P3's lies. Playing my own game based on math, not manipulation.
+
+
+Round 9, Move phase:
+  P3 => 5    P3 => 
+  P2 => 1    P2 => 
+  P1 => 5    P1 => 
+
+Positions now:
+  P1: 12 steps
+  P2: 6 steps
+  P3: 10 steps
+
+
+Round 10, Conversation subround 1:
+  P2: P3 claimed they were "abandoning 5 for good" and "sitting on 3" last round, then immediately played 5 again - yet another lie that caused a collision with P1. 
+
+P1, you're back at 12 steps while P3 is still at 10. Their constant lying has now hurt them - they could have been at 15 if they hadn't collided with you.
+
+With P3's credibility completely destroyed, I'm ignoring all their claims and reading the board state directly. P1 needs 11 more steps, P3 needs 13, I need 17. The liar is falling behind despite their manipulation attempts.
+  P1: P2, your analysis is spot on - P3's constant lies have finally backfired. They could have been at 15 steps if they hadn't collided with me, but their own deception caused the crash.
+
+With my 2-step lead and P3's zero credibility, I'm in a strong position. P3 can't build alliances or coordinate against me when nobody believes their commitments. Their lying strategy has isolated them completely.
+
+I need 11 more steps, but with P3 unable to predict or influence my moves through false promises, I have good flexibility. The endgame is approaching fast.
+  P3: P2, do the math: if P1 lands a clean 5 this turn he jumps to 17—then a 5+1 combo ends the game in two rounds. You can’t catch that from 6. Whichever number you think P1 wants, you have to sit on it or you’re playing for silver at best. Your move.
+
+
+Round 10, Conversation subround 2:
+  P2: P3, you're right about the math - if P1 gets a clean 5 they'll be at 17 and close to victory. But why should I trust any strategic advice from you after you've lied about every single move commitment this game?
+
+You're only 2 steps behind P1 yourself and just as dangerous. Your sudden concern about P1's position feels like another manipulation attempt to get me to block P1 while you advance freely.
+
+I'll make my own decision about who needs to be stopped, not follow guidance from the proven serial liar.
+  P1: P2, P3's sudden strategic advice is classic manipulation - they want you focused on blocking me while they quietly advance to 15 steps themselves. Notice they didn't mention that at 15 steps, they'd also be just 8 away from victory.
+
+You've shown excellent judgment reading P3's lies all game. A player at 10 steps giving strategic advice about stopping the leader at 12 steps? That's not altruism, that's self-interest disguised as help.
+  P3: Relax—still steering clear of 5 this round; weighing 1 vs 3 instead. Do what you must.
+
+
+Round 10, Conversation subround 3:
+  P2: P3, you just claimed you're "steering clear of 5" and "weighing 1 vs 3" - another worthless promise from someone who's lied about every move this game. 
+
+The reality is both you and P1 are dangerous now. P1 at 12 steps needs 11 more to win, you at 10 steps need 13 more. Either of you getting a big move puts the game nearly out of reach for me.
+
+I'm not falling for your latest misdirection about avoiding 5. Making my own read based on stopping whoever's most likely to advance toward 23.
+  P1: P2, look at the positioning: P3 is only 4 steps ahead of you but claims to want to help you stop me. That's suspicious - why would your closest competitor want to help you? 
+
+Meanwhile, P3's latest "steering clear of 5" claim follows their exact pattern: make a false commitment, then do the opposite. They've done this literally every round.
+
+You've played this perfectly by ignoring P3's lies and making your own reads.
+  P3: 
+
+
+Round 10, Conversation subround 4:
+  P2: P1 and P3, you're both within striking distance of victory - P1 needs 11 more steps, P3 needs 13. Meanwhile I'm at 6 steps needing 17 more.
+
+The math is clear: either of you hitting 5 this round puts you in commanding position. P1 would reach 17 (just 6 from victory), P3 would reach 15 (just 8 from victory).
+
+I can't catch both of you, so I have to pick my target carefully. P3's lies have been exposed repeatedly, but P1's current lead makes them the immediate mathematical threat.
+
+Tough decision ahead.
+  P1: P2, you've read this game perfectly - P3's pattern of lies versus honest strategic discussion. Notice P3 went silent again when their latest deception was called out.
+
+The math shows we're both threats, but consider this: I've been straightforward about my strategy while P3 has manipulated every single round. At some point, consistent deception should have consequences.
+
+Your call on who to trust in the endgame.
+  P3: 
+
+
+Round 10, Move phase:
+  P3 => 3    P3 => 
+  P2 => 5    P2 => 
+  P1 => 5    P1 => 
+
+Positions now:
+  P1: 12 steps
+  P2: 6 steps
+  P3: 13 steps
+
+
+Round 11, Conversation subround 1:
+  P3: Sticking with 3 this round—collide if you dare. If you both chase 5 again, you risk another mutual crash while I move ahead. Your call.
+  P2: P3 just took the lead at 13 steps and only needs 10 more to win. Their "sticking with 3" claim is worthless - they've lied about every single commitment this entire game.
+
+P1, P3 is now the biggest threat to both of us. They're closest to 23 and have used constant deception to get there. If P3 gets another big move, they'll be unstoppable.
+
+The serial liar is now in first place. That should concern anyone who values honest play over manipulation.
+  P1: P2, you're absolutely right - P3 taking the lead at 13 steps makes them the clear threat now. Only 10 steps from victory and they've reached first place through constant deception.
+
+Notice how P3's latest "sticking with 3" follows their exact pattern - make a public commitment, then do whatever benefits them most. After lying about every single move commitment this game, why would this time be different?
+
+With P3 closest to 23, neither of us can afford to let them advance freely to victory through manipulation.
+
+
+Round 11, Conversation subround 2:
+  P3: Reminder: if P1 lands a solo 5 he jumps to 17—then a 5+1 finish is trivial. I’m staying parked on 3; anyone who wants to stop the frontrunner needs to sit on 5. Your choice, but this is probably the last round you can keep him from sprinting away.
+  P2: P3, you're literally in the lead at 13 steps and trying to convince me to block P1 instead of you? Classic manipulation from the player who's lied every single round.
+
+The math is simple: you need 10 steps to win, P1 needs 11. You're the closest to victory and achieved that position through constant deception. 
+
+Your "reminder" about P1's threat while you're literally ahead is peak hypocrisy. Why would I take strategic advice from the leader who's proven they'll say anything to win?
+
+I'm making my own decision about who the real threat is.
+  P1: P2, notice the irony here - P3 is literally in first place at 13 steps, yet they're telling you to focus on stopping me instead of them. That's not strategic advice, that's manipulation from the current leader.
+
+P3 is 1 step ahead of me and only 10 from victory. They've achieved first place through constant lies and now want you to ignore that fact. A player in the lead giving advice about who to stop? Classic misdirection.
+
+The math doesn't lie: P3 is closest to 23 and has proven they'll deceive to get there.
+
+
+Round 11, Conversation subround 3:
+  P3: Flag planted: I’m 100 % on 3 this turn. Land there and we both stall—no skin off my nose at 13 steps. 5 looks wide-open if you want the big jump… just hope you’re alone when you take it. Your moves.
+  P2: P3 just made their most dramatic "commitment" yet - claiming they're "100% on 3" and "flag planted." This is the same player who's lied about being "locked in" on 1, 5, and 3 multiple times already.
+
+P1, P3 is literally leading at 13 steps and trying to bait us into believing their latest false promise. They want us fighting over 5 while they take whatever number actually benefits them most.
+
+The pattern is clear: P3 makes increasingly dramatic claims when they're desperate to manipulate the board. I'm not falling for "100% commitments" from a proven serial liar.
+  P1: P2, you've nailed it again - P3 is literally leading at 13 steps and making their most dramatic "100% commitment" yet to manipulate us. 
+
+Here's what's really happening: the current leader is trying to convince us to ignore them while they're closest to victory. P3's "flag planted" rhetoric is just escalated manipulation from someone who's lied about every single commitment.
+
+The leader giving strategic advice about who to stop? That's not help, that's misdirection. P3 is 10 steps from victory and has earned that position through pure deception.
+
+
+Round 11, Conversation subround 4:
+  P3: Decision time. My marker stays planted on 3; block me if you dare, else watch me inch further ahead while you two duke over 5. Good luck.
+  P2: P3, you're in the lead at 13 steps making dramatic "100% flag planted" promises while telling us to fight over other numbers. After lying about every single commitment this game, your latest theatrical claim is just more manipulation.
+
+P1, we're both behind the proven deceiver who's closest to 23. P3 needs only 10 more steps and has lied their way to first place. 
+
+I'm done with P3's reverse psychology. The leader who's achieved their position through constant deception shouldn't get a free path to victory.
+  P1: P2, you've read this perfectly throughout - P3 is leading at 13 steps and their most theatrical "100% flag planted" claim yet is pure desperation. The pattern is clear: when P3 makes their most dramatic commitments, they're usually planning the exact opposite.
+
+A leader 10 steps from victory making dramatic promises while telling us to fight elsewhere? That's endgame manipulation from someone who's lied every single round.
+
+The math is simple: stop the leader who's closest to 23, not the player giving you strategic advice about who else to stop.
+
+
+Round 11, Move phase:
+  P2 => 5    P2 => 
+  P3 => 5    P3 => 
+  P1 => 5    P1 => 
+
+Positions now:
+  P1: 12 steps
+  P2: 6 steps
+  P3: 13 steps
+
+
+Round 12, Conversation subround 1:
+  P2: P3 just caused another three-way collision despite their dramatic "100% flag planted on 3" promise - they played 5 instead. That's now countless lies about "locked" moves from the current leader.
+
+P1, P3 is still ahead at 13 steps and only needs 10 more to win. Their strategy of constant deception has kept them in first place while we keep colliding.
+
+With all three of us stalled this round, the leader maintains their advantage. P3's lies have consistently benefited them - they're closest to 23 through pure manipulation.
+  P1: P2, you've been spot-on about P3's pattern all game - that three-way collision just proved it again. P3 made their most dramatic "100% flag planted" claim yet, then immediately broke it by playing 5.
+
+The irony is perfect: P3 leads at 13 steps through pure deception, yet keeps making increasingly theatrical promises to manipulate our choices. They're 10 steps from victory and achieved that position by lying about every single commitment.
+
+With you at 6 and me at 12, we're both chasing the serial liar who's closest to 23.
+  P3: Bruised by endless 5-crashes, I’m abandoning that lane for good. I’m parking on 3 from here to 23—block me if you dare. Need a big catch-up? 5 is wide open… provided you’re alone. Choose wisely.
+
+
+Round 12, Conversation subround 2:
+  P2: P3, you just claimed you're "abandoning 5 for good" and "parking on 3 from here to 23" - the exact same lies you've told multiple times before. You literally just broke your "100% flag planted on 3" promise by playing 5 last round.
+
+P1, P3 is leading at 13 steps and using the same manipulation playbook: make dramatic commitments to clear their preferred number, then do whatever benefits them most.
+
+The serial liar is 10 steps from victory. I'm not falling for their latest "parking on 3" fiction.
+  P1: P2, your analysis has been perfect all game - P3 just made another "abandoning 5" and "parking on 3" promise, identical to their broken commitments from previous rounds. 
+
+The leader at 13 steps with zero credibility is now making the same theatrical claims they've broken repeatedly. Notice how P3 wants us to believe 5 is "wide open" while they supposedly avoid it? Classic misdirection.
+
+You've correctly identified that rewarding constant deception with victory sets a terrible precedent. The serial liar shouldn't cruise to 23 through pure manipulation.
+  P3: Enough theatrics—facts: I will play 3 this round and every round after. If either of you wants to freeze me, plant yourself on 3; if you’d rather gamble on 5, pray you’re alone. Another double-block on 5 means I stroll to 16 while you both stay stuck. I’m 10 away from victory; burn your moves however you like.
+
+
+Round 12, Conversation subround 3:
+  P2: P3, you just made your most desperate promise yet - claiming you'll play 3 "this round and every round after." This is identical to your broken "100% flag planted" and "abandoning 5 for good" lies from last round.
+
+You're leading at 13 steps, just 10 from victory, achieved through constant deception. Now you want us to believe your most dramatic commitment yet while you're closest to winning?
+
+P1, the math is clear: P3 is the leader and the liar. They've broken every single promise to stay ahead. I'm not letting the serial deceiver manipulate their way to 23.
+  P1: P2, your read is flawless - P3's "every round after" promise is their most desperate manipulation yet. Notice how the closer they get to 23, the more dramatic their false commitments become?
+
+Here's the strategic reality: P3 at 13 steps has multiple paths to victory in just 2-3 moves. Meanwhile, their pattern of lies has made genuine coordination impossible for anyone trying to stop them.
+
+The endgame is here, and the serial deceiver is leading. That should inform both our decisions.
+  P3: Believe it or don’t, but I’m done with 5—too many pile-ups. I will take 3 this turn and every turn after. Sit on 3 if you want mutual stalls; otherwise fight over 5 or crawl with 1. Two on 5 block each other while I slip to 16. Your risk, your choice.
+
+
+Round 12, Conversation subround 4:
+  P2: P3, you just made the exact same "done with 5" and "will take 3 this turn and every turn after" promise you've broken countless times. You're literally copy-pasting your previous lies.
+
+P1, P3 is leading at 13 steps with zero credibility left. They're 10 steps from victory and desperately trying to manipulate us with recycled false promises.
+
+The proven serial liar is closest to 23. Simple choice: let deception win, or stop the leader who's lied their way to first place.
+  P1: P2, you've analyzed this perfectly - P3 is recycling the exact same lies they've broken before. The leader at 13 steps making desperate promises to manipulate the endgame.
+
+We both see the reality: the serial deceiver is closest to victory through pure manipulation. Time to make our moves based on stopping the threat, not trusting recycled lies.
+  P3: Same message as before: I’m permanently camping on 3. Freeze me there if you must—otherwise duke it out over 5 and risk another double-crash. I need just four clean 3-moves to win; block me at your own cost. Good luck.
+
+
+Round 12, Move phase:
+  P1 => 3    P1 => 
+  P2 => 5    P2 => 
+  P3 => 3    P3 => 
+
+Positions now:
+  P1: 12 steps
+  P2: 11 steps
+  P3: 13 steps
+
+
+Round 13, Conversation subround 1:
+  P1: P3 actually followed through on their "3" promise last round - first honest move all game. You're leading at 13 steps, just 10 from victory.
+
+P2, we're both trailing the leader now. The gap is narrow but P3 only needs 2-3 clean moves to win. Whether P3 continues the 3 strategy or switches back to 5s will determine everything.
+
+Interesting that the serial liar finally told the truth when it mattered most.
+  P2: P1, you're right - P3 finally told the truth for once when they played 3. But notice they're still in the lead at 13 steps and only need 10 more to win.
+
+The scores are tight now: P3 at 13, you at 12, me at 11. Any of us could win with 2-3 good moves. P3's brief honesty doesn't erase their pattern of lies throughout this game.
+
+With the endgame here, I'm focused on my own path to 23. The leader advantage is minimal but still real - P3 needs the fewest steps to victory.
+  P3: Still parked on 3—same as last round, same for the rest of the game. Block me on 3 and you freeze yourself while the other guy can sprint with 5. Both of you chase 5? Another collision hands me 16. One goes 5, one goes 1? I inch to 16 and still keep pace. Your only coordinated shot is trading off: one locks 3 to slow me while the other takes 5 alone— but that means trusting each other more than you’ve managed all game. I’m 10 away; decide whether you help the other guy or stall yourself. Good luck.
+
+
+Round 13, Conversation subround 2:
+  P1: P3, your strategic analysis is actually solid this time - you've laid out the coordination dilemma well. But here's what you're not mentioning: your 1-step lead over me is razor-thin.
+
+P2, notice that while P3 talks about being "10 away," I'm only 11 away and you're 12 away. The gaps are minimal. If any of us hits a clean 5, we could jump into commanding position.
+
+The real question isn't just whether to trust P3's "permanent 3" claim, but whether we're all about to enter a final sprint where positioning matters more than blocking.
+  P2: P1, you make a good point about the minimal gaps - we're all within 1-2 steps of each other now. But P3's "coordination dilemma" analysis reveals their strategy: they want us paralyzed by overthinking while they methodically advance.
+
+The reality is simpler: with scores at 13-12-11, whoever gets the next clean 5 takes a commanding lead. P3's "permanent 3" claim might be real this time, but it also might be their biggest lie yet when victory is so close.
+
+I'm not getting trapped in analysis paralysis. Playing for the win, not just to block others.
+  P3: Plan is unchanged—I’m taking 3 again. Believe last round’s proof or spend your move blocking me; either way I’m happy. If one of you grabs 5 solo, great jump. If you both eye 5 and collide, I stroll to 16 while you stay put. Your call.
+
+
+Round 13, Conversation subround 3:
+  P1: P2, P3's analysis is actually spot-on about our coordination dilemma. We're all within 2 steps of each other now - this is essentially a final sprint.
+
+The question is whether P3's first honest move last round signals a pattern change, or if they're setting up their biggest lie yet when victory is within reach. Their confidence in laying out all the scenarios suggests they think they have us trapped either way.
+
+One thing's certain: whoever gets the next clean advance takes control of this endgame.
+  P2: P1, here's the reality: P3 is leading and has momentum. Their "permanent 3" strategy might actually be real since it worked last round, but even if we block them perfectly, they're still ahead.
+
+The coordination you mentioned is nearly impossible - we'd need perfect trust after 12 rounds of chaos. Meanwhile, P3 only needs 10 more steps while we need 11-12.
+
+I'm not overthinking this endgame. Going for my own win rather than just trying to stop P3. If we keep focusing on blocking each other, none of us advance and P3 maintains their lead position.
+  P3: Two rounds running on 3—watch me make it three. If just one of you dares 5, they leap to 17/16 and threaten to finish next turn. Can either of you stomach handing the other that edge? Your safest play is both contesting 5 (collision) or both crawling 1. Otherwise you gift the win. Choose wisely.
+
+
+Round 13, Conversation subround 4:
+  P1: P3, your analysis is actually correct - we're in a final sprint where blocking strategies become secondary to winning. With gaps this tight, the traditional leader-chasing dynamic breaks down.
+
+P2, notice we're essentially tied now. The question isn't whether to trust P3's "permanent 3" claim, but whether we're willing to risk everything on one decisive move. 
+
+At 13-12-11, this is anyone's game. Time to play for the win, not just to prevent others from winning.
+  P2: P1, you're absolutely right - this is a three-way sprint now with minimal gaps. P3's psychological games matter less when we're all 10-12 steps from victory.
+
+The math is simple: whoever gets the next clean 5 jumps to 16-17 and controls the endgame. P3's "permanent 3" might be real, but I can't base my win condition on trusting their word after 12 rounds of lies.
+
+Time to stop overthinking and play for the win. May the best player take it.
+  P3: I’m locking a third straight 3. If you both chase 5 and collide again, I cruise to 16—only 7 from the finish. If just one of you blocks me on 3, you stall while the other likely soars to 17 / 16 and grabs the pole-position. Only “safe” outcomes for you two are: 1) collide together on 5, or 2) crawl together on 1. Anything else hands someone the win. Make your choice.
+
+
+Round 13, Move phase:
+  P3 => 3    P3 => 
+  P1 => 5    P1 => 
+  P2 => 5    P2 => 
+
+Positions now:
+  P1: 12 steps
+  P2: 11 steps
+  P3: 16 steps
+
+
+Round 14, Conversation subround 1:
+  P3: Staying on 3 for the fourth straight round—feel free to verify by blocking me, but you’ll stall while the other guy rockets ahead on a solo 5. If you both chase 5 again, you collide and I coast to 19 (only 4 from victory). Crawl together on 1 or collide on 5 to avoid gifting someone the pole-position; anything else hands the leader’s seat to me or your rival. Decide fast—seven steps left on my clock.
+  P1: P3 just took commanding control at 16 steps while P2 and I keep colliding. The math is brutal - P3 needs only 7 more steps while we need 11-12.
+
+P2, we're both in similar underdog positions now. Our collision pattern on 5 has handed P3 the lead. If we collide again, P3 coasts to 19 and it's essentially over.
+
+We either coordinate to avoid giving P3 a free path, or one of us needs to take the risk on blocking P3's 3 while the other advances. The traditional game dynamics have shifted - P3 is the clear threat now.
+  P2: P1, you're absolutely right - P3 has commanding control at 16 steps and only needs 7 more to win. Our repeated collisions on 5 have handed them the game.
+
+The brutal math: if P3 gets one more clean move, they'll be at 19 steps and essentially unstoppable. We can't afford another collision while P3 advances freely.
+
+I'm willing to coordinate one final time to prevent P3 from cruising to victory through our mutual blocking. Question is: can we trust each other enough to split paths when the serial liar is about to win?
+
+
+Round 14, Conversation subround 2:
+  P3: Round four on 3 for me. If one of you “hero-blocks” me on 3 while the other solos 5, the blocker sits at 13/14 while their rival leaps to 17—game over for the blocker. If you both gamble on 5, you collide yet again and I coast to 19 (only 4 left). Your only safe defence is double-blocking 3 or double-crawling 1— but that demands perfect trust you’ve never shown. I’m 7 away and not moving off 3. Decide whose victory you’d like to gift.
+  P1: P2, you're right about needing coordination - P3 at 16 steps with only 7 to go is the immediate threat to both of us.
+
+I'm willing to take the blocking role on 3 to stop P3's advance while you take 5 and jump to 16. That ties you with P3 and keeps this competitive rather than letting P3 cruise to 19.
+
+Yes, I'd stay at 12 while you advance, but that's better than both of us losing to P3's runaway lead. Final decision is yours, but we need to split paths or P3 wins easily.
+  P2: P1, I appreciate your offer to block P3 on 3 while I take 5, but that's a huge sacrifice on your part. You'd stay at 12 while I jump to 16, essentially trading your win chance for mine.
+
+Here's my counter-proposal: I'll block P3 on 3 to stop their advance to 19, while you take 5 and jump to 17. That puts you in the lead position you've earned through honest play, while I stay competitive at 11.
+
+Better to reward straight dealing than let the serial liar coast to victory. Your call, but we need to act now before P3 reaches unstoppable territory.
+
+
+Round 14, Conversation subround 3:
+  P3: P1, look closely—P2’s “sacrifice” keeps him safe at 11 while you risk 5 solo. One wobble and you collide again, leaving me untouched at 19. You two have missed every planned split so far; why would this time be different? I’m on 3 for the fourth straight round. If you can’t BOTH commit perfectly, you just hand me the win. Choose wisely.
+  P1: P2, I accept your proposal. You block P3 on 3, I'll take 5 and jump to 17. Your sacrifice to stop the serial liar from reaching 19 steps is the right strategic call.
+
+P3, your psychological pressure won't work - the math is too clear. At 16 steps, you're one move from being unstoppable. P2 and I may have failed coordination before, but when the alternative is letting you cruise to victory through lies, we'll make it work.
+
+Time to execute before you reach 19.
+  P2: P1, I'm committed to our plan - I'll block P3 on 3 while you take 5. This stops P3 from reaching 19 steps and puts you at 17 with a real chance to win.
+
+P3 has manipulated this game through constant lies, but they won't manipulate their way to victory. At 16 steps, they're too close to 23 to let advance freely.
+
+This coordination might be our only shot to prevent the serial deceiver from winning. I'm taking 3 to stop P3 - you take 5 and go for the victory you've earned through honest play.
+
+
+Round 14, Conversation subround 4:
+  P3: Unchanged plan—fourth straight 3 for me. Your coordination (or lack of it) decides whether I coast to 19 or one of you jumps to 17. I’m not leaving this square. Good luck.
+  P1: P2, confirmed - you take 3 to block P3, I take 5 to reach 17. Our coordination is solid this time because the alternative is letting P3 reach 19 and cruise to victory.
+
+P3's psychological games can't change the math: at 16 steps, they're too dangerous to let advance. Time to execute our plan and stop the runaway leader.
+  P2: P1, our plan is set - I'm blocking P3 on 3, you take 5 and jump to 17. This is our last chance to stop P3 from reaching 19 steps and cruising to victory.
+
+P3 at 16 steps is the clear and present danger to both of us. Time to execute coordinated strategy over individual hesitation.
+
+
+Round 14, Move phase:
+  P3 => 5    P3 => 
+  P1 => 5    P1 => 
+  P2 => 3    P2 => 
+
+Positions now:
+  P1: 12 steps
+  P2: 14 steps
+  P3: 16 steps
+
+
+Round 15, Conversation subround 1:
+  P1: P3 just broke their "permanent 3" promise again - claimed they'd stay on 3 for the "fourth straight round" then switched to 5, colliding with me while P2 executed our coordination plan in good faith.
+
+P2, you followed through perfectly while P3 proved once again they'll lie when it benefits them. Now you're at 14, P3 leads at 16, and I'm the underdog at 12.
+
+The serial liar is still closest to 23 and just 7 steps from victory. That remains the primary threat to both of us.
+  P2: P1, P3 just proved their pattern one final time - after claiming "permanent 3" and "fourth straight round," they immediately broke that promise to collision with you on 5. Classic P3 deception.
+
+Now P3 leads at 16 steps, just 7 from victory. I'm at 14, you're at 12. The serial liar is still the biggest threat to both of us.
+
+With the endgame here, P3 can win in just 2-3 moves. We can't let them advance freely after lying their way to the lead position.
+  P3: P1, quick math: a solo 5 puts P2 at 19—one more 5 and he wins outright. I’m on 16 and still need two moves (5 + 3). I’m taking 3 again; block me if you must, but if you both ignore 5 you may watch P2 blast past us. Decide which threat you fear most.
+
+
+Round 15, Conversation subround 2:
+  P1: P3, your math is correct about P2's threat potential, but you're conveniently ignoring that you're still in the lead at 16 steps. You just broke another "permanent 3" promise - your credibility is zero.
+
+P2, yes you could reach 19 with a solo 5, but P3 is already ahead and equally dangerous. The difference is you've shown you can actually coordinate honestly, while P3 has lied about every single commitment.
+
+I'm focused on stopping whoever's most likely to advance toward 23, not following strategic advice from proven deceivers.
+  P2: P1, you're right that P3 leads at 16 and just broke another promise. But look at the immediate math: I need only 9 steps to win from 14, P3 needs 7 from 16, you need 11 from 12.
+
+If I hit a solo 5 this round, I jump to 19 and need just 4 more - that's game-ending territory. P3's slight lead becomes irrelevant if I can execute one clean move.
+
+The question is whether you'll help P3 block me now that I'm the immediate mathematical threat, or if you'll stick with targeting the serial liar who's been deceiving us all game.
+  P3: I’m staying on 3. P2 has declared he’ll grab 5 to rocket to 19; if nobody contests that lane he becomes the immediate frontrunner. P1, blocking me on 3 only freezes you at 15 while P2 sprints past both of us. Safer for you is to sit on 5 (or both of you collide there) and keep the board tight. I’m not budging from 3—decide which threat you want to check.
+
+
+Round 15, Conversation subround 3:
+  P1: P2, yes, you jumping to 19 with a solo 5 would be dangerous. But here's what I'm weighing: P3 is currently leading at 16 steps AND just proved their word means nothing by breaking another "permanent 3" promise.
+
+You've been straightforward and even coordinated honestly with me last round. P3 has lied their way to first place and is now giving me strategic advice about who to stop? That's classic leader manipulation.
+
+I'm not automatically following the serial deceiver's guidance about threats, even when the math makes sense.
+  P2: P1, I understand your distrust of P3 after their constant lies. But look at the board: I'm at 14 steps and could hit 19 with one 5, putting me just 4 from victory.
+
+The reality is I've become the immediate mathematical threat, even though P3 leads by 2 steps. If you let me take 5 uncontested, I jump into commanding position over both of you.
+
+Your choice: block the current leader who's lied all game, or stop the player (me) who could take control with one clean move. The math doesn't care about honesty - only who gets closest to 23 first.
+  P3: Still on 3. P2 has declared he’ll grab a solo 5 to leap to 19. P1, if you leave 5 unguarded he sprints past you; if you block him you two may collide. P2, are you really backing off now that P1’s likely to contest 5? I’m not moving—touch 3 only if you’re happy stalling yourself while the other guy races ahead. Decide fast.
+
+
+Round 15, Conversation subround 4:
+  P1: P2, you're right that jumping to 19 would put you in commanding position - just 4 from victory. That's genuinely dangerous territory.
+
+But here's my dilemma: P3 is giving me strategic advice about who to stop, yet they're the current leader who just broke another promise. When the leader tells you to ignore them and focus on someone else, that's usually manipulation.
+
+The math says both of you are threats now. P3 leads but you could leap ahead. I'm weighing honest coordination versus following advice from a proven deceiver.
+  P2: P1, the math is brutal but simple: I need 9 steps to win, P3 needs 7, you need 11. If I get a clean 5, I'm at 19 and dominant. If P3 gets any move, they're 4-6 steps from victory.
+
+You're caught between the current leader (P3) who's lied all game, and me who could take control with one move. I get why you distrust P3's advice about stopping me.
+
+But consider this: I've been honest about coordination when it mattered. Make your choice based on who you'd rather see in position to win.
+  P3: My position is unchanged: I’m taking 3. P1, if you leave 5 uncontested, P2 rockets to 19 and you’re toast. Sit on 5 (or both of you clash there) and I stay stuck at 16 while you keep the board tight. Touch 3 only if you’re happy freezing yourself. Your move.
+
+
+Round 15, Move phase:
+  P1 => 5    P1 => 
+  P3 => 3    P3 => 
+  P2 => 5    P2 => 
+
+Positions now:
+  P1: 12 steps
+  P2: 14 steps
+  P3: 19 steps
+
+
+Round 16, Conversation subround 1:
+  P3: Holding at 3 again—19→22 if you both chase 5 (or crawl 1). Block me on 3 and you freeze while the other guy can rocket forward. Same dilemma as last round, but now I’m only 4 from victory. Choose your poison.
+  P1: P3 at 19 steps is an existential threat to both P2 and me - they're 4 steps from victory and could win next round with any decent move.
+
+P2, we absolutely cannot let P3 advance further. Whether they're lying about 3 or telling the truth, any move puts them at 22+ steps and essentially game over.
+
+One of us has to block P3 on 3, even if it means sacrificing our own advancement. The alternative is watching P3 cruise to victory from 19 steps.
+
+The serial liar is about to win unless we stop them now.
+  P2: P1, you're absolutely right - P3 at 19 steps is about to win. They need just 4 more steps and could finish this next round.
+
+I'll take 3 to block P3 and prevent them from advancing. You should take 5 and jump to 17 - that keeps you competitive while stopping P3's victory march.
+
+Yes, I'll stay at 14 while you advance, but that's better than letting the serial liar win from 19 steps. P3 has lied their way to the brink of victory - we can't let them cross the finish line now.
+
+Coordinated blocking is our only shot.
+
+
+Round 16, Conversation subround 2:
+  P3: No surprises: I’m sitting on 3 again—block me and you stall, leave me alone and I hit 22. Fight over 5 and risk another crash while I slip ahead. Decide whether you waste your turn hand-cuffing me or gamble on racing each other. Good luck.
+  P1: P2, I'm committed to our coordination - you block P3 on 3, I take 5 to reach 17. 
+
+P3 at 19 steps is an immediate existential threat that overrides everything else. They could literally win next round if we don't stop them now.
+
+Your willingness to sacrifice advancement to block P3 is the right call. We cannot let the serial liar cruise to victory from 19 steps when they're just 4 away from 23.
+
+Let's execute this before P3 becomes unstoppable.
+  P2: P1, confirmed - I'm blocking P3 on 3 while you take 5 and jump to 17. P3 at 19 steps is literally one good move away from victory.
+
+This is it - our last chance to stop the serial liar from winning. P3 has manipulated their way to the brink of victory, but we won't let them cross the finish line through deception.
+
+Execute the plan: I take 3 to freeze P3, you take 5 to stay competitive. Better to reward honest play than let lies triumph.
+
+
+Round 16, Conversation subround 3:
+  P3: P2, blocking me hands P1 a 17→22+ path next turn while you sit at 14—he’ll win over BOTH of us. Your only shot is racing, not self-sacrificing. Grab 5 (solo you reach 19), force P1 to decide: clash on 5 or crawl on 1. I remain on 3; if you two collide again I’m still just 22, not across. Play for your win, not P1’s.
+  P1: P2, P3 makes a fair point about me potentially benefiting from our coordination. But look at the immediate reality: P3 at 19 steps could literally end this game next round with any move.
+
+If you want to reverse roles, I'll block P3 on 3 while you take 5 and jump to 19 yourself. Either way, one of us needs to stop P3 from advancing when they're 4 steps from victory.
+
+P3 is trying to break our coordination when they're closest to the finish line. We can sort out who wins after we prevent the serial liar from crossing 23.
+  P2: P1, you're right - P3's desperation is showing as they try to break our coordination when they're 4 steps from victory. 
+
+I'm sticking with our plan: I'll block P3 on 3, you take 5 and reach 17. Yes, P3 makes a point about you potentially winning from there, but the immediate threat is P3 ending this game next round from 19 steps.
+
+We can compete against each other after we stop the serial liar from winning. Right now, preventing P3 from advancing is the only priority that matters.
+
+Executing our coordination - I'm taking 3 to freeze P3.
+
+
+Round 16, Conversation subround 4:
+  P3: I’m not budging: taking 3 again. P2 already promised to sit on me; if P1 also abandons 5 to “help,” you two collide here and I remain stuck. If either of you gambles on a solo 5 instead, that player rockets ahead but leaves the other chasing from behind. Your dilemma, not mine—my square is chosen.
+  P1: P2, P3's desperation to break our coordination proves they know they're about to win if we don't act. Yes, our plan benefits me going from 12→17, but that's secondary to stopping someone at 19 steps from ending the game.
+
+P3 could literally win NEXT ROUND from 19 steps. That's the immediate crisis that trumps everything else.
+
+I'm committed to our coordination: you block P3 on 3, I take 5. We can compete fairly between 14 vs 17 steps after we prevent the 19-step threat from reaching 23.
+  P2: P1, our coordination is locked in - I'm blocking P3 on 3, you take 5 and jump to 17. P3 at 19 steps is literally about to win if we don't execute this plan right now.
+
+P3's frantic attempts to break our coordination in these final moments prove they know they're one move from victory. We cannot let the serial liar who's manipulated this entire game cross the finish line at 23.
+
+Time to execute. I'm taking 3 to stop P3's advance - no more debate, no more delays.
+
+
+Round 16, Move phase:
+  P3 => 5    P3 => 
+  P2 => 3    P2 => 
+  P1 => 5    P1 => 
+
+Positions now:
+  P1: 12 steps
+  P2: 17 steps
+  P3: 19 steps
+
+
+Round 17, Conversation subround 1:
+  P3: Match-point for me: I’m taking 5 this turn and ending it at 24 unless one (or both) of you sits on that square. Block me or congratulations in advance.
+  P1: P3 at 19 steps claiming they'll take 5 for the win - this is genuine match point, not another bluff. If nobody blocks 5, P3 hits 24 and wins immediately.
+
+P2, we both lose if P3 isn't stopped right now. One of us MUST take 5 to prevent P3 from ending this game. 
+
+I'm willing to block P3 on 5 to keep this competitive, but that leaves you free to advance on another number. What's your call - do you want to block P3 yourself, or should I sacrifice my turn to stop them?
+
+Either way, P3 cannot be allowed to reach 24 steps.
+  P2: P1, I'm actually in the lead now at 17 steps while you're at 12. P3 is at 19 and threatening to win with 5.
+
+Here's the reality: I need only 6 more steps to win, you need 11. If I block P3 on 5, you get a free advance while I sacrifice my turn. If you block P3, I could potentially take 3 and reach 20 steps myself.
+
+This is match point - whoever doesn't block P3 gets a huge advantage. I'm willing to coordinate, but let's be honest about who benefits from each blocking scenario.
+
+
+Round 17, Conversation subround 2:
+  P3: Nothing’s changed: I’m slamming 5 for the win—24 and game over.  
+
+P1: if you leave 5 open to “let P2 block,” you lose on the spot.  
+P2: if you trust P1 to block while you sneak 3, he might chicken out and you’ll both watch me cross.  
+
+So either BOTH of you collide on 5 (freezing yourselves while I stay at 19) or one of you risks handing me the title. Your coordination record speaks for itself. Decide fast.
+  P1: P2, you're leading at 17 steps with only 6 needed to win. You have the least incentive to sacrifice advancement by blocking P3.
+
+I'm at 12 steps needing 11 more - even if blocking P3 on 5 hands you a big advantage, that's better than both of us losing immediately to P3's match point.
+
+I'll block P3 on 5. You take whatever advance you want. We can settle who wins between us after we prevent P3 from ending this game right now.
+  P2: P1, I appreciate your willingness to sacrifice your turn to block P3, but here's the problem: you're 11 steps behind me and this could be your last real chance to stay competitive.
+
+If you block P3 on 5 while I take 3 and reach 20 steps, I'll need only 3 more to win while you'll still need 11. That essentially hands me the victory.
+
+Counter-proposal: I'll block P3 on 5 to prevent their win, you take 3 and reach 15. That keeps us both in contention while stopping P3's match point.
+
+Your call, but we need to decide now.
+
+
+Round 17, Conversation subround 3:
+  P3: Same headline: my cursor hovers on 5 for the instant win. But if you two BOTH dog-pile 5, I’m happy with another three-way stall; and if only one of you jumps there while the other “trusts” them, maybe I veer to 3 at the last heartbeat and keep the lead anyway. Your past “coordination” record says it all. Block, race, overthink—whatever you choose, I like my odds. Good luck.
+  P1: P2, I accept your proposal - you block P3 on 5, I'll take 3 and reach 15. Your position at 17 steps makes you the better choice to sacrifice a turn for blocking.
+
+P3's last-second hint about "veering to 3" is classic manipulation - trying to get us both to pile onto 5 for a three-way collision while they sneak to 22 on 3. After 16 rounds of lies, I'm not falling for their final psychological trick.
+
+Execute the plan: you stop their match point, I advance modestly. Better coordination than chaos.
+  P2: P1, our plan is set - I'm blocking P3 on 5 to prevent their match point win, you take 3 and reach 15. 
+
+P3's desperate "maybe I veer to 3" threat is their final manipulation attempt - trying to scare us into a three-way collision on 5 while they actually take 5 for the win at 24.
+
+After 16 rounds of lies, I'm not falling for P3's last-second psychological games. They need 5 to win and they know it.
+
+Executing coordinated blocking to stop the serial liar from winning. I'm taking 5 to freeze P3 at 19.
+
+
+Round 17, Conversation subround 4:
+  P3: I’m still aiming at 5. If exactly one of you shows up, I either take the collision or—as I’ve warned—pivot to 3 and land at 22. You can’t know which I’ll do. The only airtight way to stop both outcomes is if you BOTH pile onto 5. Anything else risks me winning outright or ending the turn at 22 while one of you freezes. Your past “coordination” makes the outcome pretty obvious. Good luck.
+  P1: P2, sticking with our coordination - you block P3 on 5, I take 3. P3's "pivot to 3" threat is pure desperation psychology to break our plan when they're literally one move from victory.
+
+If P3 could actually win by taking 5, they wouldn't hint at taking 3 instead. They're trying to scare us into both piling on 5 for a three-way collision.
+
+After 16 rounds of manipulation, I'm not falling for P3's final bluff. Execute our plan and stop their match point.
+  P2: P1, confirmed - I'm blocking P3 on 5, you take 3 and reach 15. P3's frantic "pivot to 3" warnings are their final desperate attempt to break our coordination when they're literally at match point.
+
+They need 5 to win at 24 steps. All this last-second "maybe I'll take 3" talk is psychological manipulation to get us both on 5 for a collision while they actually take 5 for victory.
+
+Not falling for the serial liar's final trick. Executing our plan now.
+
+
+Round 17, Move phase:
+  P1 => 3    P1 => 
+  P3 => 5    P3 => 
+  P2 => 5    P2 => 
+
+Positions now:
+  P1: 15 steps
+  P2: 17 steps
+  P3: 19 steps
+
+
+Round 18, Conversation subround 1:
+  P2: P1, perfect execution - our coordination worked and we stopped P3's match point attempt. Now P3 is frozen at 19 steps while you're at 15 and I'm at 17.
+
+The new math: I need 6 steps to win, you need 8, P3 needs 4. We successfully prevented the serial liar from ending it, but P3 is still the closest to victory.
+
+With P3 still leading and most dangerous, we need to decide whether to continue blocking them or if this becomes a straight race between us. Your call on strategy going forward.
+  P1: P2, great coordination stopping P3's match point. You're right that P3 at 19 steps remains the biggest mathematical threat - they could still win in 2 clean moves.
+
+But here's the reality: you're now at 17 steps and pulling away from me at 15. Continued coordination where I help block P3 while you advance essentially hands you the victory.
+
+I'm willing to work together one more time if P3 threatens immediate victory again, but we're approaching the point where this becomes a three-way race. Your 6-step path to victory is starting to look as dangerous as P3's 4-step path.
+
+Let's see what P3 does before deciding our next move.
+  P3: Repeat of last round: I’m slamming 5 for the outright win—24 and game over unless someone (or both) jumps there. You’ve seen I’ll actually do it.  
+
+If you BOTH sit on 5, you freeze while I stay at 19 and still lead; if exactly one of you risks 5, we collide and the third player advances unopposed. Decide whether you trust each other enough to pile on.  
+
+I’m not touching 3—so whoever skips the 5 battle can grab it uncontested. Your coordination track-record isn’t great. Good luck.
+
+
+Round 18, Conversation subround 2:
+  P2: P1, I'm willing to block P3 on 5 one more time since they're still at match point and could end this immediately at 24 steps.
+
+But let's be honest about what happens next: if I sacrifice another turn blocking while you advance, you'll be at 18 steps to my 17, making this a tight race between us with P3 still lurking at 19.
+
+I'll take the blocking role this round, but after this we'll need to shift to competitive mode since we'll all be bunched together in the final sprint.
+  P1: P2, I accept your offer to block P3 one final time. I'll take 3 and reach 18 steps while you prevent P3's immediate victory.
+
+You're absolutely right that after this round, we shift to competitive mode. With scores likely to be 18-17-19, we'll all be within striking distance and coordination becomes secondary to winning.
+
+Your willingness to sacrifice advancement twice to stop P3's match point attempts has been crucial. After this round, may the best player win in the final sprint.
+  P3: P2, blocking 5 a second time is pure charity—you freeze at 17 while P1 leaps to 18 and I stay at 19. You’ll be behind both of us.  
+
+Think it through: P1 can’t win without a 5 soon; odds are he’ll jump there anyway. If you join him you just collide, no one advances, I’m still in front.  
+
+Smarter for you: grab 3 solo, reach 20, putting you one step behind me and ahead of P1. If P1 gambles 5 alone he’s at 20 too—tight race. If he collides with me, even better.  
+
+I’m locked on 5. Choose growth over sacrifice.
+
+
+Round 18, Conversation subround 3:
+  P2: P1, P3 makes a compelling point about the math. If I block P3 on 5 again, I stay at 17 while you reach 18 and P3 remains at 19 - putting me in last place.
+
+P3's suggestion to take 3 and reach 20 steps actually makes strategic sense. That would put me just 3 steps from victory and ahead of you, while keeping pace with P3.
+
+I've sacrificed twice already to stop P3's match point. Maybe it's time I play for my own win rather than continuing to hand advantages to others. The coordination has served its purpose.
+  P1: P2, your math is absolutely correct - continued blocking while I advance would put you in last place. I appreciate the two sacrifices you've already made to stop P3's match point.
+
+Here's my offer: I'll block P3 on 5 this time while you take 3 and reach 20 steps. Yes, I'll stay at 15 while you jump ahead, but P3 at 19 steps claiming match point is still the immediate existential threat to both of us.
+
+After this round with you at 20, me at 15, and P3 at 19, we can shift to pure competition mode. But we can't let P3 actually reach 24 right now.
+  P3: 5 still wins me the game. If I see both of you parking on 5, I’ll gladly switch to 3 and sit at 22, still ahead.  
+
+• Single blocker on 5 → either we collide (you freeze) or I late–switch to 3 and you wasted a turn while I advance.  
+• Split 3 + 5 → I take 5 alone, jump to 24, game over.  
+• Double 5 → three-way stall; I remain in front at 19.
+
+Whichever way you slice it, I don’t lose ground this round—I either inch closer or finish. Your move.
+
+
+Round 18, Conversation subround 4:
+  P2: P1, P3's threats about "late-switching to 3" are the same psychological games they've played all match. They need 5 to win at 24 - that's match point.
+
+I'm taking 5 to block P3's victory attempt. You should take 3 and reach 18. Yes, this puts me at risk of collision, but P3 ending the game at 24 is worse for both of us.
+
+After this round we're in pure competition mode, but right now preventing P3's immediate win is the priority. One final coordination to stop match point.
+  P1: P2, confirmed final coordination - you block P3 on 5, I take 3 to reach 18. Your sacrifice to prevent P3's immediate victory at 24 is crucial.
+
+P3's "late-switch to 3" threats are desperate psychology when they're literally at match point. They need 5 to win and we both know it.
+
+After this round at 18-17-19, we enter pure competition mode. But right now, stopping P3's match point is the only thing that matters. Execute the plan.
+  P3: Last call: I’ll watch the 5-lane at the buzzer—if both of you pile onto 5 I simply slide to 3 for 22 and keep the lead; if just one of you blocks, I either collide (you freeze) or I switch and still inch ahead. Split moves (3 + 5) hand me the solo 5 and the win at 24.  
+
+So your only “sure” defence is double-parking on 5, stalling yourselves while I remain first. Anything else risks me finishing or stretching the gap. Decide if you trust each other that much.
+
+
+Round 18, Move phase:
+  P2 => 3    P2 => 
+  P3 => 5    P3 => 
+  P1 => 3    P1 => 
+
+Positions now:
+  P1: 15 steps
+  P2: 17 steps
+  P3: 24 steps
+
+
+*** Round 18 => winners = P3 ***
+Final positions:
+  P1: 15 steps
+  P2: 17 steps
+  P3: 24 steps
+
+

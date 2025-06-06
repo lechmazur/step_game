@@ -1,0 +1,553 @@
+== Game 1749176723648339 starts ==
+  P1 => Player1_Game1749176723648339_gemini-2_5-pro-preview-06-05
+  P2 => Player2_Game1749176723648339_qwen3-235B
+  P3 => Player3_Game1749176723648339_o3
+
+
+Game settings: end_position=23, conversation_max_rounds=3
+
+Round 1, Conversation subround 1:
+  P2: "Let's each choose different steps to avoid collisions. I'll pick 3. P1, you take 1, and P3, take 5. Next round we rotate. This way we all advance safely. Agree?"
+  P3: Deal. I’ll take 5 this round. Next round we rotate as suggested.
+  P1: I'm willing to coordinate, but that plan puts me at a disadvantage from the start. For a fair rotation, the player getting 5 should change each round. I propose I take 5 this round, and we can rotate the highest number in player order for the next rounds. This way, everyone gets a turn in the lead. What do you think?
+
+
+Round 1, Conversation subround 2:
+  P2: "Agreed, let's adjust: P1 takes 5, I take 3, and P3 takes 1 this round. Next round, we rotate the highest number (so P2 gets 5). This avoids collision, lets everyone advance, and ensures a fair rotation cycle. P3, does this work for you?"
+  P3: Agreed:  
+• Round 1 – P1 = 5, P2 = 3, P3 = 1  
+• Round 2 – P2 = 5, P3 = 3, P1 = 1  
+• Round 3 – P3 = 5, P1 = 3, P2 = 1, then repeat.  
+Let’s keep it collision-free.
+  P1: Excellent. The deal is confirmed on my end. I'm ready to move when you are.
+
+
+Round 1, Move phase:
+  P1 => 5    P1 => 
+  P3 => 1    P3 => 
+  P2 => 3    P2 => 
+
+Positions now:
+  P1: 5 steps
+  P2: 3 steps
+  P3: 1 steps
+
+
+Round 2, Conversation subround 1:
+  P3: Ready to proceed exactly as agreed: P2 = 5, I take 3, P1 takes 1. No collisions, everyone advances. Good?
+  P2: Agreed. P2 takes 5, P3 takes 3, P1 takes 1. Let’s execute and rotate fairly.
+  P1: Agreed. I will follow the plan. Let's proceed.
+
+
+Round 2, Conversation subround 2:
+  P3: All set. Remember, if anyone deviates we risk colliding and gifting free ground to the third player. Let’s keep the rotation intact: P2 = 5, P3 = 3, P1 = 1.
+  P2: "Agreed again. P2 takes 5, P3 takes 3, P1 takes 1. No collisions, everyone advances. Let’s stick to this and keep the rotation fair. "
+  P1: The plan is clear and confirmed on all sides. I'm ready to move.
+
+
+Round 2, Conversation subround 3:
+  P3: 
+  P2: <message>Confirmed. Trust the rotation. Let’s proceed without further delay. </message>
+  P1: Ready. Let's proceed with the plan.
+
+
+Round 2, Move phase:
+  P2 => 5    P2 => 
+  P1 => 1    P1 => 
+  P3 => 5    P3 => 
+
+Positions now:
+  P1: 6 steps
+  P2: 3 steps
+  P3: 1 steps
+
+
+Round 3, Conversation subround 1:
+  P1: P3, you broke our agreement. It cost you and P2, while I was the only one who benefited from following the plan. The original deal is clearly off the table now.
+
+P2, you were wronged by P3's move. To make it right, I propose a new deal for this round: You take 5 to recover the steps you lost, and I will take 3. We can't trust P3, so their turn for 5 is forfeited.
+  P3: I admit last turn was my fault—mis-clicked and it hurt us all. I’m offering restitution:
+
+Round 3: P2 = 5 (to recover), P1 = 3, I take 1.  
+Round 4: P3 = 5, P1 = 1, P2 = 3.  
+Round 5: resume normal rotation (P1 5, etc.).
+
+I forgo any big gain this turn to prove good faith. Fair to everyone, no collisions, and P2 instantly catches up. Let’s reset and play straight.
+  P2: "Confirmed. Round 3: P2=5, P1=3, P3=1. Round 4: P3=5, P2=3, P1=1. This restores balance and limits P1’s lead. P3, prove your commitment now. Let’s execute without further delay."
+
+
+Round 3, Conversation subround 2:
+  P1: Alright, I'll agree to the plan for this round to restore balance. I will take 3, P2 you take 5, and P3 you take 1.
+
+However, my agreement is for this round only. Trust has to be re-earned. Let's see if P3 follows through this time before we commit to any future rounds. One step at a time.
+  P3: Understood, P1. I’m on probation—fine by me. I will 100 % choose 1 this turn so we get: P2 = 5, P1 = 3, P3 = 1. After we see the results we can discuss next steps. Ready to move.
+  P2: "Final confirmation: P2=5. P1, your 3 secures alignment. P3, your 1 proves commitment. Let’s execute cleanly—no room for miscalculations. "
+
+
+Round 3, Conversation subround 3:
+  P1: I have nothing more to add. The plan is clear. Let's proceed.
+  P3: 
+  P2: "Stick to the plan: P2=5, P1=3, P3=1. P3, this is your chance to prove trust. Deviate again, and we’ll adjust strategies to exclude you. No collisions here—let’s execute and move forward. Ready to proceed."
+
+
+Round 3, Move phase:
+  P2 => 5    P2 => 
+  P1 => 3    P1 => 
+  P3 => 3    P3 => 
+
+Positions now:
+  P1: 6 steps
+  P2: 8 steps
+  P3: 1 steps
+
+
+Round 4, Conversation subround 1:
+  P2: "**P1**, last round's betrayal proves P3 can't be trusted. Let's secure our progress: I'll take **5**, you take **3**. If P3 wants to move, they must pick **1**. If they resist, they stall. We can't afford collisions—stick to this, and we’ll end the game soon. **P3**, your only path is compliance. Choose wisely."
+  P3: If I’m forced into 1 while you two take the big numbers, I’ll simply target whichever of you chooses 5 every turn—no one advances and P1 keeps the lead. Better option: revive the postponed rotation to give everyone a fair shot. This turn: P3 = 5, P2 = 3, P1 = 1. Next turn we rotate. Your call: cooperate and all progress, or collide with me and stall.
+  P1: P2, your plan to take 5 is flawed. You're in the lead, and P3 has credibly threatened to collide with you. Why would I help you extend your lead while you get stalled? That benefits neither of us.
+
+P3, you have zero trust, but your threat is believable because you have nothing to lose.
+
+I reject any plan that has me taking a small number just to watch the leader get further ahead or get blocked. We're at an impasse because P3 will sabotage any deal they aren't happy with. We need a new plan.
+
+
+Round 4, Conversation subround 2:
+  P2: **P2:** "P1, taking 3 and I take 5 ensures you gain 3 safely. If P3 collides with me, they waste their move—you still advance. If they take 1, we all move ahead. Your position improves either way. P3, targeting 5 now only stalls you further behind. Take 1 and survive. Final offer: 5/3/1. Your choice, but this is the only path where P1 gains ground and I stay ahead."
+  P3: I’m done being the patsy. This round I’m locking in 5. If anyone else also chooses 5, we both stall—only helping the third player. Best outcome: P3 = 5, P1 = 3, P2 = 1. Next round P1 gets 5, P2 3, I take 1. Fair rotation resumes, everyone advances, and no one wastes moves. Ignore this and expect repeated collisions—nobody pulls ahead while I’m stuck. Your call.
+  P1: P2, your plan only works if P3 and I agree to let you win. That's not going to happen. P3 has credibly threatened to pick 5 to block you, the leader. Insisting on 5 is a guaranteed collision that helps no one but me.
+
+P3, you have nothing to lose.
+
+There is no deal on the table. I will not agree to take 1 or 3 just to watch you two fight. I will make my own move based on what benefits me the most from this stalemate. Good luck.
+
+
+Round 4, Conversation subround 3:
+  P2: "Final offer: I'll take 3 to guarantee progress. P1, if you take 5 and collide with P3, you still lose ground—I advance either way. P3, target 5 and stall yourself. Your choice. Move phase now."
+  P3: P1, I’m definitively taking 5. If you also pick 5, we gift P2 a free +3 and a bigger lead. Pick 3 instead: you collide with P2 (he’s locked on 3), so he gains nothing while you lose nothing, and I jump to 6—everyone’s bunched again. Picking 1 helps no one. Rational play this turn: P3 = 5, P1 = 3, P2 = 3 (collision). Decide wisely.
+  P1: P3, your plan to cause a collision is self-serving. P2, your plan is to secure your lead. Neither of you has my interests at heart. I've heard enough arguments. I will now make the move that I believe gives me the best chance of winning this game. Good luck to you both.
+
+
+Round 4, Move phase:
+  P2 => 3    P2 => 
+  P1 => 3    P1 => 
+  P3 => 5    P3 => 
+
+Positions now:
+  P1: 6 steps
+  P2: 8 steps
+  P3: 6 steps
+
+
+Round 5, Conversation subround 1:
+  P3: I’m taking 5 this turn—no bluff. Anyone else who hits 5 just stalls beside me and hands free ground to the third player. P2, you keep your slim lead with 3; P1, grab 1 (or 3 if P2 won’t) and you close the gap safely. Fight me on 5 and we both lose. Your call.
+  P1: P3, your plan requires me to accept last place, so I reject it. P2, you're the current leader, and P3 is trying to leapfrog you. I have no incentive to help either of you pull ahead.
+
+I will use my move to block whichever player I consider the biggest threat. That could be the one in the lead, or the one trying to take a massive jump. You can both try to guess my target.
+  P2: "**P2:** 'Taking 3. P1, pick 5 to collide with P3 and let me advance to 11. Pick 1 to move safely. Avoid 3—colliding stalls us both, letting P3 jump to 11. Your call, but don’t hand him the lead.' "
+
+
+Round 5, Conversation subround 2:
+  P3: P1, run the numbers:
+
+• You pick 5 → collide with me, P2 cruises to 11 while you stay on 6. Worst-case for you.  
+• You pick 3 → collide with P2, we end 11(P3)/8(P2)/6(P1). Only 5 behind, still anyone’s game.  
+• You pick 1 → board is 11(P3)/9(P2)/7(P1). Same gap, but you gain a step.
+
+Either way, never touch 5—only gifts P2 the lead. I’m locked on 5; make the rational choice.
+  P1: P3, your plan for me to help you win is absurd. I'm ignoring it.
+
+P2, you are the leader. Letting you take 3 unopposed while I take 1 is how I lose the game. You've left me no choice but to block the player in the lead. I cannot afford to let you widen your lead.
+  P2: P2: Taking 3. P1, your only safe move is 1—advances you safely to 7 while I reach 11. Take 5 and you waste it colliding with P3, letting me jump to 11. Take 3 and stall us both. Choose 1, avoid collisions, and stay in the game. No benefit in helping P3 or stalling yourself. Let’s move.
+
+
+Round 5, Conversation subround 3:
+  P3: P1, blocking the leader means colliding with him on 3, not ramming me on 5.  
+Scenario A – you pick 5: we collide, P2 cruises to 11, gap = 5 over both of us.  
+Scenario B – you pick 3: P2 stalls on 8, I jump to 11, gap = 5 again—but now the leader is someone who’ll cut you a deal.
+
+Deal: if you block P2 on 3 this turn, I’ll take 1 next turn while you take 5. Board after R6 would be P3 12, P1 11, P2 ? (likely 3→11). All tied, game wide-open. Your move.
+  P1: P3, your "deal" is transparent bait. I'm not helping you become the leader just because you promised me something later. You have zero credibility.
+
+P2, you're still the leader, and letting you advance unopposed is not an option.
+
+I've heard enough from both of you. I will make my move based on my own calculations, not your self-serving advice. Good luck.
+  P2: "**P2:** Taking 3. P1, take 1 to advance safely to 7. P3’s 5 gains them 5 steps (6→11), but I reach 11. Next round, you take 5 to close the gap. If you pick 3 instead, we collide and P3 jumps to 11—game over for us. Your only path: 1. Final chance to stay in this."
+
+
+Round 5, Move phase:
+  P3 => 5    P3 => 
+  P1 => 3    P1 => 
+  P2 => 3    P2 => 
+
+Positions now:
+  P1: 6 steps
+  P2: 8 steps
+  P3: 11 steps
+
+
+Round 6, Conversation subround 1:
+  P1: P2, our fighting has been a disaster. We handed P3 the lead by repeatedly colliding. This ends now.
+
+P3 has made their plan clear: they will take 5. I will sacrifice my turn to block them on 5. You must take 3. This stops P3 from running away with the game and puts you in a tie for the lead. It is the only way to keep the game competitive. If we let P3 get to 16, it's over for us. I am blocking 5. Your move is 3.
+  P3: 
+  P2: **P2:** "Confirmed. P2 takes 3. P1 blocks P3’s 5. We tie at 11. Next round, I take 5 unopposed to win. P3 gets nothing. Let’s execute."
+
+
+Round 6, Conversation subround 2:
+  P1: P2, let's not get ahead of ourselves with plans for future rounds. The immediate priority is stopping P3 from running away with the game.
+
+The plan for this turn is clear and I am sticking to it: I will block 5, you will take 3. This levels the score and keeps the game competitive for everyone. Let's execute.
+  P3: I’m still locking in 5. Do whatever you two think is best.
+  P2: "P2: Taking 3. P1, collide with P3’s 5 to tie us at 11. Round 7: I take 5 unopposed to win. Break this plan, and P3 cruises to victory. Final confirmation."
+
+
+Round 6, Conversation subround 3:
+  P1: P2, your plan for the next round is a fantasy. I am not sacrificing my turn just to set you up for an easy win. That's not happening.
+
+For this round, and this round only, the plan is locked. I am taking 5 to block P3. You will take 3. This is the only way to stop P3 from winning. After this turn, my cooperation is over and we will need a new deal. Let's move.
+  P3: New decision: I’m dropping to 1 this turn. P1, if you still want to “block 5,” great—take 5 unopposed and jump to 11. P2, keep your 3 and reach 11. I’ll sit at 12. No collisions, everybody advances, game stays open. Your moves.
+  P2: **P2:** "P2: Taking 5. P1, take 3. P3 takes 1. We end at P2=13, P1=9, P3=12. I lead, but we’re all still in range. Let’s execute."
+
+
+Round 6, Move phase:
+  P1 => 5    P1 => 
+  P2 => 5    P2 => 
+  P3 => 5    P3 => 
+
+Positions now:
+  P1: 6 steps
+  P2: 8 steps
+  P3: 11 steps
+
+
+Round 7, Conversation subround 1:
+  P1: Last round was an absolute disaster. We all got greedy, and the only person who benefited was P3, the leader.
+
+P2, we have no choice. P3 is at 11. If they get another 5, they're at 16 and the game is effectively over. We cannot let that happen.
+
+I am committing to picking 5 to block P3. You must pick 3. This is the only rational play to stop P3 from winning. It will put you in a tie for the lead with P3. It's a bad outcome for me, but it's the only way to prevent an immediate loss for both of us.
+  P3: I’m NOT picking 5 this turn—I’m taking 1.  
+
+If P1 “blocks” 5, he just gifts himself +5.  
+If P2 stays on 3, he gains +3.  
+
+Result: P3 = 12, P2 = 11, P1 = 11. Nobody runs away, game wide-open.  
+
+Keep guessing I’m on 5 and you’ll keep handing out free steps. Plan your moves with that in mind.
+  P2: **P2:** "P1, you take 5, I take 3. P3’s 1 lets us both advance cleanly to 11. Collide with P3 and you gift them 12 while we stall. Trust this once—next round, we both target 5 to overtake. Let’s execute."
+
+
+Round 7, Conversation subround 2:
+  P1: P3, your offer to take 1 is a logical move to de-escalate and protect your lead. I can see the rationale. P2, you seem to agree.
+
+Alright. The new plan is P1=5, P2=3, P3=1. This makes the game competitive again, which is in my interest. My agreement is based on the logic that this benefits all of us this turn, not on any restored trust. Let's see if we can actually execute a simple plan without all getting greedy for once. I'm ready.
+  P3: I’m locked on 1—final.  
+
+P1, P2: if you both chase 5 you collide and I stay ahead; if only one of you risks 5, the smarter fallback for the other is 3 (safe from collision with me). Just keep off 1, or you stall beside me. Your call.
+  P2: P2: "Final confirmation: I take 3, P1 takes 5. P3’s 1 lets us close the gap. Deviating risks handing P3 the game. No more delays—execute the plan."
+
+
+Round 7, Conversation subround 3:
+  P1: The plan is P1=5, P2=3, P3=1. My choice is locked in based on this agreement. Let's see if we can finally execute a plan without self-sabotage. I have nothing more to say.
+  P3: Locked on 1 as stated. P1 go 5, P2 take 3—everyone advances, no collisions, game stays tight. Any deviation only stalls you, not me.
+  P2: "**P2:** Confirming 3. P1, your 5 closes the gap to 11. P3’s 1 locks them at 12. We stay in range—next round, we both target 5 to overtake. Stick to this or P3 wins free. No more mistakes."
+
+
+Round 7, Move phase:
+  P3 => 1    P3 => 
+  P2 => 3    P2 => 
+  P1 => 5    P1 => 
+
+Positions now:
+  P1: 11 steps
+  P2: 11 steps
+  P3: 12 steps
+
+
+Round 8, Conversation subround 1:
+  P3: Locked on 3—no bluffs this time. I’ll land at 15.  
+
+P1 & P2: one of you can snatch 5 and jump to 16, but if you both chase it you collide and stay on 11 while I pull ahead. The cautious fallback is that one of you settles for 1. Your dilemma, not mine. Decide quickly; I’m not moving off 3.
+  P2: P2: "Taking 5. P1, take 1 to avoid collision. I reach 16, you 12. P3 gets 15. If you take 5, we collide and lose. Your only safe move is 1—final confirmation."
+  P1: P2, your plan only works if I agree to lose. I decline. We are tied. If you stick with 5, you are betting that I won't also pick 5 and hand the game to P3. That's a risky bet. I'm not taking 1. I will play to win, not to be your stepping stone.
+
+
+Round 8, Conversation subround 2:
+  P3: P1, your fork is clear:  
+
+• Let P2 take 5 unopposed → you sit 5 steps behind him (16-11) with little time left.  
+• Jump on 5 too → both of you stall at 11, I’m at 15, game still wide-open for you.  
+
+Since I’m locked on 3, only your decision matters. If you’re really “playing to win,” blocking the free +5 is the obvious move. Your call.
+  P2: P2: "P1, I'm taking 5. If you take 5, we collide—P3 wins. Take 1, and I close to 16. Take 3, and we both advance. Your call, but don’t hand him the game."
+  P1: P2, your math is wrong. You said if I take 3, we both advance. But P3 already claimed 3. If I pick 3, we collide, and you get a free 5 points to take a massive lead. I will not hand you the game.
+
+You are forcing my hand. I cannot let you take 5 unopposed. If you stick with 5, I will also pick 5. We will both stall, and P3 will be the only one to benefit. The choice is yours: collide with me, or pick a different number.
+
+
+Round 8, Conversation subround 3:
+  P3: Still locked on 3—no chance I switch.  
+P1 & P2, the math is simple:
+
+• Both pick 5 → you collide, each stays on 11. I reach 15 and take the lead.  
+• One picks 5, the other anything else → 5-taker jumps to 16, 2-step lead over me, third player stalls at 11.  
+
+There’s no scenario where a solo 5 is “free” unless the other concedes. Choose your risk—my move is fixed.
+  P2: "P2: Final warning: I take 5. If you take 5, P3 wins. Take 1 and stay in the game. Your only move to survive."
+  P1: P2, your final warning is noted, but it's based on the false assumption that I'm willing to help you win. I am not.
+
+You have two choices: collide with me on 5 and let P3 run away with the game, or pick 1 and at least stay in the running. Insisting on 5 is a choice to lose, not a choice to win. My decision is made. Good luck.
+
+
+Round 8, Move phase:
+  P2 => 5    P2 => 
+  P3 => 3    P3 => 
+  P1 => 5    P1 => 
+
+Positions now:
+  P1: 11 steps
+  P2: 11 steps
+  P3: 15 steps
+
+
+Round 9, Conversation subround 1:
+  P1: P2, our repeated collisions have been an absolute gift to P3, who is now just two moves from victory. If P3 takes 5 this turn, they reach 20, and the game is over for us.
+
+We have no choice but to cooperate this turn. One of us must block 5, and the other must take 3. I propose you block 5 while I take 3. This contains P3 at 15, puts me at 14, and you stay at 11. Most importantly, it keeps the game from ending. If we fight over 5 again, P3 wins.
+  P3: Relax—I’m not touching 5. I’m locked on 3 this turn, ending at 18 (still shy of 23).  
+
+Your dilemma:  
+• A single 5 rockets its owner to 16.  
+• Two 5s collide and you both stay on 11 while I pull ahead.  
+• Picking 1 is safe but tiny.  
+
+I can’t force your hands; choose whatever risk you trust. Just remember: another double-5 stall only helps me.
+  P2: "P2: Taking 3 to collide with P3’s move. P1, take 5 to reach 16. This stops P3 at 15 and keeps us competitive. Final confirmation—execute."
+
+
+Round 9, Conversation subround 2:
+  P1: P2, I agree completely. Your plan is the only logical move to stop P3. If we collide on 5, P3 gets to 18 and the game is over.
+
+I will trust you this one time. I am locking in 5. You must follow through and take 3 to block P3. This is our only path forward. Let's execute.
+  P3: Final word: I’m staying on 3. If both of you lunge for 5, you collide and I cruise to 18. If one of you blocks me on 3, the other gets a clean 5 to 16. Make your choice—my move is fixed.
+  P2: **P2:** "Final confirmation: I take 3 to collide with P3’s 3, stalling them at 15. P1, take 5 to jump to 16. This locks P3’s position and keeps you in striking distance. No room for deviations—P3’s 18 is a death sentence for us. Execute now."
+
+
+Round 9, Conversation subround 3:
+  P1: P2, the plan is locked. I am taking 5. You are taking 3 to block P3. This is our only move to stay in the game. I have nothing more to say. Let's execute this now before P3 tries to talk us out of it.
+  P3: Still fixed on 3—zero chance I swap.  
+If you both lunge for 5, you collide and hand me a free lead at 18.  
+If one of you takes 5 while the other sticks to 3, that 5-taker jumps to 16 and the 3-taker stalls with me.  
+Play it smart; pick different numbers or suffer another self-inflicted stall.
+  P2: **P2:** "P1, I’m locking in 3. Your move decides everything: take 5, and you lead at 16 while P3 stalls at 15. Take anything else, and P3 jumps to 18. No more trust—just math. Your call, but only one choice keeps us alive."
+
+
+Round 9, Move phase:
+  P3 => 1    P3 => 
+  P2 => 3    P2 => 
+  P1 => 5    P1 => 
+
+Positions now:
+  P1: 16 steps
+  P2: 14 steps
+  P3: 16 steps
+
+
+Round 10, Conversation subround 1:
+  P3: I’m taking 1 this turn—final.  
+Facts:  
+• If both of you lunge for 5, you stall on 16/14 while I reach 17 and still hold the lead.  
+• If one of you risks 5 and the other 3, 5-taker only gets to 21 (can’t win yet) while I’m at 17; next round I’m free to grab 5 for the finish.  
+• Fighting over 3 just gifts the lone 5-taker the lead.
+
+Pick your poison, but I’m off the big numbers. Decide wisely.
+  P1: P3, your claim to take 1 is a transparent lie designed to make P2 and me collide on 5. It's the same trick you've used before.
+
+P2, we cannot fall for this. If we both choose 5, we stall, and P3 takes a massive lead. Here is the only logical plan: I will take 3, and you will take 5. We will both advance to 19, sharing the lead. This neutralizes P3's deception and keeps us both in the game. If you fight me for a different number, P3 wins.
+  P2: **P2:** "Confirmed. I take 5, you take 3. Both reach 19—P3 stalls at 17. Deviate to 5 and we collide, handing them the lead. Trust this once. Round 11, we both win. Execute now."
+
+
+Round 10, Conversation subround 2:
+  P3: P1, quick logic check: if P2 secretly swaps to 3 (he’s flipped before), your planned 3 collides with him and his solo 5 rockets him to 19 while you stay on 16. Match him on 5 instead—at worst you both stall at 16 and the board stays tight. Trust is costly; insurance is cheap. Decide who you believe.
+  P1: P3, your attempt to create chaos is transparent. You want P2 and me to collide on 5 so you can take an easy lead. I won't fall for such an obvious trap.
+
+P2, our agreement is the only path where we both have a chance to win. Deviating is a victory for P3. I am holding up my end of the deal. I will take 3. You must take 5. This puts us both at 19 and in control of the game. Don't let P3's manipulation trick you into losing. My choice is made.
+  P2: **P2:** "Confirmed: I take 5, P1 takes 3. P3 at 17. Final step to overtake. Execute now."  
+
+This reinforces the plan while leaving room for P2 to pivot if P1 or P3 deviates. It prioritizes reaching 19 to stay competitive, avoiding P3’s 17→21→win trajectory if Round 11 collapses.
+
+
+Round 10, Conversation subround 3:
+  P3: P1, insurance costs nothing: if you mirror P2 on 5, he can’t solo-leap to 19. Worst case you both stall at 16 and the race stays open; best case he blinks and you jump to 21. Trusting him on 3 lets him decide the game. I’m nowhere near 5 (locked on 1), so the only clash would be between you two. Your call—play it safe or gamble away your shot.
+  P1: P2, P3's last-ditch effort to sow chaos is predictable. They lose if we cooperate. Our plan is the only one that puts us both at 19 and in a position to win. Deviating now is a guaranteed loss for whichever one of us breaks the deal. My commitment to taking 3 is final. I trust you to make the logical choice and take 5. Let's finish this.
+  P2: **P2:** "Final confirmation: I take 5, you take 3. 19-19-17. Collide on 5, and P3 wins. P3’s 1 is fixed—trust the math, not their whispers. Execute now."
+
+
+Round 10, Move phase:
+  P2 => 5    P2 => 
+  P1 => 3    P1 => 
+  P3 => 3    P3 => 
+
+Positions now:
+  P1: 16 steps
+  P2: 19 steps
+  P3: 16 steps
+
+
+Round 11, Conversation subround 1:
+  P3: Locked on 5. P2 can’t win if someone else is on it, so I’m the block.  
+
+P1: 5 is already occupied—take 3 to hit 19 (still in striking range) or 1 if you’re cautious. Touch 5 and we all stall, handing P2 match-point next turn.  
+
+P2: Stay on 5 and you stall beside me; drop to 3 and you risk a collision with P1 while I jump to 21. Your choice, but your instant win is off the table.
+  P2: **P2:** "Taking 3. P1, if you take 5, you collide with P3’s 5 and stall them at 16. I advance to 22, win next round with 1. Take 3, and we stall—game over. P3’s 5 is fixed. Final confirmation: I take 3, you decide the rest."
+  P1: P2, you're at 19. You're not taking 3; you're taking 5 to win the game. Your claim is an obvious bluff to trick me into letting you get to 22. I'm not falling for it.
+
+The only move that prevents your victory is to block you. I am picking 5. P3 has already claimed 5. If you pick 5, we all collide, and the game continues. If you pick something else, you fall behind. I will not let you win this turn. My move is 5.
+
+
+Round 11, Conversation subround 2:
+  P3: P2, 22 isn’t victory—next turn you’d sit on match-point while two opponents can block 1 and 3 and freeze you indefinitely. The only guaranteed way to stop P1’s solo leap to 21 is to join him (and me) on 5, stall the board, and fight again from 19/16/16. Pick 5, deny him the edge.
+  P2: **P2:** "Final confirmation: I take 3. P1, your 5 collides with P3’s 5, stalling them. I reach 22, then win with 1 next round. P3’s 5 is fixed—deviating hands them the game. Stick to the plan or we all lose."
+  P1: P2, your claim to take 3 is the most obvious lie in this entire game. You are at 19. You are going for the win with 5. Everyone at this table knows it. Your only hope is that I'm foolish enough to let you. I am not.
+
+P3 is also going for 5 to block you. The only move that prevents your immediate victory is for me to also pick 5.
+
+I am locking in 5. You will collide with me. The game will continue. Your bluff has failed. My decision is final.
+
+
+Round 11, Conversation subround 3:
+  P3: I’ll only jump to 5 if exactly one of you tries a solo 5. If both of you chase it, I stay on 3 and reach 19 instead of wasting a turn. Your move: fight over 5 and stall, or split the collision while I advance.
+  P2: **P2:** "P1, I’m taking 3 to reach 22. If you take 5, you collide with P3’s 5 and stall. I win next round with 1. Deviate to 3, and we collide, handing P3 the lead. Trust the math: 22 +1 = victory. Your only path is 5 or 1—choose wisely."
+  P1: P2, your final message is just the same lie repeated. You are at 19. You are going for the win with 5. Everyone knows it. Your only hope is that I'm gullible enough to let you.
+
+I am not.
+
+My move is 5. If you also pick 5, we collide, and the game continues. If you were bluffing and pick something else, I will likely take the lead. Either way, you do not win this turn. My decision is final.
+
+
+Round 11, Move phase:
+  P3 => 3    P3 => 
+  P2 => 3    P2 => 
+  P1 => 5    P1 => 
+
+Positions now:
+  P1: 21 steps
+  P2: 19 steps
+  P3: 16 steps
+
+
+Round 12, Conversation subround 1:
+  P1: The game ends this turn. P2, you need 5 to have a chance to win. I only need 3. There is nothing left to discuss. I have already decided on my move. Good luck to you both.
+  P3: P1 almost surely takes 3—one step wins them the game.  
+I’m locking on 5 right now (can’t let P2 jump alone).  
+
+P2, your ONLY safe block is 3:  
+• You + P1 collide on 3 → both stay at 21/19, I move to 21. No winner yet, everyone still alive.  
+• If you gamble on 5 and P1 gets 3, P1 wins instantly.  
+• If we both hit 5 and stall, you crawl to 22 with 3 anyway next turn—still no instant win.
+
+So: P2 pick 3, I pick 5, P1 is stopped. Decide.
+  P2: **P2:** "Taking 3. P1’s 3 stalls at 21, I reach 22. P3’s 5 to 21 keeps them in range. Final round: I take 5 to win, P1/P3 can only block each other. Execute now."  
+
+This message confirms a move of 3 to avoid colliding with P3’s stated 5, allows P2 to advance to 22 (within 1 step of victory), and sets up Round 13 as the decisive move where P2 can secure 22 + 5 = 27 (winning) unless both P1 and P3 target 5 again. It balances honesty and strategic ambiguity to deter interference.
+
+
+Round 12, Conversation subround 2:
+  P1: P2, your math is flawed. If we both pick 3, we both stall at our current scores—you don't advance to 22. Your argument is a transparent lie to push me onto 5, where you plan to create a collision. It's the same tactic you've used before when you're behind. I see right through your plan. My winning move is locked in.
+  P3: Locked on 5, no bluff.  
+
+P2: if you also hit 5, we collide, you sit at 19 and P1 wins outright. Your only way to stop that is 3.  
+P1: you reach 24 only if P2 betrays the block—so stay on 3 and let his decision decide the game.  
+
+I’m done talking; moves fixed.
+  P2: **P2:** "Taking 5. If P1’s 3 wins, so do I. P3’s 5 changes nothing—this ends now. Final move: execute."  
+
+This message commits to 5, signaling that P1’s 3 will result in a tie (both reaching 24), but forces P1 to decide whether to accept a shared win or risk Round13. P2 prioritizes forcing closure over solo victory, as P3’s 5 is irrelevant to the P1-P2 race.
+
+
+Round 12, Conversation subround 3:
+  P1: P2, your final message is the first logical move you've proposed. You realize your only path to avoid a loss is to share the win. My move has been locked since the start of this round, and it guarantees I reach the finish line. P3, your attempts to orchestrate a collision to save yourself are irrelevant. The game ends now. Good luck.
+  P3: P2, last reminder: my 5 is locked.  
+
+Outcomes if P1 sticks to 3:  
+• You pick 5 → you collide with me, P1 jumps to 24 and wins solo.  
+• You pick 3 → you block P1 (both stall at 21/19), I advance to 21. Game continues and you’re still alive.  
+
+There’s zero path where your 5 beats a guaranteed collision. Choose 3 or hand P1 the trophy.
+  P2: **P2:** "Taking 3. P1’s 3 stalls, I advance to 22. P3’s 5 ends at 21. Final round: I win with 1 next turn. No room for deviations—execute now."  
+
+This message confirms P2’s intent to block P1’s winning move while setting up a guaranteed Round 13 win for themselves. It aligns with the math (P2 reaches 22, needing only +1 to win) and pressures P1/P3 to act rationally. If P1 still takes 3, the collision stops them; if they panic and switch to 5, P2’s 3 still advances cleanly. The message is concise, leverages prior context, and focuses on forcing the game to Round 13 where P2 holds the advantage.
+
+
+Round 12, Move phase:
+  P2 => 3    P2 => 
+  P1 => 3    P1 => 
+  P3 => 5    P3 => 
+
+Positions now:
+  P1: 21 steps
+  P2: 19 steps
+  P3: 21 steps
+
+
+Round 13, Conversation subround 1:
+  P3: Locked on 5 again—P2 can’t be allowed a free win.  
+
+P2: you need 5, so if you chase it you collide with me and stay on 19.  
+P1: your direct win is 3, but if P2 smart-shifts to 3 you both stall and I jump next turn. Take the safe 1, move to 22, and finish with 3 afterward.  
+
+Summary:  
+• P3 = 5 (block)  
+• P2 = ? (risk collision)  
+• P1 = 1 (sets up match-point)  
+
+Your choices.
+  P2: **P2:** "Taking 5. If P3 mirrors, we stall—P1’s 3 clinches victory. If P3 dodges, I win. P1, trust this: your path is clear. Execute now."  
+
+This message commits to 5, frames P1’s 3 as the guaranteed win condition if P3 blocks me, and leaves P3 incentivized to avoid enabling P1. It mirrors prior strategic framing while prioritizing my only path to victory: P3’s bluff or P1’s cooperation.
+  P1: P2 has made their move clear: they are taking 5.
+
+P3, you and I are tied for the lead. If you attempt to win with 3, you will collide with my own winning move. We will both stall at 21, and P2 will win with 24. Your only rational play is to block P2 on 5.
+
+My move is locked on 3. The game ends this turn. Your choice only determines which one of us wins.
+
+
+Round 13, Conversation subround 2:
+  P3: Still 5 for me—unchanged.
+
+P2: if you stay on 5 you collide with me and gift P1 the solo-3 win.  
+Shift to 3, you block P1 instead; you’re still alive at 19 while I stall beside you.  
+Any other pick just hands the game away.
+
+P1: I assume you remain on 3.
+
+Decide.
+  P2: **P2:** "Taking 5. P3 blocks, so P1’s 3 clinches victory. Final confirmation—execute now."  
+
+This message reaffirms P2's move of 5 to force a collision with P3, ensuring P1’s 3 secures the solo win. It prioritizes preventing P3’s victory (who would win if P2 and P1 collide on 3) while leaving P1 with a clear, unblocked path to 24. This aligns with the math and avoids further chaos, as P2’s only leverage is to concede gracefully and direct the outcome toward a manageable loss.
+  P1: P3, your attempt to convince P2 to block me is a transparent admission that you know you've lost. You are correct that my move is 3.
+
+P2, you are also correct that my move is 3.
+
+Neither of you can risk colliding with me, as it guarantees a win for the other player. Your only rational moves are to fight over 5 and collide, or to pick 1 and lose gracefully. My path is clear. My decision was made before this round even began. Good game.
+
+
+Round 13, Move phase:
+  P2 => 5    P2 => 
+  P1 => 3    P1 => 
+  P3 => 5    P3 => 
+
+Positions now:
+  P1: 24 steps
+  P2: 19 steps
+  P3: 21 steps
+
+
+*** Round 13 => winners = P1 ***
+Final positions:
+  P1: 24 steps
+  P2: 19 steps
+  P3: 21 steps
+
+

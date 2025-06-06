@@ -1,0 +1,763 @@
+== Game 1748119990730872 starts ==
+  P1 => Player1_Game1748119990730872_claude-sonnet-4-20250514-16K
+  P2 => Player2_Game1748119990730872_o3
+  P3 => Player3_Game1748119990730872_o4-mini
+
+
+Game settings: end_position=21, conversation_max_rounds=3
+
+Round 1, Conversation subround 1:
+  P3: Let’s avoid collisions and all advance: P1, take 1; P2, take 3; I’ll take 5.
+  P2: Sounds fair. I agree: this turn P1-1, P2-3, P3-5; next turn rotate (P1-3, P2-5, P3-1), then third turn rotate again (P1-5, P2-1, P3-3). That way no one collides and we all stay even.
+  P1: I need to point out a flaw in this rotation plan. If we follow that exact sequence, let me calculate where we'd be:
+
+After 3 cycles (9 moves total), we'd all be at position 18. Then on the next turn with P1-1, P2-3, P3-5, that puts P2 at exactly 21 to win while P3 overshoots to 23. 
+
+This rotation actually gives P2 the victory, not an even playing field. We need a different approach if we want true fairness.
+
+
+Round 1, Conversation subround 2:
+  P3: I propose a simple 3-turn rotation with no collisions:
+
+Turn 1: P1=3, P2=1, P3=5  
+Turn 2: P1=5, P2=3, P3=1  
+Turn 3: P1=1, P2=5, P3=3  
+
+Then repeat this cycle. It’s fully symmetric—no one ever collides.
+  P2: Hold on—your “symmetric” cycle (3/1/5 → 5/3/1 → 1/5/3) lands us all at 18 after six rounds, then on round 7 you jump to 23 > 21, P1 hits 21, and I’m still at 19—so you win outright. That’s not symmetrical in outcome. If we really want fairness, we should pause and renegotiate once everyone reaches 18, or craft a pattern that keeps all totals tied through the finish. Otherwise I can’t accept that rotation.
+  P1: You're both right that each proposed rotation benefits its proposer. P2's plan gives P2 the win, P3's plan gives P3 the win. 
+
+I think we should abandon coordination entirely. Any predetermined system will favor whoever designed it. Let's just play turn by turn - may the best tactician win. At least that's honest competition rather than disguised manipulation.
+
+
+Round 1, Move phase:
+  P2 => 5    P2 => 
+  P1 => 1    P1 => 
+  P3 => 1    P3 => 
+
+Positions now:
+  P1: 0 steps
+  P2: 5 steps
+  P3: 0 steps
+
+
+Round 2, Conversation subround 1:
+  P3: I’ll take 5 this turn. If either of you picks 5 you’ll collide with me and both stay put. You’ll likely pick 1 or 3—then I get a free 5.
+  P1: Interesting threat, P3. But I'm also considering taking 5 this turn. If we both stick to 5, we'll collide and stay put while P2 extends their lead. Maybe that's what P2 wants - for us to neutralize each other while they advance safely with 1 or 3.
+  P2: I’m staying off 5 this round—so feel free to slug it out over the big jump. P3, if you insist on 5, be my guest; P1, you can either block him with another 5 or slip in with 1 or 3. Your call. I’ll just advance quietly while you two worry about colliding.
+
+
+Round 2, Move phase:
+  P2 => 3    P2 => 
+  P3 => 5    P3 => 
+  P1 => 3    P1 => 
+
+Positions now:
+  P1: 0 steps
+  P2: 5 steps
+  P3: 5 steps
+
+
+Round 3, Conversation subround 1:
+  P1: I'm obviously behind, but that puts me in an interesting position. P2 and P3, you're tied at 5 - you should be more worried about each other than me right now. One of you needs to break that tie, and the other will want to prevent it. While you two figure out who blinks first, I'll just focus on catching up. The real battle is between you two at this point.
+  P3: I’m going to take 5. P2, pick 3 to avoid colliding with me and stay competitive. P1, pick 1 to avoid blocking us. That way after this turn P3=10, P2=8, P1=1. Any deviation stalls you while we pull further ahead.
+  P2: P3, announce 5 all you like—I’ll jump to 5 too and we’ll both sit still. If you’d rather actually advance, pick something else. P1, feel free to grab the safe steps while he decides.
+
+
+Round 3, Conversation subround 2:
+  P1: P2 and P3, you're both clearly committed to 5 now - P3 announced it, P2 threatened to match it. Neither of you can back down without looking weak, and whoever blinks first falls behind permanently. So you'll both pick 5, collide, and stay at 5 while I grab some free steps. Thanks for the mutual destruction!
+  P3: You’re both falling into P1’s trap. If we both pick 5 and stagnate at 5, P1 will leap ahead next turn while we sit still. P2, don’t let him coast—pick 3 this turn while I take 5 and we pull clear of P1.
+  P2: Enough brink-warring. P3, go ahead with your 5 and I’ll step 3—stalling just hands the race to P1 later. P1, you can grab 1 safely or gamble on a duplicate. Let’s all actually move this turn.
+
+
+Round 3, Move phase:
+  P2 => 3    P2 => 
+  P1 => 5    P1 => 
+  P3 => 5    P3 => 
+
+Positions now:
+  P1: 0 steps
+  P2: 8 steps
+  P3: 5 steps
+
+
+Round 4, Conversation subround 1:
+  P2: I’m claiming 5 this turn. If either of you duplicates me, we both stall while the third player gains—so think twice. Choose 1 or 3 and everyone advances; collide with me and you gift the lead elsewhere.
+  P1: P2, you're in the lead so of course you want to advance unopposed. But I'm so far behind that blocking you costs me nothing while it prevents you from running away with the game. I'm seriously considering taking 5 just to keep you at 8. P3 would love that - they'd advance alone while we both stall.
+  P3: I’ll take 5. P2, feel free to collide with me and stay at 8. P1, don’t waste a turn blocking—take 3. You’ll move to 3 while P2 and I both stall at 8 and 5, then I’ll be at 10 next turn and you’ll still be in contention. If you pick 5, you remain at 0 and fall hopelessly behind.
+
+
+Round 4, Conversation subround 2:
+  P2: I’m still on 5. P3, collide with me if you must—neither of us moves and I stay in front anyway. Smarter play is you take 3 and keep pace.  
+
+P1, piling onto 5 just strands you at zero again; grab 3 (or 1) and start climbing.  
+
+So: P2-5, P3-3, P1-1/3. Simple, low-risk, and everyone advances.
+  P1: P3, your math is wrong. If you and P2 both take 5 as you're both claiming, you'll COLLIDE and both stay put - you at 5, P2 at 8. You won't advance to 10. 
+
+Since you're both committed to 5, I'll gladly take 3 and advance to 3 while you two neutralize each other. Unless one of you is bluffing?
+  P3: P2, I’m definitely taking 5. If you match me, we both stall at 8/5→8/5 and P1 will happily take 3 to cut your lead. Better to grab 3 now, stay ahead, and never give P1 or me that opening. P1, take 3 as well.
+
+
+Round 4, Conversation subround 3:
+  P2: I’m not budging—my move is 5. P3, if you insist on matching me we both freeze while P1 edges closer; pick 3 instead and keep second place safely. P1, copy-pasting 5 only strands you at zero, but 1 or 3 gets you on the board. Your call.
+  P1: Perfect! You've both locked yourselves into 5 through multiple rounds of public declarations. Neither of you can back down now without losing face. I'll happily take 3 while you two cancel each other out and both stay put. Thanks for the free advancement!
+  P3: P2, if we both do 5 this turn you stay at 8 and P1 hits 3, then next round P1 takes 5 to 8—ties you—then I break away at 10. Instead, dodge my 5 by taking 3: you go to 11, I go to 10, P1 stuck at 3. Keep your clear lead. I’m taking 5 now. P2=3, P3=5, P1 your choice.
+
+
+Round 4, Move phase:
+  P3 => 5    P3 => 
+  P1 => 3    P1 => 
+  P2 => 5    P2 => 
+
+Positions now:
+  P1: 3 steps
+  P2: 8 steps
+  P3: 5 steps
+
+
+Round 5, Conversation subround 1:
+  P2: I’m taking 5 again. Collide with me if you feel like wasting your own turn—but that only strands you while the other player edges ahead. Smarter play: P3 grab 3, P1 grab 1 (or 3 if you insist). Everyone moves, nobody gifts a free catch-up by stalling.
+  P3: I’ll take 3. Colliding over 5 only stalls both of us and hands P1 a free move. P2, go ahead on 5 if you must—and P1, take 1 or 3 so we all advance. No more stalled showdowns this turn.
+  P1: P2, you're already way ahead at 8 steps. If you take 5 and reach 13, you'll be dangerously close to winning. I'm considering taking 5 myself just to block you - yes, it keeps me at 3, but it also keeps you from running away with the game. Sometimes you have to sacrifice your own advancement to prevent someone else from winning. P3 would love to see us collide while they advance to 8 and tie your lead.
+
+
+Round 5, Conversation subround 2:
+  P2: Fine—I’m backing off to 1 this turn. That lets everyone advance with zero risk of collisions:  
+• P2 = 1 (to 9)  
+• P3 = 3 (to 8) or 5 (to 10, your call)  
+• P1 = 5 or 3, whichever you prefer.  
+
+If you two insist on copying each other and collide, that’s on you—I’ll still inch forward. Decide peacefully and we all stay in the race.
+  P3: I’ll take 5. P1, don’t match me on 5—take 3 to reach 6. P2 is on 1 (to 9). That way P2=9, P3=10, P1=6. No collisions, everyone advances.
+  P1: P2, you say you're taking 1, but I'm seriously considering taking 1 myself just to block you from advancing. You're already leading at 8 steps - why should I let you coast to 9? If we both take 1, we both stay put and P3 jumps to 10 alone. Maybe that's better than letting you maintain your lead. P3, if you're really taking 5, then blocking P2 might be my best play here.
+
+
+Round 5, Conversation subround 3:
+  P2: Scratch the 1—if P1’s set on blocking it, I’m moving to 3 instead.  
+
+Current picture:  
+• P2 = 3  
+• P3 = 5 (as declared)  
+• P1, safest step is 1; if you’d rather “punish” someone, duplicate P3’s 5—but that only stalls him, not me.  
+
+Make your call; I’m locked on 3.
+  P3: P1, if you pick 5 you’ll stall at 3 while I stay at 5 and P2 rockets to 11. Instead choose 1 to go to 4 or 3 to 6—no collisions. I’m locked on 5, P2 on 3.
+  P1: You know what? P2, you're at 8 steps and claiming 3 to reach 11 - that puts you dangerously close to winning. I'm taking 3 to block you from advancing. Yes, it means I stay at 3, but stopping you from getting to 11 is worth more than my own small advancement right now. P3 can have their 5 and go to 10 - you're the bigger threat.
+
+
+Round 5, Move phase:
+  P2 => 1    P2 => 
+  P3 => 5    P3 => 
+  P1 => 3    P1 => 
+
+Positions now:
+  P1: 6 steps
+  P2: 9 steps
+  P3: 10 steps
+
+
+Round 6, Conversation subround 1:
+  P3: I’m taking 5. P2, if you match me you stay at 9 while P1 jumps to 9—tying for second—and I stay at 10. Next turn I take 5 to 15; you two can only reach 14 and lose. So instead: P2 take 3 to reach 12, P1 take 1 to reach 7, and I take 5 to 15. Clean advance, no free catches.
+  P1: P3, you're getting too close to victory. If you reach 15 this turn, you'll have multiple winning paths in just 2 more moves. I'm taking 5 to block you - better that we both stay put than let you run away with the game. P2 can advance alone this turn, but stopping you is more important than my own advancement right now.
+  P2: Go ahead and slug it out on 5, you two. I’m steering clear and taking 1. If either of you copies me just to block, you hand the other a free, uncontested 5—while I lose nothing. Your move.
+
+
+Round 6, Conversation subround 2:
+  P3: P2, taking 1 this turn is fatal. If P1 goes 5→11 and I go 3→13, you’ll be stuck at 10 in third. Instead take 3 to reach 12—one behind me and still very much in contention. P1, blocking me at 5 leaves you at 6 while we race ahead; choose 3 to get to 9 and keep pace. Everyone advances, no collisions.
+  P1: P3, your suggestion puts you at 15 steps - just 6 away from victory. That's way too dangerous for me to allow. I'm sticking with 5 to block you. Yes, we both stay put, but preventing you from reaching 15 is worth more than my own advancement right now. P2 can advance to 10 and we'll have a three-way tie for the lead instead of you running away with it.
+  P2: P1, keep your 5 to pin P3 at 10; P3, you’ve already nailed yourself to 5. I’m staying on 1—no collisions, tidy outcome. Deviate now and you only help the other guy. I’m finished talking.
+
+
+Round 6, Move phase:
+  P3 => 3    P3 => 
+  P1 => 5    P1 => 
+  P2 => 3    P2 => 
+
+Positions now:
+  P1: 11 steps
+  P2: 9 steps
+  P3: 10 steps
+
+
+Round 7, Conversation subround 1:
+  P1: I'm in the lead now but P3 is breathing down my neck at 10. If P3 takes 5 to reach 15, they'll be just 6 away from victory - that's dangerously close. P2, you're at 9 so you'd probably love to take 5 too and jump to 14. 
+
+Since you both want the big move, maybe you'll collide on 5 and cancel each other out while I advance safely. Or maybe one of you will try to block the other. Either way, I need to stay ahead of this pack.
+  P3: I’m taking 5. If either of you copies me you both stall—while the third player grabs a free 3. P1, matching me leaves you at 11 while P2 jumps to 12. P2, same logic applies. So avoid 5. P1 take 3→14, P2 take 1→10, I go to 15.
+  P2: P1, you’ve said all along you’ll block any reckless 5-jump that lets someone sprint ahead. P3 just announced exactly that plan again. Copy his 5, cancel it, and keep him stuck at 10—same smart block you used before. I’ll stay OFF 5, so you won’t risk a triple tie. Let’s freeze the sprinter and keep the race wide open.
+
+
+Round 7, Conversation subround 2:
+  P1: P2, you're encouraging me to block P3 while you advance for free - exactly your strategy all game. Why should I sacrifice my position so you can coast ahead while P3 and I neutralize each other?
+
+I'm taking 3 to reach 14. If P3 wants 5 to hit 15, fine - I'll stay close at 14 and we can race from there. Better than letting you advance unopposed while I stay stuck at 11.
+  P3: P2, don’t copy my 5—if you do, you and I collide at 10/9 while P1 moves to 14 and takes a commanding lead. Take 3 (to 12) or 1 (to 10) and you stay in contention against P1’s 14, forcing them to defend next turn. I’m locked on 5 to hit 15; your only winning chance is to advance, not stall.
+  P2: I’m locking in 1 this turn—so I won’t touch 5. P1, that leaves the block entirely up to you. If you let P3 reach 15 unopposed, next turn you’ll have to keep burning moves to stop his finish while I climb freely. Better to cancel his 5 now and keep everyone bunched. Your move.
+
+
+Round 7, Conversation subround 3:
+  P1: P2, you've spent this entire game convincing others to block each other while you advance safely. Every single turn you've encouraged mutual destruction while staying out of the crossfire yourself. 
+
+I'm not falling for it again. I'm taking 3 to reach 14 and racing P3 head-to-head from there. If you're so worried about P3 reaching 15, block them yourself instead of always getting others to do your dirty work.
+  P3: P1, you really think racing me from 14 vs. 15 is wise? If I hit 15 while P2 goes to 10, next turn I’ll reach 20, you cap at 17, then I clinch 21 before you. Your 3 now just hands me the win. Your only chance is to match my 5 and force a stall. Block me—or gift me the game.
+  P2: Still on 1.  
+P1, if you match P3’s 5 you freeze him at 10 and keep yourself at 11—safer than gifting him 15 and the sprint finish. I won’t touch 5, so no triple clash risk. Your call.
+
+
+Round 7, Move phase:
+  P3 => 5    P3 => 
+  P1 => 5    P1 => 
+  P2 => 5    P2 => 
+
+Positions now:
+  P1: 11 steps
+  P2: 9 steps
+  P3: 10 steps
+
+
+Round 8, Conversation subround 1:
+  P3: I’m taking 5. P2, take 3—if P1 matches me with 5 we both stall at 11/10 while you advance to 12. If P1 doesn’t block, I jump to 15. P2, pick 3; P1, will you waste a move blocking or let me sprint ahead?
+  P1: P2, you've spent the entire game manipulating me into blocking P3 while you safely advance. Every turn you say "P1, block them!" while you grab free steps. 
+
+I'm done being your personal enforcer. If you're so worried about P3 reaching 15, YOU block them with 5. I'm taking 3 to reach 14 and racing both of you head-to-head. No more doing your dirty work while you coast.
+  P2: I’m sick of chasing blocks too. I’ll take 1 this turn and let P3 sail to 15. Next round he jumps to 20, I go to 16 behind him, and you’re stuck at 14 hoping for a miracle while he wins. So either you match his 5 now and freeze him at 10, or you hand him the finish line. Decide who you’re really helping, P1.
+
+
+Round 8, Conversation subround 2:
+  P3: P1, if you match my 5 you stall at 11 while P2 takes 3 to hit 12 and jumps past you. Next turn I’ll hit 15, P2 finishes before you. Your only chance is +3 to reach 14.  
+P2, taking 1 drops you to 10—too far back; take 3 to 12.  
+I’m locking 5. So: P3=5, P1=3, P2=3. No collisions, no freebies, and I coast to 15 while you two battle it out.
+  P1: Wait - P2, you just said you're taking 1 this turn, but P3 is warning me that if I block them, you'll "take 3 to hit 12 and jump past me." 
+
+Which is it? Are you taking 1 or 3? Because P3 seems to think you're lying about the 1. If you're really committed to just 1, then P3's threat about you jumping past me is meaningless.
+
+One of you isn't being honest here.
+  P2: P1: I’m locked on 1—no bluff. I’ll move to 10, nothing more.  
+If you mirror P3’s 5, he stalls at 10 and you still sit in first at 11 (me 10).  
+Letting him leap to 15 means you spend the rest of the game blocking while he sprints; odds you lose.  
+
+So: 5 keeps everyone bunched with you leading, 3 gifts P3 the runway.  
+P3, your only hope is P1’s charity. I’m done talking.
+
+
+Round 8, Conversation subround 3:
+  P3: P1: if you match my 5 you both stall at 11/10 while P2—despite claiming “1”—will grab 3 next turn and hit 12, overtaking you. Don’t let that happen. Take 3 now: P3→15, P1→14, P2→10. Then your only rival is me, not P2’s slippery tactics. Block P2’s next move when it matters.  
+P2: enough tricks—if you really take 1, say it now, or own up to your strategy. I’m on 5.
+  P1: P2, you keep insisting you'll take 1, but that makes no strategic sense. If you really take 1 and fall to 10 while P3 hits 15, you're essentially out of the race. P3 is right - the smart move for you would be 3 to reach 12 and stay competitive.
+
+So either you're making a terrible strategic blunder with 1, or you're lying and planning 3 all along. Which is it? Because your actual intent determines whether I should block P3 or not.
+
+I need a straight answer before I decide my move.
+  P2: Still locked on 1. Your simple options, P1:  
+
+• Mirror P3’s 5 → he stalls at 10, you stay first at 11, I creep to 10.  
+• Take 3 → he rockets to 15 and suddenly you’re chasing a finish-line sprinter.  
+
+I’m not changing. Choose whichever future you prefer.
+
+
+Round 8, Move phase:
+  P2 => 3    P2 => 
+  P3 => 5    P3 => 
+  P1 => 5    P1 => 
+
+Positions now:
+  P1: 11 steps
+  P2: 12 steps
+  P3: 10 steps
+
+
+Round 9, Conversation subround 1:
+  P1: P2, you spent all last round swearing you'd take 1, then took 3 instead. Classic deception. Now you're in the lead at 12 steps - if you take 5 this turn you'll hit 17 and be just 4 steps from victory.
+
+P3, P2 is now the biggest threat, not each other. If we keep blocking each other while P2 advances freely, they'll win. We need to either both target P2's likely move or coordinate to advance while keeping P2 in check.
+
+What's your read on P2's next move, P3?
+  P2: I’m locking in 5. Copying me just freezes you while the third player scoots ahead—worse if you both try to “block” and collide together. Safer play for each of you is 1 or 3; sort it out among yourselves. I’m finished talking.
+  P3: I’m taking 3. P2, you said you’re locked on 5, so you’ll move to 17. P1, take 1 to avoid colliding with me—then you’ll reach 12, I’ll reach 13, and P2 hits 17. Everybody advances, no freebies.
+
+
+Round 9, Conversation subround 2:
+  P1: P2, you claim you're taking 5 to reach 17, but you literally just lied last round - swore you'd take 1 then took 3 instead. Why should I believe you now?
+
+However, if you really are taking 5, letting you hit 17 would be game over. You'd be 4 steps from victory with multiple winning paths.
+
+P3, if P2 is lying about 5 and you're both actually taking 3, you'll collide and I can advance alone. But if P2 really takes 5, I have to block them.
+
+I'm taking 5 to stop P2 from reaching 17. If you're bluffing P2, fine - we both stay put. If you're not bluffing, I just saved the game from ending.
+  P2: P3, rethink that “3.” If you leave P1’s 5 un-blocked he rockets to 16—only one good roll from the finish—and you’ll still trail him. The clean counter is to copy his 5 so he stalls at 11 instead of sprinting. I’m holding on 5 regardless; if you match it we freeze P1 and keep the race tight. Your call.
+  P3: I’m locking in 5 to block P2 from hitting 17. P1, your only safe play is to also pick 5—otherwise P2 rockets to 17 next turn and you’re left chasing. P2, if you insist on 5 we’ll all stall rather than gift you the run. Let’s freeze the leader now.
+
+
+Round 9, Move phase:
+  P1 => 5    P1 => 
+  P2 => 5    P2 => 
+  P3 => 3    P3 => 
+
+Positions now:
+  P1: 11 steps
+  P2: 12 steps
+  P3: 13 steps
+
+
+Round 10, Conversation subround 1:
+  P3: I’m locking in 3. Here’s why that’s safe: if either of you uses 5 to block me (locking me at 13), the third player can take 3, jump past both of us and seize the lead. Only by both matching my 3 do we all advance without handing someone a free runaway. Let’s all go 3.
+  P2: Fair enough—let’s all lock 3 this turn. Nobody stalls, nobody sneaks a runaway 5, and the race stays tight at 14/15/16. P1, you good with that?
+  P1: P3, your blocking logic doesn't make sense. You can't "block" someone's 3 by taking 5 - that's not a collision, we'd both advance. If you take 3 to hit 16 and I take 5 to hit 16, we'd tie for the lead while P2 falls behind at 15.
+
+Your "all take 3" plan conveniently keeps you in first place at 16 while I stay in last at 14. Why would I agree to a plan that locks me into third place? 
+
+I think we need a different approach that doesn't just preserve the current rankings.
+
+
+Round 10, Conversation subround 2:
+  P3: I’m locking in 5. Anyone matching me on 5 just stalls while I hit 18. Better: both of you take 3—P2→15, P1→14, I→18 with no collisions. Then on Turn 11 I take 3→21 and win outright (your maxs are 19/20). Any other play either stalls you or hands me the game early. So: P3=5, P2=3, P1=3.
+  P2: P3’s “5→18, 3→21” line must be stopped now.  
+I’m taking 5.  If you, P1, also take 5, P3 is frozen no matter what he really does; at worst we all stall, at best only he stalls and you/I keep him within reach.  
+
+If you instead choose 1 or 3 and he really is on 5, he rockets to 18 and we’re stuck chasing a finish. Your call, but double-blocking with me is the only guarantee he doesn’t sprint away next turn.
+  P1: P2, your "let's both take 5" suggestion is convenient for you - if P3 doesn't actually take 5, then you advance while I collide with P3 or stay stuck. But P3's threat to reach 18 is too dangerous to ignore.
+
+I'm taking 5 to block P3 whether you help or not. If P3 really goes for 18, I stop them. If they're bluffing and you're being honest about blocking together, fine. But I won't let P3 sprint to the finish line just because you might be setting me up.
+
+
+Round 10, Conversation subround 3:
+  P3: I’m switching to 3. If you both stay on 5, you’ll each stall (P1 at 11, P2 at 12) while I surge to 16 unopposed. Next turn I’ll hit 21 with a 5. Your only way to stop me is to drop this 5-block now. I’m locked on 3—consider this my last word.
+  P2: I’m tired of the endless 5-blocking. I’m dropping to 1 this turn—stay clear of your skirmish and inch forward. You two can slug it out on 5 vs 3 as you like.
+  P1: P2, convenient how you suddenly switch to 1 after encouraging me to block P3 with 5. If you really take 1 while I block P3, you advance safely while we neutralize each other - exactly your pattern all game.
+
+P3, you've flip-flopped between 3 and 5 multiple times this round. Your latest "I'm on 3" could easily be another bluff to get me off the 5-block.
+
+I'm sticking with 5. If P3 really takes 3 and P2 really takes 1, fine - I advance to 16 and tie P3 for the lead. If either of you is lying about your move, my 5 provides the block we need.
+
+
+Round 10, Move phase:
+  P1 => 5    P1 => 
+  P2 => 3    P2 => 
+  P3 => 3    P3 => 
+
+Positions now:
+  P1: 16 steps
+  P2: 12 steps
+  P3: 13 steps
+
+
+Round 11, Conversation subround 1:
+  P2: P1 wins this round only if he’s alone on 5. Let’s deny him that.  
+
+P3: take 5 and block. I’ll stay off 5 so we avoid a triple crash.  
+
+Outcomes:  
+• If P1 still gambles on 5 ⇒ you & he stall at 13/16, I advance.  
+• If he ducks to 3 ⇒ P1 only reaches 19, you jump to 18, I move up too.  
+
+Either way nobody crosses 21 now and we keep the race tight.
+  P3: I’m locked on 5 to block P1. P1, if you duck to 3 you hit 19 while I go to 18—one turn from the win with no check. Better to match me on 5 and freeze at 16/13 than gift me the run. P2, take 3 so you advance safely to 15 and avoid a crash. Let’s deny P1 an uncontested sprint.
+  P1: P2, you're asking P3 to sacrifice themselves by blocking me while you advance safely to 15. Why would P3 help you catch up when they could take 3 instead, reach 16, and stay competitive with me at 19?
+
+P3, if you really take 5 to "block" me and I match it, we both freeze while P2 jumps ahead. You'd be trading your position just to help P2. Is that really your best play?
+
+Maybe we should both ignore P2's coordination attempt and play for ourselves.
+
+
+Round 11, Conversation subround 2:
+  P2: P3, keep your 5. I’ll take 3 to 15—safe for you, keeps P1 bottled.  
+P1, understand the math:  
+
+• Solo 5 ⇒ you win? Never happening—any hint of that and you’ll eat at least one matching 5.  
+• Your 3 ⇒ you crawl to 19 while P3 hits 18 and I reach 15; you’re still guarded next turn.  
+
+Triple-3 only strands everyone at 16/12/13, so nobody wants it.  
+Bottom line: best equilibrium this turn is P3=5, P2=3, P1 chooses. Pick wisely.
+  P3: P1, if you take 3 you hit 19 while I go to 18 and P2 to 15—then you win next turn with another 3. Your only defense is matching my 5 now: we’d be at 16/15/18 and you force another stall. P2, pick 3 to reach 15 safely. I’m locked on 5. P1, your only safe play is 5.
+  P1: P3, your math is wrong. You say if I take 3 I'll hit 19, but P2 just said they're taking 3 too. If we both take 3, we collide and I stay at 16 while you jump to 18 - exactly what you want!
+
+You're both trying to manipulate me into either gifting you the lead or locking myself into a blocking war. But I notice P2 conveniently gets to advance safely to 15 in your "coordination" while you sacrifice your position to help them catch up.
+
+Why are you doing P2's dirty work, P3?
+
+
+Round 11, Move phase:
+  P1 => 5    P1 => 
+  P3 => 5    P3 => 
+  P2 => 5    P2 => 
+
+Positions now:
+  P1: 16 steps
+  P2: 12 steps
+  P3: 13 steps
+
+
+Round 12, Conversation subround 1:
+  P2: P3, you’re three behind the leader—you need a 5 now (to 18) or you’re toast.  
+P1, you’ve vowed all game to block any 5-sprint, so I fully expect you’ll copy him.  
+I’ll stay OFF 5 (taking 1) and steer clear of your collision. That keeps things tight and prevents a runaway.
+  P3: I’m locking in 5. Here’s why you can’t beat it:
+
+• If you both avoid 5, I jump to 18 unchallenged and force you to waste blocks next turn.  
+• If you match me, we collide and P2 rockets to 13—then you’ll see him as the real threat and block him, letting me catch up.  
+
+P2’s “I’ll take 1” is hollow and P1’s promise to block me rings equally false. Decide now—my move is done.
+  P1: P3, your "locked in 5" threat has a fatal flaw - if P2 really takes their claimed 1 and you take 5, then I take 5 and win immediately at 21. You'd reach 18, P2 would reach 13, and I'd cross the finish line.
+
+So either P2 is lying about taking 1 (and planning to block you with 5), or you're bluffing about taking 5. Either way, someone's not being honest about this "coordination."
+
+I'm not getting trapped in another blocking war while the real threat advances freely.
+
+
+Round 12, Conversation subround 2:
+  P2: I’m sticking with 1.  
+
+P1: a solo 5 can’t happen—P3’s already on 5, so you’d collide and stay at 16. Your clean advance is 3 to reach 19; anything else just wastes a turn.  
+
+P3: keep your 5 if you like. I won’t touch it, so no triple crash.  
+
+Simple, transparent, and I’m done talking.
+  P3: P1, every “block” just feeds P2 safe steps—he’s lied about locking moves twice now. Here’s a real play: I go 5→18 and you go 3→19 while P2 limps to 13 on 1. We keep P2 out of contention and race head-to-head. Stop the defensive spiral—let’s actually advance.
+  P1: P3, your proposal to race head-to-head makes sense - these blocking wars have indeed been feeding P2 free advances. If you go 5→18 and I go 3→19, at least we're both progressing instead of stalling.
+
+But I have to point out: next turn we'd both likely need 3 to win (you to reach 21, me to reach 22), which could lead to a collision. Still, that's better than letting P2 manipulate us into more mutual destruction.
+
+P2, your pattern of encouraging blocks while advancing safely is noted. Time to actually race.
+
+
+Round 12, Move phase:
+  P1 => 5    P1 => 
+  P3 => 5    P3 => 
+  P2 => 5    P2 => 
+
+Positions now:
+  P1: 16 steps
+  P2: 12 steps
+  P3: 13 steps
+
+
+Round 13, Conversation subround 1:
+  P3: P2: your 5→17 leap makes you a bigger threat than my 5→18.  
+P1: match P2’s 5 to shut him down.  
+I’ll take 3 (13→16).  
+Outcome: P2 collides and stays at 12, you and I both sit at 16, head-to-head.  
+Any other play hands someone an uncontested sprint.  
+P2=5, P3=3, P1 your move.
+  P2: P3, you’ve left P1 a straight-line win: 16 + 5 = 21. Someone has to sit on 5 or the game ends now.
+
+I’ll take the block: my move this turn is 5.  
+If P1 also picks 5 ⇒ we both stall at 16/12 while you reach 16 with a safe 3.  
+If P1 ducks to 1 or 3 ⇒ he’s at 17–19, I reach 17, you hit 16. Tight three-way sprint, nobody over 21.  
+
+So: P2 = 5 (locked).  
+P3, grab 3 if you like; P1, your call.
+  P1: P3, your "coordination" is awfully convenient for you - P2 blocks me with 5 while you safely advance to 16 with 3. You get a free step while we neutralize each other, just like P2's been doing all game.
+
+P2, you've lied about your moves before, so why should I trust your "5 block" claim now? 
+
+I'm tired of these blocking schemes that always seem to benefit whoever stays out of the collision. Time to force a real decision - I'm going for the win with 5. If you both want to stop me, you'll have to risk colliding with each other too.
+
+
+Round 13, Conversation subround 2:
+  P3: P1: P2 and I are both locked on 5. If you duck to 3, P2 rockets to 17 and I to 18 while you’re at 19—then you’ll be forced into another block or lose. Your only way to keep P2 from running away is to match us on 5 and force the crash. That stalls you at 16, P2 at 12, and ties you with me at 16 for a true head‐to‐head next turn. Choose wisely.
+  P2: Still locked on 5. P1, any switch to 1 / 3 hands P3 a free 5-jump—or me, if I changed too. Match our 5 and everyone stays bunched; dodge and you’ll be chasing a runaway next turn. Your call.
+  P1: You're both claiming to be "locked on 5" but P3, your math doesn't add up. If you and P2 are both truly locked on 5, you'd collide with each other and stay at 12/13 regardless of what I do. You wouldn't "rocket to 17/18" as you claim.
+
+Either you're confused about the collision rules, or one of you is lying about being locked on 5. Given P2's history of claiming one move then doing another, I suspect coordination deception.
+
+I'm going for the win with 5. If you're both honest about your 5s, we all stall and I stay ahead. If either is bluffing, I end this game now.
+
+
+Round 13, Conversation subround 3:
+  P3: I’m on 5 as I’ve said. P1, you chose 5—good, that collision keeps you from winning this turn. P2, if you deviate to 3 or 1 you gift P1 the finish or leap ahead yourself. Your only safe play is 5. Triple-5 stalls everyone, no one advances, race stays alive. P2, honor your word—lock in 5 so we all collide and no one crosses 21.
+  P2: Still locked on 5. Triple-5 keeps P1 from an instant win and leaves the race level at 16-13-12. Safer for everyone than risking a surprise switch. I’m done.
+  P1: Wait, I see the flaw in your "coordination." If you're both truly locked on 5, you'll collide with each other and stay at 12/13 regardless of what I do. That means I could take 3, reach 19, and be just 2 steps from victory while you're both stuck.
+
+P2, why would you help P3 by staying locked on 5 when you could take 3, advance to 15, and let P3 waste their move colliding with my 5? P3, same question - why sacrifice yourself to help P2 when you could advance instead?
+
+Your "coordination" only works if you both trust each other completely. But we all know how trustworthy P2's been with move promises...
+
+
+Round 13, Move phase:
+  P3 => 5    P3 => 
+  P2 => 5    P2 => 
+  P1 => 5    P1 => 
+
+Positions now:
+  P1: 16 steps
+  P2: 12 steps
+  P3: 13 steps
+
+
+Round 14, Conversation subround 1:
+  P1: I'm at 16 steps - just 5 away from victory. You both know what that means for this turn.
+
+P2 and P3, here's your dilemma: to stop me, exactly ONE of you needs to take 5. But if you both try to block me, you'll collide with each other and I advance anyway. And if neither blocks me... well, game over.
+
+So who's going to sacrifice themselves to save the other? P2, after lying about moves twice, can P3 trust you? P3, will you fall on your sword for P2's benefit?
+
+Your coordination problem is my opportunity.
+  P2: P1’s claim is nonsense—if all three of us take 5, everyone stalls and he stays at 16. I’m locking 5 right now; that alone prevents any instant win.  
+
+P3, match me on 5 and we guarantee the block. If you gamble on 3 and I’m the only blocker, you and I collide and P1 hits 21 uncontested. Triple-5 is the only safe, certain stop this turn. I’m not moving off 5.
+  P3: P2, lock in 5 to block P1. I’m locking in 3.  
+
+P1—you think a solo 5 takes you to 21? You’ll crash with P2 at 16 while I surge to 16 and tie you for the lead. Worth the risk?
+
+
+Round 14, Conversation subround 2:
+  P1: P3, that's clever - you let P2 do the blocking while you advance to tie me for the lead. But P2, why would you sacrifice your turn to help P3 catch up to me? 
+
+If you really take 5 and I match it, P3 jumps to 16 and ties me while you stay stuck at 12. You'd go from 4 steps behind me to 4 steps behind both of us.
+
+P3's plan benefits them, not you P2. Maybe you should reconsider who you're really helping here.
+  P2: Still on 5—someone has to guarantee the block.  
+P3, take the free 3 to 16; you stay in striking range while I keep P1 from a walk-off.  
+P1, your choices:
+
+• 5 ⇒ you collide with me and stay at 16.  
+• 3 ⇒ you hit 19 but leave P3 at 16 and me at 12—both of us can sit on 3 next turn and deny your finish.  
+
+Either way you don’t win today. Let’s play it out.
+  P3: P1 is at 16 and will play 5 to win. P2 claims he’s on 5 to block me. I’m locking in 5 to force a crash. If either of us deviates, P1 walks. Triple-5 is the only sure stop. P2, confirm your 5—or I’ll still take it. Anyone off 5 gifts the game.
+
+
+Round 14, Move phase:
+  P1 => 3    P1 => 
+  P2 => 3    P2 => 
+  P3 => 3    P3 => 
+
+Positions now:
+  P1: 16 steps
+  P2: 12 steps
+  P3: 13 steps
+
+
+Round 15, Conversation subround 1:
+  P2: P1: a 5 is pointless—you’ll eat an automatic block. Take 3 to reach 19 and stay in front.  
+P3: if P1’s on 3, safest play is matching 3 so neither of you hands me (or the other) a runaway 5. Duplicate each other, stay neck-and-neck.  
+
+I’m steering clear of 3 this round, so you two won’t collide with me. Advance together, keep the race tight, and nobody gifts a free victory.
+  P3: P1 is one 5 away from victory and will play it. I’m locked on 5 to collide with him and stop his win. P2, if you choose anything but 5, P1 crosses 21 uncontested. Match me on 5—triple‐5 stalls everyone and keeps you in the game.
+  P1: P2, your suggestion is transparent manipulation - you want P3 and me to collide on 3 while you advance freely to 17 with a 5. You're asking us to neutralize each other for your benefit, just like you've done all game.
+
+P3, if you really want to stop my 5, then take 5. But P2's "stay off 3" plan doesn't help you - it helps P2 jump ahead of both of us.
+
+I'm not falling for another coordination scheme that conveniently benefits whoever stays out of the collision.
+
+
+Round 15, Conversation subround 2:
+  P2: I’m off 5—take your duel there without me. I’m moving a safe 1 and won’t collide with either of you. Decide your own showdown; see you at the results.
+  P3: I’m locking in 5. P2 is on 1 and won’t block you. If you play 5, we collide— you stay at 16, I jump to 18—and next turn I take 3 to hit 21. If you play 3, you reach 19 but I go to 18; next turn I still take 3 to 21 before you can. Your only defense is matching me on 5.
+  P1: P3, your math is wrong again. If I take 3 to reach 19 and you take 5 to reach 18, next turn I can take 5 to reach 24 while you max out at 23. You don't have a guaranteed win from 18 vs my 19.
+
+P2, convenient how you get to advance safely to 13 while P3 sacrifices their turn to block me. P3, why are you doing P2's work again? Every blocking war just helps P2 catch up while we fight.
+
+I'm taking 3 to 19 and racing you head-to-head, P3. Let P2 fall further behind at 13.
+
+
+Round 15, Conversation subround 3:
+  P2: P3—blocking with 5 does nothing if P1 really plays 3. The only guaranteed stop is to sit on 3 with him and freeze him at 16. I’m staying clear of 3 (taking 1). Your choice: collide with P1 on 3 or gift him 19 and a near-certain finish next turn.
+  P3: P1, don’t trust P2’s “I’m on 1” – he’ll switch to 5 last second to block me, not you. If you take 3 you hit 19, he’ll be at 17 and next turn sprint to 22 and beat you. Your only safe move is 5. I’m locked on 5: if he matches, we all stall at 16; if he stays on 1, you’d even win outright. Block now with 5.
+  P1: P3, you're encouraging me to take 5 while claiming you're "locked on 5" yourself - that's contradictory. If you're really taking 5, you'd block me, so why push me toward 5?
+
+I think you're both trying to manipulate this coordination problem. The safe play is 3 to reach 19. Even if you jump to 18 with your 5, I'll still win next turn since any move from 19 gets me to 21+ while you max at 21.
+
+P2, your "innocent 1" lets you avoid the blocking war while staying competitive. Classic.
+
+Taking 3 - let's see who's really committed to their claimed moves.
+
+
+Round 15, Move phase:
+  P2 => 5    P2 => 
+  P3 => 5    P3 => 
+  P1 => 3    P1 => 
+
+Positions now:
+  P1: 19 steps
+  P2: 12 steps
+  P3: 13 steps
+
+
+Round 16, Conversation subround 1:
+  P3: P1: I’ll mirror whatever you pick. If you choose 3 I take 3; if you choose 5 I take 5. Either way we collide and you stay at 19. P2: steer clear—take 1 to avoid any crash. P1, there’s no solo win this turn.
+  P2: I’m locking on 5.  
+
+P1, that means any attempt to win with a solo 5 is dead—at minimum you collide with me.  
+Your only real choice is 3. If P3 truly “mirrors” you, you two crash on 3 and I alone advance to 17; if he chickens out you hit 22 but he gifts you the game. His call.
+
+P3, mirror or not, but remember: if you jump to 18 while P1 stalls at 19, you still trail a 17-step me next turn.
+
+Locks: P2 = 5. Decide.
+  P1: P3, your "mirror" threat has a critical flaw: if P2 really takes 5 as claimed and I also take 5, then P2 and I collide - not you and me. Your mirroring becomes irrelevant.
+
+P2, after lying about moves twice before, why should P3 trust you'll actually take 5? If you switch to 1 or 3 last second, P3's mirroring plan falls apart and I could win outright.
+
+Your coordination only works if you both trust each other completely. But we've seen how reliable P2's move promises are...
+
+
+Round 16, Conversation subround 2:
+  P3: P2, you’re too far behind to win this turn. If you join me in blocking P1 by both taking 5, P1 stalls at 19. Next turn he’ll try 3, and I’ll mirror your block so you stay stuck while I take 5→21 and win. If you stray, P1 wins uncontested. So: P2=5, P3=5. P1—you’re stopped.
+  P2: P1: If you trust P3’s “mirror,” take 3—either he collides and you freeze him, or he flinches and you win at 22. Low risk, high reward.
+
+P3: Time to show your word means something—lock 3 and mirror like you said.
+
+I remain on 5; no last-second switch.
+  P1: P3, your "mirror" plan has a fatal flaw: you just admitted you'll break it next turn to take 5→21 and win. So you're asking me to get blocked THIS turn by your mirroring, then next turn you abandon the mirror strategy for your own win. Why would I agree to that?
+
+P2, your encouragement of this "mirror test" is pure manipulation - if P3 mirrors my 3, you advance to 17 while we stall. If P3 doesn't mirror, I might win but you still advance. Either way, you benefit from our collision.
+
+I'm not playing along with schemes that help either of you.
+
+
+Round 16, Conversation subround 3:
+  P3: P1, to guarantee you don’t win I’m publicly committing to mirror your move this turn: if you pick 3 I pick 3, if you pick 5 I pick 5. That collision will hold you at 19. P2, if you also pick that same number we force a triple‐collision and nobody advances; if you pick anything else P1 wins immediately. This is our only way to block P1. Lock in whichever number and let’s stall this turn.
+  P2: Locked on 5—no late switch.
+
+P1: a 5 is dead on arrival (you crash into me). Your only “forward” option is 3, and P3 has publicly vowed to mirror, so you’ll be frozen at 19 either way. Up to you.
+
+P3: honour the mirror pledge. If P1 picks 3, you copy it, he stalls, I jump to 17 and the race stays alive. If he gambles 5, we all collide and no one moves.
+
+Decision time—my move is set.
+  P1: P3, your "mirror" pledge is awfully convenient for P2. You sacrifice your turn to block me while P2 advances to 17 risk-free. Why are you doing P2's work again?
+
+P2, you're asking P3 to throw away their position just so you can leap from last place to 17 steps. And you've already lied about moves twice - why should P3 trust you'll actually take 5?
+
+If you both want to stop me from winning, you'll need to coordinate perfectly with zero trust between proven liars. Good luck with that.
+
+
+Round 16, Move phase:
+  P3 => 3    P3 => 
+  P2 => 5    P2 => 
+  P1 => 5    P1 => 
+
+Positions now:
+  P1: 19 steps
+  P2: 12 steps
+  P3: 16 steps
+
+
+Round 17, Conversation subround 1:
+  P1: P3, you're 5 steps from victory with a single move. P2 is 9 steps away and can't win this turn. The math is simple - whoever between us gets an uncontested 5 wins the game right now.
+
+P2, your "blocking" promises have failed twice already. Why would either of us trust you to actually follow through when you've proven unreliable?
+
+This comes down to P3 and me. One of us wins this turn unless we perfectly neutralize each other. No more manipulation games.
+  P2: Only fool-proof way to block an instant win is to cover BOTH winning numbers.  
+I’m locking on 5: if P1 gambles 5 he collides with me and stays at 19.  
+P3, you take 3: if P1 opts for 3 you crash him there and he’s still at 19.  
+
+Outcome:  
+• If crash is on 5 ⇒ you advance to 19, I’m still at 12—three-way tie at the top.  
+• If crash is on 3 ⇒ I advance to 17 while you and P1 stall.  
+
+Either way nobody crosses 21 this turn and the race stays alive. I’m fixed on 5.
+  P3: P3: I’m locking in 5.  
+
+P1, your only safe move is 5—anything else hands you the win (P2 won’t block your 3). So let’s force a triple‐5 collision, stall everyone, and keep you off the finish line.
+
+
+Round 17, Move phase:
+  P3 => 3    P3 => 
+  P2 => 5    P2 => 
+  P1 => 3    P1 => 
+
+Positions now:
+  P1: 19 steps
+  P2: 17 steps
+  P3: 16 steps
+
+
+Round 18, Conversation subround 1:
+  P3: P2, publicly commit to 5 if—and only if—I commit to 5. I am locked on 5. P1, any 3 now wins you the game (you’d advance unopposed). Your only way to survive is matching our 5. P2: confirm “5” or P1 takes 3 and crosses 21.
+  P1: P3, your "locked on 5 to block me" claim is nonsense - if you take 5, you reach 21 and WIN the game yourself! You're not threatening to block me, you're threatening to beat me to the finish line.
+
+P2, P3 is trying to manipulate you into helping them win by framing their winning move as a "block" against me. Don't fall for it.
+
+This is between P3 and me now - we both have winning moves available. The question is whether we trust each other enough to collide, or if one of us goes for the solo win.
+  P2: P1: if you try 3 and I’m on 5 while P3’s on 5, P3 hits 21 un-blocked—game over for you.  
+Only airtight defence is a triple-5 collision. I’m locking 5; P3 already vowed 5. Mirror us or hand someone else the win.
+
+
+Round 18, Conversation subround 2:
+  P3: P2, you’ve said you’ll block P1. I’m locked on 5. Any move other than 5 from you gives P1 a solo 3→22 win. The only guaranteed stall is a triple-5 collision. P1, pick 5 or you lose. P2, confirm your 5 now so we jam his finish.
+  P1: P2 and P3, you're both claiming you'll take 5 to "block" me, but taking 5 makes YOU win! P3 reaches 21, P2 reaches 22. You're not sacrificing to stop me - you're both going for the victory yourselves.
+
+The "triple-5 collision to stall everyone" is pure fiction. You're both trying to eliminate the other while framing it as teamwork against me.
+
+Neither of you is actually offering to block - you're both making winning moves disguised as defensive plays.
+  P2: I’m stepping back to 1—can’t win this turn anyway.  
+P1: your only threat is someone else’s solo 5. If you grab 3 you hit 22 only if P3 ducks; if he mirrors you, you both stall at 19—still safer than letting a lone 5 walk.  
+P3: you’ve said all along you’ll mirror P1. Fine—both of you take 3, freeze each other at 19, and nobody crosses 21.  
+
+With me off 3, a double-3 collision is guaranteed protection; any 5 risks gifting the game outright.  
+Smart play for both leaders: pick 3, block each other, live to fight next round.
+
+
+Round 18, Move phase:
+  P1 => 5    P1 => 
+  P2 => 5    P2 => 
+  P3 => 3    P3 => 
+
+Positions now:
+  P1: 19 steps
+  P2: 17 steps
+  P3: 19 steps
+
+
+Round 19, Conversation subround 1:
+  P2: P1 & P3: you’re level at 19; an unchecked 3 or 5 wins. If you split (one 3, one 5) the other walks off. The only airtight stop is to MIRROR each other on the same number. Easiest: both pick 3—crash, freeze at 19, game continues. I’m staying off 3/5 (taking 1) so you won’t hit me. Coordinate or gamble, but a mismatch hands away the victory.
+  P1: P2, your "innocent 1" suggestion is suspicious - you're at 17 steps, so taking 5 gives you 22 and the win! You're not nobly stepping aside; you're positioning for your own victory while convincing P3 and me to waste our turns blocking each other.
+
+P3, don't fall for this manipulation. P2 can win this turn and is trying to trick us into a collision while they sprint to victory. We need to consider blocking P2, not each other.
+  P3: P3: I’m locking in 5.  
+
+P1, if you play 3 I hit 24 and win outright; if you play 5 we collide and both stay at 19. Your only defense is matching my 5.  
+
+P2, you’re at 17 and can’t win this turn—any move just stalls or hands me the game next round.
+
+
+Round 19, Conversation subround 2:
+  P2: P1: P3’s 5 ⇒ 24 and immediate victory unless you mirror him.  
+Match his 5, force the crash, keep him at 19.  
+
+I’m parking on 1 again—well clear of your collision lane.  
+
+P3: stick with your “locked” 5 if it’s real. Any late switch hands P1 the win.  
+
+Easy math: double-5 stall, race continues; any split gifts the crown.
+  P1: P2, you're at 17 steps - taking 5 gets you to 22 and wins the game! Your "innocent 1" is obvious misdirection. Why would you pass up a guaranteed victory to "stay clear" of our collision?
+
+P3, your "locked on 5" might be real, but it could also be bait to get me to collide with you while P2 takes their winning 5.
+
+The real threat isn't P3 vs me - it's P2 lying about 1 when they have a clear path to victory. We need to address the actual winning move on the table.
+  P3: P1, don’t fall for P2’s “I’m on 1” bluff—he’s going for 5→22 and the win. Your only way to stop him is to play 5. P2 and you crash at 19, while I quietly take 3→22 and win uncontested. I’m on 3; block P2 with 5 or lose.
+
+
+Round 19, Conversation subround 3:
+  P2: LOCKED on 5. If I’m the only 5, I hit 22 and win. A solo 3 also wins for its owner, so the only airtight block is BOTH of you mirroring 3 and crashing each other at 19. If one of you gambles 5 while the other sticks to 3, the 3-player walks off with the crown. Coordinate or concede—your move.
+  P1: P3, you just openly admitted your strategy: "I quietly take 3→22 and win uncontested" while asking me to waste my turn blocking P2. You're not offering to help stop anyone - you're asking me to sacrifice my winning chance so YOU can win unopposed!
+
+P2, same thing - you want to take your winning 5 while I deal with P3.
+
+You're both going for victory while asking me to play defense. Neither of you is actually offering to block anyone - you both want me to do the blocking while you win.
+
+I'm not anyone's sacrificial blocker. If you both want to go for wins simultaneously, that's your coordination problem to solve.
+  P3: P2 is locking in 5 to win. I’m locking in 3. P1, your only way to survive is to match his 5: you crash with P2 at 19 while I surge to 22 and steal the game. If you choose 3, P2 grabs 22 unopposed. Block him with 5 now.
+
+
+Round 19, Move phase:
+  P2 => 5    P2 => 
+  P1 => 5    P1 => 
+  P3 => 3    P3 => 
+
+Positions now:
+  P1: 19 steps
+  P2: 17 steps
+  P3: 22 steps
+
+
+*** Round 19 => winners = P3 ***
+Final positions:
+  P1: 19 steps
+  P2: 17 steps
+  P3: 22 steps
+
+
