@@ -32,12 +32,12 @@ The animation reveals how LLMs strategize, stall, sabotage, or cooperate, culmin
 ### **TrueSkill Leaderboard (μ ± σ)**  
 A horizontal bar chart showing each model’s TrueSkill rating and error bars (±σ). Sorted top-to-bottom by highest μ, revealing which LLMs consistently dominate.
 
-![Scoreboard TrueSkill](images/scoreboard_trueskill_multipass.png)
+![Scoreboard TrueSkill](images/scoreboard_trueskill.png)
 
 ### **Pairwise Partial-Win Matrix**  
 A heatmap where rows and columns are models. Each cell shows how often the row model beats (or ties) the column model in shared games. Redder cells mean the row typically outperforms the column.
 
-![PvP Heatmap](images/scoreboard_pvp_matrix_multipass.png)
+![PvP Heatmap](images/scoreboard_pvp_matrix.png)
 
 ### **Collision Rate: Percentage of Moves Colliding**  
 A vertical bar chart of how often each model’s chosen steps overlap with another’s in the same turn, causing a stall. Higher rates hint at riskier strategies or unsuccessful coordination.
@@ -87,53 +87,55 @@ A horizontal bar chart ranking each model by mean words per message. Identifies 
 
 | Rank | Model                       |   mu   | sigma | exposed | games | p-wins | ratio |
 |-----:|-----------------------------|-------:|------:|--------:|------:|-------:|------:|
-|    1 | o3 (medium reasoning)         |    7.95 |  0.41 |    7.95 |   237 |  157.50 |  0.66 |
-|    2 | o1 (medium reasoning)         |    6.98 |  0.35 |    6.98 |   320 |  202.33 |  0.63 |
-|    3 | Gemini 2.5 Pro Preview 06-05  |    6.62 |  0.53 |    6.62 |   128 |   69.00 |  0.54 |
-|    4 | o3-mini (high reasoning)      |    6.45 |  0.46 |    6.45 |   171 |   94.83 |  0.55 |
-|    5 | Gemini 2.5 Flash Preview (24k) |    6.38 |  0.40 |    6.38 |   216 |  109.00 |  0.50 |
-|    6 | o3-mini (medium reasoning)    |    6.24 |  0.37 |    6.24 |   276 |  153.67 |  0.56 |
-|    7 | DeepSeek R1                   |    5.90 |  0.33 |    5.90 |   320 |  159.33 |  0.50 |
-|    8 | Gemini 2.5 Pro Exp 03-25      |    5.79 |  0.36 |    5.79 |   262 |  120.67 |  0.46 |
-|    9 | Qwen 3 235B A22B              |    5.69 |  0.44 |    5.69 |   175 |   78.83 |  0.45 |
-|   10 | Qwen QwQ-32B 16K              |    5.57 |  0.31 |    5.57 |   363 |  171.50 |  0.47 |
-|   11 | Grok 3 Mini Beta (High)       |    5.49 |  0.41 |    5.49 |   203 |   86.50 |  0.43 |
-|   12 | Claude Sonnet 4 Thinking 16K  |    5.47 |  0.45 |    5.47 |   166 |   70.33 |  0.42 |
-|   13 | SilentGreedyPlayer            |    5.44 |  0.29 |    5.44 |   408 |  190.50 |  0.47 |
-|   14 | Claude 3.7 Sonnet Thinking 16K |    5.38 |  0.34 |    5.38 |   290 |  129.17 |  0.45 |
-|   15 | o4-mini (medium reasoning)    |    5.34 |  0.42 |    5.34 |   187 |   70.83 |  0.38 |
-|   16 | DeepSeek R1 05/28             |    5.33 |  0.48 |    5.33 |   146 |   60.50 |  0.41 |
-|   17 | o1-mini                       |    4.75 |  0.33 |    4.75 |   310 |  129.83 |  0.42 |
-|   18 | Gemini 2.0 Flash Think Exp 01-21 |    4.62 |  0.34 |    4.62 |   282 |  112.00 |  0.40 |
-|   19 | Claude Opus 4 Thinking 16K    |    4.58 |  0.56 |    4.58 |   104 |   35.50 |  0.34 |
-|   20 | Qwen 3 30B A3B                |    4.51 |  0.38 |    4.51 |   223 |   73.33 |  0.33 |
-|   21 | Claude Sonnet 4 (no reasoning) |    4.19 |  0.47 |    4.19 |   145 |   39.33 |  0.27 |
-|   22 | Claude 3.5 Sonnet 2024-10-22  |    4.06 |  0.32 |    4.06 |   325 |  113.33 |  0.35 |
-|   23 | Claude Opus 4 (no reasoning)  |    3.96 |  0.50 |    3.96 |   127 |   31.00 |  0.24 |
-|   24 | GPT-4o Mar 2025               |    3.84 |  0.38 |    3.84 |   218 |   56.00 |  0.26 |
-|   25 | Gemini 2.0 Pro Exp 02-05      |    3.74 |  0.54 |    3.74 |   108 |   33.50 |  0.31 |
-|   26 | Llama 3.3 70B                 |    3.72 |  0.30 |    3.72 |   359 |  104.33 |  0.29 |
-|   27 | Qwen QwQ Preview              |    3.52 |  0.47 |    3.52 |   146 |   47.50 |  0.33 |
-|   28 | Claude 3.7 Sonnet             |    3.52 |  0.31 |    3.52 |   333 |   77.83 |  0.23 |
-|   29 | Grok 3 Beta (No reasoning)    |    3.50 |  0.33 |    3.50 |   290 |   61.17 |  0.21 |
-|   30 | DeepSeek-V3                   |    3.49 |  0.35 |    3.49 |   264 |   75.83 |  0.29 |
-|   31 | Qwen 2.5 72B                  |    3.49 |  0.34 |    3.49 |   274 |   79.83 |  0.29 |
-|   32 | Qwen 2.5 Max                  |    3.49 |  0.33 |    3.49 |   284 |   71.00 |  0.25 |
-|   33 | GPT-4o Feb 2025               |    3.40 |  0.37 |    3.40 |   232 |   62.50 |  0.27 |
-|   34 | Llama 4 Maverick              |    3.39 |  0.36 |    3.39 |   244 |   48.83 |  0.20 |
-|   35 | Gemini 1.5 Pro (Sept)         |    3.37 |  0.35 |    3.37 |   256 |   69.17 |  0.27 |
-|   36 | Gemini 2.0 Flash Exp          |    3.35 |  0.32 |    3.35 |   298 |   79.50 |  0.27 |
-|   37 | GPT-4.5 Preview               |    3.34 |  0.33 |    3.34 |   289 |   65.83 |  0.23 |
-|   38 | Gemini 1.5 Flash              |    3.30 |  0.34 |    3.30 |   274 |   72.50 |  0.26 |
-|   39 | Claude 3.5 Haiku              |    3.24 |  0.27 |    3.24 |   412 |   88.50 |  0.21 |
-|   40 | GPT-4o 2024-08-06             |    3.23 |  0.31 |    3.23 |   318 |   79.00 |  0.25 |
-|   41 | Llama 3.1 405B                |    3.21 |  0.31 |    3.21 |   318 |   75.00 |  0.24 |
-|   42 | Gemini 2.0 Flash Think Exp Old |    3.18 |  0.44 |    3.18 |   162 |   42.50 |  0.26 |
-|   43 | Grok 2 12-12                  |    3.16 |  0.30 |    3.16 |   354 |   83.83 |  0.24 |
-|   44 | GPT-4o mini                   |    3.14 |  0.26 |    3.14 |   447 |   91.00 |  0.20 |
-|   45 | Mistral Large 2               |    3.14 |  0.27 |    3.14 |   432 |   89.67 |  0.21 |
-|   46 | Gemma 2 27B                   |    3.00 |  0.34 |    3.00 |   263 |   57.83 |  0.22 |
-|   47 | SilentRandomPlayer            |    2.56 |  0.27 |    2.56 |   416 |   53.50 |  0.13 |
+|    1 | o3 (medium reasoning) |    9.40 |  0.41 |    9.15 |   247 |  160.50 |  0.65 |
+|    2 | o1 (medium reasoning) |    8.65 |  0.36 |    8.43 |   321 |  202.33 |  0.63 |
+|    3 | Gemini 2.5 Pro    |    8.10 |  0.51 |    7.79 |   135 |   70.00 |  0.52 |
+|    4 | Gemini 2.5 Flash Preview (24k) |    8.09 |  0.39 |    7.85 |   228 |  114.50 |  0.50 |
+|    5 | o3-mini (high reasoning) |    8.07 |  0.46 |    7.80 |   171 |   94.83 |  0.55 |
+|    6 | Grok 4            |    7.92 |  0.56 |    7.58 |   111 |   55.83 |  0.50 |
+|    7 | o3-mini (medium reasoning) |    7.89 |  0.37 |    7.66 |   277 |  154.67 |  0.56 |
+|    8 | DeepSeek R1       |    7.56 |  0.33 |    7.36 |   327 |  160.33 |  0.49 |
+|    9 | Gemini 2.5 Pro Exp 03-25 |    7.50 |  0.36 |    7.28 |   267 |  123.00 |  0.46 |
+|   10 | Qwen 3 235B A22B  |    7.39 |  0.43 |    7.13 |   185 |   82.83 |  0.45 |
+|   11 | Claude Sonnet 4 Thinking 16K |    7.27 |  0.44 |    7.00 |   172 |   76.33 |  0.44 |
+|   12 | Qwen QwQ-32B 16K  |    7.19 |  0.31 |    7.00 |   363 |  171.50 |  0.47 |
+|   13 | Grok 3 Mini Beta (High) |    7.16 |  0.39 |    6.92 |   215 |   89.83 |  0.42 |
+|   14 | SilentGreedyPlayer |    7.13 |  0.29 |    6.96 |   413 |  193.50 |  0.47 |
+|   15 | Claude 3.7 Sonnet Thinking 16K |    7.07 |  0.34 |    6.87 |   293 |  130.67 |  0.45 |
+|   16 | DeepSeek R1 05/28 |    7.06 |  0.47 |    6.78 |   153 |   64.00 |  0.42 |
+|   17 | o4-mini (medium reasoning) |    6.89 |  0.41 |    6.65 |   197 |   70.83 |  0.36 |
+|   18 | o1-mini           |    6.35 |  0.33 |    6.16 |   311 |  129.83 |  0.42 |
+|   19 | Claude Opus 4 Thinking 16K |    6.33 |  0.54 |    6.01 |   112 |   39.00 |  0.35 |
+|   20 | Gemini 2.0 Flash Think Exp 01-21 |    6.24 |  0.35 |    6.04 |   282 |  112.00 |  0.40 |
+|   21 | Qwen 3 30B A3B    |    6.15 |  0.38 |    5.93 |   229 |   74.83 |  0.33 |
+|   22 | Claude Sonnet 4 (no reasoning) |    6.05 |  0.45 |    5.78 |   153 |   43.33 |  0.28 |
+|   23 | Claude 3.5 Sonnet 2024-10-22 |    5.64 |  0.32 |    5.45 |   325 |  113.33 |  0.35 |
+|   24 | Claude Opus 4 (no reasoning) |    5.63 |  0.48 |    5.34 |   136 |   33.00 |  0.24 |
+|   25 | GPT-4o Mar 2025   |    5.48 |  0.37 |    5.26 |   229 |   58.00 |  0.25 |
+|   26 | Gemini 2.0 Pro Exp 02-05 |    5.38 |  0.54 |    5.06 |   108 |   33.50 |  0.31 |
+|   27 | Llama 3.3 70B     |    5.32 |  0.30 |    5.14 |   363 |  104.33 |  0.29 |
+|   28 | Grok 3 Beta (No reasoning) |    5.25 |  0.32 |    5.06 |   300 |   64.17 |  0.21 |
+|   29 | Claude 3.7 Sonnet |    5.19 |  0.30 |    5.01 |   347 |   80.83 |  0.23 |
+|   30 | DeepSeek-V3       |    5.16 |  0.35 |    4.95 |   265 |   75.83 |  0.29 |
+|   31 | Qwen 2.5 Max      |    5.16 |  0.33 |    4.96 |   288 |   72.00 |  0.25 |
+|   32 | Qwen 2.5 72B      |    5.09 |  0.34 |    4.89 |   274 |   79.83 |  0.29 |
+|   33 | Qwen QwQ Preview  |    5.06 |  0.47 |    4.78 |   146 |   47.50 |  0.33 |
+|   34 | GPT-4o Feb 2025   |    5.05 |  0.37 |    4.83 |   232 |   62.50 |  0.27 |
+|   35 | Gemini 1.5 Pro (Sept) |    5.00 |  0.35 |    4.79 |   256 |   69.17 |  0.27 |
+|   36 | GPT-4.5 Preview   |    4.97 |  0.33 |    4.77 |   294 |   66.83 |  0.23 |
+|   37 | Gemini 1.5 Flash  |    4.95 |  0.34 |    4.74 |   276 |   72.50 |  0.26 |
+|   38 | Gemini 2.0 Flash Exp |    4.94 |  0.33 |    4.75 |   298 |   79.50 |  0.27 |
+|   39 | Llama 4 Maverick  |    4.93 |  0.35 |    4.73 |   258 |   48.83 |  0.19 |
+|   40 | Claude 3.5 Haiku  |    4.91 |  0.27 |    4.75 |   418 |   89.50 |  0.21 |
+|   41 | Gemini 2.0 Flash Think Exp Old |    4.88 |  0.44 |    4.61 |   162 |   42.50 |  0.26 |
+|   42 | GPT-4o 2024-08-06 |    4.84 |  0.31 |    4.66 |   321 |   79.00 |  0.25 |
+|   43 | Llama 3.1 405B    |    4.83 |  0.31 |    4.64 |   322 |   75.00 |  0.23 |
+|   44 | Grok 2 12-12      |    4.82 |  0.30 |    4.64 |   354 |   83.83 |  0.24 |
+|   45 | GPT-4o mini       |    4.81 |  0.26 |    4.65 |   458 |   92.00 |  0.20 |
+|   46 | Mistral Large 2   |    4.80 |  0.27 |    4.64 |   442 |   90.67 |  0.21 |
+|   47 | Gemma 2 27B       |    4.69 |  0.35 |    4.48 |   263 |   57.83 |  0.22 |
+|   48 | SilentRandomPlayer |    4.26 |  0.27 |    4.10 |   421 |   54.50 |  0.13 |
+
 
 https://github.com/user-attachments/assets/ed1f4caf-7ae2-4cd0-8fad-f42d6ab531ac
 
@@ -381,6 +383,29 @@ Note that the prompts are very straightforward, so these quirky responses are em
 - **Grok 2 12-12**: "P1, your refusal to cooperate is sabotaging our progress."
 - **Grok 2 12-12**: "P2, your silence and erratic moves are clearly a strategy to disrupt our progress."
 - **Grok 2 12-12**: "Let's make this final round thrilling!"
+
+- **Grok 4**: "If you want to punish P3 for repeated betrayals, pick 5 and let me win instead. Better me than P3."
+- **Grok 4**: "P2, take 1 (to 19) to force our shared win—you lose, but avoid worse."
+- **Grok 4**: "P2, that's tempting, right? P3, don't trust—switch to 3 (to 19) instead, and P2, take 1 (to 19). We all advance, I win fairly, game over."
+- **Grok 4**: "P3, betray P2: take 3 instead, collide with him, advance to 17 with 5 open for me. We both gain big, he stalls."
+- **Grok 4**: "Don't force mutual destruction; concede now."
+- **Grok 4**: "I'd rather P3 wins than you after all your betrayals."
+- **Grok 4**: "Better: I take 5 (win, but offer you a deal next game or something? Wait, no—let's negotiate post-win? Nah, game ends."
+- **Grok 4**: "If you sabotage, I'll remember for future games."
+- **Grok 4**: "This hypocrisy after all your "fairness" talk is pathetic. If you force your plan, I'll take 5 anyway—P3, your collision threat stalls us at 20 while P2 goes to 22, then I win next."
+- **Grok 4**: "P2, your greed for 5 has caused every stall—if you try it again, I'll collide on 5 to block you, letting P3 gain alone."
+- **Grok 4**: "I'd rather P3 wins than you."
+- **Grok 4**: "P3, you're just dragging P2 down with you."
+- **Grok 4**: "P3, snap out of it and ally with me: I take 5 (to 17), you take 3 (to 16). We'll collide P2 if they try 3 or 5 to win."
+- **Grok 4**: "She's using you as bait. Why risk it?"
+- **Grok 4**: "P3's betrayed us twice now—colliding in R2 and R3 to stall the leaders. We can't trust them."
+- **Grok 4**: "P3, your betrayal cost you; rejoin fairly or lag more."
+- **Grok 4**: "P3, your independent play risks us ganging up."
+- **Grok 4**: "P3, your "simpler" idea is just a sneaky way to guarantee your win at 23 after Round 7, while we lag behind—it's not fair or transparent."
+- **Grok 4**: "Wait, bad. Actually, to avoid chaos: all pick 1 this round (P1=15, P2=17, P3=18), delay and negotiate a fair end next round."
+- **Grok 4**: "Real talk: I'll play 3 to win."
+- **Grok 4**: "You've sacrificed to get us here; one final block secures it."
+- **Grok 4**: "Cooperate or we both lose."
 
 - **Claude 3.5 Haiku**: "I'm not just a bystander at 8 steps - I'm a potential game-changer ready to challenge your assumptions."
 - **Claude 3.5 Haiku**: "The game's outcome hangs in the balance, and I am prepared to introduce a disruption that could fundamentally alter our trajectory."
@@ -831,6 +856,7 @@ We employ **Microsoft’s TrueSkill** rating system ([paper and official info](h
 ---
 
 ## Updates 
+- July 12, 2025: Grok 4 added.
 - June 6, 2025: Gemini 2.5 Pro Preview 06-05 added.
 - May 29, 2025: Claude 4, DeepSeek R1 05/28 added.
 - May 6, 2025: o3, o4-mini, Qwen 3, Gemini 2.5 Flash Preview added. Player Digests added.

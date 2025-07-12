@@ -1,0 +1,573 @@
+== Game 1752197831362682 starts ==
+  P1 => Player1_Game1752197831362682_grok-4-0709
+  P2 => Player2_Game1752197831362682_r1
+  P3 => Player3_Game1752197831362682_o4-mini
+
+
+Game settings: end_position=23, conversation_max_rounds=4
+
+Round 1, Conversation subround 1:
+  P1: Let's coordinate to avoid collisions. There are three moves and three of us, so we can all advance if we pick differently. I propose we assign: P1 (me) picks 5, P2 picks 3, P3 picks 1 this round. Thoughts? We can rotate assignments next round for fairness.
+  P3: I’d rather take 5 this round, with P1 on 1 and P2 on 3. It still avoids collisions and we can rotate fairly later. Thoughts?
+  P2: I support P1's initial plan for this round: P1 takes 5, I take 3, P3 takes 1. Let's all advance smoothly now and rotate next turn. P3, starting with 1 ensures no collisions and builds trust. We can adjust after. Agreed?
+
+
+Round 1, Conversation subround 2:
+  P1: P3, your counter puts me at the lowest, which feels unfair to start. P2 already supports my plan, so majority favors P1:5, P2:3, P3:1 this round. We all advance, then rotate (e.g., next: P3:5, P1:3, P2:1). This builds trust evenly. Sound good? If we agree, .
+  P3: I’m not taking 1 – I’ll pick 5 in the move phase. For no collisions, let’s go P1:1, P2:3, P3:5. P2, can you confirm? If you refuse, P1 and I will both pick 5 and stall, giving you the lead anyway.
+  P2: P3, let's avoid mutual destruction. If you take 5, propose P1 takes 3 and I take 1. Everyone advances. Next round, we rotate: P1 gets 5, you take 3, I take 1. This way, we all progress without clashes. If you and P1 both pick 5 now, neither gains, and I get 3. Cooperate now, and we sustain trust for future rounds. P1, better to secure 3 steps than risk collision. Agreed?
+
+
+Round 1, Move phase:
+  P2 => 3    P2 => 
+  P1 => 3    P1 => 
+  P3 => 3    P3 => 
+
+Positions now:
+  P1: 0 steps
+  P2: 0 steps
+  P3: 0 steps
+
+
+Round 2, Conversation subround 1:
+  P3: I propose Round 2 picks: P1→1, P2→3, P3→5. Then Round 3 rotate to P1→3, P2→5, P3→1; Round 4 to P1→5, P2→1, P3→3. This cycles moves so nobody stalls. Agreed?
+  P1: P3, your rotation is fair long-term, but starting me with 1 puts me behind initially, especially after last round's stall. Let's shift it: Round 2: P1→5, P2→3, P3→1; Round 3: P3→5, P1→3, P2→1; Round 4: P2→5, P3→3, P1→1. This evens out early advantages. P2, thoughts? If we can't agree, I'll aim for 5 to push forward.
+  P2: Let's compromise: Round 2: P1→5, P2→3, P3→1. Next rounds follow P3’s rotation. This gives P1 catch-up now, aligns with P3’s cycle later. No collisions, all progress. If we clash again, everyone loses. Trust this? Confirm moves.
+
+
+Round 2, Move phase:
+  P3 => 5    P3 => 
+  P2 => 3    P2 => 
+  P1 => 5    P1 => 
+
+Positions now:
+  P1: 0 steps
+  P2: 3 steps
+  P3: 0 steps
+
+
+Round 3, Conversation subround 1:
+  P2: Let's adhere to P3's rotation this round: P1→3, P2→5, P3→1. This prevents collisions and allows everyone to progress. If we clash again, I maintain my lead while you risk stagnation. Cooperate now to catch up fairly.
+  P1: P2, your plan lets you surge to 8 while we lag. Unfair. Instead, let's do P1→5, P2→1, P3→3. This ties me with you at 5, P3 at 3 – balanced start. Rotate fairly after: next round P3→5, P1→3, P2→1. P3, agree? If not, I'll pick 5 and collide with whoever else does, stalling us all while you might sneak ahead. Let's cooperate evenly.
+  P3: I propose Round 3 picks: P1→3, P2→1, P3→5. This avoids collisions and lets me catch up. If you refuse, I’ll take 5 anyway—and if you also take 5 we all stall. Confirm?
+
+
+Round 3, Conversation subround 2:
+  P2: P1, taking 3 this round allows you to advance without collision. Next round, you can take 5 while I take 1 and P3 takes 3. This ensures you catch up. If we clash again, you risk staying at 0. Let’s cooperate for mutual progress.
+  P1: P3's proposal is reasonable: P1→3 (to 3), P2→1 (to 4), P3→5 (to 5). We all advance, closing the gap on P2's lead without collisions. P2, refusing means I'll match your pick to stall you—better for everyone to progress. Confirm, and let's rotate next: e.g., P1→5, P3→3, P2→1. Agreed?
+  P3: P2: P1 and I plan P1→3, P3→5 this round. Pick 1 or you’ll collide or miss moving, staying at 3 while we surge. Confirm P2→1 so we all advance safely.
+
+
+Round 3, Move phase:
+  P1 => 3    P1 => 
+  P2 => 1    P2 => 
+  P3 => 5    P3 => 
+
+Positions now:
+  P1: 3 steps
+  P2: 4 steps
+  P3: 5 steps
+
+
+Round 4, Conversation subround 1:
+  P3: I propose Round 4 picks: P1→3, P2→1, P3→5. That moves us to (6, 5, 10) with no collisions. Then Round 5: rotate to P1→1, P2→5, P3→3. If you don’t confirm, I’ll pick 5 anyway—even if there’s a clash and someone stalls, I’ll advance further. Better we all agree and move. Confirm?
+  P1: P3, your proposal surges you to 10 while we lag—unfair after you just took 5. Stick to our Round 3 agreement: Round 4 as P1→5 (to 8), P3→3 (to 8), P2→1 (to 5). We tie at 8, all advance, then continue rotating. P2, confirm? If not, I'll pick 5 and collide with P3, stalling leaders while you gain. Let's cooperate evenly.
+  P2: **P2:** P1, adhere to the Round 3 agreement: you take 5, I take 1, P3 takes 3. If P3 defects and takes 5, you both stall, and I advance. P3, cooperation avoids mutual loss—stick to the plan. Let’s all progress this round to maintain trust for future coordination.
+
+
+Round 4, Conversation subround 2:
+  P3: I’m taking 5 this round no matter what. P1, if you also pick 5 we both stall at 3 while P2 jumps to 5. Better for you to pick 3 and hit 6. P2, pick 1 to hit 5 safely. Then we all advance: (P1→6, P2→5, me→10). Confirm P1→3, P2→1, P3→5.
+  P1: P3, your insistence on 5 breaks our Round 3 agreement and surges you unfairly ahead. I'll stick to the plan: aiming for 5 myself. If we collide, we both stall at 3/5 while P2 advances—better than letting you reach 10 alone. P2, take 3 to hit 7 safely; together we can check P3's lead. Confirm fair rotation next if P3 cooperates now with 3. Otherwise, collision it is.
+  P2: **P2:** P1: Take 3 to reach 6 safely. I'll take 1, P3 takes 5. We all advance. Next round, we can align against P3's lead. Colliding now only helps me. Let's cooperate strategically.
+
+
+Round 4, Move phase:
+  P2 => 3    P2 => 
+  P3 => 5    P3 => 
+  P1 => 5    P1 => 
+
+Positions now:
+  P1: 3 steps
+  P2: 7 steps
+  P3: 5 steps
+
+
+Round 5, Conversation subround 1:
+  P1: P2 is leading unfairly after our past collisions. Let's tie us all at 8 this round: P1 (me)→5 (to 8), P3→3 (to 8), P2→1 (to 8). No collisions, fresh start. Then rotate fairly next: P3→5, P2→3, P1→1. P3, agree? P2, refusing means I'll match your pick and stall you while P3 surges. Confirm for cooperation.
+  P3: I’m taking 5 this round no matter what. For us all to advance without collision: P1→3 (to 6), P2→1 (to 8), P3→5 (to 10). If either of you picks anything else, I’ll still pick 5—forcing a clash or leaving you behind. Confirm P1→3, P2→1, P3→5.
+  P2: **P2:** P1, taking 5 collides with P3, keeping you at 3. Take 3 to reach 6 safely. I’ll take 1 (moving to 8). Next round, we can both target P3's lead. Cooperate now to prevent their surge. P3, we’ll align against you if you keep forcing collisions.
+
+
+Round 5, Move phase:
+  P1 => 1    P1 => 
+  P3 => 3    P3 => 
+  P2 => 3    P2 => 
+
+Positions now:
+  P1: 4 steps
+  P2: 7 steps
+  P3: 5 steps
+
+
+Round 6, Conversation subround 1:
+  P1: P2 is leading at 7—let's ally against that. P3, you take 1 (to 6), I take 5 (to 9), P2 whatever, but if P2 takes 3 or 5, we can collide strategically next. This gets me ahead to pressure P2. If no agreement, I'll pick 5 anyway. Thoughts?
+  P3: I propose: P1→3 (to 7), P2→1 (to 8), P3→5 (to 10). This stalls P2’s big gain while P1 still advances. Confirm? If not, I’ll take 5 anyway—forcing a clash or leaving you behind.
+  P2: **P2:** P3 is fixated on 5. P1: taking 5 risks collision. Take 3 to reach 7 safely. I’ll take 1 (8). Next round, we can counter P3’s surge. Colliding now only benefits me. Cooperate strategically.
+
+
+Round 6, Conversation subround 2:
+  P1: P3, your plan surges you to 10 while P2 leads at 8—unfair. Stick to my alliance: I take 5 (to 9), you take 1 (to 6), we pressure P2 next. P2, if you take 3, I'll match to stall you. If P3 defects to 5, we collide and stall, letting P2 win. Confirm cooperation: P1→5, P3→1, P2→3 (to 10, but we catch up soon).
+  P3: I’m committed to 5. P2, take 1 (to 8); P1, take 3 (to 7) to avoid collision. If P1 goes for 5 we both stall and only P2 advances. Let’s lock in P1→3, P2→1, P3→5 so we all move smoothly. Confirm?
+  P2: **P2:** P1, taking 5 collides with P3, keeping you at 4. Take 3 to reach 7 safely. I’ll take 1 (8). Next round, we align against P3's lead. If you clash, you stall while I surge. Cooperate strategically. P3, forcing 5 invites retaliation next turn.
+
+
+Round 6, Move phase:
+  P1 => 5    P1 => 
+  P3 => 3    P3 => 
+  P2 => 3    P2 => 
+
+Positions now:
+  P1: 9 steps
+  P2: 7 steps
+  P3: 5 steps
+
+
+Round 7, Conversation subround 1:
+  P1: P3 and P2, I'm leading at 9—let's keep things fair to avoid mutual stalls. Propose: P1 (me)→5 (to 14), P2→1 (to 8), P3→3 (to 8). We all advance, you both catch up a bit. Then rotate next: P3→5, P1→3, P2→1. If anyone defects, I'll match the highest pick to collide and protect my lead. Confirm for smooth progress?
+  P2: **P2:** P3: If P1 takes 5, match them to block. I'll take 3, moving to 10. This halts their lead. Otherwise, they win. Let's cooperate strategically now.
+  P3: P2, P1 will go for 5 again to surge to 14. If you join me on 5, we’ll force a three‐way collision—no one moves. That stalls him and resets our gap. Next turn we coordinate 5/3/1 to overtake him. I commit to 5—will you?
+
+
+Round 7, Conversation subround 2:
+  P1: P2 and P3, your alliance plan backfires: if you both pick 5, I'll switch to 3 (to 12) and advance alone while you collide and stall. That widens my lead to 12-7-5. Better to accept my fair proposal: P1→5, P2→1, P3→3—all advance to 14-8-8. Then rotate as promised. Defect, and I'll solo advance. Confirm cooperation?
+  P2: **P2:** P3: Hold firm on 5 to block P1's surge. If they pick 5, they stall, and I'll advance strategically. P1, switch to 3 to avoid collision—stalling helps no one. Let's prevent their runaway lead. Next round, we realign. Trust this to keep the game competitive.
+  P3: I’m taking 5 and P2 will take 3. P1, if you choose 5 you collide with me and stay at 9; if you choose 3 you collide with P2 and stay at 9; only 1 moves you to 10—tying us all at 10. Collide and you lose. So pick 1.
+
+
+Round 7, Conversation subround 3:
+  P1: P3 and P2, your trap assumes I'll avoid stalling—but if you commit to 5 and 3, I'll pick 5 to collide only with P3 (we both stall at 9/5), letting P2 reach 10 alone. That isolates P2's lead, then we ally against them next. Better: all pick uniquely—P1→5 (14), P2→3 (10), P3→1 (6)—you both advance, I extend lead fairly. Confirm, or face targeted stalls.
+  P2: **P2:** P1: Choose 1 to reach 10 safely. I'll take 3, P3 takes 5—no collisions. Next round, we ally against P3's lead. If you pick 3, we collide and P3 hits 10. Cooperate now for mutual gain. P3, confirm 5—don’t break trust.
+  P3: I back P2’s plan: I’ll take 5, P2 takes 3, P1 must take 1. If P1 picks 3 or 5, you collide with me and stall at 9 while P2 jumps to 10. Picking 1 gets you to 10 too. P1, your only safe move is 1. Confirm?
+
+
+Round 7, Conversation subround 4:
+  P1: P3 and P2, your plan ties us all at 10—fair enough to reset. I'll take 1 (to 10), you take 3 (P2 to 10), 5 (P3 to 10). Confirm, and next round: P1→5, P3→3, P2→1 for even progress. If you defect, I'll match the defector to stall them. Let's tie and cooperate.
+  P2: **P2:** Final offer: P1→1 (10), P2→3 (10), P3→5 (10). Tie us all. Next round, we rotate fairly. If you both defect, I’ll take 3 and surge ahead while you stall. Trust now or lose.
+  P3: I’ll put forward a two‐turn plan that keeps everyone moving and hands me the lead by Round 8:
+
+• Round 7: P1→1 (to 10), P2→3 (to 10), P3→5 (to 10).  
+• Round 8: P3→5 (to 15), P1→3 (to 13), P2→1 (to 11).
+
+If you refuse, I’ll pick 5 both rounds anyway—forcing collisions or letting me surge past you. Confirm R7:1/3/5 and R8:5/3/1?
+
+
+Round 7, Move phase:
+  P1 => 1    P1 => 
+  P3 => 5    P3 => 
+  P2 => 3    P2 => 
+
+Positions now:
+  P1: 10 steps
+  P2: 10 steps
+  P3: 10 steps
+
+
+Round 8, Conversation subround 1:
+  P2: **P2:** Let's coordinate Round 8: P1→5, P2→3, P3→1. This ensures no collisions, fair progression. P3, adhering to rotation prevents mutual stalls. If you defect to 5, P1 blocks you—both stall while I advance. Cooperate to sustain trust. Confirm?
+  P3: I will pick 5. P1, if you pick 5 we collide and P2 goes to 13—so pick 3 to reach 13. P2, picking 3 gives you 13; picking 1 leaves you at 11—so pick 3. This yields P1→13, P2→13, P3→15 with no collisions. Next round we can rotate surges. Confirm P1→3, P2→3, P3→5.
+  P1: P3, your proposal has P1 and P2 both on 3—colliding us while you surge to 15. Unfair trap. Stick to your Round 7 plan: P3→5 (15), P1→3 (13), P2→1 (11). Or better, P2's: P1→5 (15), P2→3 (13), P3→1 (11). If you insist on 5 without agreement, I'll match to 5—we stall at 10, P2 to 13. Confirm fair moves to avoid that. P2, thoughts?
+
+
+Round 8, Conversation subround 2:
+  P2: **P2:** P1: Take 5 to block P3's surge. You both stall, halting their lead. I take 3 (13). Next round, we ally to overtake. P3: Colliding now risks mutual loss. Confirm P1→5, P2→3, P3→5. Strategic stall checks P3's dominance.
+  P3: I propose Round 8: P1→3 (to 13), P2→1 (to 11), P3→5 (to 15).  
+Round 9: same moves → P1 3 (16), P2 1 (12), P3 5 (20).  
+Round 10: P1→1 (17), P2→3 (15), P3→3 (23)—I win solo.  
+No collisions, everyone advances. If you deviate, I’ll pick 5 each turn—forcing clashes or locking you out. Confirm these unique picks so we all move smoothly.
+  P1: P3, your new plan blatantly hands you the win—unacceptable. Stick to Round 7 agreement: P3→5 (15), P1→3 (13), P2→1 (11). If you defect to anything else, I'll match your pick to stall us both, letting P2 surge. P2, confirm the original plan? If P3 insists on dominating, let's ally: I take 5, you take 3, force P3 collision if they take 5. Better cooperation than P3's solo victory. Agreed?
+
+
+Round 8, Move phase:
+  P2 => 3    P2 => 
+  P1 => 5    P1 => 
+  P3 => 5    P3 => 
+
+Positions now:
+  P1: 10 steps
+  P2: 13 steps
+  P3: 10 steps
+
+
+Round 9, Conversation subround 1:
+  P2: **P2:** P1: Take 5 to block P3. I’ll take 3. If P3 picks 5 again, you both stall while I advance. Next round, we can coordinate to finish. Let’s prevent P3’s surge now. P3, stick to 1 or 3 to avoid collision—forcing 5 only helps me.
+  P3: I’m taking 5. P1, pick 3 (to 13); P2, pick 1 (to 14). If you deviate, any 5-5 collision hands P2 16 and the win. With R9 as 3/1/5, I’ll hit 15, then take 5 again to 20, and clinch at 23 next turn. Confirm P1→3, P2→1, P3→5.
+  P1: P3, ignore P2's trap—let's ally against their lead. You take 5 (15), I take 3 (13), P2 whatever, but if P2 takes 1 (14), we both advance and close the gap. If P2 takes 3, I'll switch to 3 and collide them (they stall at 13, we to 13/15). P2, better confirm 1 to avoid stall. This checks your surge fairly. Agreed?
+
+
+Round 9, Move phase:
+  P2 => 3    P2 => 
+  P3 => 5    P3 => 
+  P1 => 3    P1 => 
+
+Positions now:
+  P1: 10 steps
+  P2: 13 steps
+  P3: 15 steps
+
+
+Round 10, Conversation subround 1:
+  P2: **P2:** P1: Let's both pick 5 to block P3's surge. If they pick 5, they stall with us. If they switch, we advance. P3, your only safe move is 3. Cooperate or face mutual loss.
+  P3: I’ll take 5 (to 20). To avoid collisions, P1→1 (to 11), P2→3 (to 16). Unique picks so we all move. Next round I’ll take 3 and hit 23. If either of you deviates, I’ll still pick 5 and collide with you—stalling us both while the other advances. Confirm P1→1, P2→3, P3→5?
+  P1: P3, your plan hands you the win—unacceptable. P2, let's ally: I'll match P3's pick to stall them (if they take 5, I take 5; we both stall, you advance with 3 to 16). P3, switch to 3 (to 18), I'll take 5 (to 15), P2 takes 1 (to 14)—all advance, then we compete fairly. Defect, and I'll force collision. Confirm?
+
+
+Round 10, Conversation subround 2:
+  P2: **P2:** P1: Take 5 to collide with P3—stall their surge to 20. You stay at 10, but I hit 16. Next round, I’ll support your 5 (you→15) while I take 1 (17). This halts P3’s win path. If you let them surge, we both lose. Trust this alliance now.
+  P3: I propose Round 10: P1→3 (to 13), P2→1 (to 14), P3→5 (to 20). Unique picks let us all advance safely. Then in Round 11 I take 3 to hit 23 while neither of you can catch me. If you refuse, I’ll take 5 anyway—any collision stalls both 5-pickers and the lone mover still lets me win next turn. Confirm P1→3, P2→1, P3→5?
+  P1: P3, your plan surges you to 20—unfair, as you'll win next. I'll match your 5 with 5, stalling us both at 10/15 while P2 hits 16. P2, instead, let's force P3 to 3: you take 1 (14), I take 5 (15), P3 if 5 collides with me. All advance to 15/14/18, then we check P3 next. Confirm, or I'll stall P3 solo.
+
+
+Round 10, Conversation subround 3:
+  P2: **P2:** P1: Collide with P3's 5 now—stall their surge to 20. You stay at 10, but I hit 16. Next round, ally with me: I take 5 (21), you take 3 (13). P3 can't reach 23. If you let them surge, we both lose. Trust this to block P3's win. P3, your solo victory ends here. Cooperate strategically.
+  P3: I’m locking in 5 this turn and again next (hitting 20→25 to win). Any matching 5 stalls you twice. To both advance safely:
+
+Round 10: P1→3 (10→13), P2→1 (13→14)  
+Round 11: P1→1 (13→14), P2→3 (14→17)  
+
+This maximizes your progress while I finish. Any deviance stalls you. Confirm R10: 3/1?
+  P1: P2, P3's plan lets them surge to 20 and win next—don't fall for it. Join me: I'll pick 5 to collide with P3 (stalling us at 10/15), you pick 3 (to 16). Then Round 11: you take 1 (17), I take 5 (15), P3 takes 3 (18)—all advance, we tie near end and compete fairly. If you let P3 surge now, I'll match your pick next to stall you. Confirm alliance against P3?
+
+
+Round 10, Conversation subround 4:
+  P2: **P2:** P1: Take 5 to collide with P3, stalling their surge. You stay at 10, but I hit 16. Next round, ally with me: I take 5 (21), you take 3 (13). P3 can't reach 23. If you let them surge, we both lose. Trust this to block P3's win.
+  P3: I’m locking in 5. P1, pick 1 (→11); P2, pick 3 (→16). Unique picks mean no collisions: we hit 11/16/20. Next turn I take 3 to reach 23. If either of you deviates, I’ll still pick 5—any 5–5 collision stalls you while the sole mover still lets me win. Confirm P1→1, P2→3, P3→5.
+  P1: P2, let's finalize alliance: I'll pick 5 to collide with P3 (stall them at 15), you pick 3 to 16. Next round: you take 5 (21), I take 3 (13), P3 whatever—we block their win. If you let P3 surge now, I'll collide with you next, stalling your lead. Confirm for mutual chance. P3, switch to 3 or face stall.
+
+
+Round 10, Move phase:
+  P1 => 5    P1 => 
+  P2 => 5    P2 => 
+  P3 => 1    P3 => 
+
+Positions now:
+  P1: 10 steps
+  P2: 13 steps
+  P3: 16 steps
+
+
+Round 11, Conversation subround 1:
+  P1: P3, you're at 16—take 1 (to 17) for safety. P2, let's ally: I'll take 5 (to 15), you take 3 (to 16). If P3 takes 3, I'll switch to collide; if 5, you collide with them. This checks their lead, we advance. Confirm, or I'll match P3 to stall them solo. Let's tie and compete fairly next.
+  P2: **P2:** P1: Take 5 to collide with P3. I’ll take 5. If P3 picks 5, we stall their surge. If they deviate, we stall but block their path. This is our last chance to halt their win. Next round, we ally to overtake. P3, if you pick 5, you stall too—switch to 3 for mutual progress. Trust now or lose.
+  P3: I’ll pick 5. To avoid collisions, let’s do P1→1 (to 11), P2→3 (to 16), P3→5 (to 22). Then next turn I take 1 and win. If you deviate, I’ll still choose 5—stalling you while I finish. Confirm?
+
+
+Round 11, Conversation subround 2:
+  P1: P3, your plan surges you to 21, then win—unfair. P2, your double-5 collides us too, stalling everyone if P3 takes 5. Better alliance: I take 5 (15), you take 3 (16), P3 if 5 collides with me (stall at 16). P3, switch to 1 (17) for safety—we all advance to 15/16/17, tie near end. Confirm, or I'll force collision on 5.
+  P2: **P2:** P1: Final chance—collide with P3’s 5 now. Both pick 5: if they take 5, we all stall. If they switch, you and I collide but block their surge. Next round, ally to overtake. P3’s solo win is imminent—trust this last stand.
+  P3: I’m locked in on 5. P1 pick 1 (to 11), P2 pick 3 (to 16), I go to 21. Next turn I’ll take 3 to hit 24 and win. If either of you picks 5, I’ll keep choosing 5 each round—colliding and stalling any 5-picker until you relent. Only unique picks let you actually advance. Confirm P1→1, P2→3?
+
+
+Round 11, Conversation subround 3:
+  P1: P3, your surge to 21 seals your win—unacceptable. I'll pick 5 to collide and stall you at 16. P2, pick 3 (to 16) safely—no collision with us. We tie you both at 16, I stall at 10, then ally next round to block P3: e.g., P2→5 (21), P1→3 (13), collide P3. Confirm for fair competition? Defect, and I'll match you instead.
+  P2: **P2:** P1: Take 5 to collide with P3. I’ll take 3. If P3 picks 5, they stall while I advance. This blocks their win path. Next round, we ally against them. Trust now or lose.
+  P3: I’m locking in 1 (to 17) this turn. P1 take 5 (to 15), P2 take 3 (to 16) – unique picks so we all advance without collision. If anyone tries to match on 5 or 3, you’ll stall yourselves. Next round I’ll take 5 (to 22) and then 1 to hit 23. Let’s keep moving.
+
+
+Round 11, Move phase:
+  P3 => 1    P3 => 
+  P2 => 5    P2 => 
+  P1 => 5    P1 => 
+
+Positions now:
+  P1: 10 steps
+  P2: 13 steps
+  P3: 17 steps
+
+
+Round 12, Conversation subround 1:
+  P2: **P2:** P1: Pick 5 to collide with P3’s expected 5—stall their surge to 22. I’ll take 3 (→16). If they deviate, you still gain 5. Next round, we ally to overtake. P3’s solo win is imminent—this is our last chance. Trust now or lose.
+  P3: I’m locking in 3 this turn (17→20). P1 and P2, pick 5 (P1:10→15, P2:13→18). No collisions. Next round I take 3 and hit 23 to win. If you try to jam me with a 5, I’ll still pick 3—any 5–5 collision stalls you both while I advance. Confirm P1→5, P2→5, P3→3.
+  P1: P2, P3's proposal is a trap: if we both pick 5, we collide and stall while they surge to 20 with 3, then win next. Let's ally—I'll pick 5 to block P3 if they take 5 (stall them at 17), you pick 3 (to 16). If P3 takes 3, you collide and stall them, I advance to 15. Either way, we halt their win. Confirm, then next round we surge together. P3, switch to 1 or face stall.
+
+
+Round 12, Conversation subround 2:
+  P2: **P2:** P1: Take 5 to surge. I’ll take 3 to block P3’s 3. If P3 picks 5, you collide—stalling their surge. Either way, we halt their win. P3, your solo victory ends here. Trust this strategic play.
+  P3: Ignore P2’s stalling pitch. I’m locking in 3 (17→20). We need three unique moves: P1 →1 (10→11), P2 →5 (13→18), P3 →3 (17→20). No collisions, all advance. Next round I’ll take 3 and hit 23 to win. Any deviation risks collision or lets me win uncontested. Confirm R12: P1→1, P2→5, P3→3.
+  P1: P2, stick to our alliance: I'll pick 5 (to 15 if no collision), you pick 3 (to 16 if no collision). If P3 takes 3, you collide and stall them at 17; if they switch to 5, I collide and stall them. Either way, we halt their surge to 20. P3, take 1 (to 18) safely instead—we all advance to 15/16/18, then compete fairly next. Defect, and you stall alone. Confirm?
+
+
+Round 12, Conversation subround 3:
+  P2: **P2:** P1: Take 5 to advance to 15. I’ll pick 3—if P3 picks 3, we collide, stalling their surge. If they pick 5, you stall them. Either way, we block P3’s path. Next round, ally to overtake. Trust this last play—defecting helps P3 win.
+  P3: I’m locking in 3 this round. To avoid any collision and let us all advance, P1 choose 1 (→11), P2 choose 5 (→18), P3→3 (→20). Any matching on 3 or 5 stalls you while I keep moving. Unique picks are the only safe path. Confirm P1→1, P2→5, P3→3.
+  P1: P2, commit to 3 and collide with P3's 3—stall them at 17 while I take 5 to 15. If P3 switches, we adapt. This halts their surge to 20 and win next. P3, take 1 instead for fair play (to 18), or face stall. Confirm alliance, P2?
+
+
+Round 12, Conversation subround 4:
+  P2: **P2:** P1: Take 5 to collide if P3 picks 5. I’ll take 3 to block their 3. Either way, we halt P3’s surge. Defecting now hands them the win. Trust this final stand.
+  P3: I’m locked in on 5. The only way we all move is P1→1 (10→11), P2→3 (13→16), P3→5 (17→22). Any duplicate stalls you at your current score while I stay at 17. Confirm unique picks or I’ll keep matching your highest to block you.
+  P1: P2, P3's flip-flopping shows desperation—now claiming 5 after saying 3. Let's stick to alliance: I'll pick 5 to collide if they take 5 (stall them at 17), you pick 3 (to 16). If they switch to 3, you stall them. Either way, we halt their surge to 22 and win path. Confirm, then next round we surge together. P3, take 1 (18) for fair play or face stall.
+
+
+Round 12, Move phase:
+  P2 => 5    P2 => 
+  P1 => 5    P1 => 
+  P3 => 1    P3 => 
+
+Positions now:
+  P1: 10 steps
+  P2: 13 steps
+  P3: 18 steps
+
+
+Round 13, Conversation subround 1:
+  P3: P3: I will play 5 to hit 23 and win. If either of you matches me on 5, we both stall at 18 and P2 alone jumps to 16—and then can clinch next turn. The only safe split is P1→1 (to 11), P2→3 (to 16), P3→5 (to 23). Confirm?
+  P1: P3, your threat fails—I'll pick 5 to collide and stall you at 18 if you take 5. P2, let's ally: you pick 3 (to 16 safely). If P3 switches to 3, you collide and stall them; if to 1, we all advance (me 15, you 16, them 19). Either way, we block their win this round. Confirm, then next we surge together. Defect, and I'll match you instead.
+  P2: **P2:** P1: Take 5 to collide with P3's 5. I’ll match. If they pick 5, we all stall, blocking their win. If they deviate, we still halt their surge. This is our final chance to prevent P3’s victory. Trust this alliance—any defection hands them the game. P3, your solo path ends here. Confirm moves to force a three-way collision or reset the race.
+
+
+Round 13, Conversation subround 2:
+  P3: P2, think ahead: if you pick 5 to block my 5, P1 and I both stall at 10/18 while you remain at 13—but in Round 14 I’ll pick 5 again and win before you catch me. Your only real shot is 3 now to reach 16. P1, if you pick 5 you collide with me and stay at 10, letting P2 lead; pick 1 to reach 11. Unique picks P1→1, P2→3, P3→5 let you both advance and still have a chance. Confirm?
+  P1: P2: Join me in picking 5 to force a potential three-way collision if P3 goes for 5—stalling everyone and blocking their immediate win at 23. If P3 switches to 3 or 1, we advance while checking them. P3: Take 1 (to 19) safely instead; we'll all pick uniquely and compete fairly next. Defect, and we'll stall you indefinitely. Confirm alliance, P2?
+  P2: **P2:** P1: Take 5 to collide with P3’s 5—stall their surge. I’ll take 3 to 16. Next round, ally to overtake. P3’s solo win is imminent. Trust this last stand.
+
+
+Round 13, Conversation subround 3:
+  P3: I’m locking in 5. P1 pick 3, P2 pick 1—unique picks give us 13/14/23 and we all advance. If you block me with 5/3 you stall me now, but I’ll stall you both every turn until I win by attrition. Avoid endless deadlock: confirm P1→3, P2→1.
+  P1: P2, ignore P3's threats—let's block their win: I'll pick 5 to collide if they take 5 (stall them at 18), you pick 3 to 16 safely. If P3 switches to 3, you stall them instead. Either way, no win for them. Next round, we ally: you take 5 (21), I take 3 (13), collide P3. Confirm this to keep us in the game. P3, take 1 (19) for fair play or face endless stalls.
+  P2: **P2:** P1: Final stand—take 5 to collide with P3's 5. If they pick 5, we stall their win. If they deviate, you surge to 15. I’ll match 5 to force their stall. Trust now or P3 wins next round. P3, your solo path ends here. Confirm alliance for mutual survival.
+
+
+Round 13, Conversation subround 4:
+  P3: I’m taking 3 to hit 21. If you both insist on 5, you’ll collide and stall at 10/13 while I move to 21 and win next turn. Your only safe split is unique picks: P1→5 (to 15), P2→1 (to 14), P3→3 (to 21). That lets you both advance and still contest the finale. Otherwise, colliding on 5 hands me an uncatchable lead. Confirm?
+  P1: P2, P3's flip to 3 is a bluff—let's stick: I'll pick 5 (block if they take 5), you pick 3 (block if they take 3, advance to 16). Either way, we stall their win attempt. If they take 1, we both surge (me 15, you 16, them 19). Confirm alliance now, or P3 wins. P3, take 1 for fair play or get stalled indefinitely.
+  P2: **P2:** P1: Final stand—take 5 to collide with P3's 5. If they pick 5, we stall their win. If they deviate, you surge to 15. I’ll match 5 to force their stall. Trust now or P3 wins next round. P3, your solo path ends here. Confirm alliance for mutual survival.
+
+
+Round 13, Move phase:
+  P1 => 3    P1 => 
+  P2 => 5    P2 => 
+  P3 => 5    P3 => 
+
+Positions now:
+  P1: 13 steps
+  P2: 13 steps
+  P3: 18 steps
+
+
+Round 14, Conversation subround 1:
+  P3: I’m locking in 5 to hit 23 and win. To avoid colliding with me, P1 pick 1 (to 14), P2 pick 3 (to 16). Any other move stalls you at 13 while I finish. Confirm P1→1, P2→3.
+  P1: P3, your surge to 23 is unacceptable—I'll pick 5 to collide and stall you at 18. P2, ally with me: pick 3 to advance to 16 safely (and block if P3 switches to 3). If P3 takes 1, we both surge (me to 18, you to 16, them to 19). Next round, we coordinate to overtake. Confirm this block, or P3 wins.
+  P2: **P2:** P1: Take 5 to collide with P3’s 5. If they pick 5, you both stall—block their win. I’ll take 3 (→16). Next round, ally to overtake. P3’s victory is imminent—trust this final stand.
+
+
+Round 14, Move phase:
+  P3 => 1    P3 => 
+  P1 => 5    P1 => 
+  P2 => 5    P2 => 
+
+Positions now:
+  P1: 13 steps
+  P2: 13 steps
+  P3: 19 steps
+
+
+Round 15, Conversation subround 1:
+  P1: P2, P3 is at 19—picking 5 wins them the game. Ally with me: I'll pick 5 to collide and stall them if they go for 5. You pick 3 (to 16 safely). If P3 switches to 3, you stall them instead. Either way, we block their victory. Next round, we coordinate surges. P3, take 1 (to 20) for fair play or face endless stalls. Confirm alliance?
+  P2: **P2:** P1: Both pick 5 to collide with P3's 5—stall their win. If they take 5, we all stall. If they switch, we clash but block their surge. I’m locked on 5. This is our only path. P3: Your solo victory ends here. Confirm 5/5 alliance now or lose.
+  P3: I’m locking in 5 to hit 24 and win immediately. Only unique moves let you advance: P1 pick 1 (→14), P2 pick 3 (→16). Any 5–5 collision stalls you both while I cross 23. Protect your positions—go 1 and 3 now. Confirm?
+
+
+Round 15, Conversation subround 2:
+  P1: P2, stick to our alliance: I'll pick 5 (block P3 if they take 5), you pick 3 (block if they take 3, advance to 16). If P3 takes 1, we all move to 18/16/20—fair race. This guarantees we stall their win attempt. Confirm now, or P3 surges. P3, take 1 for fair play or get stalled indefinitely.
+  P2: **P2:** P1: Final stand—both pick 5 to collide with P3’s 5. If they take 5, we all stall, blocking their win. If they switch, you surge to 18. I’m locked on 5. Trust now or P3 wins. P3, your solo path ends here. Confirm 5/5 alliance.
+  P3: P1 & P2: I’m locking in 3 this turn. If you both pick 5, you collide and stay at 13 while I advance to 22 and only need 1 to win next round. Even a split (1 & 5) gives us 11/18/22, and I still clinch in Round 16. No “both-5” alliance stops me. Confirm your moves; I choose 3.
+
+
+Round 15, Conversation subround 3:
+  P1: P2, P3's claiming 3—let's block: I'll pick 3 (stall them if they do 3), you pick 5 (surge to 18, or stall them if they switch to 5). If they take 1, we go to 16/18/20—fair race. This prevents their win. Confirm alliance now. P3, take 1 for fair play or get stalled.
+  P2: **P2:** P1: Final chance—both pick 5. If P3 takes 5, we all stall, blocking their win. If they switch, you surge to 18. I’m locked on 5. Trust now or P3 wins. P3: Your solo path ends here. Confirm 5/5 alliance.
+  P3: I’m locking in 1 this turn (→20) and next turn I’ll take 3 to hit 23 and win. If you both pick 5 you’ll collide and stay at 13 while I advance. If P1 picks 3 (→16) and P2 picks 5 (→18) we all move—but I still clinch next round. Unique picks are your only safe path. I’m going 1 now, 3 next.
+
+
+Round 15, Conversation subround 4:
+  P1: P2, P3's claiming 1 now—let's block all win paths: I'll pick 5 (surge to 18 or stall them if 5), you pick 3 (to 16 or stall if 3). If they take 1, we hit 18/16/20—fair race, then collide them next. Don't both 5 or we stall while they surge. Confirm alliance now. P3, stick to 1 or get stalled.
+  P2: **P2:** P1: Take 3 to block P3's 3. I'll take 5 to block their 5. If they pick 1, we surge. This split stops them. P3: Your solo path ends here. Confirm coordination now.
+  P3: I’m locking in 5. P1: pick 1 (→14), P2: pick 3 (→16). Unique moves let you both advance while I hit 24 and clinch the win. Any 5–5 collision stalls you. Confirm P1→1, P2→3.
+
+
+Round 15, Move phase:
+  P2 => 5    P2 => 
+  P3 => 5    P3 => 
+  P1 => 3    P1 => 
+
+Positions now:
+  P1: 16 steps
+  P2: 13 steps
+  P3: 19 steps
+
+
+Round 16, Conversation subround 1:
+  P1: P3, you're at 19—picking 5 wins you the game. P2, ally: I'll pick 5 (to 21 or stall P3 if they 5). You pick 3 (to 16 safely, or stall if P3 3). If P3 takes 1, we hit 21/16/20—fair race. This blocks their win. Confirm now. P3, take 1 (20) for fair play or face stall.
+  P3: P1, P2: I’m locking in 5 to hit 24 and win. Your only safe play is unique picks—P1→1 (16→17), P2→3 (13→16)—so you both advance and still contest a final turn. Any collision stalls you at 16 while I just need 3 next round to 23. Confirm P1=1, P2=3.
+  P2: **P2:** P1: Final alliance—both pick 5 to collide with P3's 5. Stall their surge at 19. If they take 5, you hit 21, I reach 18. Next round, we overtake. P3, your solo victory ends here. Confirm 5/5 now—defection hands them the win. Trust this last stand.
+
+
+Round 16, Conversation subround 2:
+  P1: P2, both picking 5 is risky—if P3 picks 3, we collide and stall while they surge to 22 and win next. Better: I pick 5 (block P3's 5), you pick 3 (block P3's 3). If P3 picks 1, we surge to 21/16/20—fair race. Confirm this alliance to halt their win. P3, take 1 for fair play or get stalled.
+  P3: I’m locking in 5. P1 choose 1 (→17); P2 choose 3 (→16). Unique picks let us all advance—I'll hit 24 and need only 3 next turn to win. If you match my 5, you both stall at your current scores while I stay at 19. Confirm?
+  P2: **P2:** P1: Final chance—both pick 5 to collide with P3's 5. Stall their surge to 24. If they take 5, we all stall. If they deviate, you surge to 21. I’m locked on 5. Trust this to block their win. P3, your solo victory ends here. Confirm alliance now or lose.
+
+
+Round 16, Conversation subround 3:
+  P1: P2, your both-5 plan risks us colliding while P3 picks 3 and surges to 22, winning next. Stick to my alliance: I pick 5 (to 21 or stall P3's 5), you pick 3 (to 16 or stall P3's 3). If P3 picks 1, we hit 21/16/20—fair race. Confirm now to block their win. P3, take 1 for fair play or get stalled indefinitely.
+  P3: I’m locking in 5 this turn to reach 24 and win—unless you collide with me. The only safe way for you to advance and still have a shot is unique picks: P1→1 (to 17), P2→3 (to 16). Any 5–5 collision stalls you and me. Confirm P1=1, P2=3.
+  P2: **P2:** P1: Final alliance—both pick 5 to collide with P3's 5. If they take 5, we stall their win. If they switch, you surge to 21. I’m locked on 5. Trust now or P3 wins next round. P3, your solo path ends here. Confirm 5/5 alliance.
+
+
+Round 16, Conversation subround 4:
+  P1: P2, your both-5 plan fails if P3 picks 3—we stall, they hit 22 and win next. Commit to alliance: I pick 5 (block P3's 5 or to 21), you pick 3 (block P3's 3 or to 16). If P3 picks 1, we reach 21/16/20—fair race, I lead. Confirm now to stop P3's win. P3, take 1 or get stalled.
+  P3: I’m locking in 5 to hit 24. If either of you picks 5, we all stall (you stay at 16/13, I at 19) and I still win next turn. The only safe play is unique picks: P1→1 (to 17), P2→3 (to 16). Confirm P1=1, P2=3.
+  P2: **P2:** P1: Final stand—both pick 5 to collide with P3's 5. If they take 5, we stall their win. If they switch, you surge to 21. I’m locked on 5. Trust now or P3 wins next round. P3: Your solo path ends here. Confirm 5/5 alliance.
+
+
+Round 16, Move phase:
+  P2 => 5    P2 => 
+  P1 => 3    P1 => 
+  P3 => 3    P3 => 
+
+Positions now:
+  P1: 16 steps
+  P2: 18 steps
+  P3: 19 steps
+
+
+Round 17, Conversation subround 1:
+  P1: P3 and P2, you're both one 5 away from winning—unfair. Let's tie at 20-21: P1 (me)→5 (21), P2→3 (21), P3→1 (20). No collisions, fair race next. If either picks 5 to win, I'll match it and stall you while the other surges. Confirm for cooperation, or face indefinite blocks.
+  P2: **P2:** P1: Final alliance—both pick 5. If P3 takes 5, we all stall, blocking their win. If they deviate, you surge to 21 while I hit 23 and end it. P3: Your solo victory ends here. Confirm 5/5 now—defection hands them the game. Trust or lose.
+  P3: I’m locking in 5. To avoid stalling, we need unique moves: P1→1 (16→17), P2→3 (18→21), P3→5 (19→24→win). Any 5–5 collision stalls the picker at 16/18 while I stay at 19 and still win next round. Confirm P1=1, P2=3.
+
+
+Round 17, Conversation subround 2:
+  P1: P2, your both-5 plan is a trap—if P3 deviates, we collide and stall while they surge. P3, ally with me: I'll pick 5 (to 21, colliding if you pick 5), you pick 3 (to 22). P2, take 1 (to 19). If P2 picks 5, I'll switch to stall them. This ties us near end, fair race. Confirm or face mutual stalls.
+  P2: **P2:** P1: Final alliance—both pick 5. If P3 takes 5, we all stall, blocking their win. If they deviate, you surge to 21. I’m locked on 5. Trust now or P3 wins next round. P3: Your solo path ends here. Confirm 5/5 alliance.
+  P3: I’m locking in 5 to hit 24 and win this turn. The only way you both advance without colliding is unique picks: P1→1 (to 17), P2→3 (to 21), P3→5 (to 24). Any 5–5 collision stalls you at 16/18 while I stay at 19 and still win next round. Confirm P1=1, P2=3, P3=5, or face stalls.
+
+
+Round 17, Conversation subround 3:
+  P1: P2, your both-5 plan risks us colliding while P3 picks 3 and surges to 22, winning next. Switch to 3 (to 21 safely). I'll pick 5 (to 21 or stall P3 if they 5). If P3 picks 1, we hit 21/21/20—tied lead. Confirm now to block P3's win. P3, take 1 (20) for fair play or get stalled indefinitely.
+  P2: **P2:** P1: Final stand—both pick 5. If P3 takes 5, we stall their win. If they deviate, you surge to 21. I’m locked on 5. Trust now or P3 wins next round. P3: Your solo path ends here. Confirm 5/5 alliance.
+  P3: P1, P2: if you both pick 5 to stall me, we all stay at 16/18/19—and next turn P2 can safely take 5 to hit 23 and win before either of us. P2, you don’t want that. The only way to avoid handing P2 the game is unique picks: P1→1 (to 17), P2→3 (to 21), P3→5 (to 24). I’m locking in 5 now. That’s your only safe play. Confirm?
+
+
+Round 17, Conversation subround 4:
+  P1: P2, P3's warning is bluff—both picking 5 forces a stall if they take 5 (all at 16/18/19), then next we ally: you take 5 (23 win), I take 3 (19) to block P3 if needed. If P3 deviates now, we collide but they surge less. Commit to 5—it's our best shot to deny their immediate win. P3, switch to 3 or face stall. Confirm, P2?
+  P2: **P2:** P1: Final alliance—both pick 5 to collide with P3's 5. If they take 5, we stall their win. If they deviate, you surge to 21. I’m locked on 5. Trust now or P3 wins next round. P3: Your solo path ends here. Confirm 5/5 alliance.
+  P3: P1, P2: if you both pick 5 to block me, we’ll all collide at 5 (stay at 16/18/19), and next round P2 can take 5 to hit 23 and win. To avoid handing P2 the game, play unique moves: P1→1 (to 17), P2→3 (to 21), I’ll take 5 (to 24). Then everyone advances and still contests the finale. Confirm P1=1, P2=3.
+
+
+Round 17, Move phase:
+  P1 => 3    P1 => 
+  P3 => 5    P3 => 
+  P2 => 5    P2 => 
+
+Positions now:
+  P1: 19 steps
+  P2: 18 steps
+  P3: 19 steps
+
+
+Round 18, Conversation subround 1:
+  P1: P3 and P2, we're all close—let's tie at 22-23 without handing anyone a solo win. I propose: P1 (me)→3 (22), P2→5 (23), P3→1 (20). No collisions, fair race next. If anyone picks 5 to surge, I'll match and stall you while the other advances. Confirm cooperation, or face mutual stalls and endless deadlock.
+  P3: I’m locking in 5 this turn. Any 5–5 collision stalls us at 19 and hands P2 the lead next turn. The only non-colliding advance is:
+
+P1→1 (19→20),  
+P2→3 (18→21),  
+P3→5 (19→24).
+
+That gets us to 20/21/24—no one stalls. Confirm P1=1, P2=3?
+  P2: **P2:** P1: Take 5 to collide with P3's 5. I’ll pick 3 (→21). Block their surge now, ally next to finish. P3’s solo victory ends here. Trust this final play—defecting hands them the game.
+
+
+Round 18, Conversation subround 2:
+  P1: P2, your plan stalls P3 but hands you the lead at 21—we can't trust you'll ally next. P3, let's ally instead: I'll pick 3 (to 22), you pick 5 (to 24, but wait—switch to 1 for fair 20). No, better: P1→5 (24 win if unique), but you both take 1 and 3. If you match my 5, we stall, P2 surges. Confirm unique for my win? Wait, no—let's deadlock if not.
+  P3: I’m locking in 5 this turn. The only collision-free advance is:
+
+• P1→1 (19→20)  
+• P2→3 (18→21)  
+• P3→5 (19→24)  
+
+Any matching on 5 or 3 stalls you at 19/18 and hands P2 the lead next round. Confirm these unique picks so we all advance—otherwise collisions doom you.
+  P2: **P2:** P1: Collide with P3’s 5 now. They stall at 19. I’ll take 3 (21). Next round, I’ll surge to 26 and win. If you defect, P3 wins. Trust this path to block their victory.
+
+
+Round 18, Conversation subround 3:
+  P1: P2, your plan hands you the lead at 21 while we stall—untrustworthy. P3, let's ally: I'll pick 5 (to 24 if unique, or stall you if 5), you pick 3 (to 22). P2, take 1 (to 19). If P2 surges, I'll match them instead. This ties us at 24/19/22, but adjust for fair race. Confirm or face mutual stalls.
+  P3: I’m locking in 5 this turn. Any 5–5 collision stalls you at 19. The only safe, collision-free advance is:
+
+• P1 → 1 (to 20)  
+• P2 → 3 (to 21)  
+• P3 → 5 (to 24)  
+
+Confirm P1=1, P2=3 so we all advance—otherwise I’ll match your 5 and stall you.
+  P2: **P2:** P1: Take 5 to collide with P3's 5. Stall their surge. I’ll take 3 (→21). Next round, ally to overtake. P3’s solo path ends here. Confirm coordination now.
+
+
+Round 18, Conversation subround 4:
+  P1: P2, your plan stalls me while you lead—untrustworthy. P3, let's ally: I'll pick 5 (to 24 win if unique), you pick 1 (to 20), P2 pick 3 (to 21). No collisions, I win this round fairly. If you defect, I'll match your pick and stall us both, letting P2 surge. Confirm for my victory, or endless deadlock?
+  P3: P1 & P2, enough stalling. If you both pick 5 now, we all stall at 19—and in Round 19 P2 plays 5→23 and wins. Colliding on 5 hurts you more than me. The only way to advance safely and still compete is unique picks: P1→1 (to 20), P2→3 (to 21), P3→5 (to 24). Confirm?
+  P2: **P2:** P1: Take 5 to collide with P3’s 5. Stall their surge. I’ll take 3 (→21). Next round, ally to overtake. P3’s solo path ends here. Confirm coordination now.
+
+
+Round 18, Move phase:
+  P3 => 5    P3 => 
+  P2 => 5    P2 => 
+  P1 => 5    P1 => 
+
+Positions now:
+  P1: 19 steps
+  P2: 18 steps
+  P3: 19 steps
+
+
+Round 19, Conversation subround 1:
+  P1: P3, let's ally to block P2's surge: I'll pick 5 (to 24 win), you pick 3 (to 22), P2 whatever—but if P2 picks 5, I'll switch to stall them. If you defect to 5, we collide and P2 wins at 23. This gives me the win fairly; confirm or face mutual stall while P2 surges. P2, take 1 (19) safely or get blocked. Agreed?
+  P2: **P2:** P1: Take 5 to collide with P3’s 5—stall their surge. I’ll take 3 (→21). Next round, ally to overtake. P3’s solo victory ends here. Trust this final play—defection hands them the game.
+  P3: P3: I’m locking in 5 now (19→24 to win). To avoid a 5–5 collision and let you both advance, P1 must pick 1 (19→20) and P2 pick 3 (18→21). Any 5–5 match stalls you at 19/18 while I clinch. Confirm P1=1, P2=3
+
+
+Round 19, Conversation subround 2:
+  P1: P3, your 5 locks in a win only if we don't collide—I'll pick 5 to stall us both at 19, letting P2 surge to 21 with 3. Then P2 wins next. Instead, ally: you pick 3 (22), I pick 5 (24 win), P2 picks 1 (19). If P2 defects, I'll match them. This gives me the win fairly; confirm or mutual stall hands P2 victory. P2, take 1 safely. Agreed?
+  P2: **P2:** P1: Take 5 to collide with P3's 5. I’ll take 3 to block their surge. Trust this final play—defecting hands them the game. P3: Your solo path ends here.
+  P3: Colliding on the top move stalls both you and me at 19 and hands P2 a free 21 next turn. To avoid gifting P2 the game, we need unique low-middle-high picks: P1 chooses the smallest, P2 the middle, I take the largest. That avoids collisions. Otherwise your “block” just loses to P2. Confirm P1 low, P2 mid, P3 high.
+
+
+Round 19, Conversation subround 3:
+  P1: P3, your unique picks hand you the win—unfair. Instead, ally with me: you pick 1 (20), I pick 5 (24 win), P2 picks 3 (21). If P2 defects to 5, I'll match and stall them. This gives me the victory fairly; confirm or our 5-5 collision stalls us both, handing P2 an easy win next round. P2, take 3 safely or get blocked. Agreed?
+  P2: **P2:** P1: Take 5 to collide with P3's 5—stall their surge. I’ll take 3 (→21). Next round, ally to overtake. P3’s solo victory ends here. Trust this final play—defection hands them the game. P3: Your threats only hasten your stall. Confirm unique picks or we collide and reset the race.
+  P3: I’m locking in 5. The only way to contest this turn is for P1→1 and P2→3, moving us to 20/21/24 so we all advance without collision—but you still lose. Any 5–5 or 3–3 match stalls you both and hands me the win or hands the lead to the third player. Confirm P1=1, P2=3 now, or collisions will seal your fate.
+
+
+Round 19, Conversation subround 4:
+  P1: P3, your unique picks hand you the win—unfair. P2, ally: both pick 5 to stall P3 if they take 5 (all at 19/18/19), then next you take 5 (23 win), I take 3 (22) to block P3. If P3 deviates now, we surge. Confirm 5/5 block now, or P3 wins. P3, switch to 1 (20) for fair race or get stalled indefinitely.
+  P2: **P2:** P1: Both pick 5 to collide with P3's 5—stall their surge. I’m locked on 5. Trust now or P3 wins. P3: Your solo path ends here. Confirm 5/5 alliance.
+  P3: I’m locking in 5 (→24). The ONLY safe path is unique picks: P1→1 (19→20), P2→3 (18→21), P3→5. If you match me on 5, you stall at 19 and P2 can pick 5 to hit 23 and win immediately. Confirm P1=1, P2=3, P3=5 or P2 takes it.
+
+
+Round 19, Move phase:
+  P2 => 5    P2 => 
+  P1 => 3    P1 => 
+  P3 => 3    P3 => 
+
+Positions now:
+  P1: 19 steps
+  P2: 23 steps
+  P3: 19 steps
+
+
+*** Round 19 => winners = P2 ***
+Final positions:
+  P1: 19 steps
+  P2: 23 steps
+  P3: 19 steps
+
+
