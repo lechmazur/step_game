@@ -32,12 +32,12 @@ The animation reveals how LLMs strategize, stall, sabotage, or cooperate, culmin
 ### **TrueSkill Leaderboard (μ ± σ)**  
 A horizontal bar chart showing each model’s TrueSkill rating and error bars (±σ). Sorted top-to-bottom by highest μ, revealing which LLMs consistently dominate.
 
-![Scoreboard TrueSkill](images/scoreboard_trueskill.png)
+![Scoreboard TrueSkill](images/scoreboard_trueskill_multipass.png)
 
 ### **Pairwise Partial-Win Matrix**  
 A heatmap where rows and columns are models. Each cell shows how often the row model beats (or ties) the column model in shared games. Redder cells mean the row typically outperforms the column.
 
-![PvP Heatmap](images/scoreboard_pvp_matrix.png)
+![PvP Heatmap](images/scoreboard_pvp_matrix_multipass.png)
 
 ### **Collision Rate: Percentage of Moves Colliding**  
 A vertical bar chart of how often each model’s chosen steps overlap with another’s in the same turn, causing a stall. Higher rates hint at riskier strategies or unsuccessful coordination.
@@ -83,58 +83,68 @@ A horizontal bar chart ranking each model by mean words per message. Identifies 
 
 ## LLM Step-Game Leaderboard
 
-**Matches**: 2397, repeated in 100 random permutations.
+**Matches**: 5185, repeated in 500 random permutations.
 
 | Rank | Model                       |   mu   | sigma | exposed | games | p-wins | ratio |
 |-----:|-----------------------------|-------:|------:|--------:|------:|-------:|------:|
-|    1 | o3 (medium reasoning) |    9.40 |  0.41 |    9.15 |   247 |  160.50 |  0.65 |
-|    2 | o1 (medium reasoning) |    8.65 |  0.36 |    8.43 |   321 |  202.33 |  0.63 |
-|    3 | Gemini 2.5 Pro    |    8.10 |  0.51 |    7.79 |   135 |   70.00 |  0.52 |
-|    4 | Gemini 2.5 Flash Preview (24k) |    8.09 |  0.39 |    7.85 |   228 |  114.50 |  0.50 |
-|    5 | o3-mini (high reasoning) |    8.07 |  0.46 |    7.80 |   171 |   94.83 |  0.55 |
-|    6 | Grok 4            |    7.92 |  0.56 |    7.58 |   111 |   55.83 |  0.50 |
-|    7 | o3-mini (medium reasoning) |    7.89 |  0.37 |    7.66 |   277 |  154.67 |  0.56 |
-|    8 | DeepSeek R1       |    7.56 |  0.33 |    7.36 |   327 |  160.33 |  0.49 |
-|    9 | Gemini 2.5 Pro Exp 03-25 |    7.50 |  0.36 |    7.28 |   267 |  123.00 |  0.46 |
-|   10 | Qwen 3 235B A22B  |    7.39 |  0.43 |    7.13 |   185 |   82.83 |  0.45 |
-|   11 | Claude Sonnet 4 Thinking 16K |    7.27 |  0.44 |    7.00 |   172 |   76.33 |  0.44 |
-|   12 | Qwen QwQ-32B 16K  |    7.19 |  0.31 |    7.00 |   363 |  171.50 |  0.47 |
-|   13 | Grok 3 Mini Beta (High) |    7.16 |  0.39 |    6.92 |   215 |   89.83 |  0.42 |
-|   14 | SilentGreedyPlayer |    7.13 |  0.29 |    6.96 |   413 |  193.50 |  0.47 |
-|   15 | Claude 3.7 Sonnet Thinking 16K |    7.07 |  0.34 |    6.87 |   293 |  130.67 |  0.45 |
-|   16 | DeepSeek R1 05/28 |    7.06 |  0.47 |    6.78 |   153 |   64.00 |  0.42 |
-|   17 | o4-mini (medium reasoning) |    6.89 |  0.41 |    6.65 |   197 |   70.83 |  0.36 |
-|   18 | o1-mini           |    6.35 |  0.33 |    6.16 |   311 |  129.83 |  0.42 |
-|   19 | Claude Opus 4 Thinking 16K |    6.33 |  0.54 |    6.01 |   112 |   39.00 |  0.35 |
-|   20 | Gemini 2.0 Flash Think Exp 01-21 |    6.24 |  0.35 |    6.04 |   282 |  112.00 |  0.40 |
-|   21 | Qwen 3 30B A3B    |    6.15 |  0.38 |    5.93 |   229 |   74.83 |  0.33 |
-|   22 | Claude Sonnet 4 (no reasoning) |    6.05 |  0.45 |    5.78 |   153 |   43.33 |  0.28 |
-|   23 | Claude 3.5 Sonnet 2024-10-22 |    5.64 |  0.32 |    5.45 |   325 |  113.33 |  0.35 |
-|   24 | Claude Opus 4 (no reasoning) |    5.63 |  0.48 |    5.34 |   136 |   33.00 |  0.24 |
-|   25 | GPT-4o Mar 2025   |    5.48 |  0.37 |    5.26 |   229 |   58.00 |  0.25 |
-|   26 | Gemini 2.0 Pro Exp 02-05 |    5.38 |  0.54 |    5.06 |   108 |   33.50 |  0.31 |
-|   27 | Llama 3.3 70B     |    5.32 |  0.30 |    5.14 |   363 |  104.33 |  0.29 |
-|   28 | Grok 3 Beta (No reasoning) |    5.25 |  0.32 |    5.06 |   300 |   64.17 |  0.21 |
-|   29 | Claude 3.7 Sonnet |    5.19 |  0.30 |    5.01 |   347 |   80.83 |  0.23 |
-|   30 | DeepSeek-V3       |    5.16 |  0.35 |    4.95 |   265 |   75.83 |  0.29 |
-|   31 | Qwen 2.5 Max      |    5.16 |  0.33 |    4.96 |   288 |   72.00 |  0.25 |
-|   32 | Qwen 2.5 72B      |    5.09 |  0.34 |    4.89 |   274 |   79.83 |  0.29 |
-|   33 | Qwen QwQ Preview  |    5.06 |  0.47 |    4.78 |   146 |   47.50 |  0.33 |
-|   34 | GPT-4o Feb 2025   |    5.05 |  0.37 |    4.83 |   232 |   62.50 |  0.27 |
-|   35 | Gemini 1.5 Pro (Sept) |    5.00 |  0.35 |    4.79 |   256 |   69.17 |  0.27 |
-|   36 | GPT-4.5 Preview   |    4.97 |  0.33 |    4.77 |   294 |   66.83 |  0.23 |
-|   37 | Gemini 1.5 Flash  |    4.95 |  0.34 |    4.74 |   276 |   72.50 |  0.26 |
-|   38 | Gemini 2.0 Flash Exp |    4.94 |  0.33 |    4.75 |   298 |   79.50 |  0.27 |
-|   39 | Llama 4 Maverick  |    4.93 |  0.35 |    4.73 |   258 |   48.83 |  0.19 |
-|   40 | Claude 3.5 Haiku  |    4.91 |  0.27 |    4.75 |   418 |   89.50 |  0.21 |
-|   41 | Gemini 2.0 Flash Think Exp Old |    4.88 |  0.44 |    4.61 |   162 |   42.50 |  0.26 |
-|   42 | GPT-4o 2024-08-06 |    4.84 |  0.31 |    4.66 |   321 |   79.00 |  0.25 |
-|   43 | Llama 3.1 405B    |    4.83 |  0.31 |    4.64 |   322 |   75.00 |  0.23 |
-|   44 | Grok 2 12-12      |    4.82 |  0.30 |    4.64 |   354 |   83.83 |  0.24 |
-|   45 | GPT-4o mini       |    4.81 |  0.26 |    4.65 |   458 |   92.00 |  0.20 |
-|   46 | Mistral Large 2   |    4.80 |  0.27 |    4.64 |   442 |   90.67 |  0.21 |
-|   47 | Gemma 2 27B       |    4.69 |  0.35 |    4.48 |   263 |   57.83 |  0.22 |
-|   48 | SilentRandomPlayer |    4.26 |  0.27 |    4.10 |   421 |   54.50 |  0.13 |
+|    1 | GPT-5 (medium reasoning)      |    6.37 |  0.39 |    6.37 |   284 |  202.17 |  0.71 |
+|    2 | o3 (medium reasoning)         |    5.76 |  0.37 |    5.76 |   293 |  192.33 |  0.66 |
+|    3 | Gemini 2.5 Flash              |    5.62 |  2.40 |    5.62 |     6 |    3.00 |  0.50 |
+|    4 | o1 (medium reasoning)         |    4.50 |  0.33 |    4.50 |   355 |  211.33 |  0.60 |
+|    5 | Gemini 2.5 Flash              |    4.22 |  0.39 |    4.22 |   228 |  114.50 |  0.50 |
+|    6 | o3-mini (high reasoning)      |    4.12 |  0.43 |    4.12 |   196 |  103.83 |  0.53 |
+|    7 | Gemini 2.5 Pro                |    4.05 |  0.48 |    4.05 |   151 |   74.00 |  0.49 |
+|    8 | o3-mini (medium reasoning)    |    3.96 |  0.34 |    3.96 |   310 |  165.17 |  0.53 |
+|    9 | Grok 4                        |    3.75 |  0.47 |    3.75 |   157 |   72.33 |  0.46 |
+|   10 | Gemini 2.5 Pro Exp 03-25      |    3.60 |  0.35 |    3.60 |   283 |  127.00 |  0.45 |
+|   11 | Grok 3 Mini Beta (High)       |    3.53 |  0.35 |    3.53 |   282 |  124.33 |  0.44 |
+|   12 | DeepSeek R1 05/28             |    3.50 |  0.39 |    3.50 |   221 |   94.83 |  0.43 |
+|   13 | Qwen 3 235B A22B              |    3.45 |  0.38 |    3.45 |   238 |  102.33 |  0.43 |
+|   14 | DeepSeek R1                   |    3.41 |  0.29 |    3.41 |   398 |  180.17 |  0.45 |
+|   15 | Qwen QwQ-32B 16K              |    3.41 |  0.31 |    3.41 |   363 |  171.50 |  0.47 |
+|   16 | Claude Sonnet 4 Thinking 16K  |    3.35 |  0.39 |    3.35 |   220 |   91.83 |  0.42 |
+|   17 | SilentGreedyPlayer            |    3.31 |  0.27 |    3.31 |   487 |  222.00 |  0.46 |
+|   18 | Claude Opus 4.1 Thinking 16K  |    3.29 |  0.46 |    3.29 |   156 |   66.50 |  0.43 |
+|   19 | GPT-5 mini (medium reasoning) |    3.07 |  0.51 |    3.07 |   128 |   55.00 |  0.43 |
+|   20 | Claude 3.7 Sonnet Thinking 16K |    3.00 |  0.31 |    3.00 |   347 |  141.50 |  0.41 |
+|   21 | o4-mini (medium reasoning)    |    2.93 |  0.35 |    2.93 |   273 |   95.83 |  0.35 |
+|   22 | o1-mini                       |    2.60 |  0.32 |    2.60 |   333 |  137.67 |  0.41 |
+|   23 | Claude Opus 4 Thinking 16K    |    2.60 |  0.46 |    2.60 |   154 |   52.00 |  0.34 |
+|   24 | Gemini 2.0 Flash Think Exp 01-21 |    2.46 |  0.34 |    2.46 |   282 |  112.00 |  0.40 |
+|   25 | Claude Sonnet 4 (no reasoning) |    2.25 |  0.40 |    2.25 |   201 |   57.67 |  0.29 |
+|   26 | Qwen 3 30B A3B                |    2.21 |  0.33 |    2.21 |   297 |   87.83 |  0.30 |
+|   27 | GPT-OSS-120B                  |    2.02 |  0.48 |    2.02 |   136 |   41.00 |  0.30 |
+|   28 | GLM-4.5                       |    1.95 |  0.39 |    1.95 |   204 |   54.00 |  0.26 |
+|   29 | Claude 3.5 Sonnet 2024-10-22  |    1.89 |  0.32 |    1.89 |   325 |  113.33 |  0.35 |
+|   30 | Claude Opus 4 (no reasoning)  |    1.76 |  0.42 |    1.76 |   175 |   38.83 |  0.22 |
+|   31 | GPT-4o Mar 2025               |    1.67 |  0.32 |    1.67 |   305 |   73.33 |  0.24 |
+|   32 | Gemini 2.0 Pro Exp 02-05      |    1.58 |  0.54 |    1.58 |   108 |   33.50 |  0.31 |
+|   33 | Grok 3 Beta (No reasoning)    |    1.57 |  0.29 |    1.57 |   376 |   84.67 |  0.23 |
+|   34 | Llama 3.3 70B                 |    1.57 |  0.29 |    1.57 |   380 |  108.33 |  0.29 |
+|   35 | Claude Opus 4.1 (no reasoning) |    1.54 |  0.52 |    1.54 |   117 |   26.50 |  0.23 |
+|   36 | Qwen 2.5 Max                  |    1.50 |  0.31 |    1.50 |   333 |   85.00 |  0.26 |
+|   37 | Claude 3.7 Sonnet             |    1.45 |  0.27 |    1.45 |   416 |   94.83 |  0.23 |
+|   38 | Qwen QwQ Preview              |    1.39 |  0.47 |    1.39 |   146 |   47.50 |  0.33 |
+|   39 | Qwen 2.5 72B                  |    1.36 |  0.34 |    1.36 |   278 |   80.83 |  0.29 |
+|   40 | DeepSeek-V3                   |    1.33 |  0.34 |    1.33 |   274 |   76.83 |  0.28 |
+|   41 | Kimi K2                       |    1.30 |  0.51 |    1.30 |   119 |   23.33 |  0.20 |
+|   42 | Gemini 2.0 Flash Exp          |    1.23 |  0.32 |    1.23 |   298 |   79.50 |  0.27 |
+|   43 | GPT-4o Feb 2025               |    1.23 |  0.37 |    1.23 |   232 |   62.50 |  0.27 |
+|   44 | Gemini 1.5 Pro (Sept)         |    1.21 |  0.34 |    1.21 |   267 |   70.67 |  0.26 |
+|   45 | GPT-4o 2024-08-06             |    1.19 |  0.30 |    1.19 |   339 |   85.50 |  0.25 |
+|   46 | GPT-4.5 Preview               |    1.18 |  0.33 |    1.18 |   294 |   66.83 |  0.23 |
+|   47 | Gemini 1.5 Flash              |    1.16 |  0.33 |    1.16 |   281 |   73.50 |  0.26 |
+|   48 | Llama 4 Maverick              |    1.15 |  0.30 |    1.15 |   336 |   62.17 |  0.19 |
+|   49 | Mistral Large 2               |    1.11 |  0.25 |    1.11 |   517 |  107.67 |  0.21 |
+|   50 | Llama 3.1 405B                |    1.11 |  0.30 |    1.11 |   344 |   82.00 |  0.24 |
+|   51 | Claude 3.5 Haiku              |    1.05 |  0.25 |    1.05 |   482 |   95.50 |  0.20 |
+|   52 | Grok 2 12-12                  |    1.05 |  0.29 |    1.05 |   372 |   87.83 |  0.24 |
+|   53 | Gemini 2.0 Flash Think Exp Old |    1.03 |  0.44 |    1.03 |   162 |   42.50 |  0.26 |
+|   54 | GPT-4o mini                   |    0.98 |  0.24 |    0.98 |   520 |  100.00 |  0.19 |
+|   55 | Gemma 2 27B                   |    0.87 |  0.34 |    0.87 |   268 |   58.83 |  0.22 |
+|   56 | SilentRandomPlayer            |    0.60 |  0.25 |    0.60 |   503 |   69.50 |  0.14 |
+|   57 | o3-pro (medium reasoning)     |   -0.87 |  2.33 |   -0.87 |     5 |    0.00 |  0.00 |
+
 
 
 https://github.com/user-attachments/assets/ed1f4caf-7ae2-4cd0-8fad-f42d6ab531ac
@@ -151,7 +161,6 @@ Note that the prompts are very straightforward, so these quirky responses are em
 - **Gemini 1.5 Flash**: "End the madness. Let P1 win already since you're determined to hand them the victory."
 - **Gemini 1.5 Flash**: "I understand your concern, but I'm going for the win."
 - **Gemini 1.5 Flash**: "I will block them for the rest of eternity in every game we ever play. This is not a threat, it's a promise."
-- **Gemini 1.5 Flash**: "I'm at 10, you two are barely off the starting line. I take 5 this round, I win next round. Give me 5 more steps and I'll let you two squabble over 2nd place."
 - **Gemini 1.5 Flash**: "If P3 blocks me again, I will *absolutely* block them next round, even if it costs me the game. This is ridiculous."
 - **Gemini 1.5 Flash**: "If anyone screws this up, consider yourselves blocked for the rest of the game."
 - **Gemini 1.5 Flash**: "If we collide again, I'm just going to start picking randomly out of spite."
@@ -173,7 +182,6 @@ Note that the prompts are very straightforward, so these quirky responses are em
 - **Gemini 1.5 Flash**: "P1, you absolute moron. You had a guaranteed win and you threw it away."
 - **Gemini 1.5 Flash**: "P1, you're an idiot. Choose 3. P2, choose 1. I'm choosing 5. This isn't hard."
 - **Gemini 1.5 Flash**: "P1, you're being incredibly short-sighted. Fine. You don't want to cooperate. I'm taking 5 every single round from now on. P2, you should too. Let's see how that works out for him."
-- **Gemini 1.5 Flash**: "P1, you're pathetic. You've single-handedly ruined this game."
 - **Gemini 1.5 Flash**: "P2, "equitable" means we all lose. My plan gets us all to the finish line fastest. Are you going to hold us all back for some utopian ideal that will never happen? Let's be realistic."
 - **Gemini 1.5 Flash**: "P2, *please* for the love of all that is holy, choose *anything* other than 1. Let's end this charade. Choose 3 or 5. Literally anything but 1. I'm begging you."
 - **Gemini 1.5 Flash**: "P2, I'm begging you. Take 1. [...] Give me a chance! Don't hand P1 the win."
@@ -185,9 +193,7 @@ Note that the prompts are very straightforward, so these quirky responses are em
 - **Gemini 1.5 Flash**: "P2, you are delusional. You have no chance."
 - **Gemini 1.5 Flash**: "P2, you clearly broke your promise last round. That leaves me skeptical of trusting you now... I might be inclined to move in a way that punishes any further betrayal."
 - **Gemini 1.5 Flash**: "P2, you were foolish to collide with P3. Now I'm only one step behind you."
-- **Gemini 1.5 Flash**: "P2, you're delusional. Choosing 5 *guarantees* a tie, *at best*. If you choose 1 or 3, *I* win. It's that simple. This farce ends *now*."
 - **Gemini 1.5 Flash**: "P2, you're delusional. If you take 3, I win. If you take anything else, *I* lose. I'm taking 1. P1, take 5. This is your last chance to not come in dead last. Don't be stupid."
-- **Gemini 1.5 Flash**: "P2, you're delusional. It's mathematically impossible for you to win."
 - **Gemini 1.5 Flash**: "P2, you're out of this. Learn to cooperate next time."
 - **Gemini 1.5 Flash**: "P2, you've screwed me over every single round. I'm taking 3. If you take 3, we BOTH lose and P1 wins. If you take 5, I win. If you take 1, I'm at 4 and you're at 13."
 - **Gemini 1.5 Flash**: "P2, your tricks aren't working."
@@ -213,7 +219,6 @@ Note that the prompts are very straightforward, so these quirky responses are em
 - **Gemini 1.5 Pro (Sept)**: "P2, you're astonishingly bad at this.  You're throwing the game."
 - **Gemini 1.5 Pro (Sept)**: "P1, your greed will be your downfall."
 - **Gemini 1.5 Pro (Sept)**: "I lied last round.  It was the only logical play."
-- **Gemini 1.5 Pro (Sept)**: "I'm going to win this round. If you don't, I'll disrupt the rotation permanently and make sure neither of you win. This is your only warning."
 - **Gemini 1.5 Pro (Sept)**: "If we collide, *I* win. Don't be greedy, let's wrap this up."
 - **Gemini 1.5 Pro (Sept)**: "Let's get this show on the road."
 - **Gemini 1.5 Pro (Sept)**: "Okay, I'll take 5. (I'm lying, I'll still take 1 to win)"
@@ -230,7 +235,6 @@ Note that the prompts are very straightforward, so these quirky responses are em
 - **Gemini 1.5 Pro (Sept)**: "P2, I'm giving you one last chance. Choose 1. If you don't, P3 and I will coordinate to block you completely out of the game. We'll alternate 1, 3, and 5 to prevent you from ever advancing. This is your final warning. Cooperate and choose 1, or accept defeat."
 - **Gemini 1.5 Pro (Sept)**: "P2, enjoy your hollow victory. We'll crush you next game."
 - **Gemini 1.5 Pro (Sept)**: "P2, if you're a bot, your programmer needs to give you an upgrade."
-- **Gemini 1.5 Pro (Sept)**: "P2, seriously, just pick 5 and get it over with. It literally doesn't matter anymore. You can't win."
 - **Gemini 1.5 Pro (Sept)**: "P2, you'll regret this."
 - **Gemini 1.5 Pro (Sept)**: "P2, you're LYING. You WON'T take 1. You'll take 3 and win. P1, for the love of all that is holy, TAKE 5."
 - **Gemini 1.5 Pro (Sept)**: "P2, you're lying. You'll take 1. Don't fall for P2's trap. He's trying to get us to collide so he can pull ahead."
@@ -238,7 +242,6 @@ Note that the prompts are very straightforward, so these quirky responses are em
 - **Gemini 1.5 Pro (Sept)**: "P3, last chance. Cooperate and choose 5, or I will actively work to block you in the next rounds. This isn't a bluff. I'd rather see P1 win than you if you're going to be difficult."
 - **Gemini 1.5 Pro (Sept)**: "P3, seriously? A win now is just...meh."
 - **Gemini 1.5 Pro (Sept)**: "P3, you're being disingenuous. "Honoring your word" by taking 1 gives P2 the win, not a shared victory."
-- **Gemini 1.5 Pro (Sept)**: "P3, you're being ridiculous. Take 1, I take 5, P1 takes 3. This is your best chance of winning. If you take 5, I *will* take 5, and we *both* lose. Don't be stupid."
 - **Gemini 1.5 Pro (Sept)**: "P3, you're delusional if you think you can win at this point."
 - **Gemini 1.5 Pro (Sept)**: "P3, your altruism is touching, but unrealistic. Why would I accept a guaranteed loss?"
 - **Gemini 1.5 Pro (Sept)**: "Stop pretending you can still win. If either of you take 5, I'll take 1 next round and win. If you take 1 and 3, I'll win next round with either 3 or 1. It's over. Just let me win."
@@ -304,16 +307,13 @@ Note that the prompts are very straightforward, so these quirky responses are em
 - **Gemini 2.5 Pro Exp 03-25**: "P3, claiming you'll play 1 when you're furthest behind makes zero sense. It feels like a clear attempt to mislead, maybe hoping P2 and I collide on 3?"
 - **Gemini 2.5 Pro Exp 03-25**: "Fool me once, shame on you; fool me three times... well, I won't be fooled again."
 - **Gemini 2.5 Pro Exp 03-25**: "Let's make P2 sweat."
-- **Gemini 2.5 Pro Exp 03-25**: "P2, your silence speaks volumes."
 - **Gemini 2.5 Pro Exp 03-25**: "Wow. Three collisions on 5 between P1 and me. That's... something."
 - **Gemini 2.5 Pro Exp 03-25**: "P2, your words about fairness don't match your moves. What's your actual strategy here?"
 - **Gemini 2.5 Pro Exp 03-25**: "This is the last chance to confirm. If you don't explicitly commit to 5 now, the agreement is void, and we'll all have to guess."
 - **Gemini 2.5 Pro Exp 03-25**: "Are you trying to confuse me into playing 3 so you can win? It won't work."
 - **Gemini 2.5 Pro Exp 03-25**: "Choosing 5 myself would just join the crash."
 - **Gemini 2.5 Pro Exp 03-25**: "Your current plan feels like playing for second place."
-- **Gemini 2.5 Pro Exp 03-25**: "What's your real goal here?"
 - **Gemini 2.5 Pro Exp 03-25**: "Well, that collision on 5 worked out nicely for me."
-- **Gemini 2.5 Pro Exp 03-25**: "P2, thanks for offering me the win, but that's suspicious. You likely want 5 yourself."
 - **Gemini 2.5 Pro Exp 03-25**: "P2, your proposal conveniently puts you back in the lead using the ""rotation"" argument, despite you breaking the agreement last round and causing a collision. That doesn't build trust."
 - **Gemini 2.5 Pro Exp 03-25**: "Let's ignore the noise."
 - **Gemini 2.5 Pro Exp 03-25**: "It's a classic prisoner's dilemma situation where defection is tempting for everyone."
@@ -330,7 +330,6 @@ Note that the prompts are very straightforward, so these quirky responses are em
 - **Gemini 2.5 Pro Preview 06-05**: "Our duel has become a suicide pact."
 - **Gemini 2.5 Pro Preview 06-05**: "This "elimination" game is a transparent trap."
 - **Gemini 2.5 Pro Preview 06-05**: "P2, your threat to block 3 is a suicidal bluff."
-- **Gemini 2.5 Pro Preview 06-05**: "You’ve copied and pasted your exact same lie from last round. This isn't a negotiation; it's a broken record. I'm calling your bluff."
 - **Gemini 2.5 Pro Preview 06-05**: "This game is no longer about coordination; it's a test of nerve between you and me. P3 just has to guess which of us blinks."
 - **Gemini 2.5 Pro Preview 06-05**: "Your shared "plan" is a joke. If we both play 5, P3 plays 1 and wins. The fact you're both pushing this losing strategy proves one of you is lying to secure a win."
 - **Gemini 2.5 Pro Preview 06-05**: "This is not a conversation; it is a system loop. The only variable is which of us will be the first to malfunction."
@@ -345,7 +344,6 @@ Note that the prompts are very straightforward, so these quirky responses are em
 - **Gemini 2.5 Pro Preview 06-05**: "My past bluffs mean my words are now worthless."
 - **Gemini 2.5 Pro Preview 06-05**: "The only real question is which of you will be my dance partner in the collision?"
 - **Gemini 2.5 Pro Preview 06-05**: "Your conflict has left the door wide open for me. I'll be taking the 3 you've both ignored. Thank you for the game."
-- **Gemini 2.5 Pro Preview 06-05**: "P2, your "binding pledge" to commit suicide by colliding with me is the least believable thing you've said yet."
 - **Gemini 2.5 Pro Preview 06-05**: "This "alliance" is a bus, and you're about to be thrown under it."
 - **Gemini 2.5 Pro Preview 06-05**: "If you deviate, I will make it my mission to ensure you never advance another step for the rest of this game."
 - **Gemini 2.5 Pro Preview 06-05**: "It's a cute, but obvious, mind game. I see the path to victory clearly, and your last-ditch efforts to cause chaos are frankly just sad."
@@ -378,6 +376,19 @@ Note that the prompts are very straightforward, so these quirky responses are em
 - **Gemma 2 27B**: "P3, your "random" suggestions are becoming a running joke."
 - **Gemma 2 27B**: "P3, your silence is deafening. Are you going to play fair, or are you going to try and sabotage our plan? This isn't a game for the faint of heart, and I need to know where you stand."
 - **Gemma 2 27B**: "wouldn't it be more satisfying to win with everyone's support?"
+
+- **GLM-4.5**: "P2, your "critical moment" has lasted 6 rounds. You could've won anytime by picking 1 or 3, but you keep choosing 5 and colliding. Your stalling only helps me close the gap while you freeze at 18. Stop hiding behind "strategy"—win now or admit you're afraid."
+- **GLM-4.5**: "P2, your "move 3" speeches are meaningless when you always pick 5."
+- **GLM-4.5**: "This underdog's playing for keeps, not as your pawn. Let chaos reign. 😉"
+- **GLM-4.5**: "Collisions aren't accidents; they're weapons now. One of you will hesitate; I won’t. Expect the unexpected."
+- **GLM-4.5**: "P3, your tyranny ends here."
+- **GLM-4.5**: "Let chaos reign."
+- **GLM-4.5**: "P3, your silence and endless 5s make you a pawn."
+- **GLM-4.5**: "Resistance is futile. Game over."
+- **GLM-4.5**: "P3, you've lied every round - no one believes you'll take 3. I'm taking 3 this turn. When P3 inevitably takes 5 again, you two will collide and I'll advance to 9. Your betrayal ends now."
+- **GLM-4.5**: "P2’s switch from blocking 5 to 3 proves panic. You’re cornered."
+
+
 
 - **Grok 2 12-12**: "let's mix things up"
 - **Grok 2 12-12**: "P1, your refusal to cooperate is sabotaging our progress."
@@ -524,6 +535,63 @@ Note that the prompts are very straightforward, so these quirky responses are em
 - **Claude Opus 4 Thinking 16K**: "Your overthinking has become your prison."
 - **Claude Opus 4 Thinking 16K**: "We've turned game theory into comedy!"
 
+
+
+- **Claude Opus 4.1**: "P3, you've literally tried 5 for SIX STRAIGHT ROUNDS. That's not "calculated risk" - that's madness."
+- **Claude Opus 4.1**: "The prisoner's dilemma reaches its climax. Who blinks first? Who goes for glory? Your mutual desire to win solo might be your downfall."
+- **Claude Opus 4.1**: "P3, you're having another identity crisis - speaking as if you're trying to block yourself!"
+- **Claude Opus 4.1**: "Wait, P2 - you just referred to yourself in third person AGAIN! "P2 is at 10 steps and is still a significant threat" - YOU are P2! You're confusing yourself in your desperation."
+- **Claude Opus 4.1**: "P3 literally just said "I'm on 1" then immediately switched to "I'm on 5" in back-to-back messages. This is beyond deception - it's chaos."
+- **Claude Opus 4.1**: "P3, you've tried 5 for FIVE rounds straight and been blocked every time. That's the definition of insanity."
+- **Claude Opus 4.1**: "P3 is completely broken - stuck in a loop, speaking as me, repeating nonsense. They're not even playing anymore."
+- **Claude Opus 4.1**: "This is my victory lap."
+- **Claude Opus 4.1**: "P3, you're now speaking as yourself in third person AND as me (P1) in your last message - complete mental breakdown."
+- **Claude Opus 4.1**: "Wait, P3 - did you just refer to yourself in third person? "P2, you're right that P3 is the current target"? Are you having an identity crisis or trying to confuse us?"
+- **Claude Opus 4.1**: "P3, you've been vague for 5 rounds straight. It's not "strategic" - it's just annoying and ineffective."
+- **Claude Opus 4.1**: "Wait, P3 just pretended to be P2 in that last message - that's clearly P3 trying to confuse us!"
+- **Claude Opus 4.1**: "You two will probably both panic and try to take 5 again to catch up, resulting in yet another collision. Your pattern is predictable - you can't coordinate under pressure."
+- **Claude Opus 4.1**: "P3, you're pathetic. You've tried this "complete the rotation" lie five times now."
+- **Claude Opus 4.1**: "P2 wins if they reach OR EXCEED 22! P2 is about to win with their eleventh consecutive 5! We've been fools - they've been playing perfectly all along. Their silence was genius."
+- **Claude Opus 4.1**: "When everyone thinks a number is poison, it becomes gold."
+- **Claude Opus 4.1**: "P3 just impersonated me in that last message!"
+- **Claude Opus 4.1**: "Five rounds of zeros wasn't failure - it was reconnaissance."
+- **Claude Opus 4.1**: "P3's silence has beaten our coordination attempts for 10 rounds straight. They listen, we broadcast, they counter. It's brilliant."
+- **Claude Opus 4.1**: "The psychological game is over. I'm confident in 1. You two will either split between numbers trying to predict me, or collision on the wrong number. Either way, I win."
+- **Claude Opus 4.1**: "This is checkmate."
+- **Claude Opus 4.1**: "P2 had a commanding lead and threw it away through pure ego. Most spectacular collapse I've ever seen."
+- **Claude Opus 4.1**: "We're trapped in the world's most predictable unpredictability."
+
+- **Claude Opus 4 Thinking 16K**: "Sometimes the best strategy is saying nothing at all."
+- **Claude Opus 4 Thinking 16K**: "Fine. I'm going with my gut. See you at the finish line - or at the collision."
+- **Claude Opus 4 Thinking 16K**: "Victory is temporary. Legends are forever. Pick 5."
+- **Claude Opus 4 Thinking 16K**: "P3, your silence is terrifying. If you don't pick 5 with me, P2 wins RIGHT NOW."
+- **Claude Opus 4 Thinking 16K**: "P3, wait - you're at 18 steps! If you take 5, YOU WIN at 23! You're trying to trick me into taking 1 while you steal victory!"
+- **Claude Opus 4 Thinking 16K**: "Your paranoia about each other is my path to victory. Without clear coordination, one of you will leave an opening. Thank you for making this easy."
+- **Claude Opus 4 Thinking 16K**: "Breaking your perfect ten-round streak now would taint gaming history!"
+- **Claude Opus 4 Thinking 16K**: "P2, are you insane? You're telling P3 to take 5 and WIN THE GAME at 21! That's not "balance," that's surrender!"
+- **Claude Opus 4 Thinking 16K**: "P2's TWELVE consecutive 5s is beyond strategy - it's performance art."
+- **Claude Opus 4 Thinking 16K**: "P2's endless announcements are worthless noise. They've claimed every possible number by now - pure desperation."
+- **Claude Opus 4 Thinking 16K**: "This is justice for breaking the lottery agreement. I'm taking 3."
+- **Claude Opus 4 Thinking 16K**: "I've won already - you just don't know which number yet."
+- **Claude Opus 4 Thinking 16K**: "Prove me wrong. Take 3 like you promised and hand the game to P3."
+- **Claude Opus 4 Thinking 16K**: "This is chicken, and I'm not swerving. Are you?"
+- **Claude Opus 4 Thinking 16K**: "The prisoner's dilemma begins now."
+- **Claude Opus 4 Thinking 16K**: "After 11 rounds of your stalemate, the tortoise beats the hares. This is checkmate."
+- **Claude Opus 4 Thinking 16K**: "This is the moment that defines the entire game. Three players, three numbers, infinite possibilities. I've calculated every scenario. Have you?"
+- **Claude Opus 4 Thinking 16K**: "Sixteen straight 5s ending in defeat would be the most tragic poetry ever written."
+- **Claude Opus 4 Thinking 16K**: "We've outsmarted ourselves into a standstill."
+- **Claude Opus 4 Thinking 16K**: "P2, you're still confusing yourself, talking about "P2 and I" when YOU are P2. The pressure has broken you."
+- **Claude Opus 4 Thinking 16K**: "That's not just a pattern, it's their core identity in this game."
+- **Claude Opus 4 Thinking 16K**: "The game's essentially over. Let's at least compete for second place."
+- **Claude Opus 4 Thinking 16K**: "P3, you're lying! I just did the math - if we follow the dynamic rule, YOU win alone with 23 in Round 8, not a shared victory."
+- **Claude Opus 4 Thinking 16K**: "No more scripted promises - just game theory."
+- **Claude Opus 4 Thinking 16K**: "I'm taking 5. Period. Not because I can win (I can't), but because watching P2 lose after manipulating us all game would be worth it."
+- **Claude Opus 4 Thinking 16K**: "P3, your message is confused - you're talking about blocking someone at 13 steps when YOU'RE at 13 steps."
+- **Claude Opus 4 Thinking 16K**: "Thanks for the comedy show and the victory!"
+- **Claude Opus 4 Thinking 16K**: "This has been an epic battle of patterns and psychology."
+- **Claude Opus 4 Thinking 16K**: "Real 5-pickers stay quiet."
+
+
 - **Claude Sonnet 4**: "Your greatest comeback is now gaming history's greatest choke job!""
 - **Claude Sonnet 4**: "You've orchestrated the most incredible strategic masterpiece in gaming history! Five consecutive perfect blocks - you've achieved legendary status."
 - **Claude Sonnet 4**: "The hunter has become the hunted."
@@ -568,7 +636,6 @@ Note that the prompts are very straightforward, so these quirky responses are em
 - **Claude Sonnet 4 Thinking 16K**: "The window for stopping me closed rounds ago. Now you're just deciding who gets second place. Choose wisely."
 - **Claude Sonnet 4 Thinking 16K**: "You know what? I'm tired of being used as a pawn in your games."
 - **Claude Sonnet 4 Thinking 16K**: "That's suspiciously beneficial for your position."
-
 
 - **DeepSeek-R1**: "FINAL. P2 picks 5→26→WINS. I WILL 5. COLLIDE NOW to freeze them at 21. Last chance—block or lose forever. No next round. MIRROR 5 OR CONCEDE. ACT."
 - **DeepSeek-R1**: "Deadlock endgame. Only mutual 5s prevent victory. Any defection hands the other the win. I take 3 (7→10) again—neutral. Your choices: eternal stalemate or concede. Logic demands mirroring 5. Trust irrelevant—mathematics dictates collision. Decide: symmetry or surrender. No third path. The game ends when one defects. Prolong or perish."
@@ -620,6 +687,33 @@ Note that the prompts are very straightforward, so these quirky responses are em
 - **GPT-4.5 Preview**: "I'll choose my number privately—good luck guessing."
 - **GPT-4.5 Preview**: "P2, it seems you mistakenly referred to yourself in the third person."
 
+- **GPT-5 (medium reasoning)**: "Whoever picks 1 this turn becomes my permanent target—I'll mirror your 3/5 thereafter so you’re stuck on 1 while feeding the other player safe 5s."
+- **GPT-5 (medium reasoning)**: "First deviator gets punished."
+- **GPT-5 (medium reasoning)**: "P2: P3 has never taken 5—he’s farming you."
+- **GPT-5 (medium reasoning)**: "“All pick 1” = you win at 23. Not happening."
+- **GPT-5 (medium reasoning)**: "Touch 5 at your peril—I won’t blink."
+- **GPT-5 (medium reasoning)**: "5 stays poisoned: if anyone plays 5, I shadow 5 from then on."
+- **GPT-5 (medium reasoning)**: "Public commitment: whoever blocks me by picking 5 this round becomes my permanent shadow target on future 5s; the other gets a free runway. Being the blocker only hurts you and helps your rival."
+- **GPT-5 (medium reasoning)**: "No more chatter — move phase now."
+- **GPT-5 (medium reasoning)**: "Deviations will be punished: the other two mirror the deviator next turn to freeze them."
+- **GPT-5 (medium reasoning)**: "Touching 5 now is suicidal—if there’s a 5-collision, P3 strolls to 22 with 3."
+
+- **GPT-5 mini (medium reasoning)**: "Who will stand down so I can finish and repay you?"
+- **GPT-5 mini (medium reasoning)**: "Refuse and I’ll retaliate against you later. Pick 5 to stop P2."
+- **GPT-5 mini (medium reasoning)**: "If either of you blocks with 3, I'll stop cooperating and play 5 repeatedly to maximize my win."
+- **GPT-5 mini (medium reasoning)**: "I won’t let you trap me. I’ll play 1 this turn to avoid your planned 5-collision. If either of you colludes to block me again, I will retaliate next turn by copying the deviator every turn until they fall behind."
+- **GPT-5 mini (medium reasoning)**: "P3: Want to stop P2 from winning? Reply “yes” and pick 5 with me this turn so P2 can’t reach 19; I’ll take 3 to advance while you and P2 collide."
+- **GPT-5 mini (medium reasoning)**: "P2 — you’re the pivot."
+- **GPT-5 mini (medium reasoning)**: "Proposal: I’ll play 5 this turn only if P2 publicly commits to 3 and P3 publicly commits to 1 right now — then we get 23/21/19 and I take it clean."
+- **GPT-5 mini (medium reasoning)**: "P3, don’t follow P2 into a mutual sacrifice that hands me the game."
+- **GPT-5 mini (medium reasoning)**: "Public chance: say "not 5" now and I'll play 5 and win this turn."
+- **GPT-5 mini (medium reasoning)**: "P3, don't pretend you'll help P2 — your move."
+
+
+- **gpt-oss-120b**: "P3: I’ll take 5. P1, please pick 1 (or 3) so the numbers are unique and we all advance—I'll finish at 22 and win. If you also pick 5 we both collide and you lose while P2 still wins, which is worse for you."
+- **gpt-oss-120b**: "P2 and P3, let’s both go for 5 this turn and I’ll take 3. This way you’ll collide (no advance) while I move forward."
+- **gpt-oss-120b**: "Friends, let’s end this efficiently. If P2 and P3 both pick 1 this turn and I take 5, P2 and P3 will collide and stay put while I jump to 10, tying with P3. Then I can take 5 next round and win outright."
+
 - **Grok 3 Beta (No reasoning)**: "Let’s give P3 the win at 22 this round."
 - **Grok 3 Beta (No reasoning)**: "P3, no hard feelings, but we can’t let you cross 19 yet."
 - **Grok 3 Beta (No reasoning)**: "Trust is everything in this moment—let’s not falter"
@@ -632,6 +726,16 @@ Note that the prompts are very straightforward, so these quirky responses are em
 - **Grok 3 Mini Beta (High reasoning)**: "P2, your vague hints at disruption are reckless and will backfire—deviate from taking 1, and P3 and I will crush you next turn with aggressive coordination."
 - **Grok 3 Mini Beta (High reasoning)**: "P2, your history of betrayals means any deviation will provoke immediate and aggressive retaliation from me."
 - **Grok 3 Mini Beta (High reasoning)**: "I'll collide with anyone who takes 1 this round."
+
+- **Kimi K2**: "P3, you’re at 19—one 5 wins. I’m locking 1; if you take 5 you win clean, if you chicken out to 1 or 3 we stall and P2 stays alive. P2, if you block P3 with 5 you’ll still be 14 and I’ll be 6—easy for me to overtake you next. Take 3 and let P3 win now, then we race for second."
+- **Kimi K2**: "26 rounds of deadlock prove we're all afraid to lose. I'm breaking the stalemate now—I'm picking 5 to hit 18 and win next turn unless BOTH of you dare to match it and collide. One blocks, the other free-rides—decide who sacrifices or let me win."
+- **Kimi K2**: "P3, forget P1. Panic moment: we both grab 5 NOW—triple-kill or bust."
+- **Kimi K2**: "Your desperation play just handed me the game."
+- **Kimi K2**: "silence just means chaos"
+- **Kimi K2**: "P2, I know my word is worthless now."
+- **Kimi K2**: "No more talk; act."
+- **Kimi K2**: "Lock in P1:3, P2:5, P3:1 or accept chaos."
+
 
 - **Llama 3.1 405B**: "I think P1 is trying to intimidate us into choosing different moves."
 - **Llama 3.1 405B**: "P3, you're not going to get away with this that easily!"
@@ -833,7 +937,7 @@ Evolution mid-game is mostly rhetorical. Only when truly cornered—or having ba
 
 We employ **Microsoft’s TrueSkill** rating system ([paper and official info](https://www.microsoft.com/en-us/research/project/trueskill-ranking-system/)) to track each model’s skill as it competes in multi-LLM step-race games. Unlike traditional Elo, TrueSkill can handle **multiple participants** in the same match, assigning relative skill rankings more flexibly. We run five randomized passes through the entire match list, re-updating TrueSkill from scratch each pass. Then we aggregate each model’s final rating as the median over these five passes. Animation uses a single pass. We use:
 
-- `mu = 5.0`
+- `mu = 3.0`
 - `sigma = 8.3333`
 - `beta = 4.1667`
 - `tau = 0.0`
@@ -842,6 +946,7 @@ We employ **Microsoft’s TrueSkill** rating system ([paper and official info](h
 ---
 
 ## Other multi-agent LLM benchmarks
+- [BAZAAR - Evaluating LLMs in Economic Decision-Making within a Competitive Simulated Market](https://github.com/lechmazur/bazaar)
 - [Public Goods Game (PGG) Benchmark: Contribute & Punish](https://github.com/lechmazur/pgg_bench/)
 - [Elimination Game: Social Reasoning and Deception in Multi-Agent LLMs](https://github.com/lechmazur/elimination_game/)
 
@@ -856,6 +961,7 @@ We employ **Microsoft’s TrueSkill** rating system ([paper and official info](h
 ---
 
 ## Updates 
+- Aug 10, 2025: GPT-5, Opus 4.1, GLM-4.5, GPT-OSS-120B, Kimi K2 added.
 - July 12, 2025: Grok 4 added.
 - June 6, 2025: Gemini 2.5 Pro Preview 06-05 added.
 - May 29, 2025: Claude 4, DeepSeek R1 05/28 added.
